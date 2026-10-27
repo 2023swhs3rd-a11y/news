@@ -56,7 +56,7 @@
   <nav class="filters" aria-label="필터">
     <div class="wrap">
       <div class="filter-row">
-        <label for="issue-select" class="label">🗓️ 발행일</label>
+        <label for="issue-select" class="label">🗓️ 발행 호</label>
         <select id="issue-select"></select>
         <input id="search" type="search" placeholder="🔍 기사·과목·개념 검색" aria-label="검색">
       </div>
@@ -73,12 +73,14 @@
   </main>
 
   <footer class="wrap site-footer">
+    <p class="site-meta" id="site-meta"></p>
     <p>과목명은 2022 개정 교육과정 기준이며, 단원명은 교과서마다 다를 수 있습니다. 요약과 예시 답안은 AI가 초안을 쓰고 선생님이 검토했습니다. 예시 답안은 정답이 아니라 생각의 길잡이예요. 기사 원문도 꼭 직접 읽어 보세요.</p>
   </footer>
 
   <dialog id="submit-dialog" aria-labelledby="submit-title">
     <form id="submit-form" method="dialog">
       <h2 id="submit-title">✍️ 내 답안 제출하기</h2>
+      <p class="notice">📮 작성한 답안은 <b>담당 선생님께 제출</b>되며, 친구들에게는 공개되지 않아요. 학번과 이름을 정확히 적어 주세요.</p>
       <p class="dialog-q" id="submit-question"></p>
       <div class="row2">
         <label>학번<input name="studentId" required maxlength="10" inputmode="numeric" placeholder="예: 10315" autocomplete="off"></label>
@@ -93,6 +95,8 @@
       </div>
     </form>
   </dialog>
+
+  <button type="button" id="to-top" class="to-top" hidden aria-label="맨 위로">⬆</button>
 
   <script src="assets/app.js"></script>
 </body>

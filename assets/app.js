@@ -51,6 +51,14 @@
     return `${y}년 ${Number(m)}월 ${Number(day)}일`;
   }
 
+  function fmtShort(d) {
+    const [, m, day] = d.split("-");
+    return `${Number(m)}월 ${Number(day)}일`;
+  }
+
+  const issueLabel = (i) => (i.no ? `제${i.no}호` : fmtDate(i.date));
+  const issueByDate = (d) => issues.find((i) => i.date === d);
+
   const colorOf = (id) => (trackById[id] && trackById[id].color) || "";
 
   function matchesTracks(itemTracks) {
@@ -78,8 +86,8 @@
 
   function renderSelect() {
     const sel = $("#issue-select");
-    sel.innerHTML = `<option value="all">모든 호 보기</option>` + issues.map((i) =>
-      `<option value="${i.date}">${fmtDate(i.date)} · ${esc(i.title)}</option>`).join("");
+    sel.innerHTML = issues.map((i) =>
+      `<option value="${i.date}">${issueLabel(i)} (${fmtShort(i.date)})</option>`).join("") + `<option value="all">모든 호 함께 보기</option>`;
     sel.value = state.date || "all";
   }
 
@@ -104,7 +112,7 @@
     const main = (a.tracks || [])[0];
     const badges = (a.tracks || []).map((t) => trackById[t]
       ? `<span class="badge" style="--c:${colorOf(t)}">${trackById[t].emoji} ${esc(trackById[t].name)}</span>` : "").join("");
-    const dateBadge = showDate ? `<a class="badge date" href="#date=${date}">${fmtDate(date)} 호</a>` : "";
+    const dateBadge = showDate ? `<a class="badge date" href="#date=${date}">${issueLabel(issueByDate(date))}</a>` : "";
     const links = (a.links || []).map((l) =>
       `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a> <span class="muted">· ${esc(l.source)}</span>${l.lang === "en" ? '<span class="lang">EN</span>' : ""}</li>`).join("");
     const curr = (a.curriculum || []).map((c) =>
@@ -128,7 +136,55 @@
         <div class="curr">${curr}</div>
         <div class="section-label">💭 탐구 질문</div>
         <ol class="questions">${qs}</ol>
+        ${relatedHTML(a, date)}
       </article>`;
+  }
+
+  // 비슷한 주제 기사: 계열·과목·개념이 겹칠수록 점수가 높다
+  function keywords(a) {
+    const set = new Set();
+    (a.tracks || []).forEach((t) => set.add("t:" + t));
+    (a.curriculum || []).forEach((c) => {
+      set.add("s:" + c.subject);
+      (c.concepts || []).forEach((k) => set.add("k:" + k));
+    });
+    (a.questions || []).forEach((q) => (q.concepts || []).forEach((c) => set.add("k:" + c.term)));
+    return set;
+  }
+  const WEIGHT = { t: 2, s: 2, k: 3 };
+
+  function related(a, date) {
+    const mine = keywords(a);
+    return issues.flatMap((i) => i.articles.map((b) => ({ b, date: i.date })))
+      .filter(({ b, date: d }) => !(b.id === a.id && d === date))
+      .map(({ b, date: d }) => {
+        let score = 0;
+        keywords(b).forEach((k) => { if (mine.has(k)) score += WEIGHT[k[0]]; });
+        return { b, date: d, score };
+      })
+      .filter((r) => r.score >= 3)
+      .sort((x, y) => y.score - x.score || y.date.localeCompare(x.date))
+      .slice(0, 3);
+  }
+
+  function relatedHTML(a, date) {
+    const list = related(a, date);
+    if (!list.length) return "";
+    return `<div class="related"><div class="section-label">🧭 비슷한 주제 기사</div><ul>${list.map(({ b, date: d }) => {
+      const t = trackById[(b.tracks || [])[0]];
+      return `<li><a href="#date=${d}" class="jump" data-date="${d}" data-id="${esc(b.id)}">${t ? t.emoji + " " : ""}${esc(b.title)}</a> <span class="muted">· ${issueLabel(issueByDate(d))}</span></li>`;
+    }).join("")}</ul></div>`;
+  }
+
+  function jumpTo(d, id) {
+    state.date = d;
+    state.tracks.clear();
+    state.q = "";
+    $("#search").value = "";
+    $("#issue-select").value = d;
+    update();
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function readingHTML(list) {
@@ -148,7 +204,7 @@
       const filtered = state.tracks.size || state.q;
       main.innerHTML = `
         <section class="issue-head">
-          <div class="date">🗞️ ${fmtDate(issue.date)} 발행 · 다룬 기간 ${esc(issue.period || "")}</div>
+          <div class="date">🗞️ <b>${issueLabel(issue)}</b> · ${fmtDate(issue.date)} 발행 · <span class="nowrap">다룬 기간 ${esc(issue.period || "")}</span></div>
           <h2>${esc(issue.title)}</h2>
           <p>${esc(issue.intro || "")}</p>
         </section>
@@ -163,6 +219,14 @@
         (rows.length ? rows.map(({ a, date }) => articleHTML(a, date, true)).join("") : `<p class="empty">🤔 조건에 맞는 기사가 없어요.</p>`);
     }
     $("#toggle-answers").textContent = state.openAll ? "💡 예시 답안 모두 접기" : "💡 예시 답안 모두 펼치기";
+  }
+
+  function renderFooter() {
+    const parts = [];
+    if (config.version) parts.push(`버전 ${esc(config.version)}`);
+    if (config.buildDate) parts.push(`업데이트 ${esc(config.buildDate)}`);
+    if (config.author) parts.push(`만든 곳 ${esc(config.author)}`);
+    $("#site-meta").innerHTML = parts.join(" · ");
   }
 
   function update() { writeHash(); renderChips(); render(); }
@@ -210,7 +274,7 @@
       // Apps Script 웹 앱은 CORS 응답을 주지 않으므로 no-cors 로 보내고 응답은 확인하지 않는다
       await fetch(config.submitUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) });
       store.set(draftKey(), "");
-      $("#submit-status").textContent = "✅ 제출했어요! 이제 예시 답안과 비교해 보세요.";
+      $("#submit-status").textContent = "✅ 선생님께 제출했어요! 이제 예시 답안과 비교해 보세요.";
       setTimeout(() => $("#submit-dialog").close(), 1600);
     } catch (err) {
       $("#submit-status").textContent = "⚠️ 제출하지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요. (작성한 내용은 저장되어 있어요)";
@@ -225,12 +289,13 @@
       config = cfg;
       tracks = trk;
       trackById = Object.fromEntries(tracks.map((t) => [t.id, t]));
-      issues = (await Promise.all(index.issues.map((i) => getJSON(i.file))))
+      issues = (await Promise.all(index.issues.map((i) => getJSON(i.file).then((x) => Object.assign(x, { no: i.no })))))
         .sort((x, y) => y.date.localeCompare(x.date));
     } catch (e) {
       $("#content").innerHTML = `<p class="empty">데이터를 불러오지 못했습니다. (${esc(e.message)})</p>`;
       return;
     }
+    renderFooter();
     readHash();
     if (!state.date && issues.length) state.date = issues[0].date;
     $("#search").value = state.q;
@@ -260,10 +325,15 @@
     $("#content").addEventListener("click", (e) => {
       const b = e.target.closest(".submit-btn");
       if (b) openSubmit(b);
+      const j = e.target.closest("a.jump");
+      if (j) { e.preventDefault(); jumpTo(j.dataset.date, j.dataset.id); }
     });
     $("#submit-form").addEventListener("submit", sendSubmit);
     $("#submit-form").answer.addEventListener("input", (e) => store.set(draftKey(), e.target.value));
     $("#submit-cancel").addEventListener("click", () => $("#submit-dialog").close());
+    const top = $("#to-top");
+    window.addEventListener("scroll", () => { top.hidden = window.scrollY < 600; }, { passive: true });
+    top.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     window.addEventListener("hashchange", () => { readHash(); if (!state.date) state.date = issues[0].date; $("#issue-select").value = state.date; renderChips(); render(); });
   }
 

@@ -166,13 +166,18 @@ def build(issues, tracks):
     shutil.copy(ROOT / "index.html", OUT / "index.html")
     shutil.copytree(ROOT / "assets", OUT / "assets")
     shutil.copy(DATA / "tracks.json", OUT / "data" / "tracks.json")
-    shutil.copy(DATA / "config.json", OUT / "data" / "config.json")
     (OUT / ".nojekyll").write_text("")
+
+    # 호수: 가장 오래된 호가 제1호
+    numbers = {iss["date"]: n for n, iss in enumerate(sorted(issues, key=lambda i: i["date"]), start=1)}
+    config = load(DATA / "config.json")
+    config["buildDate"] = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    (OUT / "data" / "config.json").write_text(json.dumps(config, ensure_ascii=False, indent=1), encoding="utf-8")
 
     index = {"issues": []}
     for iss in issues:
         shutil.copy(DATA / "issues" / f"{iss['date']}.json", OUT / "data" / "issues" / f"{iss['date']}.json")
-        index["issues"].append({"date": iss["date"], "title": iss["title"], "period": iss.get("period", ""),
+        index["issues"].append({"date": iss["date"], "no": numbers[iss["date"]], "title": iss["title"], "period": iss.get("period", ""),
                                 "file": f"data/issues/{iss['date']}.json",
                                 "tracks": sorted({t for a in iss["articles"] for t in a["tracks"]})})
     (OUT / "data" / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -180,7 +185,7 @@ def build(issues, tracks):
     items = []
     for iss in issues[:30]:
         body = f"<p>{html.escape(iss['intro'])}</p>" + "".join(article_html(a) for a in iss["articles"])
-        items.append({"title": f"[{iss['date']}] {iss['title']}", "link": f"{SITE_URL}#date={iss['date']}",
+        items.append({"title": f"[제{numbers[iss['date']]}호] {iss['title']}", "link": f"{SITE_URL}#date={iss['date']}",
                       "guid": f"issue-{iss['date']}", "pubDate": rfc822(iss["date"]), "html": body})
     (OUT / "feed.xml").write_text(rss(SITE_TITLE, SITE_URL, "이번 주 뉴스를 계열별로 읽고 교과 개념으로 진로를 넓혀 보는 주간 뉴스", items), encoding="utf-8")
 
