@@ -64,7 +64,10 @@ def parse_feed(raw):
     except ET.ParseError:
         text = raw.decode("utf-8", "replace")
         text = HTML_ENTITY_RE.sub(lambda m: f"&#{ord(html.unescape(m.group(0)))};" if len(html.unescape(m.group(0))) == 1 else "", text)
-        root = ET.fromstring(text.encode("utf-8"))
+        try:
+            root = ET.fromstring(text.encode("utf-8"))
+        except ET.ParseError:
+            return parse_feed_loose(text)
     out = []
     for el in root.iter():
         if local(el.tag) not in ("item", "entry"):
@@ -85,6 +88,27 @@ def parse_feed(raw):
             "published": published.isoformat() if published else None,
             "summary": clean(f.get("description") or f.get("summary")),
             "_outlet": f.get("source", ""),
+        })
+    return out
+
+
+def parse_feed_loose(text):
+    """XML 형식이 깨진 RSS 를 위한 정규식 파서. <item> 의 제목·링크·날짜·설명만 뽑는다."""
+    def field(block, name):
+        m = re.search(rf"<{name}[^>]*>(.*?)</{name}>", block, re.S)
+        if not m:
+            return ""
+        v = m.group(1).strip()
+        return v[9:-3] if v.startswith("<![CDATA[") and v.endswith("]]>") else v
+    out = []
+    for block in re.findall(r"<item[\s>].*?</item>", text, re.S):
+        published = parse_date(html.unescape(field(block, "pubDate")))
+        out.append({
+            "title": clean(field(block, "title"), 200),
+            "url": html.unescape(field(block, "link")),
+            "published": published.isoformat() if published else None,
+            "summary": clean(field(block, "description")),
+            "_outlet": "",
         })
     return out
 
