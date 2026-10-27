@@ -408,7 +408,7 @@
   async function openSubmit(btn) {
     if (btn.dataset.act) {
       const x = (activities || []).find((v) => v.id === btn.dataset.act);
-      if (x) showSubmit({ issue: { date: "추가활동" }, a: { id: "act-" + x.id, title: x.title, tracks: [] }, q: { type: "추가활동", q: (x.prompts || []).map((p, i) => `${i + 1}. ${p}`).join(" ") } });
+      if (x) showSubmit({ issue: { date: "추가활동" }, a: { id: "act-" + x.id, title: x.title, tracks: [] }, q: { type: "추가활동", q: "\n" + (x.prompts || []).map((p, i) => `${i + 1}. ${p}`).join("\n") } });
       return;
     }
     const issue = await loadIssue(btn.dataset.date).catch(() => null);
