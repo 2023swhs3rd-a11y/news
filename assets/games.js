@@ -388,8 +388,6 @@
     const games = GAMES.filter((g) => g.need(kit));
     if (!games.length) { el.innerHTML = ""; return; }
     el.innerHTML = `
-      <div class="section-label">뉴스 게임 <span class="g-issue">${esc(label)} 기사로 만든 문제</span></div>
-      <h3>읽은 기사로 놀아 보기</h3>
       <div class="g-tabs" role="tablist">${games.map((g, i) => `<button type="button" role="tab" data-game="${g.id}" aria-selected="${i === 0}">${esc(g.name)}</button>`).join("")}</div>
       <p class="g-intro muted"></p>
       <div class="g-stage"></div>`;
