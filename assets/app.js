@@ -9,10 +9,11 @@
     { name: "비교하기", icon: "⚖️" },
   ];
   const QINDEX = Object.fromEntries(QTYPES.map((t, i) => [t.name, i]));
-  const state = { date: null, tracks: new Set(), q: "", openAll: false };
+  const state = { date: null, tracks: new Set(), major: "", q: "", openAll: false };
   let config = {};
   let tracks = [];
   let trackById = {};
+  let majorGroups = {}; // 계열 id → 전공 목록 (data/majors.json)
   let issues = [];
   let pending = null; // 제출 창에 띄운 질문
 
@@ -34,6 +35,7 @@
     const p = new URLSearchParams(location.hash.slice(1));
     state.date = p.get("date") || null;
     state.tracks = new Set((p.get("track") || "").split(",").filter((t) => trackById[t]));
+    state.major = p.get("major") || "";
     state.q = p.get("q") || "";
   }
 
@@ -41,6 +43,7 @@
     const p = new URLSearchParams();
     if (state.date) p.set("date", state.date);
     if (state.tracks.size) p.set("track", [...state.tracks].join(","));
+    if (state.major) p.set("major", state.major);
     if (state.q) p.set("q", state.q);
     const h = p.toString();
     history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
@@ -66,10 +69,13 @@
     return (itemTracks || []).some((t) => state.tracks.has(t));
   }
 
+  const matchesMajor = (a) => !state.major || (a.majors || []).includes(state.major);
+  const matches = (a) => matchesTracks(a.tracks) && matchesMajor(a) && matchesQuery(a);
+
   function matchesQuery(a) {
     if (!state.q) return true;
     const q = state.q.toLowerCase();
-    const hay = [a.title, a.summary,
+    const hay = [a.title, a.summary, ...(a.majors || []),
       ...(a.curriculum || []).flatMap((c) => [c.subject, c.unit, ...(c.concepts || [])]),
       ...(a.questions || []).flatMap((x) => [x.q, ...(x.concepts || []).map((c) => c.term)]),
       ...(a.links || []).map((l) => l.label + " " + l.source)].join(" ").toLowerCase();
@@ -89,6 +95,24 @@
     sel.innerHTML = issues.map((i) =>
       `<option value="${i.date}">${issueLabel(i)} (${fmtShort(i.date)})</option>`).join("") + `<option value="all">모든 호 함께 보기</option>`;
     sel.value = state.date || "all";
+  }
+
+  // 실제 기사에 쓰인 전공만 계열별로 묶어 보여 준다
+  function renderMajorSelect() {
+    const count = {};
+    issues.forEach((i) => i.articles.forEach((a) => (a.majors || []).forEach((m) => { count[m] = (count[m] || 0) + 1; })));
+    const used = new Set();
+    const opt = (m) => { used.add(m); return `<option value="${esc(m)}">🎓 ${esc(m)} (${count[m]})</option>`; };
+    const groups = tracks.map((t) => {
+      const ms = (majorGroups[t.id] || []).filter((m) => count[m] && !used.has(m));
+      return ms.length ? `<optgroup label="${t.emoji} ${esc(t.name)}">${ms.map(opt).join("")}</optgroup>` : "";
+    }).join("");
+    const rest = Object.keys(count).filter((m) => !used.has(m)).sort();
+    const sel = $("#major-select");
+    sel.innerHTML = `<option value="">🎓 모든 전공</option>` + groups +
+      (rest.length ? `<optgroup label="기타">${rest.map(opt).join("")}</optgroup>` : "");
+    sel.hidden = !Object.keys(count).length;
+    sel.value = count[state.major] ? state.major : "";
   }
 
   function questionHTML(x, a, date, qi) {
@@ -117,6 +141,8 @@
       `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a> <span class="muted">· ${esc(l.source)}</span>${l.lang === "en" ? '<span class="lang">EN</span>' : ""}</li>`).join("");
     const curr = (a.curriculum || []).map((c) =>
       `<div class="curr-item"><b>📗 ${esc(c.subject)}</b>${c.unit ? ` <span class="muted">› ${esc(c.unit)}</span>` : ""}<br>${(c.concepts || []).map((k) => `<span class="concept-tag">${esc(k)}</span>`).join("")}</div>`).join("");
+    const majors = (a.majors || []).length ? `<div class="majors"><span class="muted">🎓 관련 전공</span>${a.majors.map((m) =>
+      `<button type="button" class="major-tag" data-major="${esc(m)}" aria-pressed="${state.major === m}">#${esc(m)}</button>`).join("")}</div>` : "";
     const qs = (a.questions || []).map((x, i) => ({ x, i }))
       .sort((p, q) => (QINDEX[p.x.type] ?? 9) - (QINDEX[q.x.type] ?? 9))
       .map(({ x, i }) => questionHTML(x, a, date, i)).join("");
@@ -130,6 +156,7 @@
           </div>
         </div>
         <p class="summary">${esc(a.summary)}</p>
+        ${majors}
         <div class="section-label">📰 기사 읽기</div>
         <ul class="links">${links}</ul>
         <div class="section-label">🏫 교과서와 연결</div>
@@ -144,6 +171,7 @@
   function keywords(a) {
     const set = new Set();
     (a.tracks || []).forEach((t) => set.add("t:" + t));
+    (a.majors || []).forEach((m) => set.add("m:" + m));
     (a.curriculum || []).forEach((c) => {
       set.add("s:" + c.subject);
       (c.concepts || []).forEach((k) => set.add("k:" + k));
@@ -151,7 +179,7 @@
     (a.questions || []).forEach((q) => (q.concepts || []).forEach((c) => set.add("k:" + c.term)));
     return set;
   }
-  const WEIGHT = { t: 2, s: 2, k: 3 };
+  const WEIGHT = { t: 2, m: 3, s: 2, k: 3 };
 
   function related(a, date) {
     const mine = keywords(a);
@@ -179,8 +207,10 @@
   function jumpTo(d, id) {
     state.date = d;
     state.tracks.clear();
+    state.major = "";
     state.q = "";
     $("#search").value = "";
+    $("#major-select").value = "";
     $("#issue-select").value = d;
     update();
     const el = document.getElementById(id);
@@ -199,9 +229,11 @@
 
     if (state.date && state.date !== "all") {
       const issue = issues.find((i) => i.date === state.date) || issues[0];
-      const arts = issue.articles.filter((a) => matchesTracks(a.tracks) && matchesQuery(a));
+      const arts = issue.articles.filter(matches);
       const reading = (issue.reading || []).filter((r) => matchesTracks(r.tracks));
-      const filtered = state.tracks.size || state.q;
+      const filtered = state.tracks.size || state.major || state.q;
+      const elsewhere = state.major ? issues.reduce((n, i) => n + i.articles.filter(matches).length, 0) - arts.length : 0;
+      const more = elsewhere > 0 ? `<p class="more-hint">🎓 다른 호에도 <b>${esc(state.major)}</b> 관련 기사가 ${elsewhere}개 더 있어요. <a href="#" class="show-all">모든 호에서 보기</a></p>` : "";
       main.innerHTML = `
         <section class="issue-head">
           <div class="date">🗞️ <b>${issueLabel(issue)}</b> · ${fmtDate(issue.date)} 발행 · <span class="nowrap">다룬 기간 ${esc(issue.period || "")}</span></div>
@@ -211,10 +243,11 @@
         ${!filtered && issue.headlines && issue.headlines.length ? `<section class="headlines"><h3>⚡ 이번 주 헤드라인</h3><ul>${issue.headlines.map((h) =>
           `<li><a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.title)}</a> <span class="muted">· ${esc(h.source)}</span>${h.lang === "en" ? '<span class="lang">EN</span>' : ""}</li>`).join("")}</ul></section>` : ""}
         ${arts.length ? arts.map((a) => articleHTML(a, issue.date, false)).join("") : `<p class="empty">🤔 조건에 맞는 기사가 없어요.</p>`}
+        ${more}
         ${readingHTML(reading)}`;
     } else {
       const rows = issues.flatMap((i) => i.articles.map((a) => ({ a, date: i.date })))
-        .filter(({ a }) => matchesTracks(a.tracks) && matchesQuery(a));
+        .filter(({ a }) => matches(a));
       main.innerHTML = `<section class="issue-head"><h2>모든 호</h2><p class="muted">${issues.length}개 호에서 ${rows.length}개 기사</p></section>` +
         (rows.length ? rows.map(({ a, date }) => articleHTML(a, date, true)).join("") : `<p class="empty">🤔 조건에 맞는 기사가 없어요.</p>`);
     }
@@ -284,9 +317,11 @@
 
   async function init() {
     try {
-      const [cfg, trk, index] = await Promise.all([
-        getJSON("data/config.json").catch(() => ({})), getJSON("data/tracks.json"), getJSON("data/index.json")]);
+      const [cfg, trk, index, mj] = await Promise.all([
+        getJSON("data/config.json").catch(() => ({})), getJSON("data/tracks.json"), getJSON("data/index.json"),
+        getJSON("data/majors.json").catch(() => ({}))]);
       config = cfg;
+      majorGroups = mj;
       tracks = trk;
       trackById = Object.fromEntries(tracks.map((t) => [t.id, t]));
       issues = (await Promise.all(index.issues.map((i) => getJSON(i.file).then((x) => Object.assign(x, { no: i.no })))))
@@ -300,6 +335,7 @@
     if (!state.date && issues.length) state.date = issues[0].date;
     $("#search").value = state.q;
     renderSelect();
+    renderMajorSelect();
     update();
 
     $("#issue-select").addEventListener("change", (e) => { state.date = e.target.value; update(); window.scrollTo(0, 0); });
@@ -312,6 +348,7 @@
       else state.tracks.add(t);
       update();
     });
+    $("#major-select").addEventListener("change", (e) => { state.major = e.target.value; update(); });
     let timer;
     $("#search").addEventListener("input", (e) => {
       clearTimeout(timer);
@@ -327,6 +364,19 @@
       if (b) openSubmit(b);
       const j = e.target.closest("a.jump");
       if (j) { e.preventDefault(); jumpTo(j.dataset.date, j.dataset.id); }
+      const m = e.target.closest(".major-tag");
+      if (m) {
+        state.major = state.major === m.dataset.major ? "" : m.dataset.major;
+        $("#major-select").value = state.major;
+        update();
+        $("#content").scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      if (e.target.closest("a.show-all")) {
+        e.preventDefault();
+        state.date = "all";
+        $("#issue-select").value = "all";
+        update();
+      }
     });
     $("#submit-form").addEventListener("submit", sendSubmit);
     $("#submit-form").answer.addEventListener("input", (e) => store.set(draftKey(), e.target.value));
@@ -334,7 +384,7 @@
     const top = $("#to-top");
     window.addEventListener("scroll", () => { top.hidden = window.scrollY < 600; }, { passive: true });
     top.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-    window.addEventListener("hashchange", () => { readHash(); if (!state.date) state.date = issues[0].date; $("#issue-select").value = state.date; renderChips(); render(); });
+    window.addEventListener("hashchange", () => { readHash(); if (!state.date) state.date = issues[0].date; $("#issue-select").value = state.date; $("#major-select").value = state.major; renderChips(); render(); });
   }
 
   init();

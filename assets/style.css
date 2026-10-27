@@ -79,6 +79,13 @@ select, input, textarea, button {
 }
 input[type=search] { flex: 1 1 200px; min-width: 0; }
 #issue-select { flex: 1 1 260px; min-width: 0; max-width: 100%; text-overflow: ellipsis; }
+#major-select { flex: 1 1 150px; min-width: 0; max-width: 100%; }
+#major-select[hidden] { display: none; }
+.majors { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 10px; font-size: .88rem; }
+.major-tag { border: 1.5px solid var(--c, var(--accent)); color: var(--c, var(--accent)); background: transparent; border-radius: 999px; padding: 2px 10px; font-size: .85rem; }
+.major-tag:hover { background: color-mix(in srgb, var(--c, var(--accent)) 12%, transparent); }
+.major-tag[aria-pressed=true] { background: var(--c, var(--accent)); color: #fff; }
+.more-hint { background: var(--surface); border-radius: 12px; padding: 12px 16px; }
 @media (max-width: 680px) { .filters { position: static; } }
 button { cursor: pointer; }
 .chip { border-radius: 999px; padding: 5px 13px; font-size: .92rem; border: 2px solid var(--line); transition: transform .1s; }
