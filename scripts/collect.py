@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 UA = "Mozilla/5.0 (compatible; weekly-news-collector/1.0; +https://github.com/2023swhs3rd-a11y/news)"
-PER_SOURCE = 40
+PER_SOURCE = 25
 TAG_RE = re.compile(r"<[^>]+>")
 # XML이 모르는 HTML 엔터티(&nbsp; 등). 일부 피드(Brookings)가 그대로 넣어 파싱이 깨진다.
 HTML_ENTITY_RE = re.compile(r"&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)([A-Za-z][A-Za-z0-9]*);")
@@ -32,7 +32,7 @@ def fetch(url, timeout=20):
         return r.read()
 
 
-def clean(text, limit=300):
+def clean(text, limit=200):
     text = html.unescape(TAG_RE.sub(" ", text or ""))
     text = re.sub(r"\s+", " ", text).strip()
     return text[:limit]
@@ -169,7 +169,7 @@ def main():
                 # 구글 뉴스 제목은 "제목 - 매체명" 형식
                 it["title"] = re.sub(r"\s+-\s+[^-]+$", "", it["title"])
             it.pop("_outlet", None)
-            kept.append({"source": src["name"], "kind": src["kind"], "lang": src["lang"], **it})
+            kept.append({"source": src["name"], "kind": src["kind"], "lang": src["lang"], **({"paywall": True} if src.get("paywall") else {}), **it})
         kept.sort(key=lambda x: x["published"] or "", reverse=True)
         result["items"] += kept[:PER_SOURCE]
         print(f"{src['name']}: {len(kept[:PER_SOURCE])}건", file=sys.stderr)

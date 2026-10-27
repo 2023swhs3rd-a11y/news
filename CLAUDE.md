@@ -12,10 +12,11 @@
 
 - 발행일은 그 주 월요일, `period`는 직전 월~일요일입니다.
 - `data/raw/<발행일>.json`이 없거나 거의 비어 있으면 웹 검색과 각 매체 페이지로 직접 찾되, 실제로 확인한 기사만 씁니다. URL을 지어내지 않습니다.
-- 원자료에서 `news.google.com/rss/articles/...` 링크(KBS, Korea Times, The Times, Washington Post, CSIS, 동아사이언스)는 구글 뉴스 경유 링크입니다. 원고에는 제목으로 검색해 확인한 언론사 원래 기사 주소를 쓰고, 찾지 못하면 그 기사는 쓰지 않습니다.
+- 원자료에서 `news.google.com/rss/articles/...` 링크(`data/sources.json`에서 `type: "gnews"`인 매체)는 구글 뉴스 경유 링크입니다. 원고에는 제목으로 검색해 확인한 언론사 원래 기사 주소를 쓰고, 찾지 못하면 그 기사는 쓰지 않습니다.
 - **계열**: `data/tracks.json`의 8개(hum, biz, sci, eng, med, edu, art, common)마다 기사 1개 이상. 한 기사가 여러 계열에 걸치면 `tracks`에 함께 적습니다. 보통 8~10개 기사.
 - **세부 전공(majors)**: 기사마다 `"majors": ["심리학", "사회학"]`처럼 이 기사로 탐구를 넓힐 수 있는 대학 전공을 2~4개 붙입니다. 이름은 `data/majors.json`에 있는 것을 그대로 쓰고, 꼭 필요한 새 전공은 알맞은 계열 목록에 추가합니다(이때는 PR에서 바뀌는 파일이 하나 늘어난다고 본문에 적습니다). 학생이 사이트에서 전공별로 기사를 모아 보는 데 쓰이므로, 기사와 억지로 엮지 말고 실제로 그 전공에서 다루는 주제일 때만 붙입니다.
-- **매체 균형**: 국내 언론(연합뉴스, KBS, 경향 등), 영자신문(Korea Herald, Korea Times), 해외 언론(NYT, The Times, FT, Washington Post), 과학 매체, 싱크탱크(KDI, Brookings, CSIS)를 고루 씁니다. 영어 기사는 `lang: "en"`.
+- **매체 균형**: 국내 언론(연합뉴스, KBS, 경향, 중앙, 시사IN 등), 계열 전문 매체(교육·의약·IT·문화예술), 영자신문(Korea Herald, Korea Times), 해외 언론(BBC, Guardian, NPR, AP, NYT, The Times, FT, Washington Post), 과학 매체, 싱크탱크·연구기관(KDI, KEDI, KISTEP, 보사연, Brookings, CSIS, Pew)을 고루 씁니다. 영어 기사는 `lang: "en"`.
+- **무료 매체 우선**: 원자료에 `paywall: true`가 붙은 유료 매체(NYT, The Times, FT, Washington Post)는 학생이 원문을 끝까지 읽기 어렵습니다. 같은 소식을 무료 매체에서 찾을 수 있으면 그 기사를 쓰고, 유료 기사를 쓸 때는 링크 `label` 끝에 "(유료)"를 붙입니다.
 - **기사 선택 기준**: 고등학생이 교과 개념으로 설명할 수 있고, 한 주의 중요한 흐름을 보여 주는 기사. 자극적 사건·사고, 특정 정당 지지로 읽힐 수 있는 정쟁성 기사는 피하고, 논쟁적 주제는 여러 입장을 함께 보여 줍니다.
 - **요약(summary)**: 2~3문장, 고등학생 눈높이, 기사에 실제로 있는 내용만.
 - **교과 연결(curriculum)**: 과목명은 `data/curriculum.json`의 2022 개정 과목명을 그대로 씁니다. `unit`은 확실할 때만 내용 영역 수준으로 적고, 모르면 생략합니다. `concepts`는 그 과목에서 실제로 배우는 개념.
