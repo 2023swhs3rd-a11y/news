@@ -94,6 +94,8 @@ input[type=search] { flex: 1 1 200px; min-width: 0; }
 .view-tabs button { border: 0; border-radius: 0; background: transparent; padding: 12px 14px 10px; font-weight: 700; color: var(--muted); margin-bottom: -1px; border-bottom: 3px solid transparent; }
 .view-tabs button[aria-selected=true] { color: var(--text); border-bottom-color: var(--accent); }
 .view-act .filters .filter-row:not(.view-tabs) { display: none; }
+/* 게임 탭에서는 발행 호 고르기만 남긴다 */
+.view-game .filters #track-chips, .view-game .filters .filter-row.small, .view-game #major-select, .view-game #search { display: none; }
 
 /* 호 머리 */
 .issue-head { padding: 28px 0 4px; }
@@ -271,10 +273,6 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 
 /* 뉴스 게임 (추가 활동 탭) */
 .games { --c: var(--accent); }
-.games .section-label { border-top: 0; padding-top: 0; margin-top: 0; }
-.g-issue { font-weight: 400; margin-left: 6px; }
-.games h3 { margin: 2px 0 12px; }
-.act-ext { border-top: 0; margin-top: 32px; }
 .g-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
 .g-tabs button { border-radius: 999px; padding: 4px 14px; font-size: .9rem; color: var(--text-2); border-color: var(--line); }
 .g-tabs button[aria-selected=true] { background: var(--text); border-color: var(--text); color: var(--surface); }

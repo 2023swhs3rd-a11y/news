@@ -52,7 +52,7 @@
 
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
-    state.view = p.get("view") === "act" ? "act" : "news";
+    state.view = ["act", "game"].includes(p.get("view")) ? p.get("view") : "news";
     state.date = p.get("date") || null;
     state.tracks = new Set((p.get("track") || "").split(",").filter((t) => trackById[t]));
     state.major = p.get("major") || "";
@@ -61,7 +61,7 @@
 
   function writeHash() {
     const p = new URLSearchParams();
-    if (state.view === "act") p.set("view", "act");
+    if (state.view !== "news") p.set("view", state.view);
     if (state.date) p.set("date", state.date);
     if (state.tracks.size) p.set("track", [...state.tracks].join(","));
     if (state.major) p.set("major", state.major);
@@ -328,28 +328,40 @@
     main.innerHTML = `
       <section class="issue-head">
         <h2>추가 활동</h2>
-        <p>뉴스를 더 깊이 읽고 싶은 친구를 위한 활동이에요. 이번 호 기사로 만든 게임을 하고, 매주 새 그래프와 사진, 사실 확인 사례가 올라오는 바깥 활동에도 도전해 보세요.</p>
+        <p>뉴스를 더 깊이 읽고 싶은 친구를 위한 활동이에요. 매주 새 그래프와 사진, 사실 확인 사례가 올라와요. 질문에 답하고 선생님께 제출해 보세요.</p>
       </section>
-      <section class="card games" id="games" aria-label="뉴스 게임"></section>
-      <div class="section-label act-ext">바깥 활동</div>
       ${activities.map(activityHTML).join("")}`;
-    // 게임 문제는 지금 고른 호(모든 호 보기면 최신 호)의 개념 해설과 영어 기사 제목으로 만든다
+  }
+
+  // 뉴스 게임 탭: 고른 호(모든 호 보기면 최신 호)의 개념 해설과 영어 기사 제목으로 문제를 만든다
+  async function renderGames(main, seq) {
     const meta = issueByDate(state.date) || issues[0];
-    const box = $("#games");
-    if (!meta || !window.NewsGames) { box.remove(); return; }
+    if (!meta || !window.NewsGames) { main.innerHTML = `<p class="empty">아직 게임을 만들 기사가 없어요.</p>`; return; }
+    let issue;
     try {
-      const issue = await loadIssue(meta.date);
-      if (seq === renderSeq) window.NewsGames.mount(box, issue, issueLabel(issue));
+      issue = await loadIssue(meta.date);
     } catch (e) {
-      box.remove();
+      if (seq === renderSeq) main.innerHTML = `<p class="empty">기사를 불러오지 못했어요. 새로고침해 주세요.</p>`;
+      return;
     }
+    if (seq !== renderSeq) return;
+    main.innerHTML = `
+      <section class="issue-head">
+        <div class="date"><b>${issueLabel(issue)}</b> · ${fmtDate(issue.date)} 발행</div>
+        <h2>뉴스 게임</h2>
+        <p>이번 호 기사에 나온 개념과 영어 기사 제목으로 만든 게임이에요. 기사를 읽고 나서 얼마나 기억하는지 확인해 보세요. 위에서 발행 호를 바꾸면 그 호의 문제로 바뀌어요.</p>
+      </section>
+      <section class="card games" id="games" aria-label="뉴스 게임"></section>`;
+    window.NewsGames.mount($("#games"), issue, issueLabel(issue));
   }
 
   async function render() {
     const main = $("#content");
     document.body.classList.toggle("view-act", state.view === "act");
+    document.body.classList.toggle("view-game", state.view === "game");
     document.querySelectorAll("#view-tabs [data-view]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.view === state.view)));
     if (state.view === "act") return renderActivities(main, ++renderSeq);
+    if (state.view === "game") return renderGames(main, ++renderSeq);
     if (!issues.length) { main.innerHTML = `<p class="empty">아직 발행된 호가 없습니다.</p>`; return; }
     const seq = ++renderSeq;
     const all = !state.date || state.date === "all";
