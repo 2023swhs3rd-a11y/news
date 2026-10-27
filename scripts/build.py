@@ -4,7 +4,7 @@
   python scripts/build.py            # 검사 + _site/ 생성 (index.json, feed.xml, feeds/*.xml 포함)
   python scripts/build.py --check    # 검사만
 
-검사에 실패하면 종료 코드 1. 과목명이 data/curriculum.json 에 없으면 경고만 한다.
+검사에 실패하면 종료 코드 1. 과목명이 data/curriculum.json 에, 전공 태그가 data/majors.json 에 없으면 경고만 한다.
 """
 import argparse
 import html
@@ -26,6 +26,7 @@ QTYPES = ["알아보기", "연결하기", "확장하기", "비교하기"]
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 SITE_TITLE = "봉일천고 1학년 뉴스 읽고 진로 확장하기"
 MIN_ANSWER = 250  # 예시 답안 최소 글자 수
+MAX_MAJORS = 4  # 기사당 세부 전공 태그 수
 
 
 def load(path):
@@ -44,6 +45,10 @@ def known_subjects():
     return names
 
 
+def known_majors():
+    return {m for k, v in load(DATA / "majors.json").items() if not k.startswith("_") for m in v}
+
+
 def check_link(errors, where, link, title_key):
     url = link.get("url", "")
     if not url.startswith("https://") and not url.startswith("http://"):
@@ -53,7 +58,7 @@ def check_link(errors, where, link, title_key):
             errors.append(f"{where}: '{k}' 없음")
 
 
-def validate(path, track_ids, subjects):
+def validate(path, track_ids, subjects, majors):
     errors, warnings = [], []
     name = path.name
     try:
@@ -89,6 +94,15 @@ def validate(path, track_ids, subjects):
             if t not in track_ids:
                 errors.append(f"{w}: 알 수 없는 계열 '{t}'")
         covered.update(ts)
+        ms = a.get("majors", [])
+        if not isinstance(ms, list) or not all(isinstance(m, str) and m for m in ms):
+            errors.append(f"{w}: majors 는 전공 이름 문자열 목록이어야 함")
+        elif not 1 <= len(ms) <= MAX_MAJORS:
+            warnings.append(f"{w}: 세부 전공 태그는 1~{MAX_MAJORS}개 권장 (현재 {len(ms)}개)")
+        else:
+            for m in ms:
+                if m not in majors:
+                    warnings.append(f"{w}: 전공 태그 '{m}' 이 data/majors.json 에 없음")
         if not a.get("links"):
             errors.append(f"{w}: links 없음")
         for j, l in enumerate(a.get("links", [])):
@@ -155,7 +169,8 @@ def article_html(a):
     links = "".join(f'<li><a href="{e(l["url"])}">{e(l["label"])}</a> · {e(l["source"])}</li>' for l in a["links"])
     curr = "".join(f"<li>{e(c['subject'])}{(' › ' + e(c['unit'])) if c.get('unit') else ''}: {e(', '.join(c.get('concepts', [])))}</li>" for c in a["curriculum"])
     qs = "".join(f"<li><b>{e(q['type'])}</b> {e(q['q'])}</li>" for q in a["questions"])
-    return f"<h3>{e(a['title'])}</h3><p>{e(a['summary'])}</p><ul>{links}</ul><p>교과 연결</p><ul>{curr}</ul><ol>{qs}</ol>"
+    majors = f"<p>관련 전공: {e(', '.join(a['majors']))}</p>" if a.get("majors") else ""
+    return f"<h3>{e(a['title'])}</h3><p>{e(a['summary'])}</p>{majors}<ul>{links}</ul><p>교과 연결</p><ul>{curr}</ul><ol>{qs}</ol>"
 
 
 def build(issues, tracks):
@@ -166,13 +181,19 @@ def build(issues, tracks):
     shutil.copy(ROOT / "index.html", OUT / "index.html")
     shutil.copytree(ROOT / "assets", OUT / "assets")
     shutil.copy(DATA / "tracks.json", OUT / "data" / "tracks.json")
-    shutil.copy(DATA / "config.json", OUT / "data" / "config.json")
+    shutil.copy(DATA / "majors.json", OUT / "data" / "majors.json")
     (OUT / ".nojekyll").write_text("")
+
+    # 호수: 가장 오래된 호가 제1호
+    numbers = {iss["date"]: n for n, iss in enumerate(sorted(issues, key=lambda i: i["date"]), start=1)}
+    config = load(DATA / "config.json")
+    config["buildDate"] = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    (OUT / "data" / "config.json").write_text(json.dumps(config, ensure_ascii=False, indent=1), encoding="utf-8")
 
     index = {"issues": []}
     for iss in issues:
         shutil.copy(DATA / "issues" / f"{iss['date']}.json", OUT / "data" / "issues" / f"{iss['date']}.json")
-        index["issues"].append({"date": iss["date"], "title": iss["title"], "period": iss.get("period", ""),
+        index["issues"].append({"date": iss["date"], "no": numbers[iss["date"]], "title": iss["title"], "period": iss.get("period", ""),
                                 "file": f"data/issues/{iss['date']}.json",
                                 "tracks": sorted({t for a in iss["articles"] for t in a["tracks"]})})
     (OUT / "data" / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -180,7 +201,7 @@ def build(issues, tracks):
     items = []
     for iss in issues[:30]:
         body = f"<p>{html.escape(iss['intro'])}</p>" + "".join(article_html(a) for a in iss["articles"])
-        items.append({"title": f"[{iss['date']}] {iss['title']}", "link": f"{SITE_URL}#date={iss['date']}",
+        items.append({"title": f"[제{numbers[iss['date']]}호] {iss['title']}", "link": f"{SITE_URL}#date={iss['date']}",
                       "guid": f"issue-{iss['date']}", "pubDate": rfc822(iss["date"]), "html": body})
     (OUT / "feed.xml").write_text(rss(SITE_TITLE, SITE_URL, "이번 주 뉴스를 계열별로 읽고 교과 개념으로 진로를 넓혀 보는 주간 뉴스", items), encoding="utf-8")
 
@@ -203,9 +224,10 @@ def main():
     tracks = load(DATA / "tracks.json")
     track_ids = {t["id"] for t in tracks}
     subjects = known_subjects()
+    majors = known_majors()
     issues, all_errors = [], []
     for path in sorted((DATA / "issues").glob("*.json")):
-        issue, errors, warnings = validate(path, track_ids, subjects)
+        issue, errors, warnings = validate(path, track_ids, subjects, majors)
         for w in warnings:
             print("경고:", w)
         all_errors += errors
