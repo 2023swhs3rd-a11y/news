@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>주간 계열 탐구 뉴스</title>
+  <meta name="description" content="일반계 고등학생을 위한 계열별 주간 뉴스와 교과 연계 탐구 질문">
+  <link rel="alternate" type="application/rss+xml" title="주간 계열 탐구 뉴스" href="feed.xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1><a href="./">주간 계열 탐구 뉴스</a></h1>
+      <p class="tagline">이번 주 뉴스를 계열별로 읽고, 교과 개념으로 알아보기 · 연결하기 · 확장하기 · 비교하기</p>
+    </div>
+  </header>
+
+  <nav class="filters wrap" aria-label="필터">
+    <div class="filter-row">
+      <label for="issue-select">발행일</label>
+      <select id="issue-select"></select>
+      <input id="search" type="search" placeholder="기사·과목·개념 검색" aria-label="검색">
+    </div>
+    <div class="filter-row chips" id="track-chips" role="group" aria-label="계열"></div>
+    <div class="filter-row small">
+      <button type="button" id="toggle-answers">예시 답안 모두 펼치기</button>
+      <a id="rss-link" href="feed.xml">RSS 구독</a>
+    </div>
+  </nav>
+
+  <main class="wrap" id="content" aria-live="polite">
+    <p class="muted">불러오는 중…</p>
+  </main>
+
+  <footer class="wrap site-footer">
+    <p>과목명은 2022 개정 교육과정 기준이며, 단원명은 교과서마다 다를 수 있습니다. 요약과 예시 답안은 AI가 초안을 쓰고 선생님이 검토했습니다. 기사 원문을 꼭 직접 읽어 보세요.</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

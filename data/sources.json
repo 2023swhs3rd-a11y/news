@@ -1,0 +1,19 @@
+{
+  "_note": "주간 헤드라인 수집 대상. type=rss 는 RSS/Atom 피드, type=gnews 는 구글 뉴스 검색 RSS(site: 검색), type=kdi 는 KDI 보고서 목록 페이지. 수집에 실패한 매체는 건너뛰고 기록만 남깁니다.",
+  "sources": [
+    {"name": "연합뉴스", "lang": "ko", "kind": "국내 언론", "type": "rss", "urls": ["https://www.yna.co.kr/rss/news.xml", "https://www.yna.co.kr/rss/economy.xml", "https://www.yna.co.kr/rss/society.xml", "https://www.yna.co.kr/rss/international.xml", "https://www.yna.co.kr/rss/culture.xml"]},
+    {"name": "KBS", "lang": "ko", "kind": "국내 언론", "type": "gnews", "query": "site:news.kbs.co.kr"},
+    {"name": "경향신문", "lang": "ko", "kind": "국내 언론", "type": "rss", "urls": ["https://www.khan.co.kr/rss/rssdata/total_news.xml"]},
+    {"name": "동아사이언스", "lang": "ko", "kind": "과학 매체", "type": "gnews", "query": "site:dongascience.com"},
+    {"name": "Korea Herald", "lang": "en", "kind": "영자신문", "type": "rss", "urls": ["https://www.koreaherald.com/rss/newsAll"]},
+    {"name": "Korea Times", "lang": "en", "kind": "영자신문", "type": "gnews", "query": "site:koreatimes.co.kr", "hl": "en"},
+    {"name": "The New York Times", "lang": "en", "kind": "해외 언론", "type": "rss", "urls": ["https://rss.nytimes.com/services/xml/rss/nyt/World.xml", "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml", "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml", "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml", "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml", "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml", "https://rss.nytimes.com/services/xml/rss/nyt/Education.xml"]},
+    {"name": "The Times", "lang": "en", "kind": "해외 언론", "type": "gnews", "query": "site:thetimes.com", "hl": "en"},
+    {"name": "Financial Times", "lang": "en", "kind": "해외 언론", "type": "rss", "urls": ["https://www.ft.com/rss/home"]},
+    {"name": "The Washington Post", "lang": "en", "kind": "해외 언론", "type": "gnews", "query": "site:washingtonpost.com", "hl": "en"},
+    {"name": "ScienceDaily", "lang": "en", "kind": "과학 매체", "type": "rss", "urls": ["https://www.sciencedaily.com/rss/top/science.xml", "https://www.sciencedaily.com/rss/top/technology.xml", "https://www.sciencedaily.com/rss/top/health.xml"]},
+    {"name": "KDI", "lang": "ko", "kind": "싱크탱크", "type": "kdi", "urls": ["https://www.kdi.re.kr/research/reportList"]},
+    {"name": "Brookings", "lang": "en", "kind": "싱크탱크", "type": "rss", "urls": ["https://www.brookings.edu/feed/"]},
+    {"name": "CSIS", "lang": "en", "kind": "싱크탱크", "type": "gnews", "query": "site:csis.org/analysis", "hl": "en"}
+  ]
+}
