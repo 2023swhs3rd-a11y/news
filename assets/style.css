@@ -1,6 +1,6 @@
 :root {
-  --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
-  --font-head: "Jua", "Noto Sans KR", sans-serif;
+  --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-head: "Black Han Sans", "IBM Plex Sans KR", sans-serif;
   --bg: #f6f8fc;
   --surface: #ffffff;
   --text: #1d2433;
