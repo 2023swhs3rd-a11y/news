@@ -14,6 +14,7 @@ import os
 import re
 import shutil
 import sys
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 from pathlib import Path
@@ -33,6 +34,11 @@ MIN_ANSWER = 450  # 예시 답안 최소 글자 수
 MIN_CONCEPTS = 2  # 질문마다 개념 해설 최소 개수
 MIN_CONCEPT_DESC = 70  # 개념 해설 정의 최소 글자 수
 MAX_MAJORS = 4  # 기사당 세부 전공 태그 수
+READING_MAX_DAYS = 90  # 더 읽을거리: 발행일보다 이만큼 앞선 보고서는 경고 (연구소 보고서는 매주 나오지 않음)
+MAX_SOURCE_SHARE = 0.3  # 기사 링크 가운데 한 매체가 차지해도 되는 비율
+MIN_SOURCE_KINDS = 4  # 기사 링크에 들어가야 하는 매체 종류 수 (data/sources.json 의 kind)
+MIN_GAME_TERMS = 10  # 뉴스 게임(초성 퀴즈·십자말풀이·짝 맞추기)을 넉넉히 만들 개념 수
+MIN_GAME_EN = 3  # 영어 헤드라인 빈칸 게임에 쓸 영어 기사 수
 
 
 def load(path):
@@ -201,9 +207,72 @@ def validate(path, track_ids, subjects, majors, sources):
     missing = sorted(track_ids - covered)
     if missing:
         warnings.append(f"{name}: 다루지 않은 계열 {missing}")
-    for i, r in enumerate(issue.get("reading", [])):
-        check_link(errors, f"{name} reading[{i}]", r, "title")
+    check_balance(warnings, name, articles, sources, media)
+    check_games(warnings, name, articles)
+    check_reading(errors, warnings, name, issue, media)
     return issue, errors, warnings
+
+
+def check_balance(warnings, name, articles, sources, media):
+    """매체 쏠림 검사: 한 매체가 기사 링크의 30%를 넘거나, 매체 종류가 너무 적으면 경고"""
+    links = [l.get("source") for a in articles for l in a.get("links", [])]
+    if len(links) < 8:
+        return
+    top, n = Counter(links).most_common(1)[0]
+    if n / len(links) > MAX_SOURCE_SHARE:
+        warnings.append(f"{name}: 기사 링크 {len(links)}개 중 '{top}'이 {n}개({n * 100 // len(links)}%). 한 매체는 {int(MAX_SOURCE_SHARE * 100)}% 이하 권장")
+    kinds = {sources.get(x, {}).get("kind") for x in links} - {None}
+    if media and len(kinds) < MIN_SOURCE_KINDS:
+        warnings.append(f"{name}: 기사 링크의 매체 종류가 {len(kinds)}가지({', '.join(sorted(kinds))}). {MIN_SOURCE_KINDS}가지 이상 권장")
+
+
+def check_games(warnings, name, articles):
+    """뉴스 게임 탭은 호의 개념 해설과 영어 기사 제목으로 문제를 만든다. 재료가 적으면 경고"""
+    terms = {c["term"] for a in articles for q in a.get("questions", []) for c in q.get("concepts", []) if c.get("term")}
+    if len(terms) < MIN_GAME_TERMS:
+        warnings.append(f"{name}: 개념 해설 용어가 {len(terms)}개뿐이라 뉴스 게임 문제가 적게 나옴 ({MIN_GAME_TERMS}개 이상 권장)")
+    en = [l for a in articles for l in a.get("links", []) if l.get("lang") == "en"]
+    if len(en) < MIN_GAME_EN:
+        warnings.append(f"{name}: 영어 기사가 {len(en)}개뿐이라 영어 헤드라인 빈칸 게임이 짧아짐 ({MIN_GAME_EN}개 이상 권장)")
+
+
+def check_reading(errors, warnings, name, issue, media):
+    """더 읽을거리: 발간일(date)로 오래된 보고서를 걸러 내고, 읽기 길잡이(guide)가 있는지 본다"""
+    reading = issue.get("reading", [])
+    if media and len(reading) < 2:
+        warnings.append(f"{name}: 더 읽을거리(reading)는 2~5개 권장")
+    issue_date = issue.get("date", "")
+    for i, r in enumerate(reading):
+        w = f"{name} reading[{i}]"
+        check_link(errors, w, r, "title")
+        d = r.get("date")
+        if not d:
+            (errors if media else warnings).append(f"{w}: 발간일(date) 없음. 원문에서 확인해 YYYY-MM-DD 로 적음")
+        elif not DATE_RE.match(d):
+            errors.append(f"{w}: 발간일(date)은 YYYY-MM-DD ({d!r})")
+        elif DATE_RE.match(issue_date):
+            age = (datetime.strptime(issue_date, "%Y-%m-%d") - datetime.strptime(d, "%Y-%m-%d")).days
+            if age < 0:
+                errors.append(f"{w}: 발간일 {d} 이 발행일보다 늦음")
+            elif age > READING_MAX_DAYS:
+                warnings.append(f"{w}: 발간 {age}일 지난 보고서. 더 새 보고서가 없는지 확인하고, 그래도 쓰면 note 에 이번 호 기사와의 연결을 적음")
+        g = r.get("guide") or {}
+        if media and not (g.get("start") and g.get("ask")):
+            warnings.append(f"{w}: 읽기 길잡이(guide.start, guide.ask) 없음")
+        for j, e in enumerate(r.get("easy", [])):
+            check_link(errors, f"{w} easy[{j}]", {**e, "source": e.get("source", "-")}, "label")
+
+
+def check_reading_reuse(issues):
+    """같은 보고서를 여러 호의 더 읽을거리에 다시 싣지 않는다"""
+    errors, first = [], {}
+    for iss in sorted(issues, key=lambda i: i["date"]):
+        for r in iss.get("reading", []):
+            u = r.get("url")
+            if u in first and first[u] != iss["date"]:
+                (errors if iss["date"] >= MEDIA_FROM else []).append(f"{iss['date']}.json reading: '{r.get('title')}' 은 {first[u]} 호에 이미 실림")
+            first.setdefault(u, iss["date"])
+    return errors
 
 
 def rfc822(date):
@@ -336,6 +405,7 @@ def main():
         all_errors += errors
         if issue and not errors:
             issues.append(issue)
+    all_errors += check_reading_reuse(issues)
     all_errors += validate_activities()
     for e in all_errors:
         print("오류:", e)
