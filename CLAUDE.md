@@ -12,6 +12,7 @@
 
 - 발행일은 그 주 월요일, `period`는 직전 월~일요일입니다.
 - `data/raw/<발행일>.json`이 없거나 거의 비어 있으면 웹 검색과 각 매체 페이지로 직접 찾되, 실제로 확인한 기사만 씁니다. URL을 지어내지 않습니다.
+- 원자료에서 `news.google.com/rss/articles/...` 링크(KBS, Korea Times, The Times, Washington Post, CSIS, 동아사이언스)는 구글 뉴스 경유 링크입니다. 원고에는 제목으로 검색해 확인한 언론사 원래 기사 주소를 쓰고, 찾지 못하면 그 기사는 쓰지 않습니다.
 - **계열**: `data/tracks.json`의 8개(hum, biz, sci, eng, med, edu, art, common)마다 기사 1개 이상. 한 기사가 여러 계열에 걸치면 `tracks`에 함께 적습니다. 보통 8~10개 기사.
 - **매체 균형**: 국내 언론(연합뉴스, KBS, 경향 등), 영자신문(Korea Herald, Korea Times), 해외 언론(NYT, The Times, FT, Washington Post), 과학 매체, 싱크탱크(KDI, Brookings, CSIS)를 고루 씁니다. 영어 기사는 `lang: "en"`.
 - **기사 선택 기준**: 고등학생이 교과 개념으로 설명할 수 있고, 한 주의 중요한 흐름을 보여 주는 기사. 자극적 사건·사고, 특정 정당 지지로 읽힐 수 있는 정쟁성 기사는 피하고, 논쟁적 주제는 여러 입장을 함께 보여 줍니다.

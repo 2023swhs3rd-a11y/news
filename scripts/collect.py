@@ -22,6 +22,8 @@ ROOT = Path(__file__).resolve().parent.parent
 UA = "Mozilla/5.0 (compatible; weekly-news-collector/1.0; +https://github.com/2023swhs3rd-a11y/news)"
 PER_SOURCE = 40
 TAG_RE = re.compile(r"<[^>]+>")
+# XML이 모르는 HTML 엔터티(&nbsp; 등). 일부 피드(Brookings)가 그대로 넣어 파싱이 깨진다.
+HTML_ENTITY_RE = re.compile(r"&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)([A-Za-z][A-Za-z0-9]*);")
 
 
 def fetch(url, timeout=20):
@@ -57,7 +59,12 @@ def local(tag):
 
 def parse_feed(raw):
     """RSS 2.0 과 Atom 모두 처리해 (title, url, published, summary) 목록을 돌려준다."""
-    root = ET.fromstring(raw)
+    try:
+        root = ET.fromstring(raw)
+    except ET.ParseError:
+        text = raw.decode("utf-8", "replace")
+        text = HTML_ENTITY_RE.sub(lambda m: f"&#{ord(html.unescape(m.group(0)))};" if len(html.unescape(m.group(0))) == 1 else "", text)
+        root = ET.fromstring(text.encode("utf-8"))
     out = []
     for el in root.iter():
         if local(el.tag) not in ("item", "entry"):
