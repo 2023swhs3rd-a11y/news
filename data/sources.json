@@ -21,7 +21,7 @@
     {"name": "에듀프레스", "lang": "ko", "kind": "교육 매체", "type": "rss", "urls": ["https://www.edupress.kr/rss/allArticle.xml"]},
     {"name": "청년의사", "lang": "ko", "kind": "의약·보건 매체", "type": "rss", "urls": ["https://www.docdocdoc.co.kr/rss/allArticle.xml"]},
     {"name": "메디게이트뉴스", "lang": "ko", "kind": "의약·보건 매체", "type": "gnews", "query": "site:medigatenews.com"},
-    {"name": "전자신문", "lang": "ko", "kind": "공학·IT 매체", "type": "rss", "urls": ["https://rss.etnews.com/Section901.xml"]},
+    {"name": "전자신문", "lang": "ko", "kind": "공학·IT 매체", "type": "gnews", "query": "site:etnews.com"},
     {"name": "ZDNet Korea", "lang": "ko", "kind": "공학·IT 매체", "type": "gnews", "query": "site:zdnet.co.kr"},
     {"name": "씨네21", "lang": "ko", "kind": "문화·예술 매체", "type": "gnews", "query": "site:cine21.com"},
     {"name": "국립현대미술관", "lang": "ko", "kind": "문화·예술 기관", "type": "gnews", "query": "국립현대미술관 전시"},
