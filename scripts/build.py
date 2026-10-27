@@ -48,6 +48,8 @@ MAX_SOURCE_SHARE = 0.3  # 기사 링크 가운데 한 매체가 차지해도 되
 MIN_SOURCE_KINDS = 4  # 기사 링크에 들어가야 하는 매체 종류 수 (data/sources.json 의 kind)
 MIN_GAME_TERMS = 10  # 뉴스 게임(초성 퀴즈·십자말풀이·짝 맞추기)을 넉넉히 만들 개념 수
 MIN_GAME_EN = 3  # 영어 헤드라인 빈칸 게임에 쓸 영어 기사 수
+# 기사 이미지: 자유 이용 라이선스만 (scripts/images.py 와 같은 기준). NC·ND 는 쓰지 않는다.
+FREE_LICENSE = re.compile(r"^(public domain|pd\b|cc0|cc[ -]by(-sa)?[ -]\d|공공누리 ?제?1유형|kogl ?type ?1)", re.I)
 
 
 def load(path):
@@ -118,6 +120,19 @@ def check_orig(errors, warnings, w, l, period, media):
         gap = (datetime.strptime(start, "%Y-%m-%d") - datetime.strptime(d, "%Y-%m-%d")).days
         if gap > ORIG_GAP_DAYS:
             warnings.append(f"{w}: 원 발표({d})가 다룬 기간보다 {gap}일 앞섬. 요약에서 '이번 주 발표'처럼 쓰지 않았는지 확인")
+
+
+def check_image(errors, warnings, w, image):
+    if not image.get("src"):
+        warnings.append(f"{w} image: 아직 내려받지 않음 (Actions '기사 이미지 가져오기' 실행)")
+        return
+    for k in ("alt", "credit", "license", "source_url"):
+        if not image.get(k):
+            errors.append(f"{w} image: '{k}' 없음")
+    if image.get("license") and not FREE_LICENSE.match(image["license"]):
+        errors.append(f"{w} image: 자유 이용 라이선스가 아님 ({image['license']!r})")
+    if not image["src"].startswith("assets/img/") or not (ROOT / image["src"]).is_file():
+        errors.append(f"{w} image: 파일이 없음 ({image['src']!r})")
 
 
 def check_verb(warnings, w, q):
@@ -202,6 +217,8 @@ def validate(path, track_ids, subjects, majors, sources):
             elif media and not l.get("type"):
                 warnings.append(f"{w} links[{j}]: 기사 종류(type) 없음")
             check_orig(errors, warnings, f"{w} links[{j}]", l, issue.get("period", ""), media)
+        if a.get("image"):
+            check_image(errors, warnings, w, a["image"])
         if "explore" in a:
             x = a["explore"] or {}
             kws, tasks = x.get("keywords") or [], x.get("tasks") or []

@@ -172,7 +172,11 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "query": "Seoul skyline night",
+        "alt": "서울 도심의 야경"
+      }
     },
     {
       "id": "biz-bank-hacking",
@@ -326,7 +330,11 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "query": "padlock keyboard computer security",
+        "alt": "키보드 위에 놓인 자물쇠"
+      }
     },
     {
       "id": "sci-three-black-holes",
@@ -454,7 +462,11 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "query": "galaxy merger Hubble",
+        "alt": "허블 우주망원경이 찍은 충돌하는 은하"
+      }
     },
     {
       "id": "eng-silicon-qubits",
@@ -600,7 +612,11 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "query": "silicon wafer",
+        "alt": "반도체 회로가 새겨진 실리콘 웨이퍼"
+      }
     },
     {
       "id": "med-cavity-liquid",
@@ -740,7 +756,11 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "query": "toothbrush toothpaste",
+        "alt": "칫솔과 치약"
+      }
     },
     {
       "id": "edu-school-snapshot",
@@ -878,7 +898,11 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "query": "empty classroom desks",
+        "alt": "책상이 놓인 빈 교실"
+      }
     },
     {
       "id": "art-access-kpop",
@@ -1007,7 +1031,11 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "query": "cinema seats auditorium",
+        "alt": "영화관 객석"
+      }
     },
     {
       "id": "common-plastic-rare-earth",
@@ -1150,7 +1178,11 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "query": "plastic waste bales recycling",
+        "alt": "압축해 묶은 폐플라스틱 더미"
+      }
     }
   ],
   "reading": [
