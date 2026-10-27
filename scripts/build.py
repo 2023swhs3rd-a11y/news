@@ -24,6 +24,8 @@ OUT = ROOT / "_site"
 SITE_URL = os.environ.get("SITE_URL", "https://2023swhs3rd-a11y.github.io/news/").rstrip("/") + "/"
 QTYPES = ["알아보기", "연결하기", "확장하기", "비교하기"]
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+SITE_TITLE = "봉일천고 1학년 뉴스 읽고 진로 확장하기"
+MIN_ANSWER = 250  # 예시 답안 최소 글자 수
 
 
 def load(path):
@@ -102,6 +104,11 @@ def validate(path, track_ids, subjects):
         for q in a.get("questions", []):
             if not q.get("q") or not q.get("a"):
                 errors.append(f"{w}: '{q.get('type')}' 질문 또는 예시 답안(a)이 비어 있음")
+            elif len(q["a"]) < MIN_ANSWER:
+                errors.append(f"{w}: '{q.get('type')}' 예시 답안이 {len(q['a'])}자로 짧음 ({MIN_ANSWER}자 이상)")
+            for c in q.get("concepts", []):
+                if not c.get("term") or not c.get("desc"):
+                    errors.append(f"{w}: '{q.get('type')}' 개념 해설에 term/desc 가 비어 있음")
 
     missing = sorted(track_ids - covered)
     if missing:
@@ -159,6 +166,7 @@ def build(issues, tracks):
     shutil.copy(ROOT / "index.html", OUT / "index.html")
     shutil.copytree(ROOT / "assets", OUT / "assets")
     shutil.copy(DATA / "tracks.json", OUT / "data" / "tracks.json")
+    shutil.copy(DATA / "config.json", OUT / "data" / "config.json")
     (OUT / ".nojekyll").write_text("")
 
     index = {"issues": []}
@@ -174,7 +182,7 @@ def build(issues, tracks):
         body = f"<p>{html.escape(iss['intro'])}</p>" + "".join(article_html(a) for a in iss["articles"])
         items.append({"title": f"[{iss['date']}] {iss['title']}", "link": f"{SITE_URL}#date={iss['date']}",
                       "guid": f"issue-{iss['date']}", "pubDate": rfc822(iss["date"]), "html": body})
-    (OUT / "feed.xml").write_text(rss("주간 계열 탐구 뉴스", SITE_URL, "일반계 고등학생을 위한 계열별 주간 뉴스와 교과 연계 탐구 질문", items), encoding="utf-8")
+    (OUT / "feed.xml").write_text(rss(SITE_TITLE, SITE_URL, "이번 주 뉴스를 계열별로 읽고 교과 개념으로 진로를 넓혀 보는 주간 뉴스", items), encoding="utf-8")
 
     for t in tracks:
         items = []
@@ -184,7 +192,7 @@ def build(issues, tracks):
                     items.append({"title": a["title"], "link": f"{SITE_URL}#date={iss['date']}&track={t['id']}",
                                   "guid": f"{iss['date']}-{a['id']}", "pubDate": rfc822(iss["date"]), "html": article_html(a)})
         (OUT / "feeds" / f"{t['id']}.xml").write_text(
-            rss(f"주간 계열 탐구 뉴스 · {t['name']}", f"{SITE_URL}#track={t['id']}", t["desc"], items), encoding="utf-8")
+            rss(f"{SITE_TITLE} · {t['name']}", f"{SITE_URL}#track={t['id']}", t["desc"], items), encoding="utf-8")
 
 
 def main():
