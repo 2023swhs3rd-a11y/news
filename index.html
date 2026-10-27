@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>봉일천고 1학년 뉴스 읽고 진로 확장하기</title>
   <meta name="description" content="이번 주 뉴스를 계열별로 읽고, 교과 개념으로 탐구하며 진로를 넓혀 보는 봉일천고 1학년 주간 뉴스">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="봉일천고 1학년 뉴스 읽고 진로 확장하기">
+  <meta property="og:description" content="이번 주 뉴스를 계열별로 읽고, 교과 개념으로 탐구하며 진로를 넓혀 봐요.">
+  <meta property="og:image" content="https://2023swhs3rd-a11y.github.io/news/assets/og.png">
+  <meta property="og:url" content="https://2023swhs3rd-a11y.github.io/news/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1f5fae">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -84,10 +91,11 @@
       <p class="notice">📮 작성한 답안은 <b>담당 선생님께 제출</b>되며, 친구들에게는 공개되지 않아요. 학번과 이름을 정확히 적어 주세요.</p>
       <p class="dialog-q" id="submit-question"></p>
       <div class="row2">
-        <label>학번<input name="studentId" required maxlength="10" inputmode="numeric" placeholder="예: 10315" autocomplete="off"></label>
+        <label>학번<input name="studentId" required inputmode="numeric" pattern="[0-9]{4,6}" maxlength="6" title="학번은 숫자 4~6자리로 적어 주세요 (예: 10315)" placeholder="예: 10315" autocomplete="off"></label>
         <label>이름<input name="name" required maxlength="20" placeholder="홍길동" autocomplete="off"></label>
       </div>
       <label>내 답안<textarea name="answer" required rows="8" maxlength="3000" placeholder="예시 답안을 보기 전에 내 생각을 먼저 적어 보세요."></textarea></label>
+      <label class="remember"><input type="checkbox" name="remember"> 이 기기에 학번·이름 기억하기 <small class="muted">(교실 공용 컴퓨터에서는 체크하지 마세요)</small></label>
       <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <p class="dialog-status" id="submit-status" role="status"></p>
       <div class="dialog-actions">

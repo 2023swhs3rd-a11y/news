@@ -204,3 +204,9 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 .nowrap { white-space: nowrap; }
 .card { scroll-margin-top: 200px; }
 @media (max-width: 680px) { .card { scroll-margin-top: 12px; } }
+
+/* 공용 PC 기억하기, 더 보기 */
+#submit-form label.remember { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-weight: 400; }
+#submit-form label.remember input { width: 18px; height: 18px; margin: 0; }
+.more-btn { display: block; width: 100%; margin: 8px 0 20px; padding: 12px; border-radius: 12px; font-weight: 700; cursor: pointer; }
+@media (prefers-color-scheme: dark) { .major-tag { color: var(--text); } }

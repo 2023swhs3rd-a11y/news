@@ -14,16 +14,24 @@
   let tracks = [];
   let trackById = {};
   let majorGroups = {}; // 계열 id → 전공 목록 (data/majors.json)
-  let issues = [];
+  let issues = []; // data/index.json 의 호 목록 (기사는 추천·전공 집계용 요약만)
+  const full = {}; // 발행일 → 전체 호 JSON 을 불러오는 Promise (필요할 때만 받는다)
+  let renderSeq = 0;
+  const PAGE = 20; // "모든 호" 보기에서 한 번에 그리는 기사 수
+  let shown = PAGE;
   let pending = null; // 제출 창에 띄운 질문
 
   const $ = (sel) => document.querySelector(sel);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-  const store = {
-    get(k) { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } },
-    set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* 저장 불가 환경 */ } },
-  };
+  // 학번·이름은 "이 기기에 기억하기"를 고른 경우에만 localStorage 에 둔다 (교실 공용 PC 대비).
+  // 작성 중인 답안은 탭을 닫으면 사라지는 sessionStorage 에 둔다.
+  const storage = (kind) => ({
+    get(k) { try { return window[kind].getItem(k) || ""; } catch (e) { return ""; } },
+    set(k, v) { try { if (v) window[kind].setItem(k, v); else window[kind].removeItem(k); } catch (e) { /* 저장 불가 환경 */ } },
+  });
+  const store = storage("localStorage");
+  const drafts = storage("sessionStorage");
 
   async function getJSON(path) {
     const res = await fetch(path, { cache: "no-cache" });
@@ -61,6 +69,15 @@
 
   const issueLabel = (i) => (i.no ? `제${i.no}호` : fmtDate(i.date));
   const issueByDate = (d) => issues.find((i) => i.date === d);
+
+  function loadIssue(d) {
+    const meta = issueByDate(d);
+    if (!full[d]) {
+      full[d] = getJSON(meta.file).then((x) => Object.assign(x, { no: meta.no }));
+      full[d].catch(() => { delete full[d]; }); // 실패하면 다음에 다시 시도
+    }
+    return full[d];
+  }
 
   const colorOf = (id) => (trackById[id] && trackById[id].color) || "";
 
@@ -169,6 +186,7 @@
 
   // 비슷한 주제 기사: 계열·과목·개념이 겹칠수록 점수가 높다
   function keywords(a) {
+    if (a.k) return new Set(a.k); // index.json 에 미리 계산된 키
     const set = new Set();
     (a.tracks || []).forEach((t) => set.add("t:" + t));
     (a.majors || []).forEach((m) => set.add("m:" + m));
@@ -204,7 +222,7 @@
     }).join("")}</ul></div>`;
   }
 
-  function jumpTo(d, id) {
+  async function jumpTo(d, id) {
     state.date = d;
     state.tracks.clear();
     state.major = "";
@@ -212,7 +230,7 @@
     $("#search").value = "";
     $("#major-select").value = "";
     $("#issue-select").value = d;
-    update();
+    await update();
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -223,16 +241,31 @@
       `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a> <span class="muted">· ${esc(r.source)}${r.note ? " · " + esc(r.note) : ""}</span>${r.lang === "en" ? '<span class="lang">EN</span>' : ""}</li>`).join("")}</ul></section>`;
   }
 
-  function render() {
+  async function render() {
     const main = $("#content");
     if (!issues.length) { main.innerHTML = `<p class="empty">아직 발행된 호가 없습니다.</p>`; return; }
+    const seq = ++renderSeq;
+    const all = !state.date || state.date === "all";
+    const dates = all ? issues.map((i) => i.date) : [(issueByDate(state.date) || issues[0]).date];
+    let loaded;
+    try {
+      const pending = Promise.all(dates.map(loadIssue));
+      const slow = setTimeout(() => { if (seq === renderSeq) main.innerHTML = `<p class="muted">불러오는 중…</p>`; }, 150);
+      loaded = await pending;
+      clearTimeout(slow);
+    } catch (e) {
+      if (seq === renderSeq) main.innerHTML = `<p class="empty">⚠️ 기사를 불러오지 못했어요. 인터넷 연결을 확인하고 <a href="">새로고침</a>해 주세요.</p>`;
+      return;
+    }
+    if (seq !== renderSeq) return; // 그사이 필터가 바뀌었으면 버린다
 
-    if (state.date && state.date !== "all") {
-      const issue = issues.find((i) => i.date === state.date) || issues[0];
+    if (!all) {
+      const issue = loaded[0];
       const arts = issue.articles.filter(matches);
       const reading = (issue.reading || []).filter((r) => matchesTracks(r.tracks));
       const filtered = state.tracks.size || state.major || state.q;
-      const elsewhere = state.major ? issues.reduce((n, i) => n + i.articles.filter(matches).length, 0) - arts.length : 0;
+      const elsewhere = state.major ? issues.filter((i) => i.date !== issue.date)
+        .reduce((n, i) => n + i.articles.filter((a) => matchesTracks(a.tracks) && matchesMajor(a)).length, 0) : 0;
       const more = elsewhere > 0 ? `<p class="more-hint">🎓 다른 호에도 <b>${esc(state.major)}</b> 관련 기사가 ${elsewhere}개 더 있어요. <a href="#" class="show-all">모든 호에서 보기</a></p>` : "";
       main.innerHTML = `
         <section class="issue-head">
@@ -246,10 +279,11 @@
         ${more}
         ${readingHTML(reading)}`;
     } else {
-      const rows = issues.flatMap((i) => i.articles.map((a) => ({ a, date: i.date })))
+      const rows = loaded.flatMap((i) => i.articles.map((a) => ({ a, date: i.date })))
         .filter(({ a }) => matches(a));
       main.innerHTML = `<section class="issue-head"><h2>모든 호</h2><p class="muted">${issues.length}개 호에서 ${rows.length}개 기사</p></section>` +
-        (rows.length ? rows.map(({ a, date }) => articleHTML(a, date, true)).join("") : `<p class="empty">🤔 조건에 맞는 기사가 없어요.</p>`);
+        (rows.length ? rows.slice(0, shown).map(({ a, date }) => articleHTML(a, date, true)).join("") : `<p class="empty">🤔 조건에 맞는 기사가 없어요.</p>`) +
+        (rows.length > shown ? `<button type="button" class="more-btn" id="more-btn">⬇️ 기사 더 보기 (${rows.length - shown}개 남음)</button>` : "");
     }
     $("#toggle-answers").textContent = state.openAll ? "💡 예시 답안 모두 접기" : "💡 예시 답안 모두 펼치기";
   }
@@ -262,11 +296,11 @@
     $("#site-meta").innerHTML = parts.join(" · ");
   }
 
-  function update() { writeHash(); renderChips(); render(); }
+  function update() { shown = PAGE; writeHash(); renderChips(); return render(); }
 
   // ---- 답안 제출 ----
-  function openSubmit(btn) {
-    const issue = issues.find((i) => i.date === btn.dataset.date);
+  async function openSubmit(btn) {
+    const issue = await loadIssue(btn.dataset.date).catch(() => null);
     const a = issue && issue.articles.find((x) => x.id === btn.dataset.article);
     const q = a && a.questions[Number(btn.dataset.q)];
     if (!q) return;
@@ -275,7 +309,8 @@
     $("#submit-question").textContent = `[${q.type}] ${q.q}`;
     form.studentId.value = store.get("studentId");
     form.name.value = store.get("name");
-    form.answer.value = store.get(draftKey());
+    form.remember.checked = !!store.get("studentId");
+    form.answer.value = drafts.get(draftKey());
     $("#submit-status").textContent = "";
     $("#submit-send").disabled = false;
     $("#submit-dialog").showModal();
@@ -284,11 +319,34 @@
 
   const draftKey = () => pending ? `draft:${pending.issue.date}:${pending.a.id}:${pending.q.type}` : "";
 
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  const newId = () => (window.crypto && crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2));
+
+  // 한 번 보내고 서버 응답을 읽는다. 서버가 바쁘다고 하면(동시 제출이 몰릴 때) 잠시 뒤 다시 보낸다.
+  async function post(payload) {
+    for (let attempt = 0; ; attempt++) {
+      let res = null;
+      try {
+        const r = await fetch(config.submitUrl, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) });
+        res = r.ok ? await r.json() : { ok: false, busy: r.status === 429 || r.status >= 500 };
+      } catch (err) {
+        return { ok: false, network: true };
+      }
+      if (res.ok || !res.busy || attempt >= 3) return res;
+      $("#submit-status").textContent = `제출하는 친구들이 많아 기다리는 중… (${attempt + 1}/3)`;
+      await sleep(1500 * 2 ** attempt + Math.random() * 1500);
+    }
+  }
+
   async function sendSubmit(e) {
     e.preventDefault();
     const form = $("#submit-form");
     if (!form.reportValidity() || !pending) return;
+    const answer = form.answer.value.trim();
+    // 같은 답안을 다시 보내도 시트에 한 번만 쌓이도록 서버가 이 번호로 중복을 거른다. 답안을 고치면 새 번호.
+    if (!pending.sid || pending.sent !== answer) { pending.sid = newId(); pending.sent = answer; }
     const payload = {
+      sid: pending.sid,
       issueDate: pending.issue.date,
       tracks: pending.a.tracks.map((t) => trackById[t] ? trackById[t].name : t).join(", "),
       article: pending.a.title,
@@ -296,23 +354,26 @@
       question: pending.q.q,
       studentId: form.studentId.value.trim(),
       name: form.name.value.trim(),
-      answer: form.answer.value.trim(),
+      answer,
       website: form.website.value,
     };
-    store.set("studentId", payload.studentId);
-    store.set("name", payload.name);
+    const remember = form.remember.checked;
+    store.set("studentId", remember ? payload.studentId : "");
+    store.set("name", remember ? payload.name : "");
     $("#submit-send").disabled = true;
     $("#submit-status").textContent = "보내는 중…";
-    try {
-      // Apps Script 웹 앱은 CORS 응답을 주지 않으므로 no-cors 로 보내고 응답은 확인하지 않는다
-      await fetch(config.submitUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) });
-      store.set(draftKey(), "");
+    const res = await post(payload);
+    if (res.ok) {
+      drafts.set(draftKey(), "");
+      pending.sid = null;
       $("#submit-status").textContent = "✅ 선생님께 제출했어요! 이제 예시 답안과 비교해 보세요.";
-      setTimeout(() => $("#submit-dialog").close(), 1600);
-    } catch (err) {
-      $("#submit-status").textContent = "⚠️ 제출하지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요. (작성한 내용은 저장되어 있어요)";
-      $("#submit-send").disabled = false;
+      setTimeout(() => $("#submit-dialog").close(), 1800);
+      return;
     }
+    $("#submit-status").textContent = res.network
+      ? "⚠️ 제출됐는지 확인하지 못했어요. 인터넷 연결을 확인하고 한 번 더 눌러 주세요. 같은 답안은 한 번만 저장돼요."
+      : `⚠️ ${res.error || "지금은 제출이 어려워요. 잠시 뒤 다시 눌러 주세요."} (작성한 내용은 남아 있어요)`;
+    $("#submit-send").disabled = false;
   }
 
   async function init() {
@@ -324,13 +385,14 @@
       majorGroups = mj;
       tracks = trk;
       trackById = Object.fromEntries(tracks.map((t) => [t.id, t]));
-      issues = (await Promise.all(index.issues.map((i) => getJSON(i.file).then((x) => Object.assign(x, { no: i.no })))))
-        .sort((x, y) => y.date.localeCompare(x.date));
+      issues = index.issues.slice().sort((x, y) => y.date.localeCompare(x.date));
     } catch (e) {
       $("#content").innerHTML = `<p class="empty">데이터를 불러오지 못했습니다. (${esc(e.message)})</p>`;
       return;
     }
     renderFooter();
+    // 예전 버전이 localStorage 에 남긴 작성 중 답안을 지운다 (공용 PC 에서 다음 학생에게 보이지 않도록)
+    try { Object.keys(localStorage).filter((k) => k.startsWith("draft:")).forEach((k) => localStorage.removeItem(k)); } catch (e) { /* 무시 */ }
     readHash();
     if (!state.date && issues.length) state.date = issues[0].date;
     $("#search").value = state.q;
@@ -371,6 +433,10 @@
         update();
         $("#content").scrollIntoView({ behavior: "smooth", block: "start" });
       }
+      if (e.target.closest("#more-btn")) {
+        shown += PAGE;
+        render();
+      }
       if (e.target.closest("a.show-all")) {
         e.preventDefault();
         state.date = "all";
@@ -379,7 +445,7 @@
       }
     });
     $("#submit-form").addEventListener("submit", sendSubmit);
-    $("#submit-form").answer.addEventListener("input", (e) => store.set(draftKey(), e.target.value));
+    $("#submit-form").answer.addEventListener("input", (e) => drafts.set(draftKey(), e.target.value));
     $("#submit-cancel").addEventListener("click", () => $("#submit-dialog").close());
     const top = $("#to-top");
     window.addEventListener("scroll", () => { top.hidden = window.scrollY < 600; }, { passive: true });
