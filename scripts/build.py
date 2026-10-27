@@ -258,7 +258,7 @@ def build(issues, tracks, sources):
     shutil.copytree(ROOT / "assets", OUT / "assets")
     # 배포 직후 브라우저에 남은 옛 app.js·style.css 를 쓰지 않도록 내용 해시를 붙인다
     page = (ROOT / "index.html").read_text(encoding="utf-8")
-    for asset in ("assets/app.js", "assets/style.css"):
+    for asset in ("assets/app.js", "assets/games.js", "assets/style.css"):
         digest = hashlib.sha1((ROOT / asset).read_bytes()).hexdigest()[:8]
         page = page.replace(f'"{asset}"', f'"{asset}?v={digest}"')
     (OUT / "index.html").write_text(page, encoding="utf-8")
