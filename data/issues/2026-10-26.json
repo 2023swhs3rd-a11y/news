@@ -337,8 +337,8 @@
         }
       ],
       "image": {
-        "query": "padlock keyboard computer security",
-        "alt": "키보드 위에 놓인 자물쇠"
+        "query": "padlock laptop",
+        "alt": "노트북 위에 놓인 자물쇠"
       }
     },
     {
@@ -469,13 +469,8 @@
         }
       ],
       "image": {
-        "alt": "허블 우주망원경이 찍은 충돌하는 은하",
-        "file": "File:Andromeda Galaxy Hubble M31Mosaic 2025 42208x9870.jpg",
-        "src": "assets/img/2026-10-26/sci-three-black-holes.jpg",
-        "credit": "NASA, ESA, Benjamin F. Williams (UWashington), Zhuo Chen (UWashington), L. Clifton Johnson (Northwestern); Image Process",
-        "license": "Public domain",
-        "license_url": "",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Andromeda_Galaxy_Hubble_M31Mosaic_2025_42208x9870.jpg"
+        "query": "Hubble interacting galaxies",
+        "alt": "허블 우주망원경이 찍은, 서로 끌어당기며 합쳐지는 은하"
       }
     },
     {
@@ -773,13 +768,8 @@
         }
       ],
       "image": {
-        "alt": "칫솔과 치약",
-        "file": "File:Toothbrush, Toothpaste, Dental Care (571741).jpg",
-        "src": "assets/img/2026-10-26/med-cavity-liquid.jpg",
-        "credit": "Steve Buissinne, South Africa",
-        "license": "CC0",
-        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Toothbrush,_Toothpaste,_Dental_Care_(571741).jpg"
+        "query": "dental instruments",
+        "alt": "치과 진료 기구"
       }
     },
     {
@@ -920,7 +910,7 @@
         }
       ],
       "image": {
-        "alt": "책상이 놓인 빈 교실",
+        "alt": "강의실에 줄지어 놓인 빈 책상",
         "file": "File:Rows of Desks in Lecture Theatre.jpg",
         "src": "assets/img/2026-10-26/edu-school-snapshot.jpg",
         "credit": "Paul The Writer",
@@ -1058,13 +1048,8 @@
         }
       ],
       "image": {
-        "alt": "영화관 객석",
-        "file": "File:Strood 510 seat Queens Cinema auditorium and proscenium arch 5708.jpg",
-        "src": "assets/img/2026-10-26/art-access-kpop.jpg",
-        "credit": "ClemRutter",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Strood_510_seat_Queens_Cinema_auditorium_and_proscenium_arch_5708.jpg"
+        "query": "empty movie theater seats",
+        "alt": "비어 있는 영화관 객석"
       }
     },
     {

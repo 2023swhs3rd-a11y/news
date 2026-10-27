@@ -42,8 +42,8 @@ def text(v):
     return re.sub(r"\s+", " ", html.unescape(TAG_RE.sub(" ", v or ""))).strip()
 
 
-def info(pages):
-    """imageinfo 결과를 쓰기 좋은 모양으로. 자유 라이선스가 아니면 버린다."""
+def info(pages, landscape=False):
+    """imageinfo 결과를 쓰기 좋은 모양으로. 자유 라이선스가 아니면 버린다. 검색 결과는 16:9 카드에 맞는 가로 사진만."""
     out = []
     for p in pages:
         ii = (p.get("imageinfo") or [{}])[0]
@@ -51,7 +51,8 @@ def info(pages):
         lic = text(meta.get("LicenseShortName", {}).get("value"))
         if not FREE.match(lic) or ii.get("mime") not in ("image/jpeg", "image/png"):
             continue
-        if ii.get("width", 0) < 800:
+        w, h = ii.get("width", 0), ii.get("height", 1)
+        if w < 800 or (landscape and not 1.2 <= w / h <= 2.2):
             continue
         out.append({
             "title": p["title"],
@@ -59,7 +60,7 @@ def info(pages):
             "source_url": ii.get("descriptionurl"),
             "license": lic,
             "license_url": text(meta.get("LicenseUrl", {}).get("value")),
-            "credit": text(meta.get("Artist", {}).get("value"))[:120] or "작자 미상",
+            "credit": text(meta.get("Artist", {}).get("value"))[:200] or "작자 미상",
             "desc": text(meta.get("ImageDescription", {}).get("value"))[:200],
         })
     return out
@@ -72,7 +73,7 @@ def lookup(image):
     data = get({**common, "generator": "search", "gsrsearch": f"filetype:bitmap {image['query']}",
                 "gsrnamespace": 6, "gsrlimit": 15})
     pages = sorted(data.get("query", {}).get("pages", []), key=lambda p: p.get("index", 99))
-    return info(pages)
+    return info(pages, landscape=True)
 
 
 def download(url, path):
