@@ -11,6 +11,7 @@ import html
 import json
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -120,6 +121,54 @@ def gnews_url(src):
     return f"https://news.google.com/rss/search?q={q}&hl=ko&gl=KR&ceid=KR:ko"
 
 
+GNEWS_ID_RE = re.compile(r"news\.google\.com/(?:rss/)?articles/([^?/]+)")
+
+
+def resolve_gnews(url):
+    """구글 뉴스 경유 링크를 언론사 원래 기사 주소로 바꾼다. 실패하면 None.
+
+    기사 페이지에서 서명(data-n-a-sg)과 시각(data-n-a-ts)을 읽어 구글 뉴스 내부 API(batchexecute)에 묻는다.
+    """
+    m = GNEWS_ID_RE.search(url)
+    if not m:
+        return None
+    gid = m.group(1)
+    try:
+        page = fetch(f"https://news.google.com/rss/articles/{gid}", timeout=15).decode("utf-8", "replace")
+        sg = re.search(r'data-n-a-sg="([^"]+)"', page)
+        ts = re.search(r'data-n-a-ts="([^"]+)"', page)
+        if not (sg and ts):
+            return None
+        inner = json.dumps(["garturlreq", [["X", "X", ["X", "X"], None, None, 1, 1, "US:en", None, 1, None, None, None, None, None, 0, 1],
+                                           "X", "X", 1, [1, 1, 1], 1, 1, None, 0, 0, None, 0], gid, int(ts.group(1)), sg.group(1)])
+        body = urllib.parse.urlencode({"f.req": json.dumps([[["Fbv4je", inner, None, "generic"]]])}).encode()
+        req = urllib.request.Request("https://news.google.com/_/DotsSplashUi/data/batchexecute", data=body,
+                                     headers={"User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            text = r.read().decode("utf-8", "replace")
+        for line in text.splitlines():
+            if "garturlres" in line:
+                payload = json.loads(json.loads(line)[0][2])
+                return payload[1] if isinstance(payload[1], str) and payload[1].startswith("http") else None
+    except Exception:  # 하나가 실패해도 수집은 계속한다
+        return None
+    return None
+
+
+def spread_by_day(items, limit):
+    """하루치 기사가 많은 매체(연합뉴스 등)가 마지막 하루만 남지 않도록, 날짜마다 돌아가며 최신 기사부터 고른다."""
+    days = {}
+    for it in items:
+        days.setdefault((it["published"] or "")[:10], []).append(it)
+    queues = [days[d] for d in sorted(days, reverse=True)]
+    out = []
+    while len(out) < limit and any(queues):
+        for q in queues:
+            if q and len(out) < limit:
+                out.append(q.pop(0))
+    return sorted(out, key=lambda x: x["published"] or "", reverse=True)
+
+
 def collect_kdi(url):
     page = fetch(url).decode("utf-8", "replace")
     items, seen = [], set()
@@ -171,8 +220,17 @@ def main():
             it.pop("_outlet", None)
             kept.append({"source": src["name"], "kind": src["kind"], "lang": src["lang"], **({"paywall": True} if src.get("paywall") else {}), **it})
         kept.sort(key=lambda x: x["published"] or "", reverse=True)
-        result["items"] += kept[:PER_SOURCE]
-        print(f"{src['name']}: {len(kept[:PER_SOURCE])}건", file=sys.stderr)
+        kept = spread_by_day(kept, PER_SOURCE)
+        if src["type"] == "gnews":
+            # 원고에는 언론사 원래 주소를 써야 하므로 수집할 때 미리 풀어 둔다. 못 풀면 구글 뉴스 주소를 그대로 둔다.
+            for it in kept:
+                original = resolve_gnews(it["url"])
+                if original:
+                    it["gnews_url"], it["url"] = it["url"], original
+                time.sleep(0.3)
+        result["items"] += kept
+        resolved = sum(1 for it in kept if "gnews_url" in it)
+        print(f"{src['name']}: {len(kept)}건" + (f" (원래 주소 {resolved}건)" if src["type"] == "gnews" else ""), file=sys.stderr)
 
     out = ROOT / "data" / "raw" / f"{issue_date.isoformat()}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
