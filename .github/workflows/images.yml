@@ -3,8 +3,6 @@ name: 기사 이미지 가져오기
 # 원고(data/issues/<발행일>.json)의 image.query·image.file 로 위키미디어 공용에서 자유 이용 이미지를 내려받아
 # assets/img/<발행일>/ 에 넣고, 출처·라이선스를 원고에 적어 같은 브랜치에 커밋한다. 원고 PR 브랜치에서 실행한다.
 on:
-  push:
-    branches: [images]  # 임시: 첫 실행용
   workflow_dispatch:
     inputs:
       date:
@@ -28,14 +26,14 @@ jobs:
           python-version: "3.12"
       - name: 이미지 찾기·내려받기
         env:
-          DATE: ${{ inputs.date || '2026-10-26' }}
+          DATE: ${{ inputs.date }}
           FORCE: ${{ inputs.force }}
         run: python scripts/images.py --date "$DATE" $([ "$FORCE" = true ] && echo --force)
       - name: 검사
         run: python scripts/build.py --check
       - name: 커밋
         env:
-          DATE: ${{ inputs.date || '2026-10-26' }}
+          DATE: ${{ inputs.date }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
