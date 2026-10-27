@@ -1,6 +1,6 @@
 {
  "issue_date": "2026-11-02",
- "collected_at": "2026-10-27T00:25:54+00:00",
+ "collected_at": "2026-10-27T00:24:03+00:00",
  "since": "2026-10-25",
  "items": [
   {
@@ -502,15 +502,6 @@
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "울산공업축제 존폐 재검토…경제효과 분석 부족",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBhaHFDUm40dF82NlAtRGNhN2N6VVk1TXZRSDdLdHZsQ25RTkRqWGNod1FWNjJKa04tZFJhRmRPeGdXTWljTFdsM3ZwclVHOGdQWE50OGlZaG82NDQ?oc=5",
-   "published": "2026-10-26T10:37:00+00:00",
-   "summary": "울산공업축제 존폐 재검토…경제효과 분석 부족 KBS 뉴스"
-  },
-  {
-   "source": "KBS",
-   "kind": "국내 언론",
-   "lang": "ko",
    "title": "“아침 첫발부터 뒤꿈치가 찌릿!”…가을철 족저근막염 주의보 [이슈픽]",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9rRzhqbUI0VVMzRnFSNTB6UDIxUWFnNkR4ZnRzRzNvaFNNQkxZaG5MZzF5bUZocGhUT1M2dkNkQ0tPTFpSUXE3OXcwcFRZNzAzMzhnQzF2VWVFbjA?oc=5",
    "published": "2026-10-26T09:24:00+00:00",
@@ -722,6 +713,15 @@
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jc1M0bW5YdUdjZlJTWmUtb2RJWjZRcWVza1JLSUpibGJ1a3EwaHF3amk5RHY1RWZ5d3NfZnV5Szl2d0JEaDRtYVBJekUzZXlURk54Ui1WZXpDZVE?oc=5",
    "published": "2026-10-26T02:38:00+00:00",
    "summary": "원주시의회, 국외연수 4건 실시…“의회 본분 망각” KBS 뉴스"
+  },
+  {
+   "source": "KBS",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "강원 주택사업 경기 전망 악화…12.6p 하락",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1hcHZDSDlRUmI4dUdJR1lNNkNqRjBYeVpTU0NjT1JWZHR3dkZ4TWNERUZYNF9hWk9obC1sNjRoZ1NlaFRfM0pCTEVFQ01kTmN4SHRIbnJVUjdOUlk?oc=5",
+   "published": "2026-10-26T02:37:00+00:00",
+   "summary": "강원 주택사업 경기 전망 악화…12.6p 하락 KBS 뉴스"
   },
   {
    "source": "경향신문",
@@ -1649,15 +1649,6 @@
    "url": "https://www.koreaherald.com/article/10914997",
    "published": "2026-10-26T14:45:12+00:00",
    "summary": "Song Min-kyu recorded his first attacking point for Nacional with an assist in his fifth appearance for the Portuguese club. Nacional beat Braga 1-0 at Estadio da Madeira in Funchal, Portugal, on Monday, with Miguel Baeza scoring the winner from Song's assist in the ninth round of the 2026-27 Primei"
-  },
-  {
-   "source": "Korea Times",
-   "kind": "영자신문",
-   "lang": "en",
-   "title": "Opinion",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1ZSm4zSE92QkpsVkd6bVRwRjZhdUVKZklGTF9KS0RxaG1neWRMSDdHVWRPcTNnNm9sVGpKcVNLR2tIbGw4dUQyNktta3c?oc=5",
-   "published": "2026-10-26T22:27:15+00:00",
-   "summary": "Opinion The Korea Times"
   },
   {
    "source": "Korea Times",
@@ -2635,15 +2626,6 @@
    "source": "The Washington Post",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Walter Koenig, Russian navigator Chekov on ‘Star Trek,’ dies at 90",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTUlRSGVTQ2dOTkp4QWptQkg4TFpxZ1c1YzFHLUh2U2c4amt0TlNUeTB3NWNqTGxNWEVjWnRkRExLM1ZXN0c5WmFiQU5ieEloM3pCeWl3c1FsN19MR3A3V2ItQUNVT1RORmhGZExYZ3NNOUlXWkFlUXl0cExZTnp3c05zRTZWajhpU055Rzc0SXN2emRwVDZPMnBtU1dxNkFNS0RyeTY3YllLQQ?oc=5",
-   "published": "2026-10-27T00:24:42+00:00",
-   "summary": "Walter Koenig, Russian navigator Chekov on ‘Star Trek,’ dies at 90 The Washington Post"
-  },
-  {
-   "source": "The Washington Post",
-   "kind": "해외 언론",
-   "lang": "en",
    "title": "Lawmaker seeks dozens of messages between Kennedy Center and Trump aides",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVkIwQXVicHgtNzlTdFNlZ08tYWZmV29Md1lCZGxYQlJZMG9PX0pOVk5DOW94Zmc4Nm1uOTk1bHctZWt2VzV0TnU3UkxnVkRCMTBlYktPMkhMM2RWWV9pSmtidXRobUxGSzYtMmU5MUZRS3NMbHR0M09Cd1VicHd1aVRxVEhFODJSMnFLWFMtcUNtMURaN1Y1QTVNR0dJSTc4dFlqT1lzRFhDbHZrLVZjSDlJTHE?oc=5",
    "published": "2026-10-27T00:11:02+00:00",
@@ -2698,19 +2680,19 @@
    "source": "The Washington Post",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Gov. Wes Moore, up for reelection in Maryland, campaigns in Virginia",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWHRxZnBfS1EwS252bFhDQkZIU0UtbVNJQXNrampXd0FNdTQ2cXdQSkVURmExVWRBWFdnbWF4M3dFMWxvWHBRNHhSN0RCVmk4WkEwSVQ0cDZyUGtHSnctU1I5Y0puRm5ISzVBSEtyV2ZYaG5SVGVCUVhDcHlSSFh4b242bnY1NzFpZEl5V3huVmh6OGNPODFpdGhncjN5TF94WGFYVFhEVlVGd1k?oc=5",
-   "published": "2026-10-26T22:53:49+00:00",
-   "summary": "Gov. Wes Moore, up for reelection in Maryland, campaigns in Virginia The Washington Post"
+   "title": "Walter Koenig, Russian navigator Chekov on ‘Star Trek,’ dies at 90",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTUlRSGVTQ2dOTkp4QWptQkg4TFpxZ1c1YzFHLUh2U2c4amt0TlNUeTB3NWNqTGxNWEVjWnRkRExLM1ZXN0c5WmFiQU5ieEloM3pCeWl3c1FsN19MR3A3V2ItQUNVT1RORmhGZExYZ3NNOUlXWkFlUXl0cExZTnp3c05zRTZWajhpU055Rzc0SXN2emRwVDZPMnBtU1dxNkFNS0RyeTY3YllLQQ?oc=5",
+   "published": "2026-10-26T22:54:42+00:00",
+   "summary": "Walter Koenig, Russian navigator Chekov on ‘Star Trek,’ dies at 90 The Washington Post"
   },
   {
    "source": "The Washington Post",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "White House is sued again over media bans as press groups seek wider injunction",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbGcxVGkxdGxGVEIzcmV3eE9mMXJiMVQtRW9pRFFEYmszbmRUYjJPb0pXX0RWS2F5R3c2VEI5RzVUMFhDWThZelB5YVVBQ3dJTkliMm9FMkRXbkhRVTl0bXdzcnl0RmRKeVQyTXM4bWpvbmpreGx1Q0h0Mjg0ZmtBc19OS21lVnFZU3hqOVM2Q2MxeFVPZW9JTi1sMFgxRlZ5WGcwNlV1MGVrSlN6TlRjWW5UVHNyN1VfYkliMl9CSWxpZVdoODQ0?oc=5",
-   "published": "2026-10-26T22:42:16+00:00",
-   "summary": "White House is sued again over media bans as press groups seek wider injunction The Washington Post"
+   "title": "Gov. Wes Moore, up for reelection in Maryland, campaigns in Virginia",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWHRxZnBfS1EwS252bFhDQkZIU0UtbVNJQXNrampXd0FNdTQ2cXdQSkVURmExVWRBWFdnbWF4M3dFMWxvWHBRNHhSN0RCVmk4WkEwSVQ0cDZyUGtHSnctU1I5Y0puRm5ISzVBSEtyV2ZYaG5SVGVCUVhDcHlSSFh4b242bnY1NzFpZEl5V3huVmh6OGNPODFpdGhncjN5TF94WGFYVFhEVlVGd1k?oc=5",
+   "published": "2026-10-26T22:53:49+00:00",
+   "summary": "Gov. Wes Moore, up for reelection in Maryland, campaigns in Virginia The Washington Post"
   },
   {
    "source": "The Washington Post",
@@ -2833,15 +2815,6 @@
    "source": "The Washington Post",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "States move to take ultra-processed foods off the school lunch menu",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMmVpUDh6dWtwd2lQWjlYTGd3YmxLaE85YWdRYkg3RHkwLTFCREdIMHV0TzBkanFBazNwOEN3QmkxU1ZReUZib21zdzhoTzNjSFY2cWxoRzhUUGxoSm9qSkdic1FnSS1TQ0M1Vmh6MERRTzlFcmlMRkpIVmNYUXBNTGgyM2pra3JQeTVuYW85ZnEySmtvYXJ0Smh1Y1RrdEFybmN3Y0VETGkwdTVQazJn?oc=5",
-   "published": "2026-10-26T17:00:00+00:00",
-   "summary": "States move to take ultra-processed foods off the school lunch menu The Washington Post"
-  },
-  {
-   "source": "The Washington Post",
-   "kind": "해외 언론",
-   "lang": "en",
    "title": "Opinion | What really delays home construction in America",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNYzFmSnF4QmhxNk84STBUYmg2WHZOWTVURE1yUFp5UzNxamxqVTBGWjlVZWRPWnNOdXQtVkZzaHRuTlNISHhTMG8tS0cwSVB1a0VqLUdGcnhBWERDVW81a21LeXBWcVhkOFlEbS1CQlhEa3lIZ3dvZjBKSVREbUtVMHl2NzVlbmh6SnhPYU0wVEx6NWd0d0FnQXdUMk4yQjBXQzc3M015cVF1b3Fw?oc=5",
    "published": "2026-10-26T16:45:00+00:00",
@@ -2950,15 +2923,6 @@
    "source": "The Washington Post",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Trump calls El-Sayed a ‘jihadist’ as he escalates campaign rhetoric",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeE5pU2ljSUtkcHZpTWNUaE1wdnc2ZTJWNUx6OHFmbG80UjdPYVJlTGl1RU9MWWN5S3BGOGFIUncyY0dwcmIzY2JuSWN6dkZJR3Rscy1FdU5KLVhyTUhpLXhrbldxblBhYTBMMVFxSzFOSTNQMG5HeVMtSlctb0ZHVjlUSWwybl9fTG5GX2lGVGNMdTZ2VU15LVlqRC04Y2NwWlVsZTUwaGlxMllmb3FHbA?oc=5",
-   "published": "2026-10-26T03:31:00+00:00",
-   "summary": "Trump calls El-Sayed a ‘jihadist’ as he escalates campaign rhetoric The Washington Post"
-  },
-  {
-   "source": "The Washington Post",
-   "kind": "해외 언론",
-   "lang": "en",
    "title": "Opinion | Europe is running out of other people’s money",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZnFOT3hRc1N4bFBZMWdFbDREVVhoay1HRTdISmpvelR1SzZRTzN2V0JPam5nMXZNR19KMzNuTFJSY0N0Z0dmY01YNS04MnM4OHNWa0d2bDhaNnZzQ2xCTFk1eExNX3JCZ3FBYkRjd3VhMGFJN0ItbTdjNHZ3WXpWY01tX2FBVzk2SWNTblVReFBKR1VKMWRCRTJlOA?oc=5",
    "published": "2026-10-26T00:50:15+00:00",
@@ -2990,6 +2954,33 @@
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOFBwd3dMSVFneGlRbHFTWG1TQS1DNWViYVhDeXpKeXZ6SlVXZW01YVpHWnBrR1FxazBoUU1XUWlPXzhYNjNXc2h3eHBCUkdKVnc3TFgxdUxNd1E5ZUkteGhTa3ZMVmtuQk0wN3JUNVhBU0I3Q09xTXF2Q2FRZjEzbjRERC1ma19TZXRkZHFuY2FwbzNCWnNVYkpVcUdDVjExSTYzTTlpR3lTM2Q3Y2g0U09MQjd1OFJ0?oc=5",
    "published": "2026-10-25T18:15:00+00:00",
    "summary": "Opinion | Hollywood has found a fresh supply of supervillains The Washington Post"
+  },
+  {
+   "source": "The Washington Post",
+   "kind": "해외 언론",
+   "lang": "en",
+   "title": "Opinion | The autocrats waging war on Starlink",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPajh2eER2S0tYOUZiZUdfSDRWMjJUZXNHZ3h5M3ozQkJNYjBtcVhWUkZvcVZjQy0tMm44cXRhQ2NsS3NqZW9pVjZtZXd5a0MyeVQzZ3haakkza2dwZWMzZFV6bmU5dGdRZmh0MEhfc1RpVGY3eDB4QXh6MUtmTkVQQm0tdUFZbGtlSVltSkNaenVMdEdNdzdzNWF2S21KUnhHM3c?oc=5",
+   "published": "2026-10-25T17:30:00+00:00",
+   "summary": "Opinion | The autocrats waging war on Starlink The Washington Post"
+  },
+  {
+   "source": "The Washington Post",
+   "kind": "해외 언론",
+   "lang": "en",
+   "title": "Meet Olivia, the duck quacking to keep foie gras off D.C. menus",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWHNkSVUyc29aeGxYMEhrZFp6aUZHZDd5YlVCbVR6NG12NTI2T3oyQUNvMXExbnQtdzdtM29IazNGVjY2R0dGbU9nVUtCMTRSdDVsd29rX1VoLXRmdFR4TVVGMkstb1lEWFREWW1yS3NoWU5qT2lWMDhfeGJhZExJZVJMaS1YM3BCWTlZX1BmYUp6eUQ0LU1kR05oMHpBSjFhWE8tN05HRUg?oc=5",
+   "published": "2026-10-25T17:00:01+00:00",
+   "summary": "Meet Olivia, the duck quacking to keep foie gras off D.C. menus The Washington Post"
+  },
+  {
+   "source": "The Washington Post",
+   "kind": "해외 언론",
+   "lang": "en",
+   "title": "What lymphatic drainage tools can and can’t do for your health",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZnczYXJ0VEwxM2F5b2lPWi0xOGJXbHlrVDdyUnNVcEItaTFFdm5jdlUwNjl6SEtIdHlXQ0JIR1hIY3hQYUd5TmVLZ1ltSmZjeFU1bmRiWTZ0cHFYN29qdW5PSEFibTFVR2Q3VFZwMzJnUzAyVXF0NE9ROUlDdGJ6TWtnRy0zSWRjT3JyUHZxMnZVbVFwVFBsbzBVY1dER18xRHZ1ZGRvUy0?oc=5",
+   "published": "2026-10-25T17:00:00+00:00",
+   "summary": "What lymphatic drainage tools can and can’t do for your health The Washington Post"
   },
   {
    "source": "ScienceDaily",
@@ -3262,24 +3253,6 @@
    "summary": ""
   },
   {
-   "source": "Brookings",
-   "kind": "싱크탱크",
-   "lang": "en",
-   "title": "Understanding the beginning of advertising on ChatGPT",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQ2diQU4wOWE2NWhsdVVkZlZ3V05aZDlqS2NLbTU2dGNJOGd3eW5zdXdxN3Y4NGlrQkd5R211dFRWOGhwSG1iOUQ1Z0xMbWpXbDJ6TkJjVEh1NVFGOUNqMG1aZnVOV2JScEd5OWpRTEVqbm5zeXRFYlF1cll4NFlJTGJNalItLVl5U2YwbjFvMzRvSW8?oc=5",
-   "published": "2026-10-26T17:16:17+00:00",
-   "summary": "Understanding the beginning of advertising on ChatGPT Brookings"
-  },
-  {
-   "source": "Brookings",
-   "kind": "싱크탱크",
-   "lang": "en",
-   "title": "Mandates, money, and the end of voluntary hospital cybersecurity",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV1ZINk5FZno0eUNfOXNDZ21wMTBoNU1YeDRoLUNvYlhBWFliTXViNmFudHRpSndyZzBfQ2tXLW9UbFNYblhYckhOUFV5X3ZlSFZldVlRU3dBb2dHT19VTWNRZjM4RmJUUVY2UUxoNmRBX0o0UGdnV0NvdTZKX2J4aEU5a3Npa1lZZ1RRSEE2QkItZGIzVnZOb0NlckFkZE0?oc=5",
-   "published": "2026-10-26T15:52:10+00:00",
-   "summary": "Mandates, money, and the end of voluntary hospital cybersecurity Brookings"
-  },
-  {
    "source": "CSIS",
    "kind": "싱크탱크",
    "lang": "en",
@@ -3316,5 +3289,11 @@
    "summary": "New Zealand’s Two-Track China Policy CSIS | Center for Strategic and International Studies"
   }
  ],
- "errors": []
+ "errors": [
+  {
+   "source": "Brookings",
+   "url": "https://www.brookings.edu/feed/",
+   "error": "ParseError: not well-formed (invalid token): line 115, column 44"
+  }
+ ]
 }
