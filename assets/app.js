@@ -2,12 +2,13 @@
 (function () {
   "use strict";
 
+  // 질문 단계: Bloom의 개정 교육목표 분류(Anderson & Krathwohl, 2001)의 인지 과정 차원. '기억하기'는 뉴스 게임이 맡는다.
   const QTYPES = [
-    { name: "알아보기", icon: "🔍" },
-    { name: "연결하기", icon: "🔗" },
-    { name: "확장하기", icon: "🚀" },
-    { name: "비교하기", icon: "⚖️" },
-    { name: "따져보기", icon: "🧐" },
+    { name: "이해하기", desc: "개념과 기사 내용을 내 말로 설명해요." },
+    { name: "적용하기", desc: "배운 개념·공식을 기사 속 상황에 써 봐요." },
+    { name: "분석하기", desc: "나누고 비교해 부분 사이의 관계를 찾아요." },
+    { name: "평가하기", desc: "기준을 세워 기사와 주장을 판단해요." },
+    { name: "창안하기", desc: "새 해결책·설계·가설을 만들어요." },
   ];
   // 출처 카드: 기사 종류별 읽을 때 생각할 점 (원고의 links[].type)
   const LINK_TYPES = {
@@ -145,7 +146,7 @@
     sel.value = count[state.major] ? state.major : "";
   }
 
-  function questionHTML(x, a, date, qi) {
+  function questionHTML(x, a, date, qi, qn) {
     const concepts = (x.concepts || []).length ? `
       <div class="concepts"><h4>개념 해설</h4><dl>${x.concepts.map((c) =>
         `<dt>${esc(c.term)}</dt><dd>${esc(c.desc)}</dd>`).join("")}</dl></div>` : "";
@@ -153,7 +154,7 @@
       ? `<button type="button" class="submit-btn" data-date="${date}" data-article="${esc(a.id)}" data-q="${qi}">답안 제출</button>` : "";
     return `
       <li class="q">
-        <div class="qtype"><span class="qnum">${(QINDEX[x.type] ?? 0) + 1}</span>${esc(x.type)}</div><p class="qtext">${esc(x.q)}</p>
+        <div class="qtype" title="${esc((QTYPES[QINDEX[x.type]] || {}).desc || "")}"><span class="qnum">${qn}</span>${esc(x.type)}${x.verb ? `<span class="qverb">${esc(x.verb)}</span>` : ""}</div><p class="qtext">${esc(x.q)}</p>
         <div class="q-actions">
           ${submit}
           ${x.a ? `<details${state.openAll ? " open" : ""}><summary>예시 답안${concepts ? " · 개념 해설" : ""}</summary><div class="answer">${esc(x.a)}</div>${concepts}</details>` : ""}
@@ -170,14 +171,17 @@
       l.paywall ? `<span class="paywall" title="구독해야 끝까지 읽을 수 있어요">유료</span>` : "",
       l.lang === "en" ? '<span class="lang">EN</span>' : "",
     ].filter(Boolean).join('<span class="sep">·</span>');
-    return `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.title)}</a><span class="src-meta">${meta}</span></li>`;
+    // 원 발표일: 연구·발표를 소개한 기사라면 논문·발표가 처음 나온 날을 함께 보여 준다 (재소개 기사 구별)
+    const o = l.orig;
+    const orig = o && o.date ? `<span class="src-orig">원 발표 ${fmtDate(o.date)}${o.what ? ` · ${esc(o.what)}` : ""}</span>` : "";
+    return `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.title)}</a><span class="src-meta">${meta}</span>${orig}</li>`;
   }
 
   // 한 사건, 여러 시선: 같은 사건을 다룬 국내·해외 기사를 나란히 놓고 따져 보는 코너
   function compareArticle(issue) {
     const c = issue.compare;
     if (!c) return null;
-    return { id: "compare", title: c.title, tracks: c.tracks || [], questions: [{ type: "따져보기", q: c.q, a: c.a, concepts: c.concepts }] };
+    return { id: "compare", title: c.title, tracks: c.tracks || [], questions: [{ type: "평가하기", verb: c.verb || "비평하기", q: c.q, a: c.a, concepts: c.concepts }] };
   }
 
   function compareHTML(issue) {
@@ -196,7 +200,7 @@
         <h3>${esc(c.title)}</h3>
         ${c.intro ? `<p class="summary">${esc(c.intro)}</p>` : ""}
         <div class="cmp-grid">${items}</div>
-        <ol class="questions">${questionHTML(compareArticle(issue).questions[0], compareArticle(issue), issue.date, 0)}</ol>
+        <ol class="questions">${questionHTML(compareArticle(issue).questions[0], compareArticle(issue), issue.date, 0, 1)}</ol>
       </section>`;
   }
 
@@ -204,10 +208,17 @@
     <details class="howto"><summary>기사를 따져 읽는 세 가지 질문</summary>
       <ol>
         <li><b>누가 썼나?</b> 매체와 기사 종류(보도·해설·칼럼·보도자료·연구 소개)를 확인해요. 링크 옆 꼬리표에 마우스를 올리거나 눌러 보세요.</li>
-        <li><b>근거는 무엇인가?</b> 숫자와 인용이 어디서 왔는지, 원자료가 있는지 찾아봐요.</li>
+        <li><b>근거는 무엇인가?</b> 숫자와 인용이 어디서 왔는지, 원자료가 있는지 찾아봐요. 연구를 소개한 기사는 '원 발표' 날짜도 보세요. 몇 달 전 연구를 다시 소개한 글일 수 있어요.</li>
         <li><b>다른 곳은 뭐라고 하나?</b> 새 탭을 열어 같은 소식을 다른 매체에서 검색해 봐요.</li>
       </ol>
       <p class="muted">요약과 예시 답안은 AI가 초안을 쓰고 선생님이 검토했어요. 원문과 비교해 빠진 내용이 없는지 확인하는 것도 좋은 연습이에요.</p>
+    </details>`;
+
+  // 질문 사다리: 기사마다 같은 다섯 단계를 아래에서 위로 오른다 (단계 이름 옆은 그 질문에서 할 일)
+  const LADDER = `
+    <details class="howto ladder"><summary>질문은 이렇게 올라가요</summary>
+      <ol>${QTYPES.map((t) => `<li><b>${t.name}</b> ${t.desc}</li>`).join("")}</ol>
+      <p class="muted">교육학자 블룸(Bloom)의 사고 단계 분류를 바탕으로 했어요. 맨 아래 단계인 '기억하기'는 <b>뉴스 게임</b> 탭에서 연습해요. 단계 이름 옆의 말(설명하기, 계산하기, 비교하기, 판단하기, 설계하기 등)은 그 질문에서 해야 할 일이에요.</p>
     </details>`;
 
   // 데이터로 더 보기: 빅카인즈에서 학생이 직접 검색·분석해 보는 개별 과제 (원고의 explore, 데이터로 볼 만한 기사에만)
@@ -241,7 +252,7 @@
       `<button type="button" class="major-tag" data-major="${esc(m)}" aria-pressed="${state.major === m}">#${esc(m)}</button>`).join("")}</div>` : "";
     const qs = (a.questions || []).map((x, i) => ({ x, i }))
       .sort((p, q) => (QINDEX[p.x.type] ?? 9) - (QINDEX[q.x.type] ?? 9))
-      .map(({ x, i }) => questionHTML(x, a, date, i)).join("");
+      .map(({ x, i }, n) => questionHTML(x, a, date, i, n + 1)).join("");
     return `
       <article class="card" id="${esc(a.id)}" style="--c:${colorOf(main)}">
         <div class="badges">${dateBadge}${badges}</div>
@@ -466,6 +477,7 @@
         </section>
         ${!filtered && issue.headlines && issue.headlines.length ? `<section class="headlines"><h3>이번 주 헤드라인</h3><ol>${issue.headlines.map(linkHTML).join("")}</ol></section>` : ""}
         ${HOWTO}
+        ${LADDER}
         ${state.major || state.q ? "" : compareHTML(issue)}
         ${arts.length ? arts.map((a) => articleHTML(a, issue.date, false)).join("") : `<p class="empty">조건에 맞는 기사가 없어요.</p>`}
         ${more}

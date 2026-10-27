@@ -138,6 +138,7 @@ input[type=search] { flex: 1 1 200px; min-width: 0; }
 .links a, .headlines a { font-weight: 500; }
 .src-meta { display: block; font-size: .82rem; color: var(--muted); }
 .headlines .src-meta { display: inline; margin-left: 6px; }
+.src-orig { display: block; font-size: .82rem; color: var(--warn); }
 .sep { margin: 0 5px; color: var(--line-strong); }
 .src-type { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
 .paywall { color: var(--warn); font-weight: 700; }
@@ -155,6 +156,8 @@ input[type=search] { flex: 1 1 200px; min-width: 0; }
 .q { padding: 14px 0; }
 .q + .q { border-top: 1px solid var(--line); }
 .qtype { display: flex; align-items: center; gap: 8px; font-size: .85rem; font-weight: 700; color: var(--accent); margin-bottom: 2px; }
+.qverb { font-weight: 500; color: var(--muted); }
+.qverb::before { content: "·"; margin-right: 6px; }
 .qnum { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-size: .78rem; }
 .qtext { margin: 0; font-weight: 500; font-size: 1.02rem; }
 .q-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; align-items: flex-start; }

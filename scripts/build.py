@@ -24,8 +24,17 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "_site"
 SITE_URL = os.environ.get("SITE_URL", "https://2023swhs3rd-a11y.github.io/news/").rstrip("/") + "/"
-QTYPES = ["알아보기", "연결하기", "확장하기", "비교하기", "따져보기"]
-# 미디어 리터러시 1단계: 이 날짜 이후 호부터 따져보기 질문과 '한 사건, 여러 시선'(compare)이 필수
+# 질문 단계: Bloom의 개정 교육목표 분류(Anderson & Krathwohl, 2001)의 인지 과정. '기억하기'는 뉴스 게임이 맡는다.
+QTYPES = ["이해하기", "적용하기", "분석하기", "평가하기", "창안하기"]
+# 단계마다 질문에 붙이는 동사(verb). 기사에 맞게 고르되 이 목록에서 고른다.
+QVERBS = {
+    "이해하기": ["설명하기", "요약하기", "예 들기", "분류하기", "해석하기", "바꿔 말하기", "추론하기"],
+    "적용하기": ["계산하기", "풀기", "활용하기", "도식화하기", "실행하기", "예측하기"],
+    "분석하기": ["비교하기", "구분하기", "관계 짓기", "원인 찾기", "구조 나누기", "근거 찾기"],
+    "평가하기": ["판단하기", "비평하기", "검증하기", "정당화하기", "우선순위 정하기"],
+    "창안하기": ["설계하기", "제안하기", "가설 세우기", "계획하기", "만들기"],
+}
+# 미디어 리터러시 1단계: 이 날짜 이후 호부터 다섯 단계 질문(평가하기 포함)과 '한 사건, 여러 시선'(compare)이 필수
 MEDIA_FROM = "2026-11-02"
 LINK_TYPES = {"보도", "해설", "칼럼", "인터뷰", "보도자료", "연구 소개", "분석·보고서"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -88,6 +97,36 @@ def validate_activities():
         if not x.get("desc") or not x.get("prompts"):
             errors.append(f"{w}: desc 또는 prompts 없음")
     return errors
+
+
+ORIG_GAP_DAYS = 14  # 원 발표가 다룬 기간 시작보다 이만큼 앞서면 '다시 소개한 기사'로 보고 경고
+
+
+def check_orig(errors, warnings, w, l, period, media):
+    """연구·발표를 소개한 기사는 원 논문·발표가 처음 나온 날(orig.date)을 적는다. 오래전 연구의 재소개를 이번 주 소식처럼 쓰지 않도록."""
+    o = l.get("orig")
+    if not o:
+        if media and l.get("type") in ("연구 소개", "보도자료"):
+            warnings.append(f"{w}: 원 발표일(orig) 없음. 원 논문·발표를 확인해 {{\"what\", \"date\"}} 로 적음")
+        return
+    d = o.get("date", "")
+    if not DATE_RE.match(d):
+        errors.append(f"{w}: orig.date 는 YYYY-MM-DD ({d!r})")
+        return
+    start = period[:10]
+    if media and DATE_RE.match(start):
+        gap = (datetime.strptime(start, "%Y-%m-%d") - datetime.strptime(d, "%Y-%m-%d")).days
+        if gap > ORIG_GAP_DAYS:
+            warnings.append(f"{w}: 원 발표({d})가 다룬 기간보다 {gap}일 앞섬. 요약에서 '이번 주 발표'처럼 쓰지 않았는지 확인")
+
+
+def check_verb(warnings, w, q):
+    """질문마다 그 단계에서 할 일(동사)을 붙인다. 화면에 '분석하기 · 비교하기'처럼 보인다."""
+    verbs = QVERBS.get(q.get("type"), [])
+    if not q.get("verb"):
+        warnings.append(f"{w}: '{q.get('type')}' 질문에 동사(verb) 없음 ({', '.join(verbs)} 중 하나)")
+    elif q["verb"] not in verbs:
+        warnings.append(f"{w}: '{q.get('type')}' 동사 '{q['verb']}' 는 이 단계 목록에 없음 ({', '.join(verbs)})")
 
 
 def check_question(errors, w, q):
@@ -162,6 +201,7 @@ def validate(path, track_ids, subjects, majors, sources):
                 errors.append(f"{w} links[{j}]: 기사 종류 type 은 {sorted(LINK_TYPES)} 중 하나 ({l['type']!r})")
             elif media and not l.get("type"):
                 warnings.append(f"{w} links[{j}]: 기사 종류(type) 없음")
+            check_orig(errors, warnings, f"{w} links[{j}]", l, issue.get("period", ""), media)
         if "explore" in a:
             x = a["explore"] or {}
             kws, tasks = x.get("keywords") or [], x.get("tasks") or []
@@ -177,11 +217,14 @@ def validate(path, track_ids, subjects, majors, sources):
             if c.get("subject") not in subjects:
                 warnings.append(f"{w}: 과목명 '{c.get('subject')}' 이 2022 개정 과목 목록에 없음")
         types = [q.get("type") for q in a.get("questions", [])]
-        need = QTYPES if media else QTYPES[:4]
-        if sorted(types, key=lambda t: QTYPES.index(t) if t in QTYPES else 99) != need:
-            errors.append(f"{w}: 질문은 {'/'.join(need)} 각 1개씩이어야 함 (현재 {types})")
+        if media:
+            if types != QTYPES:
+                errors.append(f"{w}: 질문은 {' → '.join(QTYPES)} 순서로 각 1개 (현재 {types})")
+        elif len(types) != 4 or any(t not in QTYPES for t in types) or types != sorted(types, key=QTYPES.index):
+            errors.append(f"{w}: 질문 4개는 {'/'.join(QTYPES)} 가운데에서 낮은 단계부터 적어야 함 (현재 {types})")
         for q in a.get("questions", []):
             check_question(errors, w, q)
+            check_verb(warnings, w, q)
 
     c = issue.get("compare")
     if c:
@@ -189,7 +232,7 @@ def validate(path, track_ids, subjects, majors, sources):
         for k in ("title", "q", "a"):
             if not c.get(k):
                 errors.append(f"{w}: '{k}' 없음")
-        check_question(errors, w, {"type": "따져보기", **c})
+        check_question(errors, w, {"type": "평가하기", **c})
         items = c.get("items", [])
         if len(items) < 2:
             errors.append(f"{w}: items 는 같은 사건을 다룬 기사 2개 이상")
