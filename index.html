@@ -3,29 +3,68 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>주간 계열 탐구 뉴스</title>
-  <meta name="description" content="일반계 고등학생을 위한 계열별 주간 뉴스와 교과 연계 탐구 질문">
-  <link rel="alternate" type="application/rss+xml" title="주간 계열 탐구 뉴스" href="feed.xml">
+  <title>봉일천고 1학년 뉴스 읽고 진로 확장하기</title>
+  <meta name="description" content="이번 주 뉴스를 계열별로 읽고, 교과 개념으로 탐구하며 진로를 넓혀 보는 봉일천고 1학년 주간 뉴스">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="봉일천고 1학년 뉴스 읽고 진로 확장하기" href="feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <h1><a href="./">주간 계열 탐구 뉴스</a></h1>
-      <p class="tagline">이번 주 뉴스를 계열별로 읽고, 교과 개념으로 알아보기 · 연결하기 · 확장하기 · 비교하기</p>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="school">📚 봉일천고등학교 1학년</p>
+        <h1><a href="./">뉴스 읽고 <span class="hl">진로 확장하기</span></a></h1>
+        <p class="tagline">매주 월요일, 내 관심 계열의 뉴스를 읽고 교과서 개념으로 생각을 넓혀 봐요.</p>
+        <ol class="steps" aria-label="이용 방법">
+          <li><span class="step-icon">📰</span><b>읽기</b><small>관심 계열 기사 고르기</small></li>
+          <li><span class="step-icon">💭</span><b>생각하기</b><small>네 단계 질문 풀기</small></li>
+          <li><span class="step-icon">💡</span><b>확인하기</b><small>예시 답안·개념 해설</small></li>
+          <li><span class="step-icon">✍️</span><b>제출하기</b><small>내 답안 보내기</small></li>
+        </ol>
+      </div>
+      <svg class="hero-art" viewBox="0 0 220 180" aria-hidden="true">
+        <circle cx="120" cy="92" r="78" fill="#fff" opacity=".18"/>
+        <g transform="rotate(-6 100 95)">
+          <rect x="38" y="40" width="130" height="104" rx="10" fill="#fff"/>
+          <rect x="50" y="52" width="106" height="14" rx="4" fill="#1f5fae"/>
+          <rect x="50" y="74" width="44" height="34" rx="4" fill="#ffd166"/>
+          <rect x="100" y="74" width="56" height="6" rx="3" fill="#c5cede"/>
+          <rect x="100" y="86" width="56" height="6" rx="3" fill="#c5cede"/>
+          <rect x="100" y="98" width="40" height="6" rx="3" fill="#c5cede"/>
+          <rect x="50" y="116" width="106" height="6" rx="3" fill="#c5cede"/>
+          <rect x="50" y="128" width="80" height="6" rx="3" fill="#c5cede"/>
+        </g>
+        <g transform="translate(150 98)">
+          <circle r="24" fill="none" stroke="#ff7b54" stroke-width="8"/>
+          <circle r="20" fill="#fff" opacity=".35"/>
+          <rect x="16" y="16" width="30" height="10" rx="5" transform="rotate(45 16 16)" fill="#ff7b54"/>
+        </g>
+        <text x="22" y="34" font-size="22">✨</text>
+        <text x="176" y="40" font-size="20">🚀</text>
+        <text x="16" y="168" font-size="20">🔭</text>
+        <text x="182" y="170" font-size="20">🎨</text>
+      </svg>
     </div>
   </header>
 
-  <nav class="filters wrap" aria-label="필터">
-    <div class="filter-row">
-      <label for="issue-select">발행일</label>
-      <select id="issue-select"></select>
-      <input id="search" type="search" placeholder="기사·과목·개념 검색" aria-label="검색">
-    </div>
-    <div class="filter-row chips" id="track-chips" role="group" aria-label="계열"></div>
-    <div class="filter-row small">
-      <button type="button" id="toggle-answers">예시 답안 모두 펼치기</button>
-      <a id="rss-link" href="feed.xml">RSS 구독</a>
+  <nav class="filters" aria-label="필터">
+    <div class="wrap">
+      <div class="filter-row">
+        <label for="issue-select" class="label">🗓️ 발행일</label>
+        <select id="issue-select"></select>
+        <input id="search" type="search" placeholder="🔍 기사·과목·개념 검색" aria-label="검색">
+      </div>
+      <div class="filter-row chips" id="track-chips" role="group" aria-label="계열"></div>
+      <div class="filter-row small">
+        <button type="button" id="toggle-answers">💡 예시 답안 모두 펼치기</button>
+        <a id="rss-link" href="feed.xml">📡 RSS 구독</a>
+      </div>
     </div>
   </nav>
 
@@ -34,8 +73,26 @@
   </main>
 
   <footer class="wrap site-footer">
-    <p>과목명은 2022 개정 교육과정 기준이며, 단원명은 교과서마다 다를 수 있습니다. 요약과 예시 답안은 AI가 초안을 쓰고 선생님이 검토했습니다. 기사 원문을 꼭 직접 읽어 보세요.</p>
+    <p>과목명은 2022 개정 교육과정 기준이며, 단원명은 교과서마다 다를 수 있습니다. 요약과 예시 답안은 AI가 초안을 쓰고 선생님이 검토했습니다. 예시 답안은 정답이 아니라 생각의 길잡이예요. 기사 원문도 꼭 직접 읽어 보세요.</p>
   </footer>
+
+  <dialog id="submit-dialog" aria-labelledby="submit-title">
+    <form id="submit-form" method="dialog">
+      <h2 id="submit-title">✍️ 내 답안 제출하기</h2>
+      <p class="dialog-q" id="submit-question"></p>
+      <div class="row2">
+        <label>학번<input name="studentId" required maxlength="10" inputmode="numeric" placeholder="예: 10315" autocomplete="off"></label>
+        <label>이름<input name="name" required maxlength="20" placeholder="홍길동" autocomplete="off"></label>
+      </div>
+      <label>내 답안<textarea name="answer" required rows="8" maxlength="3000" placeholder="예시 답안을 보기 전에 내 생각을 먼저 적어 보세요."></textarea></label>
+      <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="dialog-status" id="submit-status" role="status"></p>
+      <div class="dialog-actions">
+        <button type="button" id="submit-cancel">닫기</button>
+        <button type="submit" id="submit-send" class="primary">제출하기</button>
+      </div>
+    </form>
+  </dialog>
 
   <script src="assets/app.js"></script>
 </body>
