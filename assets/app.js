@@ -7,9 +7,20 @@
     { name: "연결하기", icon: "🔗" },
     { name: "확장하기", icon: "🚀" },
     { name: "비교하기", icon: "⚖️" },
+    { name: "따져보기", icon: "🧐" },
   ];
+  // 출처 카드: 기사 종류별 읽을 때 생각할 점 (원고의 links[].type)
+  const LINK_TYPES = {
+    "보도": "일어난 일을 전하는 기사예요. 누구의 말을 인용했는지 살펴보세요.",
+    "해설": "기자가 배경과 의미를 풀어 쓴 기사예요. 사실과 기자의 해석을 나눠 읽어 보세요.",
+    "칼럼": "글쓴이의 의견을 담은 글이에요. 주장과 근거를 구분해 보세요.",
+    "인터뷰": "한 사람의 생각을 중심으로 한 글이에요. 다른 입장은 무엇일지 떠올려 보세요.",
+    "보도자료": "기관이 직접 낸 글이에요. 그 기관에 유리한 내용 위주일 수 있어요.",
+    "연구 소개": "연구 결과를 쉽게 소개한 글이에요. 원래 논문과 연구 대상·규모를 확인해 보세요.",
+    "분석·보고서": "연구기관이 쓴 분석이에요. 누가 만든 기관인지, 어떤 자료를 썼는지 보세요.",
+  };
   const QINDEX = Object.fromEntries(QTYPES.map((t, i) => [t.name, i]));
-  const state = { date: null, tracks: new Set(), major: "", q: "", openAll: false };
+  const state = { view: "news", date: null, tracks: new Set(), major: "", q: "", openAll: false };
   let config = {};
   let tracks = [];
   let trackById = {};
@@ -41,6 +52,7 @@
 
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
+    state.view = p.get("view") === "act" ? "act" : "news";
     state.date = p.get("date") || null;
     state.tracks = new Set((p.get("track") || "").split(",").filter((t) => trackById[t]));
     state.major = p.get("major") || "";
@@ -49,6 +61,7 @@
 
   function writeHash() {
     const p = new URLSearchParams();
+    if (state.view === "act") p.set("view", "act");
     if (state.date) p.set("date", state.date);
     if (state.tracks.size) p.set("track", [...state.tracks].join(","));
     if (state.major) p.set("major", state.major);
@@ -149,13 +162,62 @@
       </li>`;
   }
 
+  // 출처 카드: 매체 종류(build.py 가 sources.json 에서 채움), 기사 종류, 유료 여부
+  function linkHTML(l) {
+    const tags = [
+      l.kind ? `<span class="src-tag">${esc(l.kind)}</span>` : "",
+      l.type ? `<span class="src-tag type" title="${esc(LINK_TYPES[l.type] || "")}">${esc(l.type)}</span>` : "",
+      l.paywall ? `<span class="src-tag paywall" title="구독해야 끝까지 읽을 수 있어요">유료</span>` : "",
+      l.lang === "en" ? '<span class="lang">EN</span>' : "",
+    ].join("");
+    return `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.title)}</a> <span class="muted">· ${esc(l.source)}</span>${tags}</li>`;
+  }
+
+  // 한 사건, 여러 시선: 같은 사건을 다룬 국내·해외 기사를 나란히 놓고 따져 보는 코너
+  function compareArticle(issue) {
+    const c = issue.compare;
+    if (!c) return null;
+    return { id: "compare", title: c.title, tracks: c.tracks || [], questions: [{ type: "따져보기", q: c.q, a: c.a, concepts: c.concepts }] };
+  }
+
+  function compareHTML(issue) {
+    const c = issue.compare;
+    if (!c || !matchesTracks(c.tracks)) return "";
+    const items = c.items.map((it) => `
+      <div class="cmp-item">
+        <div class="cmp-src">${esc(it.source)}${it.kind ? `<span class="src-tag">${esc(it.kind)}</span>` : ""}${it.lang === "en" ? '<span class="lang">EN</span>' : ""}</div>
+        <a class="cmp-title" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+        ${it.lead ? `<p class="cmp-lead">${esc(it.lead)}</p>` : ""}
+        ${it.focus ? `<p class="cmp-focus"><b>강조한 점</b> ${esc(it.focus)}</p>` : ""}
+      </div>`).join("");
+    return `
+      <section class="compare card" id="compare">
+        <div class="section-label">🔭 한 사건, 여러 시선</div>
+        <h3>${esc(c.title)}</h3>
+        ${c.intro ? `<p class="summary">${esc(c.intro)}</p>` : ""}
+        <div class="cmp-grid">${items}</div>
+        <ol class="questions">${questionHTML(compareArticle(issue).questions[0], compareArticle(issue), issue.date, 0)}</ol>
+      </section>`;
+  }
+
+  const HOWTO = `
+    <details class="howto"><summary>🔎 기사를 따져 읽는 세 가지 질문</summary>
+      <ol>
+        <li><b>누가 썼나?</b> 매체와 기사 종류(보도·해설·칼럼·보도자료·연구 소개)를 확인해요. 링크 옆 꼬리표에 마우스를 올리거나 눌러 보세요.</li>
+        <li><b>근거는 무엇인가?</b> 숫자와 인용이 어디서 왔는지, 원자료가 있는지 찾아봐요.</li>
+        <li><b>다른 곳은 뭐라고 하나?</b> 새 탭을 열어 같은 소식을 다른 매체에서 검색해 봐요.</li>
+      </ol>
+      <p class="muted">요약과 예시 답안은 AI가 초안을 쓰고 선생님이 검토했어요. 원문과 비교해 빠진 내용이 없는지 확인하는 것도 좋은 연습이에요.</p>
+    </details>`;
+
   function articleHTML(a, date, showDate) {
     const main = (a.tracks || [])[0];
     const badges = (a.tracks || []).map((t) => trackById[t]
       ? `<span class="badge" style="--c:${colorOf(t)}">${trackById[t].emoji} ${esc(trackById[t].name)}</span>` : "").join("");
     const dateBadge = showDate ? `<a class="badge date" href="#date=${date}">${issueLabel(issueByDate(date))}</a>` : "";
-    const links = (a.links || []).map((l) =>
-      `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a> <span class="muted">· ${esc(l.source)}</span>${l.lang === "en" ? '<span class="lang">EN</span>' : ""}</li>`).join("");
+    const links = (a.links || []).map(linkHTML).join("");
+    const evidence = (a.evidence || []).length ? `<div class="evidence">📊 기사가 근거로 쓴 원자료: ${a.evidence.map((e) =>
+      `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.label)}</a>`).join(" · ")}</div>` : "";
     const curr = (a.curriculum || []).map((c) =>
       `<div class="curr-item"><b>📗 ${esc(c.subject)}</b>${c.unit ? ` <span class="muted">› ${esc(c.unit)}</span>` : ""}<br>${(c.concepts || []).map((k) => `<span class="concept-tag">${esc(k)}</span>`).join("")}</div>`).join("");
     const majors = (a.majors || []).length ? `<div class="majors"><span class="muted">🎓 관련 전공</span>${a.majors.map((m) =>
@@ -176,6 +238,7 @@
         ${majors}
         <div class="section-label">📰 기사 읽기</div>
         <ul class="links">${links}</ul>
+        ${evidence}
         <div class="section-label">🏫 교과서와 연결</div>
         <div class="curr">${curr}</div>
         <div class="section-label">💭 탐구 질문</div>
@@ -241,8 +304,50 @@
       `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a> <span class="muted">· ${esc(r.source)}${r.note ? " · " + esc(r.note) : ""}</span>${r.lang === "en" ? '<span class="lang">EN</span>' : ""}</li>`).join("")}</ul></section>`;
   }
 
+  let activities = null; // data/activities.json (추가 활동 탭을 열 때 받는다)
+
+  function activityHTML(x) {
+    const tags = [x.skill, ...(x.subjects || [])].map((t) => `<span class="concept-tag">${esc(t)}</span>`).join("");
+    const submit = config.submitUrl ? `<button type="button" class="submit-btn" data-act="${esc(x.id)}">✍️ 활동 결과 제출</button>` : "";
+    return `
+      <article class="card activity" id="act-${esc(x.id)}">
+        <div class="card-head">
+          <div class="track-icon" aria-hidden="true">${esc(x.icon || "🧩")}</div>
+          <div>
+            <div class="act-provider muted">${esc(x.provider)}${x.lang === "en" ? '<span class="lang">EN</span>' : ""}</div>
+            <h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
+          </div>
+        </div>
+        <p class="summary">${esc(x.desc)}</p>
+        <div class="curr-item">${tags}</div>
+        ${x.when ? `<p class="muted act-when">🗓️ ${esc(x.when)}</p>` : ""}
+        <div class="section-label">✏️ 이렇게 해 봐요</div>
+        <ol class="act-prompts">${(x.prompts || []).map((q) => `<li>${esc(q)}</li>`).join("")}</ol>
+        <div class="q-actions"><a class="act-go" href="${esc(x.url)}" target="_blank" rel="noopener">👉 활동하러 가기</a>${submit}</div>
+      </article>`;
+  }
+
+  async function renderActivities(main, seq) {
+    try {
+      activities = activities || (await getJSON("data/activities.json")).activities;
+    } catch (e) {
+      if (seq === renderSeq) main.innerHTML = `<p class="empty">⚠️ 활동 목록을 불러오지 못했어요. 새로고침해 주세요.</p>`;
+      return;
+    }
+    if (seq !== renderSeq) return;
+    main.innerHTML = `
+      <section class="issue-head">
+        <h2>🧩 추가 활동</h2>
+        <p>뉴스를 더 깊이 읽고 싶은 친구를 위한 활동이에요. 매주 새 그래프와 사진, 사실 확인 사례가 올라와요. 질문에 답하고 선생님께 제출해 보세요.</p>
+      </section>
+      ${activities.map(activityHTML).join("")}`;
+  }
+
   async function render() {
     const main = $("#content");
+    document.body.classList.toggle("view-act", state.view === "act");
+    document.querySelectorAll("#view-tabs [data-view]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.view === state.view)));
+    if (state.view === "act") return renderActivities(main, ++renderSeq);
     if (!issues.length) { main.innerHTML = `<p class="empty">아직 발행된 호가 없습니다.</p>`; return; }
     const seq = ++renderSeq;
     const all = !state.date || state.date === "all";
@@ -273,8 +378,9 @@
           <h2>${esc(issue.title)}</h2>
           <p>${esc(issue.intro || "")}</p>
         </section>
-        ${!filtered && issue.headlines && issue.headlines.length ? `<section class="headlines"><h3>⚡ 이번 주 헤드라인</h3><ul>${issue.headlines.map((h) =>
-          `<li><a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.title)}</a> <span class="muted">· ${esc(h.source)}</span>${h.lang === "en" ? '<span class="lang">EN</span>' : ""}</li>`).join("")}</ul></section>` : ""}
+        ${!filtered && issue.headlines && issue.headlines.length ? `<section class="headlines"><h3>⚡ 이번 주 헤드라인</h3><ul>${issue.headlines.map(linkHTML).join("")}</ul></section>` : ""}
+        ${HOWTO}
+        ${state.major || state.q ? "" : compareHTML(issue)}
         ${arts.length ? arts.map((a) => articleHTML(a, issue.date, false)).join("") : `<p class="empty">🤔 조건에 맞는 기사가 없어요.</p>`}
         ${more}
         ${readingHTML(reading)}`;
@@ -300,11 +406,20 @@
 
   // ---- 답안 제출 ----
   async function openSubmit(btn) {
+    if (btn.dataset.act) {
+      const x = (activities || []).find((v) => v.id === btn.dataset.act);
+      if (x) showSubmit({ issue: { date: "추가활동" }, a: { id: "act-" + x.id, title: x.title, tracks: [] }, q: { type: "추가활동", q: (x.prompts || []).map((p, i) => `${i + 1}. ${p}`).join(" ") } });
+      return;
+    }
     const issue = await loadIssue(btn.dataset.date).catch(() => null);
-    const a = issue && issue.articles.find((x) => x.id === btn.dataset.article);
+    const a = issue && (btn.dataset.article === "compare" ? compareArticle(issue) : issue.articles.find((x) => x.id === btn.dataset.article));
     const q = a && a.questions[Number(btn.dataset.q)];
-    if (!q) return;
-    pending = { issue, a, q };
+    if (q) showSubmit({ issue, a, q });
+  }
+
+  function showSubmit(p) {
+    pending = p;
+    const { q } = p;
     const form = $("#submit-form");
     $("#submit-question").textContent = `[${q.type}] ${q.q}`;
     form.studentId.value = store.get("studentId");
@@ -400,6 +515,13 @@
     renderMajorSelect();
     update();
 
+    $("#view-tabs").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-view]");
+      if (!b || b.dataset.view === state.view) return;
+      state.view = b.dataset.view;
+      update();
+      window.scrollTo(0, 0);
+    });
     $("#issue-select").addEventListener("change", (e) => { state.date = e.target.value; update(); window.scrollTo(0, 0); });
     $("#track-chips").addEventListener("click", (e) => {
       const b = e.target.closest("button[data-track]");
