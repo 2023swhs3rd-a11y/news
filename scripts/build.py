@@ -23,7 +23,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "_site"
 SITE_URL = os.environ.get("SITE_URL", "https://2023swhs3rd-a11y.github.io/news/").rstrip("/") + "/"
-QTYPES = ["알아보기", "연결하기", "확장하기", "비교하기"]
+QTYPES = ["알아보기", "연결하기", "확장하기", "비교하기", "따져보기"]
+# 미디어 리터러시 1단계: 이 날짜 이후 호부터 따져보기 질문과 '한 사건, 여러 시선'(compare)이 필수
+MEDIA_FROM = "2026-11-02"
+LINK_TYPES = {"보도", "해설", "칼럼", "인터뷰", "보도자료", "연구 소개", "분석·보고서"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 SITE_TITLE = "봉일천고 1학년 뉴스 읽고 진로 확장하기"
 MIN_ANSWER = 250  # 예시 답안 최소 글자 수
@@ -50,6 +53,12 @@ def known_majors():
     return {m for k, v in load(DATA / "majors.json").items() if not k.startswith("_") for m in v}
 
 
+def source_meta():
+    """매체 이름 → {kind, paywall}. 사이트의 출처 카드에 쓴다."""
+    return {s["name"]: {"kind": s["kind"], **({"paywall": True} if s.get("paywall") else {})}
+            for s in load(DATA / "sources.json")["sources"]}
+
+
 def check_link(errors, where, link, title_key):
     url = link.get("url", "")
     if not url.startswith("https://") and not url.startswith("http://"):
@@ -59,7 +68,31 @@ def check_link(errors, where, link, title_key):
             errors.append(f"{where}: '{k}' 없음")
 
 
-def validate(path, track_ids, subjects, majors):
+def validate_activities():
+    """추가 활동 탭 목록(data/activities.json) 검사"""
+    errors, seen = [], set()
+    for i, x in enumerate(load(DATA / "activities.json")["activities"]):
+        w = f"activities.json [{i}] ({x.get('id', '?')})"
+        if not x.get("id") or x["id"] in seen:
+            errors.append(f"{w}: id 가 없거나 중복")
+        seen.add(x.get("id"))
+        check_link(errors, w, {**x, "source": x.get("provider")}, "title")
+        if not x.get("desc") or not x.get("prompts"):
+            errors.append(f"{w}: desc 또는 prompts 없음")
+    return errors
+
+
+def check_question(errors, w, q):
+    if not q.get("q") or not q.get("a"):
+        errors.append(f"{w}: '{q.get('type')}' 질문 또는 예시 답안(a)이 비어 있음")
+    elif len(q["a"]) < MIN_ANSWER:
+        errors.append(f"{w}: '{q.get('type')}' 예시 답안이 {len(q['a'])}자로 짧음 ({MIN_ANSWER}자 이상)")
+    for c in q.get("concepts", []) or []:
+        if not c.get("term") or not c.get("desc"):
+            errors.append(f"{w}: '{q.get('type')}' 개념 해설에 term/desc 가 비어 있음")
+
+
+def validate(path, track_ids, subjects, majors, sources):
     errors, warnings = [], []
     name = path.name
     try:
@@ -68,6 +101,7 @@ def validate(path, track_ids, subjects, majors):
         return None, [f"{name}: JSON 형식 오류 ({e})"], []
 
     date = issue.get("date", "")
+    media = date >= MEDIA_FROM
     if not DATE_RE.match(date) or path.stem != date:
         errors.append(f"{name}: date({date!r})가 파일명과 같은 YYYY-MM-DD 여야 함")
     for k in ("title", "period", "intro"):
@@ -108,22 +142,44 @@ def validate(path, track_ids, subjects, majors):
             errors.append(f"{w}: links 없음")
         for j, l in enumerate(a.get("links", [])):
             check_link(errors, f"{w} links[{j}]", l, "label")
+            if l.get("type") and l["type"] not in LINK_TYPES:
+                errors.append(f"{w} links[{j}]: 기사 종류 type 은 {sorted(LINK_TYPES)} 중 하나 ({l['type']!r})")
+            elif media and not l.get("type"):
+                warnings.append(f"{w} links[{j}]: 기사 종류(type) 없음")
+        for j, e in enumerate(a.get("evidence", [])):
+            check_link(errors, f"{w} evidence[{j}]", {**e, "source": e.get("source", "-")}, "label")
         if not a.get("curriculum"):
             errors.append(f"{w}: curriculum 없음")
         for c in a.get("curriculum", []):
             if c.get("subject") not in subjects:
                 warnings.append(f"{w}: 과목명 '{c.get('subject')}' 이 2022 개정 과목 목록에 없음")
         types = [q.get("type") for q in a.get("questions", [])]
-        if sorted(types, key=lambda t: QTYPES.index(t) if t in QTYPES else 99) != QTYPES:
-            errors.append(f"{w}: 질문은 {'/'.join(QTYPES)} 각 1개씩이어야 함 (현재 {types})")
+        need = QTYPES if media else QTYPES[:4]
+        if sorted(types, key=lambda t: QTYPES.index(t) if t in QTYPES else 99) != need:
+            errors.append(f"{w}: 질문은 {'/'.join(need)} 각 1개씩이어야 함 (현재 {types})")
         for q in a.get("questions", []):
-            if not q.get("q") or not q.get("a"):
-                errors.append(f"{w}: '{q.get('type')}' 질문 또는 예시 답안(a)이 비어 있음")
-            elif len(q["a"]) < MIN_ANSWER:
-                errors.append(f"{w}: '{q.get('type')}' 예시 답안이 {len(q['a'])}자로 짧음 ({MIN_ANSWER}자 이상)")
-            for c in q.get("concepts", []):
-                if not c.get("term") or not c.get("desc"):
-                    errors.append(f"{w}: '{q.get('type')}' 개념 해설에 term/desc 가 비어 있음")
+            check_question(errors, w, q)
+
+    c = issue.get("compare")
+    if c:
+        w = f"{name} compare"
+        for k in ("title", "q", "a"):
+            if not c.get(k):
+                errors.append(f"{w}: '{k}' 없음")
+        check_question(errors, w, {"type": "따져보기", **c})
+        items = c.get("items", [])
+        if len(items) < 2:
+            errors.append(f"{w}: items 는 같은 사건을 다룬 기사 2개 이상")
+        for j, it in enumerate(items):
+            check_link(errors, f"{w} items[{j}]", it, "title")
+        kinds = [sources.get(it.get("source"), {}).get("kind") for it in items]
+        if items and not ("해외 언론" in kinds and any(k and k != "해외 언론" for k in kinds)):
+            warnings.append(f"{w}: 국내 매체와 해외 언론(data/sources.json 의 kind)을 하나 이상씩 넣어야 함")
+        for t in c.get("tracks", []):
+            if t not in track_ids:
+                errors.append(f"{w}: 알 수 없는 계열 '{t}'")
+    elif media:
+        errors.append(f"{name}: '한 사건, 여러 시선'(compare)이 없음")
 
     missing = sorted(track_ids - covered)
     if missing:
@@ -184,7 +240,17 @@ def article_meta(a):
             "k": list(dict.fromkeys(keys))}
 
 
-def build(issues, tracks):
+def with_source_meta(iss, sources):
+    """사이트용 사본의 링크마다 매체 종류·유료 여부를 붙인다 (원고에는 쓰지 않아도 됨)"""
+    iss = json.loads(json.dumps(iss))
+    links = [l for a in iss["articles"] for l in a["links"]] + iss.get("headlines", []) + iss.get("compare", {}).get("items", [])
+    for l in links:
+        for k, v in sources.get(l.get("source"), {}).items():
+            l.setdefault(k, v)
+    return iss
+
+
+def build(issues, tracks, sources):
     if OUT.exists():
         shutil.rmtree(OUT)
     (OUT / "data" / "issues").mkdir(parents=True)
@@ -198,6 +264,7 @@ def build(issues, tracks):
     (OUT / "index.html").write_text(page, encoding="utf-8")
     shutil.copy(DATA / "tracks.json", OUT / "data" / "tracks.json")
     shutil.copy(DATA / "majors.json", OUT / "data" / "majors.json")
+    shutil.copy(DATA / "activities.json", OUT / "data" / "activities.json")
     (OUT / ".nojekyll").write_text("")
 
     # 호수: 가장 오래된 호가 제1호
@@ -208,7 +275,8 @@ def build(issues, tracks):
 
     index = {"issues": []}
     for iss in issues:
-        shutil.copy(DATA / "issues" / f"{iss['date']}.json", OUT / "data" / "issues" / f"{iss['date']}.json")
+        (OUT / "data" / "issues" / f"{iss['date']}.json").write_text(
+            json.dumps(with_source_meta(iss, sources), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         index["issues"].append({"date": iss["date"], "no": numbers[iss["date"]], "title": iss["title"], "period": iss.get("period", ""),
                                 "file": f"data/issues/{iss['date']}.json",
                                 "tracks": sorted({t for a in iss["articles"] for t in a["tracks"]}),
@@ -242,14 +310,16 @@ def main():
     track_ids = {t["id"] for t in tracks}
     subjects = known_subjects()
     majors = known_majors()
+    sources = source_meta()
     issues, all_errors = [], []
     for path in sorted((DATA / "issues").glob("*.json")):
-        issue, errors, warnings = validate(path, track_ids, subjects, majors)
+        issue, errors, warnings = validate(path, track_ids, subjects, majors, sources)
         for w in warnings:
             print("경고:", w)
         all_errors += errors
         if issue and not errors:
             issues.append(issue)
+    all_errors += validate_activities()
     for e in all_errors:
         print("오류:", e)
     if all_errors:
@@ -258,7 +328,7 @@ def main():
     issues.sort(key=lambda i: i["date"], reverse=True)
     print(f"검사 통과: {len(issues)}개 호")
     if not args.check:
-        build(issues, tracks)
+        build(issues, tracks, sources)
         print(f"_site/ 생성 완료 ({SITE_URL})")
 
 

@@ -160,24 +160,28 @@
         {
           "label": "\"2091명 추가 유출 확인\" 국민은행, 해킹 피해자 2210명으로 늘었다",
           "source": "경향신문",
+          "type": "보도",
           "url": "https://www.khan.co.kr/article/202610261921001",
           "lang": "ko"
         },
         {
           "label": "보험사 최초 해킹 뚫렸다, 미래에셋생명 개인정보 유출 사고에 금감원 긴급 점검",
           "source": "경향신문",
+          "type": "보도",
           "url": "https://www.khan.co.kr/article/202610261921011",
           "lang": "ko"
         },
         {
           "label": "KB Kookmin Bank finds 2,091 more people affected by data leak",
           "source": "Korea Herald",
+          "type": "보도",
           "url": "https://www.koreaherald.com/article/10915394",
           "lang": "en"
         },
         {
           "label": "연 이자율 60% 초과 불법 사채 원금·이자 무효, 금감원 '무효확인서' 형사 재판 첫 활용",
           "source": "경향신문",
+          "type": "보도",
           "url": "https://www.khan.co.kr/article/202610262048001",
           "lang": "ko"
         }
@@ -287,12 +291,14 @@
         {
           "label": "Three giant black holes discovered in a galaxy from the dawn of time",
           "source": "ScienceDaily",
+          "type": "연구 소개",
           "url": "https://www.sciencedaily.com/releases/2026/10/261024222000.htm",
           "lang": "en"
         },
         {
           "label": "Astronomers may have discovered the first moon beyond our solar system",
           "source": "ScienceDaily",
+          "type": "연구 소개",
           "url": "https://www.sciencedaily.com/releases/2026/10/261023023736.htm",
           "lang": "en"
         }
@@ -403,6 +409,7 @@
         {
           "label": "Scientists overcome a hidden obstacle to more powerful quantum computers",
           "source": "ScienceDaily",
+          "type": "연구 소개",
           "url": "https://www.sciencedaily.com/releases/2026/10/261024222024.htm",
           "lang": "en"
         },
@@ -415,6 +422,7 @@
         {
           "label": "Samsung may have overtaken SK hynix in HBM revenue, analysis suggests",
           "source": "Korea Herald",
+          "type": "보도",
           "url": "https://www.koreaherald.com/article/10915040",
           "lang": "en"
         }
@@ -528,18 +536,21 @@
         {
           "label": "A simple liquid can stop cavities without drilling, major study confirms",
           "source": "ScienceDaily",
+          "type": "연구 소개",
           "url": "https://www.sciencedaily.com/releases/2026/10/261025222339.htm",
           "lang": "en"
         },
         {
           "label": "Scientists reveal the hidden danger of missing blood pressure medication",
           "source": "ScienceDaily",
+          "type": "연구 소개",
           "url": "https://www.sciencedaily.com/releases/2026/10/261024222028.htm",
           "lang": "en"
         },
         {
           "label": "Scientists discover how pancreatic cancer rewrites its DNA to escape treatment",
           "source": "ScienceDaily",
+          "type": "연구 소개",
           "url": "https://www.sciencedaily.com/releases/2026/10/261024221849.htm",
           "lang": "en"
         }
@@ -648,12 +659,14 @@
         {
           "label": "A snapshot of America's schools: Trends and global comparisons",
           "source": "Brookings",
+          "type": "분석·보고서",
           "url": "https://www.brookings.edu/articles/a-snapshot-of-americas-schools-trends-and-global-comparisons/",
           "lang": "en"
         },
         {
           "label": "'Title I for rich kids' and other predictions for the Federal Scholarship Tax Credit",
           "source": "Brookings",
+          "type": "분석·보고서",
           "url": "https://www.brookings.edu/articles/title-i-for-rich-kids-and-other-predictions-for-the-federal-scholarship-tax-credit/",
           "lang": "en"
         }
@@ -876,18 +889,21 @@
         {
           "label": "폐플라스틱 70% 태워진다, 환경단체 \"플라스틱 감축 목표 다시 세워야\"",
           "source": "경향신문",
+          "type": "보도",
           "url": "https://www.khan.co.kr/article/202610261643001",
           "lang": "ko"
         },
         {
           "label": "'Eco-friendly' paper straws worse for environment than plastic: study",
           "source": "Korea Herald",
+          "type": "보도",
           "url": "https://www.koreaherald.com/article/10911494",
           "lang": "en"
         },
         {
           "label": "The Race for Malaysia's Rare Earths: An Indo-Pacific Strategy",
           "source": "CSIS",
+          "type": "분석·보고서",
           "url": "https://www.csis.org/analysis/race-malaysias-rare-earths-indo-pacific-strategy",
           "lang": "en"
         }

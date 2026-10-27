@@ -1,0 +1,90 @@
+{
+  "_note": "사이트 '추가 활동' 탭에 보이는 외부 활동 목록. 순서대로 보인다. prompts 는 학생이 답할 질문이며, 사이트에서 답을 선생님께 제출할 수 있다.",
+  "activities": [
+    {
+      "id": "nyt-graph",
+      "title": "What's Going On in This Graph?",
+      "provider": "The New York Times Learning Network · 미국통계학회",
+      "url": "https://www.nytimes.com/column/whats-going-on-in-this-graph",
+      "lang": "en",
+      "icon": "📈",
+      "skill": "그래프 읽기",
+      "subjects": ["확률과 통계", "영어"],
+      "when": "매주 목요일(미국 시간) 새 그래프, 금요일에 그래프가 실린 기사와 해설 공개",
+      "desc": "뉴스에 실린 그래프 하나를 제목과 설명 없이 보여 줘요. 무엇이 보이는지, 무엇이 궁금한지 쓰고, 다음 날 공개되는 실제 기사와 비교해요.",
+      "prompts": [
+        "이 그래프에서 무엇이 보이나요? (숫자, 추세, 가장 크거나 작은 값)",
+        "무엇이 궁금한가요? 그래프만으로는 알 수 없는 것은 무엇인가요?",
+        "이 그래프의 내용이 우리 학교나 지역과 어떤 관련이 있을까요?",
+        "그래프의 내용을 잘 담은 기사 제목을 붙여 보세요."
+      ]
+    },
+    {
+      "id": "nyt-picture",
+      "title": "What's Going On in This Picture?",
+      "provider": "The New York Times Learning Network",
+      "url": "https://www.nytimes.com/column/learning-whats-going-on-in-this-picture",
+      "lang": "en",
+      "icon": "📷",
+      "skill": "사진·이미지 읽기",
+      "subjects": ["공통국어1", "영어"],
+      "when": "매주 새 사진",
+      "desc": "설명 없이 뉴스 사진 한 장을 보여 줘요. 사진 속 단서로 무슨 일인지 추리한 뒤, 실제 기사와 비교해 보며 사진만으로 판단할 때의 한계를 느껴 봐요.",
+      "prompts": [
+        "이 사진에서 무슨 일이 일어나고 있나요?",
+        "그렇게 생각한 단서는 사진의 어디에 있나요?",
+        "실제 기사를 확인한 뒤, 내 추리와 무엇이 같고 달랐나요?"
+      ]
+    },
+    {
+      "id": "nyt-learning",
+      "title": "The Learning Network: Student Opinion·Word of the Day·퀴즈",
+      "provider": "The New York Times",
+      "url": "https://www.nytimes.com/section/learning",
+      "lang": "en",
+      "icon": "🗽",
+      "skill": "의견 쓰기·영어 어휘",
+      "subjects": ["영어", "영어 독해와 작문"],
+      "when": "매일",
+      "desc": "학생을 위한 뉴욕타임스 교육 섹션이에요. 그날의 뉴스로 만든 토론 질문(Student Opinion), 오늘의 단어, 뉴스 퀴즈가 있고 따로 가입하지 않아도 볼 수 있어요.",
+      "prompts": [
+        "오늘의 Student Opinion 질문 하나를 골라 질문을 우리말로 옮겨 적어 보세요.",
+        "그 질문에 대한 내 생각을 근거와 함께 써 보세요."
+      ]
+    },
+    {
+      "id": "rumorguard",
+      "title": "RumorGuard",
+      "provider": "News Literacy Project",
+      "url": "https://rumorguard.org",
+      "lang": "en",
+      "icon": "🕵️",
+      "skill": "사실 확인",
+      "subjects": ["통합사회1", "정보"],
+      "when": "수시로 새 사례",
+      "desc": "온라인에 퍼진 소문과 가짜 사진·영상을 하나씩 검증해 보여 주는 곳이에요. 어떤 단서로 진짜와 가짜를 가려냈는지 따라가 볼 수 있어요.",
+      "prompts": [
+        "사례 하나를 골라, 어떤 소문이 퍼졌는지 한 문장으로 적어 보세요.",
+        "검증한 사람은 어떤 단서와 방법으로 사실을 확인했나요?",
+        "비슷한 소문을 친구에게 받았다면 공유하기 전에 무엇을 확인하겠어요?"
+      ]
+    },
+    {
+      "id": "kosis-cardnews",
+      "title": "KOSIS 통계 카드뉴스",
+      "provider": "국가통계포털(KOSIS)",
+      "url": "https://kosis.kr/easyViewStatis/cardNewsList.do",
+      "lang": "ko",
+      "icon": "📊",
+      "skill": "통계 읽기",
+      "subjects": ["확률과 통계", "통합사회1"],
+      "when": "수시로 새 카드뉴스",
+      "desc": "국가 통계를 카드뉴스로 쉽게 풀어 놓은 곳이에요. 숫자가 어디서 왔는지 확인하는 습관을 길러요.",
+      "prompts": [
+        "카드뉴스 하나를 골라 가장 눈에 띈 숫자와 그 뜻을 적어 보세요.",
+        "이 숫자를 기사 제목으로 쓴다면 어떻게 쓰겠어요? 과장 없이 써 보세요.",
+        "이 통계를 다른 방식(다른 해, 다른 지역, 다른 집단)으로 비교해 보고 싶다면 무엇을 찾아보겠어요?"
+      ]
+    }
+  ]
+}
