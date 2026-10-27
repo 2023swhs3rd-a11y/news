@@ -339,3 +339,15 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
   .g-choices { grid-template-columns: minmax(0, 1fr); }
 }
 @media (min-width: 1200px) { #content > .card.games { grid-column: 1 / -1; } }
+
+/* 데이터로 더 보기 (빅카인즈 개별 과제) */
+.explore { margin-top: 16px; padding: 14px 16px; border: 1px solid var(--line); border-left: 3px solid var(--c, var(--accent)); border-radius: 0 10px 10px 0; background: var(--subtle); }
+.explore-head { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.explore-head .muted { font-size: .82rem; }
+.explore-kw { margin: 8px 0 4px; font-size: .9rem; color: var(--muted); }
+.kw { margin: 2px 4px 2px 0; padding: 2px 10px; border-radius: 6px; font-size: .9rem; font-weight: 500; color: var(--text); background: var(--surface); }
+.kw::after { content: " ⧉"; color: var(--muted); font-size: .8em; }
+.kw.copied::after { content: " 복사됨"; color: var(--accent); }
+.explore-tasks { margin: 6px 0; padding-left: 20px; font-size: .95rem; }
+.explore-tasks li { margin: 3px 0; }
+.explore-note { font-size: .82rem; margin: 6px 0 0; }

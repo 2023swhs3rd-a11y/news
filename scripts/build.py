@@ -121,6 +121,9 @@ def validate(path, track_ids, subjects, majors, sources):
     if not articles:
         errors.append(f"{name}: articles 가 비어 있음")
     seen_ids, covered = set(), set()
+    explored = sum(1 for a in articles if a.get("explore"))
+    if explored > len(articles) // 2:
+        warnings.append(f"{name}: '데이터로 더 보기'(explore)가 {explored}개 기사에 있음. 데이터로 볼 만한 기사에만 붙임 (절반 이하 권장)")
     for i, a in enumerate(articles):
         w = f"{name} articles[{i}] ({a.get('id', '?')})"
         if not a.get("id") or a["id"] in seen_ids:
@@ -153,6 +156,13 @@ def validate(path, track_ids, subjects, majors, sources):
                 errors.append(f"{w} links[{j}]: 기사 종류 type 은 {sorted(LINK_TYPES)} 중 하나 ({l['type']!r})")
             elif media and not l.get("type"):
                 warnings.append(f"{w} links[{j}]: 기사 종류(type) 없음")
+        if "explore" in a:
+            x = a["explore"] or {}
+            kws, tasks = x.get("keywords") or [], x.get("tasks") or []
+            if not 1 <= len(kws) <= 2 or not all(isinstance(k, str) and k.strip() for k in kws):
+                errors.append(f"{w} explore: 검색어(keywords)는 1~2개")
+            if not 2 <= len(tasks) <= 3 or not all(isinstance(t, str) and t.strip() for t in tasks):
+                errors.append(f"{w} explore: 과제(tasks)는 2~3개")
         for j, e in enumerate(a.get("evidence", [])):
             check_link(errors, f"{w} evidence[{j}]", {**e, "source": e.get("source", "-")}, "label")
         if not a.get("curriculum"):
