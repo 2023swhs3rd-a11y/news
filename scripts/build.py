@@ -29,7 +29,9 @@ MEDIA_FROM = "2026-11-02"
 LINK_TYPES = {"보도", "해설", "칼럼", "인터뷰", "보도자료", "연구 소개", "분석·보고서"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 SITE_TITLE = "봉일천고 1학년 뉴스 읽고 진로 확장하기"
-MIN_ANSWER = 250  # 예시 답안 최소 글자 수
+MIN_ANSWER = 450  # 예시 답안 최소 글자 수
+MIN_CONCEPTS = 2  # 질문마다 개념 해설 최소 개수
+MIN_CONCEPT_DESC = 70  # 개념 해설 정의 최소 글자 수
 MAX_MAJORS = 4  # 기사당 세부 전공 태그 수
 
 
@@ -87,9 +89,14 @@ def check_question(errors, w, q):
         errors.append(f"{w}: '{q.get('type')}' 질문 또는 예시 답안(a)이 비어 있음")
     elif len(q["a"]) < MIN_ANSWER:
         errors.append(f"{w}: '{q.get('type')}' 예시 답안이 {len(q['a'])}자로 짧음 ({MIN_ANSWER}자 이상)")
-    for c in q.get("concepts", []) or []:
+    concepts = q.get("concepts", []) or []
+    if len(concepts) < MIN_CONCEPTS:
+        errors.append(f"{w}: '{q.get('type')}' 개념 해설이 {len(concepts)}개 ({MIN_CONCEPTS}개 이상)")
+    for c in concepts:
         if not c.get("term") or not c.get("desc"):
             errors.append(f"{w}: '{q.get('type')}' 개념 해설에 term/desc 가 비어 있음")
+        elif len(c["desc"]) < MIN_CONCEPT_DESC:
+            errors.append(f"{w}: '{q.get('type')}' 개념 해설 '{c['term']}' 정의가 {len(c['desc'])}자로 짧음 ({MIN_CONCEPT_DESC}자 이상)")
 
 
 def validate(path, track_ids, subjects, majors, sources):
