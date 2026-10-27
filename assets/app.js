@@ -210,6 +210,23 @@
       <p class="muted">요약과 예시 답안은 AI가 초안을 쓰고 선생님이 검토했어요. 원문과 비교해 빠진 내용이 없는지 확인하는 것도 좋은 연습이에요.</p>
     </details>`;
 
+  // 데이터로 더 보기: 빅카인즈에서 학생이 직접 검색·분석해 보는 개별 과제 (원고의 explore, 데이터로 볼 만한 기사에만)
+  const BIGKINDS = "https://www.bigkinds.or.kr/";
+  function exploreHTML(a, date) {
+    const x = a.explore;
+    if (!x || !(x.keywords || []).length) return "";
+    const submit = config.submitUrl
+      ? `<button type="button" class="submit-btn" data-date="${date}" data-explore="${esc(a.id)}">결과 제출</button>` : "";
+    return `
+      <div class="explore">
+        <div class="explore-head"><b>데이터로 더 보기</b><span class="muted">개별 과제 · 빅카인즈(한국언론진흥재단)</span></div>
+        <p class="explore-kw">검색어 ${x.keywords.map((k) => `<button type="button" class="kw" data-copy="${esc(k)}" title="눌러서 복사">${esc(k)}</button>`).join(" ")}</p>
+        <ol class="explore-tasks">${(x.tasks || []).map((t) => `<li>${esc(t)}</li>`).join("")}</ol>
+        <p class="muted explore-note">검색어를 빅카인즈 뉴스 검색에 넣고 기간을 최근 5년으로 정한 뒤, 뉴스 분석의 키워드 트렌드·연관어 분석을 열어 보세요. 분석 화면을 쓸 수 없으면 검색 결과의 기사 수와 제목만으로 답해도 돼요.</p>
+        <div class="q-actions"><a class="act-go" href="${BIGKINDS}" target="_blank" rel="noopener">빅카인즈 열기 ↗</a>${submit}</div>
+      </div>`;
+  }
+
   function articleHTML(a, date, showDate) {
     const main = (a.tracks || [])[0];
     const badges = (a.tracks || []).map((t) => trackById[t]
@@ -234,6 +251,7 @@
         <div class="section-label">기사 읽기</div>
         <ul class="links">${links}</ul>
         ${evidence}
+        ${exploreHTML(a, date)}
         <div class="section-label">교과서와 연결</div>
         <ul class="curr">${curr}</ul>
         <div class="section-label">탐구 질문</div>
@@ -426,6 +444,11 @@
       return;
     }
     const issue = await loadIssue(btn.dataset.date).catch(() => null);
+    if (btn.dataset.explore) {
+      const art = issue && issue.articles.find((x) => x.id === btn.dataset.explore);
+      if (art && art.explore) showSubmit({ issue, a: art, q: { type: "데이터 탐구", q: `\n검색어: ${art.explore.keywords.join(", ")}\n` + art.explore.tasks.map((t, i) => `${i + 1}. ${t}`).join("\n") } });
+      return;
+    }
     const a = issue && (btn.dataset.article === "compare" ? compareArticle(issue) : issue.articles.find((x) => x.id === btn.dataset.article));
     const q = a && a.questions[Number(btn.dataset.q)];
     if (q) showSubmit({ issue, a, q });
@@ -558,6 +581,13 @@
       $("#toggle-answers").textContent = state.openAll ? "예시 답안 모두 접기" : "예시 답안 모두 펼치기";
     });
     $("#content").addEventListener("click", (e) => {
+      const kw = e.target.closest(".kw[data-copy]");
+      if (kw && navigator.clipboard) {
+        navigator.clipboard.writeText(kw.dataset.copy).then(() => {
+          kw.classList.add("copied");
+          setTimeout(() => kw.classList.remove("copied"), 1500);
+        }).catch(() => {});
+      }
       const b = e.target.closest(".submit-btn");
       if (b) openSubmit(b);
       const j = e.target.closest("a.jump");
