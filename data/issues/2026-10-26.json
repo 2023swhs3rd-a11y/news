@@ -174,8 +174,13 @@
         }
       ],
       "image": {
-        "query": "Seoul skyline night",
-        "alt": "서울 도심의 야경"
+        "alt": "서울 도심의 야경",
+        "file": "File:Seoul Skyline Night 2018.jpg",
+        "src": "assets/img/2026-10-26/hum-youth-belonging.jpg",
+        "credit": "mauveine.kim",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Seoul_Skyline_Night_2018.jpg"
       }
     },
     {
@@ -464,8 +469,13 @@
         }
       ],
       "image": {
-        "query": "galaxy merger Hubble",
-        "alt": "허블 우주망원경이 찍은 충돌하는 은하"
+        "alt": "허블 우주망원경이 찍은 충돌하는 은하",
+        "file": "File:Andromeda Galaxy Hubble M31Mosaic 2025 42208x9870.jpg",
+        "src": "assets/img/2026-10-26/sci-three-black-holes.jpg",
+        "credit": "NASA, ESA, Benjamin F. Williams (UWashington), Zhuo Chen (UWashington), L. Clifton Johnson (Northwestern); Image Process",
+        "license": "Public domain",
+        "license_url": "",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Andromeda_Galaxy_Hubble_M31Mosaic_2025_42208x9870.jpg"
       }
     },
     {
@@ -614,8 +624,13 @@
         }
       ],
       "image": {
-        "query": "silicon wafer",
-        "alt": "반도체 회로가 새겨진 실리콘 웨이퍼"
+        "alt": "반도체 회로가 새겨진 실리콘 웨이퍼",
+        "file": "File:Wafer 20110212.jpg",
+        "src": "assets/img/2026-10-26/eng-silicon-qubits.jpg",
+        "credit": "Sangitiana Fararano",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wafer_20110212.jpg"
       }
     },
     {
@@ -758,8 +773,13 @@
         }
       ],
       "image": {
-        "query": "toothbrush toothpaste",
-        "alt": "칫솔과 치약"
+        "alt": "칫솔과 치약",
+        "file": "File:Toothbrush, Toothpaste, Dental Care (571741).jpg",
+        "src": "assets/img/2026-10-26/med-cavity-liquid.jpg",
+        "credit": "Steve Buissinne, South Africa",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Toothbrush,_Toothpaste,_Dental_Care_(571741).jpg"
       }
     },
     {
@@ -900,8 +920,13 @@
         }
       ],
       "image": {
-        "query": "empty classroom desks",
-        "alt": "책상이 놓인 빈 교실"
+        "alt": "책상이 놓인 빈 교실",
+        "file": "File:Rows of Desks in Lecture Theatre.jpg",
+        "src": "assets/img/2026-10-26/edu-school-snapshot.jpg",
+        "credit": "Paul The Writer",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Rows_of_Desks_in_Lecture_Theatre.jpg"
       }
     },
     {
@@ -1033,8 +1058,13 @@
         }
       ],
       "image": {
-        "query": "cinema seats auditorium",
-        "alt": "영화관 객석"
+        "alt": "영화관 객석",
+        "file": "File:Strood 510 seat Queens Cinema auditorium and proscenium arch 5708.jpg",
+        "src": "assets/img/2026-10-26/art-access-kpop.jpg",
+        "credit": "ClemRutter",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Strood_510_seat_Queens_Cinema_auditorium_and_proscenium_arch_5708.jpg"
       }
     },
     {
@@ -1180,8 +1210,13 @@
         }
       ],
       "image": {
-        "query": "plastic waste bales recycling",
-        "alt": "압축해 묶은 폐플라스틱 더미"
+        "alt": "압축해 묶은 폐플라스틱 더미",
+        "file": "File:Bales of PET bottles closeup.jpg",
+        "src": "assets/img/2026-10-26/common-plastic-rare-earth.jpg",
+        "credit": "Grendelkhan",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bales_of_PET_bottles_closeup.jpg"
       }
     }
   ],
