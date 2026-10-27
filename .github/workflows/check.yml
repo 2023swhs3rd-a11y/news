@@ -1,0 +1,15 @@
+name: 원고 검사
+
+on:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 호 형식 검사 (계열, 네 가지 질문, 예시 답안, 링크)
+        run: python scripts/build.py --check
