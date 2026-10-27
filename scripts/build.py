@@ -7,6 +7,7 @@
 검사에 실패하면 종료 코드 1. 과목명이 data/curriculum.json 에, 전공 태그가 data/majors.json 에 없으면 경고만 한다.
 """
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -173,13 +174,28 @@ def article_html(a):
     return f"<h3>{e(a['title'])}</h3><p>{e(a['summary'])}</p>{majors}<ul>{links}</ul><p>교과 연결</p><ul>{curr}</ul><ol>{qs}</ol>"
 
 
+def article_meta(a):
+    """첫 화면에서 모든 호를 받지 않고도 추천·전공 집계를 할 수 있게 하는 기사 요약 (app.js keywords() 와 같은 키)"""
+    keys = [f"t:{t}" for t in a["tracks"]] + [f"m:{m}" for m in a.get("majors", [])]
+    for c in a["curriculum"]:
+        keys += [f"s:{c['subject']}"] + [f"k:{k}" for k in c.get("concepts", [])]
+    keys += [f"k:{c['term']}" for q in a["questions"] for c in q.get("concepts", [])]
+    return {"id": a["id"], "title": a["title"], "tracks": a["tracks"], "majors": a.get("majors", []),
+            "k": list(dict.fromkeys(keys))}
+
+
 def build(issues, tracks):
     if OUT.exists():
         shutil.rmtree(OUT)
     (OUT / "data" / "issues").mkdir(parents=True)
     (OUT / "feeds").mkdir()
-    shutil.copy(ROOT / "index.html", OUT / "index.html")
     shutil.copytree(ROOT / "assets", OUT / "assets")
+    # 배포 직후 브라우저에 남은 옛 app.js·style.css 를 쓰지 않도록 내용 해시를 붙인다
+    page = (ROOT / "index.html").read_text(encoding="utf-8")
+    for asset in ("assets/app.js", "assets/style.css"):
+        digest = hashlib.sha1((ROOT / asset).read_bytes()).hexdigest()[:8]
+        page = page.replace(f'"{asset}"', f'"{asset}?v={digest}"')
+    (OUT / "index.html").write_text(page, encoding="utf-8")
     shutil.copy(DATA / "tracks.json", OUT / "data" / "tracks.json")
     shutil.copy(DATA / "majors.json", OUT / "data" / "majors.json")
     (OUT / ".nojekyll").write_text("")
@@ -195,8 +211,9 @@ def build(issues, tracks):
         shutil.copy(DATA / "issues" / f"{iss['date']}.json", OUT / "data" / "issues" / f"{iss['date']}.json")
         index["issues"].append({"date": iss["date"], "no": numbers[iss["date"]], "title": iss["title"], "period": iss.get("period", ""),
                                 "file": f"data/issues/{iss['date']}.json",
-                                "tracks": sorted({t for a in iss["articles"] for t in a["tracks"]})})
-    (OUT / "data" / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
+                                "tracks": sorted({t for a in iss["articles"] for t in a["tracks"]}),
+                                "articles": [article_meta(a) for a in iss["articles"]]})
+    (OUT / "data" / "index.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     items = []
     for iss in issues[:30]:
