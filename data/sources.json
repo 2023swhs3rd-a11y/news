@@ -13,7 +13,7 @@
     {"name": "The Washington Post", "lang": "en", "kind": "해외 언론", "type": "gnews", "query": "site:washingtonpost.com", "hl": "en"},
     {"name": "ScienceDaily", "lang": "en", "kind": "과학 매체", "type": "rss", "urls": ["https://www.sciencedaily.com/rss/top/science.xml", "https://www.sciencedaily.com/rss/top/technology.xml", "https://www.sciencedaily.com/rss/top/health.xml"]},
     {"name": "KDI", "lang": "ko", "kind": "싱크탱크", "type": "kdi", "urls": ["https://www.kdi.re.kr/research/reportList"]},
-    {"name": "Brookings", "lang": "en", "kind": "싱크탱크", "type": "rss", "urls": ["https://www.brookings.edu/feed/"]},
+    {"name": "Brookings", "lang": "en", "kind": "싱크탱크", "type": "gnews", "query": "site:brookings.edu/articles", "hl": "en"},
     {"name": "CSIS", "lang": "en", "kind": "싱크탱크", "type": "gnews", "query": "site:csis.org/analysis", "hl": "en"}
   ]
 }
