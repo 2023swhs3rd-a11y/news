@@ -238,6 +238,19 @@
       </div>`;
   }
 
+  // 기사 이미지: 자유 이용 라이선스 사진만 싣고, 지은이·라이선스·원본 링크를 사진 아래에 밝힌다
+  function figureHTML(img) {
+    if (!img || !img.src) return "";
+    const lic = img.license_url
+      ? `<a href="${esc(img.license_url)}" target="_blank" rel="noopener license">${esc(img.license)}</a>` : esc(img.license);
+    return `
+        <figure class="art-img">
+          <img src="${esc(img.src)}" alt="${esc(img.alt || "")}" loading="lazy" decoding="async">
+          <figcaption>사진: ${esc(img.credit)} · ${lic} · <a href="${esc(img.source_url)}" target="_blank" rel="noopener">원본</a>
+            <span class="muted">(기사 속 장면이 아닌 이해를 돕는 사진)</span></figcaption>
+        </figure>`;
+  }
+
   function articleHTML(a, date, showDate) {
     const main = (a.tracks || [])[0];
     const badges = (a.tracks || []).map((t) => trackById[t]
@@ -256,6 +269,7 @@
     return `
       <article class="card" id="${esc(a.id)}" style="--c:${colorOf(main)}">
         <div class="badges">${dateBadge}${badges}</div>
+        ${figureHTML(a.image)}
         <h3>${esc(a.title)}</h3>
         <p class="summary">${esc(a.summary)}</p>
         ${majors}

@@ -172,7 +172,16 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "alt": "서울 도심의 야경",
+        "file": "File:Seoul Skyline Night 2018.jpg",
+        "src": "assets/img/2026-10-26/hum-youth-belonging.jpg",
+        "credit": "mauveine.kim",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Seoul_Skyline_Night_2018.jpg"
+      }
     },
     {
       "id": "biz-bank-hacking",
@@ -326,7 +335,16 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "alt": "노트북 위에 놓인 열린 자물쇠",
+        "file": "File:Open lock on laptop (49919519837).jpg",
+        "src": "assets/img/2026-10-26/biz-bank-hacking.jpg",
+        "credit": "Yuri Samoilov",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Open_lock_on_laptop_(49919519837).jpg"
+      }
     },
     {
       "id": "sci-three-black-holes",
@@ -454,7 +472,16 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "alt": "허블 우주망원경이 찍은, 서로 끌어당기며 합쳐지는 은하",
+        "file": "File:NGC2207+IC2163.jpg",
+        "src": "assets/img/2026-10-26/sci-three-black-holes.jpg",
+        "credit": "NASA/ESA and The Hubble Heritage Team (STScI)",
+        "license": "Public domain",
+        "license_url": "",
+        "source_url": "https://commons.wikimedia.org/wiki/File:NGC2207%2BIC2163.jpg"
+      }
     },
     {
       "id": "eng-silicon-qubits",
@@ -600,7 +627,16 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "alt": "반도체 회로가 새겨진 실리콘 웨이퍼",
+        "file": "File:Wafer 20110212.jpg",
+        "src": "assets/img/2026-10-26/eng-silicon-qubits.jpg",
+        "credit": "Sangitiana Fararano",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wafer_20110212.jpg"
+      }
     },
     {
       "id": "med-cavity-liquid",
@@ -740,7 +776,16 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "alt": "치과 진료 기구",
+        "file": "File:Warwick james dental elevators.jpg",
+        "src": "assets/img/2026-10-26/med-cavity-liquid.jpg",
+        "credit": "Sadandy",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Warwick_james_dental_elevators.jpg"
+      }
     },
     {
       "id": "edu-school-snapshot",
@@ -878,7 +923,16 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "alt": "강의실에 줄지어 놓인 빈 책상",
+        "file": "File:Rows of Desks in Lecture Theatre.jpg",
+        "src": "assets/img/2026-10-26/edu-school-snapshot.jpg",
+        "credit": "Paul The Writer",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Rows_of_Desks_in_Lecture_Theatre.jpg"
+      }
     },
     {
       "id": "art-access-kpop",
@@ -1007,7 +1061,16 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "alt": "비어 있는 영화관 객석",
+        "file": "File:Empty Movie Theater Seats (54279616742).jpg",
+        "src": "assets/img/2026-10-26/art-access-kpop.jpg",
+        "credit": "Eden, Janine and Jim from New York City",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Empty_Movie_Theater_Seats_(54279616742).jpg"
+      }
     },
     {
       "id": "common-plastic-rare-earth",
@@ -1150,7 +1213,16 @@
             }
           ]
         }
-      ]
+      ],
+      "image": {
+        "alt": "압축해 묶은 폐플라스틱 더미",
+        "file": "File:Bales of PET bottles closeup.jpg",
+        "src": "assets/img/2026-10-26/common-plastic-rare-earth.jpg",
+        "credit": "Grendelkhan",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bales_of_PET_bottles_closeup.jpg"
+      }
     }
   ],
   "reading": [
