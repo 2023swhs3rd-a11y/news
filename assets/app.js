@@ -299,6 +299,7 @@
   }
 
   async function jumpTo(d, id) {
+    state.view = "news";
     state.date = d;
     state.tracks.clear();
     state.major = "";
@@ -311,10 +312,40 @@
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  function readingHTML(list) {
+  // 더 읽을거리: 연구소 보고서마다 발간일·종류와 '읽기 길잡이'(어디부터, 생각할 질문, 낱말)를 붙인다
+  const WORD_DIC = "https://eiec.kdi.re.kr/material/wordDic.do";
+  const READ_HOWTO = `
+    <details class="howto read-howto"><summary>연구소 보고서, 이렇게 읽어요</summary>
+      <ol>
+        <li><b>누가, 언제 썼나</b> 기관과 발간일부터 봐요. 몇 달 전 보고서라면 그 뒤에 달라진 점은 없는지 생각해요.</li>
+        <li><b>요약부터</b> 처음부터 끝까지 읽지 않아도 돼요. 요약(영어는 Summary, Key findings)과 소제목을 먼저 훑어요.</li>
+        <li><b>질문 하나 들고</b> 아래 길잡이의 질문을 먼저 읽고, 답을 찾듯 필요한 부분만 골라 읽어요.</li>
+        <li><b>그래프는 순서대로</b> 제목 → 가로·세로축과 단위 → 가장 크게 변한 곳 순서로 봐요.</li>
+        <li><b>분석과 제안 나누기</b> 자료로 확인한 '분석 결과'와 연구자의 의견인 '정책 제언'을 구분해요.</li>
+        <li><b>영어 보고서</b> 문단 첫 문장만 먼저 읽고, 모르는 단어는 세 개까지만 찾아요. 번역기를 쓰면 한 문단씩 원문과 견줘 봐요.</li>
+      </ol>
+      <p class="muted">모르는 경제 용어는 <a href="${WORD_DIC}" target="_blank" rel="noopener">KDI 경제교육·정보센터 시사용어사전 ↗</a>에서 찾아볼 수 있어요.</p>
+    </details>`;
+
+  function readingItemHTML(r) {
+    const meta = [esc(r.source), r.date ? `${fmtDate(r.date)} 발간` : "", esc(r.kind || ""), r.lang === "en" ? '<span class="lang">EN</span>' : ""]
+      .filter(Boolean).join('<span class="sep">·</span>');
+    const g = r.guide || {};
+    const terms = (g.terms || []).map((t) => `<li><b>${esc(t.term)}</b> ${esc(t.desc)}</li>`).join("");
+    const easy = (r.easy || []).map((e) => `<li><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.label)}</a> <span class="muted">${esc(e.source || "")}</span></li>`).join("");
+    const guide = g.start || g.ask || terms || easy ? `
+        <details class="read-guide"><summary>읽기 길잡이</summary>
+          ${g.start ? `<p><b>어디부터</b> ${esc(g.start)}</p>` : ""}
+          ${g.ask ? `<p><b>생각할 질문</b> ${esc(g.ask)}</p>` : ""}
+          ${terms ? `<p><b>먼저 알아 둘 낱말</b></p><ul class="read-terms">${terms}</ul>` : ""}
+          ${easy ? `<p><b>쉽게 풀어 쓴 자료</b></p><ul class="read-easy">${easy}</ul>` : ""}
+        </details>` : "";
+    return `<li class="read-item"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a><span class="src-meta">${meta}</span>${r.note ? `<p class="read-note">${esc(r.note)}</p>` : ""}${guide}</li>`;
+  }
+
+  function readingHTML(list, title = "더 읽을거리") {
     if (!list.length) return "";
-    return `<section class="reading"><h3>더 읽을거리 <small class="muted">연구소 보고서</small></h3><ul class="links">${list.map((r) =>
-      `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a><span class="src-meta">${esc(r.source)}${r.note ? '<span class="sep">·</span>' + esc(r.note) : ""}${r.lang === "en" ? '<span class="sep">·</span><span class="lang">EN</span>' : ""}</span></li>`).join("")}</ul></section>`;
+    return `<section class="reading"><h3>${title} <small class="muted">연구소 보고서</small></h3>${READ_HOWTO}<ul class="links reading-list">${list.map(readingItemHTML).join("")}</ul></section>`;
   }
 
   let activities = null; // data/activities.json (추가 활동 탭을 열 때 받는다)
@@ -335,9 +366,30 @@
       </article>`;
   }
 
+  // 추가 활동 탭 맨 위: 고른 호(모든 호 보기면 최신 호)에서 자동으로 만든다. 새 호가 나오면 원고만 바뀌어도 함께 바뀐다.
+  function thisIssueHTML(issue) {
+    const explored = issue.articles.filter((a) => a.explore && (a.explore.keywords || []).length);
+    const ex = explored.length ? `
+        <div class="section-label">데이터로 더 보기 과제</div>
+        <ul class="links tie-explore">${explored.map((a) =>
+          `<li><a href="#date=${issue.date}" class="jump" data-date="${issue.date}" data-id="${esc(a.id)}">${esc(a.title)}</a><span class="src-meta">검색어 ${a.explore.keywords.map(esc).join(", ")}</span></li>`).join("")}</ul>` : "";
+    return `
+      <section class="card this-issue">
+        <div class="act-provider muted">${issueLabel(issue)} · ${fmtDate(issue.date)} 발행</div>
+        <h3>이번 호와 함께</h3>
+        <p class="summary">이번 호 기사로 만든 과제와 보고서, 게임이에요. 매주 새 호가 나오면 이 부분도 함께 바뀌어요.</p>
+        ${ex}
+        <div class="q-actions"><button type="button" class="link-btn" data-goto="game">이번 호 뉴스 게임 하러 가기 →</button></div>
+      </section>
+      ${readingHTML(issue.reading || [], "이번 호 더 읽을거리")}`;
+  }
+
   async function renderActivities(main, seq) {
+    const meta = issueByDate(state.date) || issues[0];
+    let issue = null;
     try {
       activities = activities || (await getJSON("data/activities.json")).activities;
+      if (meta) issue = await loadIssue(meta.date);
     } catch (e) {
       if (seq === renderSeq) main.innerHTML = `<p class="empty">활동 목록을 불러오지 못했어요. 새로고침해 주세요.</p>`;
       return;
@@ -346,8 +398,10 @@
     main.innerHTML = `
       <section class="issue-head">
         <h2>추가 활동</h2>
-        <p>뉴스를 더 깊이 읽고 싶은 친구를 위한 활동이에요. 매주 새 그래프와 사진, 사실 확인 사례가 올라와요. 질문에 답하고 선생님께 제출해 보세요.</p>
+        <p>뉴스를 더 깊이 읽고 싶은 친구를 위한 활동이에요. 위쪽은 이번 호와 이어진 과제, 아래쪽은 매주 새 그래프와 사진, 사실 확인 사례가 올라오는 바깥 사이트 활동이에요. 질문에 답하고 선생님께 제출해 보세요.</p>
       </section>
+      ${issue ? thisIssueHTML(issue) : ""}
+      <h3 class="act-list-title">바깥 사이트 활동</h3>
       ${activities.map(activityHTML).join("")}`;
   }
 
@@ -590,6 +644,8 @@
       }
       const b = e.target.closest(".submit-btn");
       if (b) openSubmit(b);
+      const g = e.target.closest("[data-goto]");
+      if (g) { state.view = g.dataset.goto; update(); window.scrollTo(0, 0); }
       const j = e.target.closest("a.jump");
       if (j) { e.preventDefault(); jumpTo(j.dataset.date, j.dataset.id); }
       const m = e.target.closest(".major-tag");

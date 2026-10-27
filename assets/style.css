@@ -182,6 +182,21 @@ summary::-webkit-details-marker { display: none; }
 .reading { margin-top: 36px; }
 .reading h3 { font-size: 1.15rem; margin-bottom: 4px; }
 .reading h3 small { font-weight: 400; font-size: .85rem; margin-left: 4px; }
+.reading-list { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px; }
+.reading-list .read-item { padding: 12px 0; }
+.read-note { margin: 4px 0 0; font-size: .93rem; color: var(--text-2); }
+.read-guide { margin-top: 6px; font-size: .92rem; }
+.read-guide summary { color: var(--accent); font-weight: 700; cursor: pointer; }
+.read-guide[open] { background: var(--subtle); border-radius: 8px; padding: 8px 12px; }
+.read-guide p { margin: 8px 0 2px; }
+.read-terms, .read-easy { margin: 2px 0 4px; padding-left: 18px; }
+.read-terms li { margin: 3px 0; color: var(--text-2); }
+.read-terms b { color: var(--text); margin-right: 4px; }
+.read-howto { margin-top: 6px; }
+.this-issue { --c: var(--accent); }
+.this-issue .section-label { margin-top: 14px; }
+.this-issue + .reading { margin-top: 20px; }
+.act-list-title { font-size: 1.15rem; margin: 36px 0 8px; }
 .empty { padding: 40px 0; text-align: center; color: var(--muted); }
 .site-footer { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 12px; padding-bottom: 40px; font-size: .85rem; color: var(--muted); }
 .site-meta { font-weight: 500; color: var(--text-2); }

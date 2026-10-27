@@ -57,10 +57,11 @@
           "lang": "ko"
         },
         {
-          "label": "드라마에 5·18 민주화운동 나오면 안 되나요, '닥터 X'가 쏘아 올린 공",
-          "source": "경향신문",
-          "url": "https://www.khan.co.kr/article/202610261808001",
-          "lang": "ko"
+          "label": "Online Communities Rarely Focus on Politics, and Many Say It Should Stay That Way",
+          "source": "Pew Research Center",
+          "type": "분석·보고서",
+          "url": "https://www.pewresearch.org/short-reads/2026/10/20/online-communities-rarely-focus-on-politics-and-many-say-it-should-stay-that-way/",
+          "lang": "en"
         }
       ],
       "explore": {
@@ -189,6 +190,13 @@
           "source": "경향신문",
           "type": "보도",
           "url": "https://www.khan.co.kr/article/202610261921011",
+          "lang": "ko"
+        },
+        {
+          "label": "비전공자가 AI로 90여개 기업 해킹…개인정보 820만건 탈취",
+          "source": "전자신문",
+          "type": "보도",
+          "url": "https://www.etnews.com/20261026000369",
           "lang": "ko"
         },
         {
@@ -444,10 +452,11 @@
           "lang": "en"
         },
         {
-          "label": "'알잘딱깔센' 자율운항 군집위성, 그게 우주 모빌리티",
-          "source": "경향신문",
-          "url": "https://www.khan.co.kr/article/202610262048005",
-          "lang": "ko"
+          "label": "A quantum computing feat brings the 'megaquops' era a step closer",
+          "source": "Science News",
+          "type": "보도",
+          "url": "https://www.sciencenews.org/article/quantum-computer-megaquops-error-correction",
+          "lang": "en"
         },
         {
           "label": "Samsung may have overtaken SK hynix in HBM revenue, analysis suggests",
@@ -587,10 +596,10 @@
           "lang": "en"
         },
         {
-          "label": "Scientists discover how pancreatic cancer rewrites its DNA to escape treatment",
-          "source": "ScienceDaily",
+          "label": "Coating stops tooth decay in children",
+          "source": "미국 국립보건원(NIH)",
           "type": "연구 소개",
-          "url": "https://www.sciencedaily.com/releases/2026/10/261024221849.htm",
+          "url": "https://www.nih.gov/news-events/nih-research-matters/coating-stops-tooth-decay-children",
           "lang": "en"
         }
       ],
@@ -708,6 +717,20 @@
           "type": "분석·보고서",
           "url": "https://www.brookings.edu/articles/title-i-for-rich-kids-and-other-predictions-for-the-federal-scholarship-tax-credit/",
           "lang": "en"
+        },
+        {
+          "label": "Can the new federal voucher program help public schools? Democrats are torn",
+          "source": "NPR",
+          "type": "보도",
+          "url": "https://www.npr.org/2026/10/20/nx-s1-5979065/public-school-private-school-federal-voucher-scholarship-democrats",
+          "lang": "en"
+        },
+        {
+          "label": "한국 고등교육 이수율 OECD 평균보다 22.3%p 높아…국·공립대 학사 비중은 22.1%",
+          "source": "교육을 비추다",
+          "type": "보도",
+          "url": "https://www.kyobit.com/news/articleView.html?idxno=7730",
+          "lang": "ko"
         }
       ],
       "curriculum": [
@@ -819,6 +842,13 @@
           "label": "How K-pop's self-produced content became a secret weapon",
           "source": "Korea Herald",
           "url": "https://www.koreaherald.com/article/10914560",
+          "lang": "en"
+        },
+        {
+          "label": "How K-dramas use Africa as a backdrop to boost South Korea's image",
+          "source": "The Conversation",
+          "type": "해설",
+          "url": "https://theconversation.com/how-k-dramas-use-africa-as-a-backdrop-to-boost-south-koreas-image-292171",
           "lang": "en"
         }
       ],
@@ -1055,48 +1085,100 @@
   ],
   "reading": [
     {
-      "title": "AI의 거시경제 영향 분석",
+      "title": "KDI 경제동향 2026.10",
       "source": "KDI",
-      "url": "https://www.kdi.re.kr/research/reportView?pub_no=19237",
+      "url": "https://www.kdi.re.kr/research/monTrends?pub_no=19304",
       "lang": "ko",
+      "date": "2026-10-12",
+      "kind": "월간 경기 진단",
       "tracks": [
         "biz",
         "eng"
       ],
-      "note": "AI가 성장률·고용에 미칠 영향을 다룬 연구보고서"
+      "note": "AI 관련 수출과 설비투자가 경기 개선을 이끌지만 가계 소비 회복은 완만하다는 진단. 이번 호 HBM 기사와 이어 읽기 좋아요.",
+      "guide": {
+        "start": "첫 쪽의 굵은 글씨 '총평'만 먼저 읽고, 그다음 수출·설비투자·소비 부분의 첫 문장을 차례로 읽어 보세요. 그래프는 제목과 단위(%, 전년 동월 대비)를 먼저 확인합니다.",
+        "ask": "KDI는 경기가 '좋아진다'고 보면서도 왜 '소비 개선은 완만하다'고 덧붙였을까요? 두 판단의 근거가 되는 지표를 하나씩 찾아보세요.",
+        "terms": [
+          {
+            "term": "전년 동월 대비",
+            "desc": "이번 달 수치를 1년 전 같은 달과 비교한 증감률이에요. 계절에 따라 커지고 작아지는 효과(예: 명절, 방학)를 덜어 내고 흐름을 보려고 경기 보고서에서 자주 씁니다."
+          },
+          {
+            "term": "경기 판단",
+            "desc": "생산·소비·투자·고용 같은 여러 지표를 함께 보고 경제가 좋아지는지 나빠지는지 내린 종합 평가예요. 숫자 하나가 아니라 여러 근거를 묶어 내린 해석이라는 점이 중요합니다."
+          }
+        ]
+      }
     },
     {
-      "title": "불평등에 관한 연구: 소득과 자산을 중심으로",
-      "source": "KDI",
-      "url": "https://www.kdi.re.kr/research/reportView?pub_no=19257",
-      "lang": "ko",
+      "title": "Men Are Experiencing More Job Growth Than Women in AI-Exposed Occupations",
+      "source": "Pew Research Center",
+      "url": "https://www.pewresearch.org/short-reads/2026/10/22/men-are-experiencing-more-job-growth-than-women-in-ai-exposed-occupations/",
+      "lang": "en",
+      "date": "2026-10-22",
+      "kind": "통계 분석(짧은 글)",
       "tracks": [
-        "hum",
-        "biz"
+        "biz",
+        "hum"
       ],
-      "note": "사회와 문화·경제 '불평등' 단원과 연결"
+      "note": "AI가 도울 수 있는 일이 많은 직업일수록 남성 고용은 늘고 여성 고용은 거의 늘지 않았다는 미국 노동 통계 분석",
+      "guide": {
+        "start": "글이 짧아요. 맨 위 요약 문단과 첫 그래프를 먼저 보고, 'How did we do this?'에서 'AI 노출도'를 어떻게 쟀는지 확인하세요. 모르는 단어는 세 개까지만 찾아봐도 충분합니다.",
+        "ask": "'AI 노출도가 높은 직업에서 남성 고용이 더 늘었다'는 결과가 'AI가 남성에게 유리하다'는 뜻일까요? 상관관계와 인과관계를 구분해 설명해 보세요.",
+        "terms": [
+          {
+            "term": "AI 노출도",
+            "desc": "한 직업의 주요 업무를 생성형 AI가 대신하거나 도울 수 있는 정도를 점수로 나타낸 값이에요. 점수가 높다고 그 일자리가 사라진다는 뜻은 아니고, 일하는 방식이 크게 바뀔 수 있다는 뜻입니다."
+          }
+        ]
+      }
     },
     {
       "title": "Beyond the U.S.-China Binary: The New Landscape of AI Partnerships in the Global South",
       "source": "CSIS",
       "url": "https://www.csis.org/analysis/beyond-us-china-binary-new-landscape-ai-partnerships-global-south",
       "lang": "en",
+      "date": "2026-10-21",
+      "kind": "논평(Commentary)",
       "tracks": [
         "hum",
         "eng"
       ],
-      "note": "미·중 사이에서 AI 협력 상대를 고르는 개발도상국들"
+      "note": "미·중만이 아니라 인도·걸프 국가·중견국이 저마다 다른 강점으로 개발도상국의 AI 협력 상대가 되고 있다는 논평",
+      "guide": {
+        "start": "소제목 일곱 개(China, India, The Gulf, Middle Powers, U.S. …)만 먼저 훑어 나라별로 무엇을 내세우는지 표로 정리해 보세요. 각 부분은 첫 문단만 읽어도 흐름이 잡힙니다.",
+        "ask": "이 글은 연구 결과가 아니라 '논평'이에요. 글쓴이의 주장과 그 근거로 든 사실을 한 쌍씩 찾아 나눠 보세요.",
+        "terms": [
+          {
+            "term": "글로벌 사우스",
+            "desc": "아시아·아프리카·중남미의 개발도상국을 함께 부르는 말이에요. 지리적 남반구만 뜻하지 않으며, 선진국 중심의 국제 질서에서 목소리를 키우려는 나라들을 가리킬 때 씁니다."
+          }
+        ]
+      }
     },
     {
       "title": "Capturing National Security Benefits from Offshore Wind",
       "source": "CSIS",
       "url": "https://www.csis.org/analysis/capturing-national-security-benefits-offshore-wind",
       "lang": "en",
+      "date": "2026-10-16",
+      "kind": "연구보고서(Report)",
       "tracks": [
         "eng",
         "common"
       ],
-      "note": "해상풍력과 에너지 안보"
+      "note": "해상풍력 설비와 해저 케이블을 바다 감시에도 쓸 수 있다는 제안과 그에 따른 비용·관리 문제",
+      "guide": {
+        "start": "웹 페이지의 요약 부분만 읽어도 핵심을 알 수 있어요. 더 읽고 싶다면 PDF의 'Recommendations(제언)' 부분으로 바로 가 보세요.",
+        "ask": "발전 설비에 감시 장비를 함께 달면 좋은 점과, 보고서가 지적한 위험(비용 부담, 데이터 관리, 공격 목표가 될 위험)을 비교해 보세요.",
+        "terms": [
+          {
+            "term": "이중 용도",
+            "desc": "하나의 시설이나 기술을 민간 목적과 군사·안보 목적에 함께 쓰는 것을 말해요. 예를 들어 GPS는 군사용으로 개발됐지만 지금은 길 찾기 같은 생활에 널리 쓰입니다."
+          }
+        ]
+      }
     }
   ]
 }
