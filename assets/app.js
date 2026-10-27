@@ -114,9 +114,9 @@
 
   function renderChips() {
     const box = $("#track-chips");
-    const all = `<button type="button" class="chip" data-track="" aria-pressed="${!state.tracks.size}">🌈 전체</button>`;
+    const all = `<button type="button" class="chip" data-track="" aria-pressed="${!state.tracks.size}">전체</button>`;
     box.innerHTML = all + tracks.map((t) =>
-      `<button type="button" class="chip" style="--c:${t.color}" data-track="${t.id}" aria-pressed="${state.tracks.has(t.id)}" title="${esc(t.desc)}">${t.emoji} ${esc(t.name)}</button>`
+      `<button type="button" class="chip" style="--c:${t.color}" data-track="${t.id}" aria-pressed="${state.tracks.has(t.id)}" title="${esc(t.desc)}"><span class="dot" aria-hidden="true"></span>${esc(t.name)}</button>`
     ).join("");
   }
 
@@ -132,45 +132,45 @@
     const count = {};
     issues.forEach((i) => i.articles.forEach((a) => (a.majors || []).forEach((m) => { count[m] = (count[m] || 0) + 1; })));
     const used = new Set();
-    const opt = (m) => { used.add(m); return `<option value="${esc(m)}">🎓 ${esc(m)} (${count[m]})</option>`; };
+    const opt = (m) => { used.add(m); return `<option value="${esc(m)}">${esc(m)} (${count[m]})</option>`; };
     const groups = tracks.map((t) => {
       const ms = (majorGroups[t.id] || []).filter((m) => count[m] && !used.has(m));
-      return ms.length ? `<optgroup label="${t.emoji} ${esc(t.name)}">${ms.map(opt).join("")}</optgroup>` : "";
+      return ms.length ? `<optgroup label="${esc(t.name)}">${ms.map(opt).join("")}</optgroup>` : "";
     }).join("");
     const rest = Object.keys(count).filter((m) => !used.has(m)).sort();
     const sel = $("#major-select");
-    sel.innerHTML = `<option value="">🎓 모든 전공</option>` + groups +
+    sel.innerHTML = `<option value="">모든 전공</option>` + groups +
       (rest.length ? `<optgroup label="기타">${rest.map(opt).join("")}</optgroup>` : "");
     sel.hidden = !Object.keys(count).length;
     sel.value = count[state.major] ? state.major : "";
   }
 
   function questionHTML(x, a, date, qi) {
-    const t = QTYPES[QINDEX[x.type]] || { icon: "❓" };
     const concepts = (x.concepts || []).length ? `
-      <div class="concepts"><h4>📘 개념 해설</h4><dl>${x.concepts.map((c) =>
+      <div class="concepts"><h4>개념 해설</h4><dl>${x.concepts.map((c) =>
         `<dt>${esc(c.term)}</dt><dd>${esc(c.desc)}</dd>`).join("")}</dl></div>` : "";
     const submit = config.submitUrl
-      ? `<button type="button" class="submit-btn" data-date="${date}" data-article="${esc(a.id)}" data-q="${qi}">✍️ 내 답안 제출</button>` : "";
+      ? `<button type="button" class="submit-btn" data-date="${date}" data-article="${esc(a.id)}" data-q="${qi}">답안 제출</button>` : "";
     return `
       <li class="q">
-        <span class="qtype t${(QINDEX[x.type] || 0) + 1}">${t.icon} ${esc(x.type)}</span><span class="qtext">${esc(x.q)}</span>
+        <div class="qtype"><span class="qnum">${(QINDEX[x.type] ?? 0) + 1}</span>${esc(x.type)}</div><p class="qtext">${esc(x.q)}</p>
         <div class="q-actions">
           ${submit}
-          ${x.a ? `<details${state.openAll ? " open" : ""}><summary>💡 예시 답안${concepts ? " · 개념 해설" : ""} 보기</summary><div class="answer">${esc(x.a)}</div>${concepts}</details>` : ""}
+          ${x.a ? `<details${state.openAll ? " open" : ""}><summary>예시 답안${concepts ? " · 개념 해설" : ""}</summary><div class="answer">${esc(x.a)}</div>${concepts}</details>` : ""}
         </div>
       </li>`;
   }
 
   // 출처 카드: 매체 종류(build.py 가 sources.json 에서 채움), 기사 종류, 유료 여부
   function linkHTML(l) {
-    const tags = [
-      l.kind ? `<span class="src-tag">${esc(l.kind)}</span>` : "",
-      l.type ? `<span class="src-tag type" title="${esc(LINK_TYPES[l.type] || "")}">${esc(l.type)}</span>` : "",
-      l.paywall ? `<span class="src-tag paywall" title="구독해야 끝까지 읽을 수 있어요">유료</span>` : "",
+    const meta = [
+      esc(l.source),
+      l.kind ? esc(l.kind) : "",
+      l.type ? `<span class="src-type" tabindex="0" title="${esc(LINK_TYPES[l.type] || "")}">${esc(l.type)}</span>` : "",
+      l.paywall ? `<span class="paywall" title="구독해야 끝까지 읽을 수 있어요">유료</span>` : "",
       l.lang === "en" ? '<span class="lang">EN</span>' : "",
-    ].join("");
-    return `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.title)}</a> <span class="muted">· ${esc(l.source)}</span>${tags}</li>`;
+    ].filter(Boolean).join('<span class="sep">·</span>');
+    return `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.title)}</a><span class="src-meta">${meta}</span></li>`;
   }
 
   // 한 사건, 여러 시선: 같은 사건을 다룬 국내·해외 기사를 나란히 놓고 따져 보는 코너
@@ -185,14 +185,14 @@
     if (!c || !matchesTracks(c.tracks)) return "";
     const items = c.items.map((it) => `
       <div class="cmp-item">
-        <div class="cmp-src">${esc(it.source)}${it.kind ? `<span class="src-tag">${esc(it.kind)}</span>` : ""}${it.lang === "en" ? '<span class="lang">EN</span>' : ""}</div>
+        <div class="cmp-src"><b>${esc(it.source)}</b>${it.kind ? `<span class="sep">·</span>${esc(it.kind)}` : ""}${it.lang === "en" ? '<span class="lang">EN</span>' : ""}</div>
         <a class="cmp-title" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
         ${it.lead ? `<p class="cmp-lead">${esc(it.lead)}</p>` : ""}
         ${it.focus ? `<p class="cmp-focus"><b>강조한 점</b> ${esc(it.focus)}</p>` : ""}
       </div>`).join("");
     return `
       <section class="compare card" id="compare">
-        <div class="section-label">🔭 한 사건, 여러 시선</div>
+        <div class="section-label">한 사건, 여러 시선</div>
         <h3>${esc(c.title)}</h3>
         ${c.intro ? `<p class="summary">${esc(c.intro)}</p>` : ""}
         <div class="cmp-grid">${items}</div>
@@ -201,7 +201,7 @@
   }
 
   const HOWTO = `
-    <details class="howto"><summary>🔎 기사를 따져 읽는 세 가지 질문</summary>
+    <details class="howto"><summary>기사를 따져 읽는 세 가지 질문</summary>
       <ol>
         <li><b>누가 썼나?</b> 매체와 기사 종류(보도·해설·칼럼·보도자료·연구 소개)를 확인해요. 링크 옆 꼬리표에 마우스를 올리거나 눌러 보세요.</li>
         <li><b>근거는 무엇인가?</b> 숫자와 인용이 어디서 왔는지, 원자료가 있는지 찾아봐요.</li>
@@ -213,35 +213,30 @@
   function articleHTML(a, date, showDate) {
     const main = (a.tracks || [])[0];
     const badges = (a.tracks || []).map((t) => trackById[t]
-      ? `<span class="badge" style="--c:${colorOf(t)}">${trackById[t].emoji} ${esc(trackById[t].name)}</span>` : "").join("");
+      ? `<span class="badge" style="--c:${colorOf(t)}">${esc(trackById[t].name)}</span>` : "").join("");
     const dateBadge = showDate ? `<a class="badge date" href="#date=${date}">${issueLabel(issueByDate(date))}</a>` : "";
     const links = (a.links || []).map(linkHTML).join("");
-    const evidence = (a.evidence || []).length ? `<div class="evidence">📊 기사가 근거로 쓴 원자료: ${a.evidence.map((e) =>
+    const evidence = (a.evidence || []).length ? `<div class="evidence"><span class="muted">기사가 근거로 쓴 원자료</span> ${a.evidence.map((e) =>
       `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.label)}</a>`).join(" · ")}</div>` : "";
     const curr = (a.curriculum || []).map((c) =>
-      `<div class="curr-item"><b>📗 ${esc(c.subject)}</b>${c.unit ? ` <span class="muted">› ${esc(c.unit)}</span>` : ""}<br>${(c.concepts || []).map((k) => `<span class="concept-tag">${esc(k)}</span>`).join("")}</div>`).join("");
-    const majors = (a.majors || []).length ? `<div class="majors"><span class="muted">🎓 관련 전공</span>${a.majors.map((m) =>
+      `<li><b>${esc(c.subject)}</b>${c.unit ? ` <span class="muted">${esc(c.unit)}</span>` : ""}${(c.concepts || []).length ? `<span class="curr-concepts">${c.concepts.map(esc).join(" · ")}</span>` : ""}</li>`).join("");
+    const majors = (a.majors || []).length ? `<div class="majors"><span class="muted">관련 전공</span>${a.majors.map((m) =>
       `<button type="button" class="major-tag" data-major="${esc(m)}" aria-pressed="${state.major === m}">#${esc(m)}</button>`).join("")}</div>` : "";
     const qs = (a.questions || []).map((x, i) => ({ x, i }))
       .sort((p, q) => (QINDEX[p.x.type] ?? 9) - (QINDEX[q.x.type] ?? 9))
       .map(({ x, i }) => questionHTML(x, a, date, i)).join("");
     return `
       <article class="card" id="${esc(a.id)}" style="--c:${colorOf(main)}">
-        <div class="card-head">
-          <div class="track-icon" aria-hidden="true">${trackById[main] ? trackById[main].emoji : "📰"}</div>
-          <div>
-            <div class="badges">${dateBadge}${badges}</div>
-            <h3>${esc(a.title)}</h3>
-          </div>
-        </div>
+        <div class="badges">${dateBadge}${badges}</div>
+        <h3>${esc(a.title)}</h3>
         <p class="summary">${esc(a.summary)}</p>
         ${majors}
-        <div class="section-label">📰 기사 읽기</div>
+        <div class="section-label">기사 읽기</div>
         <ul class="links">${links}</ul>
         ${evidence}
-        <div class="section-label">🏫 교과서와 연결</div>
-        <div class="curr">${curr}</div>
-        <div class="section-label">💭 탐구 질문</div>
+        <div class="section-label">교과서와 연결</div>
+        <ul class="curr">${curr}</ul>
+        <div class="section-label">탐구 질문</div>
         <ol class="questions">${qs}</ol>
         ${relatedHTML(a, date)}
       </article>`;
@@ -279,9 +274,9 @@
   function relatedHTML(a, date) {
     const list = related(a, date);
     if (!list.length) return "";
-    return `<div class="related"><div class="section-label">🧭 비슷한 주제 기사</div><ul>${list.map(({ b, date: d }) => {
+    return `<div class="related"><div class="section-label">비슷한 주제 기사</div><ul>${list.map(({ b, date: d }) => {
       const t = trackById[(b.tracks || [])[0]];
-      return `<li><a href="#date=${d}" class="jump" data-date="${d}" data-id="${esc(b.id)}">${t ? t.emoji + " " : ""}${esc(b.title)}</a> <span class="muted">· ${issueLabel(issueByDate(d))}</span></li>`;
+      return `<li><a href="#date=${d}" class="jump" data-date="${d}" data-id="${esc(b.id)}">${esc(b.title)}</a> <span class="muted">· ${issueLabel(issueByDate(d))}</span></li>`;
     }).join("")}</ul></div>`;
   }
 
@@ -300,30 +295,25 @@
 
   function readingHTML(list) {
     if (!list.length) return "";
-    return `<section class="reading"><h3>📚 더 읽을거리 (연구소 보고서)</h3><ul class="links">${list.map((r) =>
-      `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a> <span class="muted">· ${esc(r.source)}${r.note ? " · " + esc(r.note) : ""}</span>${r.lang === "en" ? '<span class="lang">EN</span>' : ""}</li>`).join("")}</ul></section>`;
+    return `<section class="reading"><h3>더 읽을거리 <small class="muted">연구소 보고서</small></h3><ul class="links">${list.map((r) =>
+      `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a><span class="src-meta">${esc(r.source)}${r.note ? '<span class="sep">·</span>' + esc(r.note) : ""}${r.lang === "en" ? '<span class="sep">·</span><span class="lang">EN</span>' : ""}</span></li>`).join("")}</ul></section>`;
   }
 
   let activities = null; // data/activities.json (추가 활동 탭을 열 때 받는다)
 
   function activityHTML(x) {
-    const tags = [x.skill, ...(x.subjects || [])].map((t) => `<span class="concept-tag">${esc(t)}</span>`).join("");
-    const submit = config.submitUrl ? `<button type="button" class="submit-btn" data-act="${esc(x.id)}">✍️ 활동 결과 제출</button>` : "";
+    const tags = [x.skill, ...(x.subjects || [])].map(esc).join(" · ");
+    const submit = config.submitUrl ? `<button type="button" class="submit-btn" data-act="${esc(x.id)}">활동 결과 제출</button>` : "";
     return `
       <article class="card activity" id="act-${esc(x.id)}">
-        <div class="card-head">
-          <div class="track-icon" aria-hidden="true">${esc(x.icon || "🧩")}</div>
-          <div>
-            <div class="act-provider muted">${esc(x.provider)}${x.lang === "en" ? '<span class="lang">EN</span>' : ""}</div>
-            <h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
-          </div>
-        </div>
+        <div class="act-provider muted">${esc(x.provider)}${x.lang === "en" ? '<span class="sep">·</span><span class="lang">EN</span>' : ""}</div>
+        <h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
         <p class="summary">${esc(x.desc)}</p>
-        <div class="curr-item">${tags}</div>
-        ${x.when ? `<p class="muted act-when">🗓️ ${esc(x.when)}</p>` : ""}
-        <div class="section-label">✏️ 이렇게 해 봐요</div>
+        <p class="act-tags muted">${tags}</p>
+        ${x.when ? `<p class="muted act-when">${esc(x.when)}</p>` : ""}
+        <div class="section-label">이렇게 해 봐요</div>
         <ol class="act-prompts">${(x.prompts || []).map((q) => `<li>${esc(q)}</li>`).join("")}</ol>
-        <div class="q-actions"><a class="act-go" href="${esc(x.url)}" target="_blank" rel="noopener">👉 활동하러 가기</a>${submit}</div>
+        <div class="q-actions"><a class="act-go" href="${esc(x.url)}" target="_blank" rel="noopener">활동하러 가기 ↗</a>${submit}</div>
       </article>`;
   }
 
@@ -331,13 +321,13 @@
     try {
       activities = activities || (await getJSON("data/activities.json")).activities;
     } catch (e) {
-      if (seq === renderSeq) main.innerHTML = `<p class="empty">⚠️ 활동 목록을 불러오지 못했어요. 새로고침해 주세요.</p>`;
+      if (seq === renderSeq) main.innerHTML = `<p class="empty">활동 목록을 불러오지 못했어요. 새로고침해 주세요.</p>`;
       return;
     }
     if (seq !== renderSeq) return;
     main.innerHTML = `
       <section class="issue-head">
-        <h2>🧩 추가 활동</h2>
+        <h2>추가 활동</h2>
         <p>뉴스를 더 깊이 읽고 싶은 친구를 위한 활동이에요. 매주 새 그래프와 사진, 사실 확인 사례가 올라와요. 질문에 답하고 선생님께 제출해 보세요.</p>
       </section>
       ${activities.map(activityHTML).join("")}`;
@@ -359,7 +349,7 @@
       loaded = await pending;
       clearTimeout(slow);
     } catch (e) {
-      if (seq === renderSeq) main.innerHTML = `<p class="empty">⚠️ 기사를 불러오지 못했어요. 인터넷 연결을 확인하고 <a href="">새로고침</a>해 주세요.</p>`;
+      if (seq === renderSeq) main.innerHTML = `<p class="empty">기사를 불러오지 못했어요. 인터넷 연결을 확인하고 <a href="">새로고침</a>해 주세요.</p>`;
       return;
     }
     if (seq !== renderSeq) return; // 그사이 필터가 바뀌었으면 버린다
@@ -371,27 +361,27 @@
       const filtered = state.tracks.size || state.major || state.q;
       const elsewhere = state.major ? issues.filter((i) => i.date !== issue.date)
         .reduce((n, i) => n + i.articles.filter((a) => matchesTracks(a.tracks) && matchesMajor(a)).length, 0) : 0;
-      const more = elsewhere > 0 ? `<p class="more-hint">🎓 다른 호에도 <b>${esc(state.major)}</b> 관련 기사가 ${elsewhere}개 더 있어요. <a href="#" class="show-all">모든 호에서 보기</a></p>` : "";
+      const more = elsewhere > 0 ? `<p class="more-hint">다른 호에도 <b>${esc(state.major)}</b> 관련 기사가 ${elsewhere}개 더 있어요. <a href="#" class="show-all">모든 호에서 보기</a></p>` : "";
       main.innerHTML = `
         <section class="issue-head">
-          <div class="date">🗞️ <b>${issueLabel(issue)}</b> · ${fmtDate(issue.date)} 발행 · <span class="nowrap">다룬 기간 ${esc(issue.period || "")}</span></div>
+          <div class="date"><b>${issueLabel(issue)}</b> · ${fmtDate(issue.date)} 발행 · <span class="nowrap">다룬 기간 ${esc(issue.period || "")}</span></div>
           <h2>${esc(issue.title)}</h2>
           <p>${esc(issue.intro || "")}</p>
         </section>
-        ${!filtered && issue.headlines && issue.headlines.length ? `<section class="headlines"><h3>⚡ 이번 주 헤드라인</h3><ul>${issue.headlines.map(linkHTML).join("")}</ul></section>` : ""}
+        ${!filtered && issue.headlines && issue.headlines.length ? `<section class="headlines"><h3>이번 주 헤드라인</h3><ol>${issue.headlines.map(linkHTML).join("")}</ol></section>` : ""}
         ${HOWTO}
         ${state.major || state.q ? "" : compareHTML(issue)}
-        ${arts.length ? arts.map((a) => articleHTML(a, issue.date, false)).join("") : `<p class="empty">🤔 조건에 맞는 기사가 없어요.</p>`}
+        ${arts.length ? arts.map((a) => articleHTML(a, issue.date, false)).join("") : `<p class="empty">조건에 맞는 기사가 없어요.</p>`}
         ${more}
         ${readingHTML(reading)}`;
     } else {
       const rows = loaded.flatMap((i) => i.articles.map((a) => ({ a, date: i.date })))
         .filter(({ a }) => matches(a));
       main.innerHTML = `<section class="issue-head"><h2>모든 호</h2><p class="muted">${issues.length}개 호에서 ${rows.length}개 기사</p></section>` +
-        (rows.length ? rows.slice(0, shown).map(({ a, date }) => articleHTML(a, date, true)).join("") : `<p class="empty">🤔 조건에 맞는 기사가 없어요.</p>`) +
-        (rows.length > shown ? `<button type="button" class="more-btn" id="more-btn">⬇️ 기사 더 보기 (${rows.length - shown}개 남음)</button>` : "");
+        (rows.length ? rows.slice(0, shown).map(({ a, date }) => articleHTML(a, date, true)).join("") : `<p class="empty">조건에 맞는 기사가 없어요.</p>`) +
+        (rows.length > shown ? `<button type="button" class="more-btn" id="more-btn">기사 더 보기 (${rows.length - shown}개 남음)</button>` : "");
     }
-    $("#toggle-answers").textContent = state.openAll ? "💡 예시 답안 모두 접기" : "💡 예시 답안 모두 펼치기";
+    $("#toggle-answers").textContent = state.openAll ? "예시 답안 모두 접기" : "예시 답안 모두 펼치기";
   }
 
   function renderFooter() {
@@ -541,7 +531,7 @@
     $("#toggle-answers").addEventListener("click", () => {
       state.openAll = !state.openAll;
       document.querySelectorAll("#content details").forEach((d) => { d.open = state.openAll; });
-      $("#toggle-answers").textContent = state.openAll ? "💡 예시 답안 모두 접기" : "💡 예시 답안 모두 펼치기";
+      $("#toggle-answers").textContent = state.openAll ? "예시 답안 모두 접기" : "예시 답안 모두 펼치기";
     });
     $("#content").addEventListener("click", (e) => {
       const b = e.target.closest(".submit-btn");
