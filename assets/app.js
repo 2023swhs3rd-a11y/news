@@ -222,7 +222,7 @@
         <div class="explore-head"><b>데이터로 더 보기</b><span class="muted">개별 과제 · 빅카인즈(한국언론진흥재단)</span></div>
         <p class="explore-kw">검색어 ${x.keywords.map((k) => `<button type="button" class="kw" data-copy="${esc(k)}" title="눌러서 복사">${esc(k)}</button>`).join(" ")}</p>
         <ol class="explore-tasks">${(x.tasks || []).map((t) => `<li>${esc(t)}</li>`).join("")}</ol>
-        <p class="muted explore-note">검색어를 빅카인즈 뉴스 검색에 넣고 기간을 최근 5년으로 정한 뒤, 뉴스 분석의 키워드 트렌드·연관어 분석을 열어 보세요. 분석 화면을 쓸 수 없으면 검색 결과의 기사 수와 제목만으로 답해도 돼요.</p>
+        <p class="muted explore-note">검색어를 빅카인즈 뉴스 검색에 넣고 기간을 최근 5년으로 정한 뒤, 뉴스 분석의 키워드 트렌드·연관어 분석을 열어 보세요(로그인 없이 쓸 수 있어요). 화면이 열리지 않으면 검색 결과의 기사 수와 제목만으로 답해도 돼요.</p>
         <div class="q-actions"><a class="act-go" href="${BIGKINDS}" target="_blank" rel="noopener">빅카인즈 열기 ↗</a>${submit}</div>
       </div>`;
   }
