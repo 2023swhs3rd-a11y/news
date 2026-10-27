@@ -328,9 +328,21 @@
     main.innerHTML = `
       <section class="issue-head">
         <h2>추가 활동</h2>
-        <p>뉴스를 더 깊이 읽고 싶은 친구를 위한 활동이에요. 매주 새 그래프와 사진, 사실 확인 사례가 올라와요. 질문에 답하고 선생님께 제출해 보세요.</p>
+        <p>뉴스를 더 깊이 읽고 싶은 친구를 위한 활동이에요. 이번 호 기사로 만든 게임을 하고, 매주 새 그래프와 사진, 사실 확인 사례가 올라오는 바깥 활동에도 도전해 보세요.</p>
       </section>
+      <section class="card games" id="games" aria-label="뉴스 게임"></section>
+      <div class="section-label act-ext">바깥 활동</div>
       ${activities.map(activityHTML).join("")}`;
+    // 게임 문제는 지금 고른 호(모든 호 보기면 최신 호)의 개념 해설과 영어 기사 제목으로 만든다
+    const meta = issueByDate(state.date) || issues[0];
+    const box = $("#games");
+    if (!meta || !window.NewsGames) { box.remove(); return; }
+    try {
+      const issue = await loadIssue(meta.date);
+      if (seq === renderSeq) window.NewsGames.mount(box, issue, issueLabel(issue));
+    } catch (e) {
+      box.remove();
+    }
   }
 
   async function render() {
