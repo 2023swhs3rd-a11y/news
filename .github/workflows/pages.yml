@@ -29,7 +29,7 @@ jobs:
       - name: 검사 및 사이트 생성
         run: python scripts/build.py
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
       - id: deployment
