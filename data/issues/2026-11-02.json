@@ -233,13 +233,8 @@
         ]
       },
       "image": {
-        "alt": "항구에 정박한 컨테이너선",
-        "file": "File:MAERSK HANOI Container Ship (Port Koper SIKOP, 2023).jpg",
-        "src": "assets/img/2026-11-02/biz-exports-trillion.jpg",
-        "credit": "Petar Milošević",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:MAERSK_HANOI_Container_Ship_(Port_Koper_SIKOP,_2023).jpg"
+        "file": "File:Port Jersey container ship sunset 2018.jpg",
+        "alt": "해 질 무렵 항구의 컨테이너선과 크레인"
       },
       "curriculum": [
         {
@@ -1130,13 +1125,8 @@
         ]
       },
       "image": {
-        "alt": "가뭄으로 갈라진 흙",
-        "file": "File:Turkey drought soil moisture.jpg",
-        "src": "assets/img/2026-11-02/common-climate-lawsuit.jpg",
-        "credit": "NASA",
-        "license": "Public domain",
-        "license_url": "",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Turkey_drought_soil_moisture.jpg"
+        "query": "cracked earth dry mud",
+        "alt": "가뭄으로 갈라진 흙"
       },
       "curriculum": [
         {
