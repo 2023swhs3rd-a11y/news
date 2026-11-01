@@ -70,8 +70,13 @@
         ]
       },
       "image": {
-        "query": "safety helmets construction site",
-        "alt": "공사 현장에 걸린 안전모"
+        "alt": "공사 현장에 걸린 안전모",
+        "file": "File:Sign on the obligation to use safety equipment - goggles, protective helmet, protective shoes and noise shields in a construction site in Jerusalem.jpg",
+        "src": "assets/img/2026-11-02/hum-field-training-safety.jpg",
+        "credit": "Korenn",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sign_on_the_obligation_to_use_safety_equipment_-_goggles,_protective_helmet,_protective_shoes_and_noise_shields_in_a_construction_site_in_Jerusalem.jpg"
       },
       "curriculum": [
         {
@@ -382,8 +387,13 @@
         }
       ],
       "image": {
-        "query": "comet Hale-Bopp night sky",
-        "alt": "밤하늘에 꼬리를 드리운 혜성"
+        "alt": "밤하늘에 꼬리를 드리운 혜성",
+        "file": "File:Kométa C-2020 F3 (NEOWISE).jpg",
+        "src": "assets/img/2026-11-02/sci-comet-origin-life.jpg",
+        "credit": "Palonitor",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Kom%C3%A9ta_C-2020_F3_(NEOWISE).jpg"
       },
       "curriculum": [
         {
@@ -522,8 +532,13 @@
         }
       ],
       "image": {
-        "query": "data center server racks",
-        "alt": "데이터센터에 줄지어 선 서버 랙"
+        "alt": "데이터센터에 줄지어 선 서버 랙",
+        "file": "File:Duga-1 radar data center inside empty server racks 2018.jpg",
+        "src": "assets/img/2026-11-02/eng-ai-datacenter.jpg",
+        "credit": "Joël van der Loo",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Duga-1_radar_data_center_inside_empty_server_racks_2018.jpg"
       },
       "curriculum": [
         {
@@ -675,8 +690,13 @@
         }
       ],
       "image": {
-        "query": "medicine tablets pills blister",
-        "alt": "포장된 알약"
+        "alt": "포장된 알약",
+        "file": "File:Sandoz.Methylprednisolone.4mg.jpg",
+        "src": "assets/img/2026-11-02/med-diet-drug-misuse.jpg",
+        "credit": "Anonymous Unknown author",
+        "license": "Public domain",
+        "license_url": "",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sandoz.Methylprednisolone.4mg.jpg"
       },
       "curriculum": [
         {
@@ -946,8 +966,13 @@
         }
       ],
       "image": {
-        "query": "compact discs stack",
-        "alt": "쌓여 있는 음반 CD"
+        "alt": "쌓여 있는 음반 CD",
+        "file": "File:Stack of CDs resting on a wooden table near a computer keyboard in a home office setting.jpg",
+        "src": "assets/img/2026-11-02/art-kpop-album-goods.jpg",
+        "credit": "Shixart1985",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Stack_of_CDs_resting_on_a_wooden_table_near_a_computer_keyboard_in_a_home_office_setting.jpg"
       },
       "curriculum": [
         {
