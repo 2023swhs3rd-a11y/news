@@ -234,7 +234,12 @@
       },
       "image": {
         "file": "File:Port Jersey container ship sunset 2018.jpg",
-        "alt": "해 질 무렵 항구의 컨테이너선과 크레인"
+        "alt": "해 질 무렵 항구의 컨테이너선과 크레인",
+        "src": "assets/img/2026-11-02/biz-exports-trillion.jpg",
+        "credit": "Eric Kilby",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Port_Jersey_container_ship_sunset_2018.jpg"
       },
       "curriculum": [
         {
@@ -1125,8 +1130,13 @@
         ]
       },
       "image": {
-        "query": "cracked earth dry mud",
-        "alt": "가뭄으로 갈라진 흙"
+        "alt": "가뭄으로 갈라진 흙",
+        "file": "File:Dry Cracked Mud (4957b8b2-f52c-43b0-acc2-ead42cf6f03b).jpg",
+        "src": "assets/img/2026-11-02/common-climate-lawsuit.jpg",
+        "credit": "Andrew Cattoir (Lake Mead National Recreation Area)",
+        "license": "Public domain",
+        "license_url": "",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Dry_Cracked_Mud_(4957b8b2-f52c-43b0-acc2-ead42cf6f03b).jpg"
       },
       "curriculum": [
         {
