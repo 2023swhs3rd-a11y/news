@@ -233,8 +233,8 @@
         ]
       },
       "image": {
-        "query": "container terminal port cranes Busan",
-        "alt": "컨테이너 부두의 크레인과 화물선"
+        "query": "container ship port",
+        "alt": "항구에 정박한 컨테이너선"
       },
       "curriculum": [
         {
@@ -532,13 +532,8 @@
         }
       ],
       "image": {
-        "alt": "데이터센터에 줄지어 선 서버 랙",
-        "file": "File:Duga-1 radar data center inside empty server racks 2018.jpg",
-        "src": "assets/img/2026-11-02/eng-ai-datacenter.jpg",
-        "credit": "Joël van der Loo",
-        "license": "CC BY-SA 4.0",
-        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Duga-1_radar_data_center_inside_empty_server_racks_2018.jpg"
+        "file": "File:Datacenter Server Racks (22370909788).jpg",
+        "alt": "데이터센터에 줄지어 선 서버 랙"
       },
       "curriculum": [
         {
@@ -690,13 +685,8 @@
         }
       ],
       "image": {
-        "alt": "포장된 알약",
-        "file": "File:Sandoz.Methylprednisolone.4mg.jpg",
-        "src": "assets/img/2026-11-02/med-diet-drug-misuse.jpg",
-        "credit": "Anonymous Unknown author",
-        "license": "Public domain",
-        "license_url": "",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Sandoz.Methylprednisolone.4mg.jpg"
+        "query": "white pills tablets",
+        "alt": "흰 알약"
       },
       "curriculum": [
         {
@@ -833,8 +823,8 @@
         }
       ],
       "image": {
-        "query": "empty classroom desks chalkboard",
-        "alt": "책상이 놓인 빈 교실"
+        "query": "classroom desks",
+        "alt": "책상이 놓인 교실"
       },
       "curriculum": [
         {
@@ -1120,8 +1110,8 @@
         ]
       },
       "image": {
-        "query": "drought cracked soil farmland",
-        "alt": "가뭄으로 갈라진 논밭의 흙"
+        "query": "drought soil",
+        "alt": "가뭄으로 갈라진 흙"
       },
       "curriculum": [
         {
