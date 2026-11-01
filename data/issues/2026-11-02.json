@@ -233,8 +233,13 @@
         ]
       },
       "image": {
-        "query": "container ship port",
-        "alt": "항구에 정박한 컨테이너선"
+        "alt": "항구에 정박한 컨테이너선",
+        "file": "File:MAERSK HANOI Container Ship (Port Koper SIKOP, 2023).jpg",
+        "src": "assets/img/2026-11-02/biz-exports-trillion.jpg",
+        "credit": "Petar Milošević",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:MAERSK_HANOI_Container_Ship_(Port_Koper_SIKOP,_2023).jpg"
       },
       "curriculum": [
         {
@@ -533,7 +538,12 @@
       ],
       "image": {
         "file": "File:Datacenter Server Racks (22370909788).jpg",
-        "alt": "데이터센터에 줄지어 선 서버 랙"
+        "alt": "데이터센터에 줄지어 선 서버 랙",
+        "src": "assets/img/2026-11-02/eng-ai-datacenter.jpg",
+        "credit": "Carl Lender from Sunrise, USA",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Datacenter_Server_Racks_(22370909788).jpg"
       },
       "curriculum": [
         {
@@ -685,8 +695,13 @@
         }
       ],
       "image": {
-        "query": "white pills tablets",
-        "alt": "흰 알약"
+        "alt": "흰 알약",
+        "file": "File:Tablets pills medicine medical waste.jpg",
+        "src": "assets/img/2026-11-02/med-diet-drug-misuse.jpg",
+        "credit": "Pöllö",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Tablets_pills_medicine_medical_waste.jpg"
       },
       "curriculum": [
         {
@@ -823,8 +838,13 @@
         }
       ],
       "image": {
-        "query": "classroom desks",
-        "alt": "책상이 놓인 교실"
+        "alt": "책상이 놓인 교실",
+        "file": "File:Classroom - Basic Desks - Loxton Historical Village (2020-10-22 09.30.20 by Michael Coghlan).jpg",
+        "src": "assets/img/2026-11-02/edu-contract-homeroom.jpg",
+        "credit": "Michael Coghlan from Adelaide, Australia",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Classroom_-_Basic_Desks_-_Loxton_Historical_Village_(2020-10-22_09.30.20_by_Michael_Coghlan).jpg"
       },
       "curriculum": [
         {
@@ -1110,8 +1130,13 @@
         ]
       },
       "image": {
-        "query": "drought soil",
-        "alt": "가뭄으로 갈라진 흙"
+        "alt": "가뭄으로 갈라진 흙",
+        "file": "File:Turkey drought soil moisture.jpg",
+        "src": "assets/img/2026-11-02/common-climate-lawsuit.jpg",
+        "credit": "NASA",
+        "license": "Public domain",
+        "license_url": "",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Turkey_drought_soil_moisture.jpg"
       },
       "curriculum": [
         {
