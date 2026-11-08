@@ -12,6 +12,8 @@
 const SHEET_NAME = '답안';
 const MAX_ANSWER = 3000;
 const PER_MINUTE = 10; // 한 학번이 1분에 보낼 수 있는 답안 수
+// 학번은 아무 값이나 적을 수 있어서, 학번을 바꿔 가며 보내는 도배는 아래 전체 상한으로 막는다.
+const TOTAL_PER_MINUTE = 300; // 사이트 전체가 1분에 받을 수 있는 답안 수(여러 반이 동시에 내도 넉넉한 값)
 
 // 반 전체가 동시에 제출할 때를 대비해 시트 쓰기는 한 번에 하나씩 한다.
 // 잠금을 오래 기다리지 않고 busy 로 답하면 사이트가 잠시 뒤 다시 보낸다.
@@ -36,6 +38,9 @@ function doPost(e) {
   const rateKey = 'n:' + studentId;
   const count = Number(cache.get(rateKey) || 0);
   if (count >= PER_MINUTE) return json_({ ok: false, error: '너무 빠르게 여러 번 제출했어요. 1분 뒤에 다시 제출해 주세요.' });
+  const allKey = 'all:' + Math.floor(Date.now() / 60000);
+  const total = Number(cache.get(allKey) || 0);
+  if (total >= TOTAL_PER_MINUTE) return json_({ ok: false, busy: true, error: '제출하는 학생이 많아요. 잠시 뒤 다시 눌러 주세요.' });
 
   const lock = LockService.getScriptLock();
   if (!lock.tryLock(8000)) return json_({ ok: false, busy: true, error: '제출하는 학생이 많아요. 잠시 뒤 다시 눌러 주세요.' });
@@ -59,6 +64,7 @@ function doPost(e) {
     SpreadsheetApp.flush();
     if (sid) cache.put('sid:' + sid, '1', 21600);
     cache.put(rateKey, String(count + 1), 60);
+    cache.put(allKey, String(total + 1), 120);
     return json_({ ok: true });
   } catch (err) {
     return json_({ ok: false, busy: true, error: '저장 중 문제가 생겼어요. 잠시 뒤 다시 눌러 주세요.' });
@@ -70,7 +76,7 @@ function doPost(e) {
 function clean_(v, max) {
   // 수식으로 해석되지 않도록 =,+,-,@ 로 시작하면 앞에 작은따옴표를 붙인다
   let s = String(v == null ? '' : v).trim().slice(0, max);
-  if (/^[=+\-@]/.test(s)) s = "'" + s;
+  if (/^[=+\-@\t\r]/.test(s)) s = "'" + s;
   return s;
 }
 

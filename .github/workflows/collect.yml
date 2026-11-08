@@ -22,7 +22,16 @@ jobs:
         with:
           python-version: "3.12"
       - name: 헤드라인 수집
-        run: python scripts/collect.py ${{ inputs.date && format('--date {0}', inputs.date) || '' }}
+        env:
+          DATE: ${{ inputs.date }}
+        # 입력값을 명령에 바로 끼워 넣지 않고 환경 변수로 넘긴 뒤 날짜 모양인지 확인한다.
+        run: |
+          if [ -n "$DATE" ]; then
+            [[ "$DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "발행일은 YYYY-MM-DD 로 적어 주세요: $DATE"; exit 1; }
+            python scripts/collect.py --date "$DATE"
+          else
+            python scripts/collect.py
+          fi
       - name: 원자료 커밋
         run: |
           git config user.name "github-actions[bot]"
