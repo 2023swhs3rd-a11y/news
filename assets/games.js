@@ -4,6 +4,7 @@
   "use strict";
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const href = (u) => (/^https?:\/\//i.test(String(u || "")) ? esc(u) : "#");
   const shuffle = (xs) => {
     const a = xs.slice();
     for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
@@ -136,7 +137,7 @@
     function show() {
       if (i >= list.length) {
         root.innerHTML = `<p class="g-final">${list.length}문제 중 <b>${score}</b>개를 맞혔어요.</p>
-          <ul class="g-review">${list.map((h) => `<li><a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.title)}</a> <span class="muted">${esc(h.source)}</span></li>`).join("")}</ul>
+          <ul class="g-review">${list.map((h) => `<li><a href="${href(h.url)}" target="_blank" rel="noopener">${esc(h.title)}</a> <span class="muted">${esc(h.source)}</span></li>`).join("")}</ul>
           <button type="button" class="primary g-again">다시 하기</button>`;
         root.querySelector(".g-again").onclick = start;
         return;
@@ -161,7 +162,7 @@
         root.querySelector(".g-blank").outerHTML = `<b class="g-filled">${esc(h.answer)}</b>`;
         const fb = root.querySelector(".g-feedback");
         fb.className = "g-feedback " + (ok ? "ok" : "no");
-        fb.innerHTML = `${ok ? "정답이에요!" : `정답: <b lang="en">${esc(h.answer)}</b>`} <a href="${esc(h.url)}" target="_blank" rel="noopener">원문 보기 ↗</a>`;
+        fb.innerHTML = `${ok ? "정답이에요!" : `정답: <b lang="en">${esc(h.answer)}</b>`} <a href="${href(h.url)}" target="_blank" rel="noopener">원문 보기 ↗</a>`;
         fb.insertAdjacentHTML("afterend", `<button type="button" class="primary g-next">${i + 1 < list.length ? "다음 문제" : "결과 보기"}</button>`);
         root.querySelector(".g-next").onclick = () => { i++; show(); };
       };

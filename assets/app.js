@@ -35,6 +35,8 @@
 
   const $ = (sel) => document.querySelector(sel);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  // 바깥 링크는 http(s) 주소만 연결한다(javascript: 같은 주소가 원고에 섞여도 실행되지 않게).
+  const href = (u) => (/^https?:\/\//i.test(String(u || "")) ? esc(u) : "#");
 
   // 학번·이름은 "이 기기에 기억하기"를 고른 경우에만 localStorage 에 둔다 (교실 공용 PC 대비).
   // 작성 중인 답안은 탭을 닫으면 사라지는 sessionStorage 에 둔다.
@@ -174,7 +176,7 @@
     // 원 발표일: 연구·발표를 소개한 기사라면 논문·발표가 처음 나온 날을 함께 보여 준다 (재소개 기사 구별)
     const o = l.orig;
     const orig = o && o.date ? `<span class="src-orig">원 발표 ${fmtDate(o.date)}${o.what ? ` · ${esc(o.what)}` : ""}</span>` : "";
-    return `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.title)}</a><span class="src-meta">${meta}</span>${orig}</li>`;
+    return `<li><a href="${href(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.title)}</a><span class="src-meta">${meta}</span>${orig}</li>`;
   }
 
   // 한 사건, 여러 시선: 같은 사건을 다룬 국내·해외 기사를 나란히 놓고 따져 보는 코너
@@ -190,7 +192,7 @@
     const items = c.items.map((it) => `
       <div class="cmp-item">
         <div class="cmp-src"><b>${esc(it.source)}</b>${it.kind ? `<span class="sep">·</span>${esc(it.kind)}` : ""}${it.lang === "en" ? '<span class="lang">EN</span>' : ""}</div>
-        <a class="cmp-title" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+        <a class="cmp-title" href="${href(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
         ${it.lead ? `<p class="cmp-lead">${esc(it.lead)}</p>` : ""}
         ${it.focus ? `<p class="cmp-focus"><b>강조한 점</b> ${esc(it.focus)}</p>` : ""}
       </div>`).join("");
@@ -242,11 +244,11 @@
   function figureHTML(img) {
     if (!img || !img.src) return "";
     const lic = img.license_url
-      ? `<a href="${esc(img.license_url)}" target="_blank" rel="noopener license">${esc(img.license)}</a>` : esc(img.license);
+      ? `<a href="${href(img.license_url)}" target="_blank" rel="noopener license">${esc(img.license)}</a>` : esc(img.license);
     return `
         <figure class="art-img">
           <img src="${esc(img.src)}" alt="${esc(img.alt || "")}" loading="lazy" decoding="async">
-          <figcaption>사진: ${esc(img.credit)} · ${lic} · <a href="${esc(img.source_url)}" target="_blank" rel="noopener">원본</a>
+          <figcaption>사진: ${esc(img.credit)} · ${lic} · <a href="${href(img.source_url)}" target="_blank" rel="noopener">원본</a>
             <span class="muted">(기사 속 장면이 아닌 이해를 돕는 사진)</span></figcaption>
         </figure>`;
   }
@@ -258,7 +260,7 @@
     const dateBadge = showDate ? `<a class="badge date" href="#date=${date}">${issueLabel(issueByDate(date))}</a>` : "";
     const links = (a.links || []).map(linkHTML).join("");
     const evidence = (a.evidence || []).length ? `<div class="evidence"><span class="muted">기사가 근거로 쓴 원자료</span> ${a.evidence.map((e) =>
-      `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.label)}</a>`).join(" · ")}</div>` : "";
+      `<a href="${href(e.url)}" target="_blank" rel="noopener">${esc(e.label)}</a>`).join(" · ")}</div>` : "";
     const curr = (a.curriculum || []).map((c) =>
       `<li><b>${esc(c.subject)}</b>${c.unit ? ` <span class="muted">${esc(c.unit)}</span>` : ""}${(c.concepts || []).length ? `<span class="curr-concepts">${c.concepts.map(esc).join(" · ")}</span>` : ""}</li>`).join("");
     const majors = (a.majors || []).length ? `<div class="majors"><span class="muted">관련 전공</span>${a.majors.map((m) =>
@@ -357,7 +359,7 @@
       .filter(Boolean).join('<span class="sep">·</span>');
     const g = r.guide || {};
     const terms = (g.terms || []).map((t) => `<li><b>${esc(t.term)}</b> ${esc(t.desc)}</li>`).join("");
-    const easy = (r.easy || []).map((e) => `<li><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.label)}</a> <span class="muted">${esc(e.source || "")}</span></li>`).join("");
+    const easy = (r.easy || []).map((e) => `<li><a href="${href(e.url)}" target="_blank" rel="noopener">${esc(e.label)}</a> <span class="muted">${esc(e.source || "")}</span></li>`).join("");
     const guide = g.start || g.ask || terms || easy ? `
         <details class="read-guide"><summary>읽기 길잡이</summary>
           ${g.start ? `<p><b>어디부터</b> ${esc(g.start)}</p>` : ""}
@@ -365,7 +367,7 @@
           ${terms ? `<p><b>먼저 알아 둘 낱말</b></p><ul class="read-terms">${terms}</ul>` : ""}
           ${easy ? `<p><b>쉽게 풀어 쓴 자료</b></p><ul class="read-easy">${easy}</ul>` : ""}
         </details>` : "";
-    return `<li class="read-item"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a><span class="src-meta">${meta}</span>${r.note ? `<p class="read-note">${esc(r.note)}</p>` : ""}${guide}</li>`;
+    return `<li class="read-item"><a href="${href(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a><span class="src-meta">${meta}</span>${r.note ? `<p class="read-note">${esc(r.note)}</p>` : ""}${guide}</li>`;
   }
 
   function readingHTML(list, title = "더 읽을거리") {
@@ -381,13 +383,13 @@
     return `
       <article class="card activity" id="act-${esc(x.id)}">
         <div class="act-provider muted">${esc(x.provider)}${x.lang === "en" ? '<span class="sep">·</span><span class="lang">EN</span>' : ""}</div>
-        <h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
+        <h3><a href="${href(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
         <p class="summary">${esc(x.desc)}</p>
         <p class="act-tags muted">${tags}</p>
         ${x.when ? `<p class="muted act-when">${esc(x.when)}</p>` : ""}
         <div class="section-label">이렇게 해 봐요</div>
         <ol class="act-prompts">${(x.prompts || []).map((q) => `<li>${esc(q)}</li>`).join("")}</ol>
-        <div class="q-actions"><a class="act-go" href="${esc(x.url)}" target="_blank" rel="noopener">활동하러 가기 ↗</a>${submit}</div>
+        <div class="q-actions"><a class="act-go" href="${href(x.url)}" target="_blank" rel="noopener">활동하러 가기 ↗</a>${submit}</div>
       </article>`;
   }
 
