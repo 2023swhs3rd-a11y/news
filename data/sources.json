@@ -19,6 +19,7 @@
     {"name": "시사IN", "lang": "ko", "kind": "국내 언론", "type": "gnews", "query": "site:sisain.co.kr"},
     {"name": "한국교육신문", "lang": "ko", "kind": "교육 매체", "type": "gnews", "query": "site:hangyo.com"},
     {"name": "에듀프레스", "lang": "ko", "kind": "교육 매체", "type": "rss", "urls": ["https://www.edupress.kr/rss/allArticle.xml"]},
+    {"name": "토끼풀", "lang": "ko", "kind": "청소년 언론", "type": "rss", "urls": ["https://www.tokipul.net/rss/allArticle.xml"]},
     {"name": "청년의사", "lang": "ko", "kind": "의약·보건 매체", "type": "rss", "urls": ["https://www.docdocdoc.co.kr/rss/allArticle.xml"]},
     {"name": "메디게이트뉴스", "lang": "ko", "kind": "의약·보건 매체", "type": "gnews", "query": "site:medigatenews.com"},
     {"name": "전자신문", "lang": "ko", "kind": "공학·IT 매체", "type": "gnews", "query": "site:etnews.com"},
