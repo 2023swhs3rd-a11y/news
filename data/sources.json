@@ -1,5 +1,5 @@
 {
-  "_note": "주간 헤드라인 수집 대상. type=rss 는 RSS/Atom 피드, type=gnews 는 구글 뉴스 검색 RSS(site: 검색), type=kdi 는 KDI 보고서 목록 페이지. 수집에 실패한 매체는 건너뛰고 기록만 남깁니다. 유료 구독 매체에는 paywall: true 를 붙인다.",
+  "_note": "주간 헤드라인 수집 대상. type=rss 는 RSS/Atom 피드, type=gnews 는 구글 뉴스 검색 RSS(site: 검색), type=kdi 는 KDI 보고서 목록 페이지. 수집에 실패한 매체는 건너뛰고 기록만 남깁니다. 유료 구독 매체를 넣을 때는 paywall: true 를 붙인다.",
   "sources": [
     {"name": "연합뉴스", "lang": "ko", "kind": "국내 언론", "type": "rss", "urls": ["https://www.yna.co.kr/rss/news.xml", "https://www.yna.co.kr/rss/economy.xml", "https://www.yna.co.kr/rss/society.xml", "https://www.yna.co.kr/rss/international.xml", "https://www.yna.co.kr/rss/culture.xml"]},
     {"name": "KBS", "lang": "ko", "kind": "국내 언론", "type": "gnews", "query": "site:news.kbs.co.kr"},
@@ -24,7 +24,7 @@
     {"name": "전자신문", "lang": "ko", "kind": "공학·IT 매체", "type": "gnews", "query": "site:etnews.com"},
     {"name": "ZDNet Korea", "lang": "ko", "kind": "공학·IT 매체", "type": "gnews", "query": "site:zdnet.co.kr"},
     {"name": "씨네21", "lang": "ko", "kind": "문화·예술 매체", "type": "gnews", "query": "site:cine21.com/news"},
-    {"name": "국립현대미술관", "lang": "ko", "kind": "문화·예술 기관", "type": "gnews", "query": "site:mmca.go.kr"},
+    {"name": "국립현대미술관", "lang": "ko", "kind": "문화·예술 기관", "type": "gnews", "query": "국립현대미술관 전시"},
     {"name": "문화체육관광부", "lang": "ko", "kind": "정부 보도자료", "type": "gnews", "query": "문화체육관광부 site:korea.kr"},
     {"name": "BBC", "lang": "en", "kind": "해외 언론", "type": "rss", "urls": ["https://feeds.bbci.co.uk/news/world/rss.xml", "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml", "https://feeds.bbci.co.uk/news/technology/rss.xml", "https://feeds.bbci.co.uk/news/health/rss.xml", "https://feeds.bbci.co.uk/news/education/rss.xml"]},
     {"name": "The Guardian", "lang": "en", "kind": "해외 언론", "type": "rss", "urls": ["https://www.theguardian.com/world/rss", "https://www.theguardian.com/science/rss", "https://www.theguardian.com/education/rss", "https://www.theguardian.com/culture/rss"]},
@@ -34,9 +34,9 @@
     {"name": "Science News", "lang": "en", "kind": "과학 매체", "type": "rss", "urls": ["https://www.sciencenews.org/feed"]},
     {"name": "The Conversation", "lang": "en", "kind": "과학 매체", "type": "rss", "urls": ["https://theconversation.com/global/articles.atom"]},
     {"name": "EurekAlert!", "lang": "en", "kind": "과학 매체", "type": "gnews", "hl": "en", "query": "site:eurekalert.org/news-releases"},
-    {"name": "한국교육개발원(KEDI)", "lang": "ko", "kind": "연구기관", "type": "gnews", "query": "site:kedi.re.kr"},
-    {"name": "KISTEP", "lang": "ko", "kind": "연구기관", "type": "gnews", "query": "site:kistep.re.kr"},
-    {"name": "한국보건사회연구원", "lang": "ko", "kind": "연구기관", "type": "gnews", "query": "site:kihasa.re.kr"},
+    {"name": "한국교육개발원(KEDI)", "lang": "ko", "kind": "연구기관", "type": "gnews", "query": "한국교육개발원"},
+    {"name": "KISTEP", "lang": "ko", "kind": "연구기관", "type": "gnews", "query": "한국과학기술기획평가원 OR KISTEP"},
+    {"name": "한국보건사회연구원", "lang": "ko", "kind": "연구기관", "type": "gnews", "query": "한국보건사회연구원"},
     {"name": "Pew Research Center", "lang": "en", "kind": "연구기관", "type": "rss", "urls": ["https://www.pewresearch.org/feed/"]}
   ]
 }
