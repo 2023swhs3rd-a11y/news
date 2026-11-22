@@ -12,11 +12,13 @@
 
 - **원고 쓰기 전 수집(고정 단계)**: 원고를 쓰기 전에 언제나 `주간 헤드라인 수집`을 직접 실행하고 끝날 때까지 기다린 뒤 main을 받아 옵니다. 예약 실행이 이미 돌았어도 다시 돌립니다(같은 파일을 최신 결과로 덮어씁니다).
   ```
-  gh workflow run collect.yml -R 2023swhs3rd-a11y/news -f date=<발행일>
-  sleep 10; RUN=$(gh run list -R 2023swhs3rd-a11y/news -w collect.yml -L 1 --json databaseId -q '.[0].databaseId')
-  gh run watch "$RUN" -R 2023swhs3rd-a11y/news --exit-status
+  R=repos/2023swhs3rd-a11y/news/actions/workflows/collect.yml
+  gh api -X POST $R/dispatches -f ref=main -f 'inputs[date]=<발행일>'
+  sleep 15; RUN=$(gh api "$R/runs?event=workflow_dispatch&per_page=1" -q '.workflow_runs[0].id')
+  for i in $(seq 40); do st=$(gh api repos/2023swhs3rd-a11y/news/actions/runs/$RUN -q '.status+" "+(.conclusion//"")'); [[ $st == completed* ]] && break; sleep 30; done; echo "$st"
   git pull origin main
   ```
+  (Claude Code 세션에서는 GitHub GraphQL이 막혀 `gh workflow run`·`gh run watch`가 실패하므로 REST(`gh api`)로 부릅니다.)
   실행이 실패하거나 20분 안에 끝나지 않으면 예약 실행이 남긴 `data/raw/<발행일>.json`을 쓰고, 그것도 없으면 아래처럼 웹 검색으로 찾습니다. 어느 쪽이었는지 PR 본문에 적습니다.
 - 발행일은 그 주 월요일, `period`는 직전 월~일요일입니다.
 - `data/raw/<발행일>.json`이 없거나 거의 비어 있으면 웹 검색과 각 매체 페이지로 직접 찾되, 실제로 확인한 기사만 씁니다. URL을 지어내지 않습니다.
