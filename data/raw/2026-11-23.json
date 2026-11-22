@@ -1,8 +1,53 @@
 {
  "issue_date": "2026-11-23",
- "collected_at": "2026-11-22T11:19:14+00:00",
+ "collected_at": "2026-11-22T12:13:55+00:00",
  "since": "2026-11-15",
  "items": [
+  {
+   "source": "연합뉴스",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "한전서 유출된 152만건에 내 개인정보도 담겼나…2차 피해 우려",
+   "url": "https://www.yna.co.kr/view/AKR20261122049800003",
+   "published": "2026-11-22T21:01:35+09:00",
+   "summary": "(서울=연합뉴스) 장보인 기자 = 한국전력에서 대규모 개인정보 유출 사고가 발생한 가운데 유출 범위와 피해 규모에 대한 우려가 커지고 있다."
+  },
+  {
+   "source": "연합뉴스",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "메이 전 英총리, EU 재가입 검토에 \"경악 금치 못해\" 반발",
+   "url": "https://www.yna.co.kr/view/AKR20261122050300009",
+   "published": "2026-11-22T20:57:51+09:00",
+   "summary": "(서울=연합뉴스) 강훈상 기자 = 테리사 메이 전 영국 총리가 유럽연합(EU) 재가입을 거론하는 현 정부를 맹비난했다고 BBC방송이 22일(현지..."
+  },
+  {
+   "source": "연합뉴스",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "[속보] 유엔기후총회, 화석연료 이견에 결렬…합의문 채택 불발",
+   "url": "https://www.yna.co.kr/view/AKR20261122050400109",
+   "published": "2026-11-22T20:53:42+09:00",
+   "summary": "("
+  },
+  {
+   "source": "연합뉴스",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "'실종 7명' 해광호 수중수색 돌입…선체 진입로 확보 나서",
+   "url": "https://www.yna.co.kr/view/AKR20261122050100063",
+   "published": "2026-11-22T20:44:41+09:00",
+   "summary": "(태안=연합뉴스) 이재림 기자 = 태안해경은 충남 태안 해역에 침몰한 것으로 확인된 해광호(7.93t)에 대해 22일 밤 중앙해양특수구조단 잠수..."
+  },
+  {
+   "source": "연합뉴스",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "김정은, 러시아대사 신임장 접수…30여년 만에 의전 변화",
+   "url": "https://www.yna.co.kr/view/AKR20261122050000504",
+   "published": "2026-11-22T20:39:43+09:00",
+   "summary": "(서울=연합뉴스) 이은정 기자 = 김정은 북한 국무위원장이 안드레이 레오니도비치 포드욜리셰프 북한 주재 러시아 대사로부터 직접 신임장을 받았다."
+  },
   {
    "source": "연합뉴스",
    "kind": "국내 언론",
@@ -38,51 +83,6 @@
    "url": "https://www.yna.co.kr/view/AKR20261122020451062",
    "published": "2026-11-22T20:04:38+09:00",
    "summary": "(평창=연합뉴스) 이재현 기자 = 강원 평창에서 공기총 사격 연습을 하다가 지나가던 주민을 맞혀 숨지게 한 60대 남성에 대해 경찰이 구속영장을..."
-  },
-  {
-   "source": "연합뉴스",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "[날씨] 월요일 아침 영하권 추위…전국에 비·눈 소식",
-   "url": "https://www.yna.co.kr/view/AKR20261122040000004",
-   "published": "2026-11-22T20:00:00+09:00",
-   "summary": "(서울=연합뉴스) 윤민혁 기자 = 월요일인 23일은 전국의 아침 기온이 영하권인 가운데 곳곳에 비나 눈이 내리겠다."
-  },
-  {
-   "source": "연합뉴스",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "동생은 쓴소리하고 형은 귀 기울이고…쇼트트랙 남자 계주의 힘",
-   "url": "https://www.yna.co.kr/view/AKR20261122048200007",
-   "published": "2026-11-22T19:54:23+09:00",
-   "summary": "(서울=연합뉴스) 김동한 기자 = 한국 쇼트트랙 남자 대표팀 주장 김태성(화성시청)이 꼽은 5,000ｍ 계주 시즌 두 번째 우승의 비결은 서로를..."
-  },
-  {
-   "source": "연합뉴스",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "멀어지는 보수 대통합…張韓갈등 격화에 吳張·吳韓 기류도 미묘(종합)",
-   "url": "https://www.yna.co.kr/view/AKR20261121050251001",
-   "published": "2026-11-22T19:35:14+09:00",
-   "summary": "(서울=연합뉴스) 권희원 노선웅 기자 = 국민의힘을 비롯한 보수 진영에서의 대통합론이 다시 사그라지고 있다."
-  },
-  {
-   "source": "연합뉴스",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "李대통령, 최교진 면직안 재가…靑 \"다음 인선 절차대로 진행\"(종합2보)",
-   "url": "https://www.yna.co.kr/view/AKR20261122024052001",
-   "published": "2026-11-22T19:34:21+09:00",
-   "summary": "(서울=연합뉴스) 고동욱 오규진 기자 = 이재명 대통령이 22일 최교진 교육부 장관의 사의 표명을 즉각 받아들였다."
-  },
-  {
-   "source": "연합뉴스",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "[부고] 박수지(뉴시스 울산취재본부 기자)씨 부친상",
-   "url": "https://www.yna.co.kr/view/AKR20261122047400057",
-   "published": "2026-11-22T19:33:36+09:00",
-   "summary": "▲ 박정(향년 69세)씨 별세, 김기덕씨 남편상, 박희수·박수지(뉴시스 울산취재본부 기자)씨 부친상 = 22일 오후, 울산영락원 VVIP 100..."
   },
   {
    "source": "연합뉴스",
@@ -252,41 +252,21 @@
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "서울 낮기온 5도…내일 전국에 비·눈",
-   "url": "https://news.kbs.co.kr/news/view.do?ncd=8719349",
+   "title": "금감원, 불법사금융 무효확인서 심사에 AI 도입",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719351",
    "published": "2026-11-22T03:01:00+00:00",
-   "summary": "서울 낮기온 5도…내일 전국에 비·눈 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE40SUtQZ1AxYllsei16NTB3c0lvSW5RdDBfTzMxcC1PdnBWWTlYRFM1UkNjX21yU2dzbUFWQW9ZMlJ0aHQ5X3doc0FmUUw4LVlyemVWZlZUVzBuZ1k?oc=5"
+   "summary": "금감원, 불법사금융 무효확인서 심사에 AI 도입 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13QktMZXhmVmg5MzdrZnVva0hZNE9EMUxHdHl2X3NfVGs1azBydXllQTE0bVh5d3NKUm1RZ2J2WmVBZkhZUXBIanZSdnBQY1dmVWdsVk5OWlJpZzJlQUlyUzZnODgzZw?oc=5"
   },
   {
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "다카이치, 개별 의원 직접 챙기며 ‘당내 통치’…“당 장악력 확대”",
-   "url": "https://news.kbs.co.kr/news/view.do?ncd=8719350",
-   "published": "2026-11-22T03:01:00+00:00",
-   "summary": "다카이치, 개별 의원 직접 챙기며 ‘당내 통치’…“당 장악력 확대” KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1naW9kNjVReW0tNjFmZnRmSWlsUk5XRklBRVpBal8xcm45QUwweFFyNTNtQVk3N0lHYm16cVcwUHhGVlh5LTluZTc2dDhhNGdtQVBvY0NZWHBveGs?oc=5"
-  },
-  {
-   "source": "KBS",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "“멈출 줄 아는 러너가 아름답다”…달리다 멈춰야 할 신호 [닥터한방]",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719364",
-   "published": "2026-11-22T02:54:58+00:00",
-   "summary": "“멈출 줄 아는 러너가 아름답다”…달리다 멈춰야 할 신호 [닥터한방] KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1haGRDaUZoWEh1NDRDSDJOTmdITlRMV0tNWWZuUl84bUFCUmVqN2owVG1sTVIySU9NTGRjbm5XTGFZUEVJaUlfR2l3eVVjako1dDlhY0RQSnF5SUZyVlQ1bXRMSkpyUQ?oc=5"
-  },
-  {
-   "source": "KBS",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "NYT “AI 발전에 향후 1∼2년 특히 위험”",
-   "url": "https://news.kbs.co.kr/news/view.do?ncd=8719321",
-   "published": "2026-11-21T23:24:00+00:00",
-   "summary": "NYT “AI 발전에 향후 1∼2년 특히 위험” KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5nTmthWDNUSUhOU3ltXzdGdWs4OTl5WElTTWxuR2JOY3lwT2VXMW5xU3g0RTF3MmVRMG1RVnl4Ym9sRU5KaHVsSTNBU3g1c0lKREJJTDNwb0tXMms?oc=5"
+   "title": "최교진 교육장관 사의…“수능 책임 통감”",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719342",
+   "published": "2026-11-22T02:42:00+00:00",
+   "summary": "최교진 교육장관 사의…“수능 책임 통감” KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5IRGZfN1lPWmVZbl9IWDFwWlprdWVrcm5kVjZLR1N4a2NfYjFGRXlGVnFMWDFWNUVsTjFrMnBkUXB6SDRCLVF5cG1ER1R2eXdUbU1FLW95eGJFdTJ2bnQzRTI5Tks1QQ?oc=5"
   },
   {
    "source": "KBS",
@@ -302,16 +282,6 @@
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "절기 ‘소설’ 겨울 추위…대기 건조 유의 [7시 날씨]",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719308",
-   "published": "2026-11-21T22:08:00+00:00",
-   "summary": "절기 ‘소설’ 겨울 추위…대기 건조 유의 [7시 날씨] KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtWUN5d29NMlNnZER5ZzFxSmNFSU9NNTJpSlVaM3E1U2Z2VGFZVXdQdkJRaXExZF8wNlVDMVdKX1p3elVXSjZ6TGE5MjRWQzNYOVU5YnhEYkROa0JBT1lOZmF1NGFyQQ?oc=5"
-  },
-  {
-   "source": "KBS",
-   "kind": "국내 언론",
-   "lang": "ko",
    "title": "오늘 첫차부터 경부선 일반열차 모두 운행재개",
    "url": "https://news.kbs.co.kr/news/view.do?ncd=8719284",
    "published": "2026-11-21T15:01:12+00:00",
@@ -322,11 +292,11 @@
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "춘천시, 자동차세 체납액 일제 정리 나서",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719270",
-   "published": "2026-11-21T13:11:00+00:00",
-   "summary": "춘천시, 자동차세 체납액 일제 정리 나서 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBxd2kyLUNxVHNTTUhtVkd6cmNIY0p6aHU0NU9kWTY0ZXNlbjY3amhlX0dxQjRSWkJqRHMtM3N3X2RvRFM4X05EdE5HSEk0M1pjSmZsTkM0YXVnQlpQcXFXeGRIb21MQQ?oc=5"
+   "title": "제주 신화역사공원 J지구 ‘테마공원’ 개발 본격화",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719276",
+   "published": "2026-11-21T13:17:00+00:00",
+   "summary": "제주 신화역사공원 J지구 ‘테마공원’ 개발 본격화 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5wRm1Nb1hZbXB5THJUNDIzQmU2SkU2RzBaUTBzUzBzQW0tR2UzOGZ2dmcyU2l5elp6Z2I3dzUtQV96cWFvenpZOWNmODhEMmV1N2JFQXJrbVBRdGtod0pZZXo0eWs3Zw?oc=5"
   },
   {
    "source": "KBS",
@@ -342,81 +312,51 @@
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "오징어에서 반도체까지…‘메이드 인 코리아’ 80년사",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8718766",
-   "published": "2026-11-20T23:09:00+00:00",
-   "summary": "오징어에서 반도체까지…‘메이드 인 코리아’ 80년사 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jRWVjY1EyM19mNkhnc2ZULTVjLXNBMXB0U2U2Qlc3NW9yU1JMZkNQSlpUUEtkekpqMTdDZFRCXzI4anQ1UG1odjFxNEtwZmpzNF80YkVzQXpiVm9ibkpRd1B3VjJVZw?oc=5"
+   "title": "“AI 클로드, 수학 최대 난제 리만가설 증명” 주장 나와",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8719075",
+   "published": "2026-11-20T23:04:00+00:00",
+   "summary": "“AI 클로드, 수학 최대 난제 리만가설 증명” 주장 나와 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5WakZHdXNCTUNudkNZZVlERFNkcHdwSklGcjdzMHNyZERKQzRYdUMwLTliRkhlYzJEdW51OGVfNGlZTks2RkF5N282NjAyUURud3J1X2pMM2xYaWVQRlZTeVBRMEltQQ?oc=5"
   },
   {
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "고유가에 기댄 석유·부진한 자동차…1조 달러 유지 가능한가",
-   "url": "https://news.kbs.co.kr/news/view.do?ncd=8718767",
-   "published": "2026-11-20T23:09:00+00:00",
-   "summary": "고유가에 기댄 석유·부진한 자동차…1조 달러 유지 가능한가 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1KTXctTHpJc042Q1VBUWlXWUtyWmp4ekFRTVIzZl82enBIN0RueW5SWHA1QW8wTTMtS19IZ1BYdEhjd2wtcWM5cVdJRlJFM2ZKbUhZYmN4OWFLRGc?oc=5"
+   "title": "울산시, 지역 식품·화장품 기업 중국 판로 개척 지원",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8718929",
+   "published": "2026-11-20T13:17:00+00:00",
+   "summary": "울산시, 지역 식품·화장품 기업 중국 판로 개척 지원 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1RWDQ0dlFGeTFrMnd3RURLMmdzYllVS2dNMEZDQVdNMkJSWFJjQk5taUEydWotckZIbS1PbndCWnFRSkdEX1ZGZ3E2YUJ0bTZ5VVc2MkZZNTBJMXM?oc=5"
   },
   {
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "어떻게 ‘수출 1조 달러’인데 ‘주가 폭락’이 오나",
-   "url": "https://news.kbs.co.kr/news/view.do?ncd=8719073",
-   "published": "2026-11-20T23:02:00+00:00",
-   "summary": "어떻게 ‘수출 1조 달러’인데 ‘주가 폭락’이 오나 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE80SWNSa0Y3X3dJXzVlc05Bd1dLR1pzbGhsb3Vfb2x5RXZfQlVjS3RrZ2pLLUN3WnFFV3hYTFcybXNXZ1ZCSGg0WDM2RkppcHotTG9kdGU3ZTRYUkU?oc=5"
+   "title": "북·미 회담 띄웠지만…트럼프 대통령 외교 득실은?",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8717996",
+   "published": "2026-11-19T21:45:00+00:00",
+   "summary": "북·미 회담 띄웠지만…트럼프 대통령 외교 득실은? KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9DcWRBRXl5Mmhyc2ZFZElyeENXenJEZV9iaDdpckhUX2Q5M21qLVBZRDJMMDJiNlZ4SWhDOUg0SElrTklzNTBLX3k0MTlSQVI1QWt0a1pBdVpMbTg?oc=5"
   },
   {
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "천안-대전 구간 일반열차 운행중단…경부선 세종 부근 화물열차 탈선",
-   "url": "https://news.kbs.co.kr/news/view.do?ncd=8719057",
-   "published": "2026-11-20T22:25:00+00:00",
-   "summary": "천안-대전 구간 일반열차 운행중단…경부선 세종 부근 화물열차 탈선 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PSnJqeWpQckQyR1VhTnQycTdZYWFpWXZtbkphbF82R0k0N05xNTRQaTdhN3JpaHgySHVfOEpOckMwZGpjaVFfXzBmVHFfX0F3cHQxT0xUX3ctRHM?oc=5"
+   "title": "시험 시작 전 무작위 전화…전체 시험장에 CCTV 설치 추진",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8717994",
+   "published": "2026-11-19T21:41:00+00:00",
+   "summary": "시험 시작 전 무작위 전화…전체 시험장에 CCTV 설치 추진 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jZGxvYXdxMHEzVDE4Z3U4NXYxQzY5c3plcmZPNUR1VkpDWG5sV19sekhsT3dtUzZ6ZzQtSjdydVFrRlFQa2JJQk1WbmpKR2ZNYVo3SnFfMUphNWc?oc=5"
   },
   {
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "이강인, AFC 사상 첫 올해의 국제선수 2년 연속 수상",
-   "url": "https://news.kbs.co.kr/news/view.do?ncd=8718111",
-   "published": "2026-11-19T23:55:00+00:00",
-   "summary": "이강인, AFC 사상 첫 올해의 국제선수 2년 연속 수상 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5OEVqcjlXMG1CeVBNZVVDZUJ2UWFoSUg0allTSl9DZ05UT3dQZU5QYUlpeGI3dm1GM05LRHZsU0FHQUJ2LUtkSzgxNFZRY0NQdXViSTZQMlNFVmM?oc=5"
-  },
-  {
-   "source": "KBS",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "자치경찰단, 수능 이후 청소년 유해환경 특별단속",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8718089",
-   "published": "2026-11-19T23:15:00+00:00",
-   "summary": "자치경찰단, 수능 이후 청소년 유해환경 특별단속 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5FWnRGWVZDdjdZeHJWVE1tclQwLXA3eW1tRHB4OWU0UnNrczFHSlQ2eFlBSy1SZ2dydXM1djdXaWlsRjB4cHpmcHJGRTdWVFRVSjRjazA5VFF4TlFwbVFRWjd5d1hCQQ?oc=5"
-  },
-  {
-   "source": "KBS",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "KBS춘천 ‘대한민국 특구1281’ 일경언론상 대상",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8718075",
-   "published": "2026-11-19T23:05:00+00:00",
-   "summary": "KBS춘천 ‘대한민국 특구1281’ 일경언론상 대상 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA1QXBCX2dZQXVJYm1pSDkwbE9nVjF6T2xZZEtQcHFMY2ZyamlEeUZrbzZMUGRsdTY3SUNPdkFEWnJPSVNkdUJSS2gySVZkYlFjTGVQX05PejRFUjEzTDh5NEw4WV9PZw?oc=5"
-  },
-  {
-   "source": "KBS",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "리야드 80층 빌딩, 후티 미사일에 파손…네타냐후 “시기 조율만 남아”",
-   "url": "https://news.kbs.co.kr/news/mobile/view/view.do?ncd=8717995",
-   "published": "2026-11-19T21:44:00+00:00",
-   "summary": "리야드 80층 빌딩, 후티 미사일에 파손…네타냐후 “시기 조율만 남아” KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAxdzh0ZXVRcjhCVENGWHgwSmd5bUlQZjFRaW9HZlZkNmpSZ1E1ZEhLSXlyZ25XV1diVUcyNklIT3VmRTRvMUktOFlNSUR5T0dEMUM3dno1RWVicXZ4RWg3VUI4NHBheDBIRU5n?oc=5"
+   "title": "김정은, 보란 듯 함경남도 시찰…북미 회담 불발",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8717977",
+   "published": "2026-11-19T21:13:00+00:00",
+   "summary": "김정은, 보란 듯 함경남도 시찰…북미 회담 불발 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9RRVI1VlN0X3JUMGtubzliRXN1aHVwLTA2LWxmR0VQOFpEd3F4UVBPMDhvS3hUVFptYzFFallqcGJlcnhRYXgzUlViQko3by1JamY1dmRqZzlXVFU?oc=5"
   },
   {
    "source": "KBS",
@@ -432,41 +372,91 @@
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "오늘 2027학년도 수능…이 시각 수험장",
-   "url": "https://news.kbs.co.kr/news/view.do?ncd=8716834",
-   "published": "2026-11-18T22:02:00+00:00",
-   "summary": "오늘 2027학년도 수능…이 시각 수험장 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1hUGFJNkI5X21jdUYyaVplR00yVW5FWUZoMnZDejdjckhYbm81Z2tmX2x4c0FGWVg2NndTR3V3UWFUS3IyN2J0eWstTUVvYkdEWi1Ocmw0am05d0k?oc=5"
+   "title": "설악권 4개 시군, ‘설악’ 단일 명칭 사용 합의",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8716922",
+   "published": "2026-11-18T22:56:00+00:00",
+   "summary": "설악권 4개 시군, ‘설악’ 단일 명칭 사용 합의 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5UbDJGcVZ5TXVlNUswb1VyMUJWOHBySV9rdlBrc0hWbHNISVByOElvaVc2X2VfYkR5bnladFI0cGUzUXJPd0RzRnZOR0JiRzdYaTlzYUNtWGhrV0U?oc=5"
   },
   {
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "KBS울산 시청자위 “겨울철 안전·취약계층 관심 당부”",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8716441",
-   "published": "2026-11-18T10:38:00+00:00",
-   "summary": "KBS울산 시청자위 “겨울철 안전·취약계층 관심 당부” KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9aYkhjY3ZEZE50aXppSHgyUHh2WVkweUJaRWJBTDFOaXM3eE5TS3pNcHNRUzhsZVF6cnRmemZ0aFhNTDRvamhYd182UTI0QXFVLWV4anpHbzRsS1hLRVhxbW40ZEZ1dw?oc=5"
+   "title": "정교함 사라진 공격진…모레노 감독 거취도 ‘안갯속’",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8716836",
+   "published": "2026-11-18T22:03:00+00:00",
+   "summary": "정교함 사라진 공격진…모레노 감독 거취도 ‘안갯속’ KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE85RlpDeHFEYWdsNTE5M0F4UlBHMUJJMjVZR1FpVUhDRUp6QS0zYUpucEg5d2V5dTM0RXlMQkRESFl6MkRTTno0OGpJai1tQ0FHeXpPRVZEWm9TZjQ?oc=5"
   },
   {
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "대구서 횡단보도 건너던 모자, 차에 치여 숨져",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8714957",
-   "published": "2026-11-17T04:46:00+00:00",
-   "summary": "대구서 횡단보도 건너던 모자, 차에 치여 숨져 KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE40VGhNYjFYeE85dUtyZkJBTER4anlRZzMzd2xOZWVVeEZpeUE1NkxmTGNGVXhtbE5rVjZRUVRmdFJ3R01Nam5UWG1GWUd2Vk84MUE5a0J4dmxCY3BKTlRrQVlRbDVNZw?oc=5"
+   "title": "울산 주택 소유율 전국 2위…실거주 비율은 1위",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8715717",
+   "published": "2026-11-17T22:41:00+00:00",
+   "summary": "울산 주택 소유율 전국 2위…실거주 비율은 1위 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJY2FWci1XZExSOGJGaV9qQl9qTDE0d0RxcmNnNk1UT2p3RVU4ZHk5T29oaS1GTDJpQm5LRDZFOG5mNnVsNWlXZnR1M0ZKYWhTdGZUbC14VFd0WG8?oc=5"
   },
   {
    "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[930뉴스 대전·세종·충남 클로징]",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8714939",
-   "published": "2026-11-17T04:16:00+00:00",
-   "summary": "[930뉴스 대전·세종·충남 클로징] KBS 뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5LeXdNdjVWZzJfT2Y0blczbS15VS1zMlBqaFpjNVpVaVM1cjYxSEhWaXlSSzRIdVNva196WVJLei1NWHhQUkpGWFRwaXlVellHazk5VkRIYWIwS2plV1BPZklnNFVKUQ?oc=5"
+   "title": "[날씨] 대전·세종·충남 내일 찬바람에 기온 ‘뚝’…당분간 비·눈",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8715341",
+   "published": "2026-11-17T11:06:00+00:00",
+   "summary": "[날씨] 대전·세종·충남 내일 찬바람에 기온 ‘뚝’…당분간 비·눈 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4yMU9EODZjWWk5NmUwX2RJdnZjaEVsNHVxNGxFZHdPdUdQMUczNkJXaU45Y1J5aVU0X015dk5TRzk2RGZNLWZSMTVJMTk4bXpmZG1pVVVaMVU2WHM?oc=5"
+  },
+  {
+   "source": "KBS",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "충남대·공주대 기존 통합안 유지…30일 구성원 투표",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8715318",
+   "published": "2026-11-17T10:53:00+00:00",
+   "summary": "충남대·공주대 기존 통합안 유지…30일 구성원 투표 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9TdHI4ZGtTSDc1Mng0a2pLQ0JlY2RNRnNmTGpfYjlwRERpTTc2bWdobVUwcG5fWG1VQUotUHNXa0ZIX2lidm5mU0VtQm5OdG5pRWFRUXNTY3lmc1k?oc=5"
+  },
+  {
+   "source": "KBS",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "[날씨] 오늘 가끔 비…당분간 제주 곳곳, 강한 바람",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8714629",
+   "published": "2026-11-16T23:47:00+00:00",
+   "summary": "[날씨] 오늘 가끔 비…당분간 제주 곳곳, 강한 바람 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8xRFROT1pSVnZaRmQ0M2lSNmptX2U0RnRwM2JrMlQ4NkNBcTVpQ1JyQXNmUDlsTTM1MHVzWGhNczZYbkJzR1ppNW1TWllVZjFrTDRCRWpENDY2U0U?oc=5"
+  },
+  {
+   "source": "KBS",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "‘무사증 폐지’ 법안 발의…“반드시 철회해야”",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8714316",
+   "published": "2026-11-16T12:55:00+00:00",
+   "summary": "‘무사증 폐지’ 법안 발의…“반드시 철회해야” KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBLQWk0ZzJVOFFwak9iTEFDdUx5ZllvMklvSnZXanVwWTdUcHE2a3ZUMEYzamd4RXd2TTRnd054UTRPUzZuelpmeUQ1OE1SWnlPcXlZZDd2RXdjWW8?oc=5"
+  },
+  {
+   "source": "KBS",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "‘애기’라 불리는 김예건, 그라운드 위에선 ‘막내형’",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8714295",
+   "published": "2026-11-16T12:51:00+00:00",
+   "summary": "‘애기’라 불리는 김예건, 그라운드 위에선 ‘막내형’ KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE51bG1MZFhwdzNhUFJUMTY3emRXQ1M3QVBteEdaSGVmUGdZeEdtdHBpQ2hfNU9JYV9SZVM1MUhIOGlTSkFmWUp5dUpvRzl4MGFJd3hKWDdLRjIxZzQ?oc=5"
+  },
+  {
+   "source": "KBS",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "강원도교육청, 내년 진로활동 지원금 ‘축소’ 전망",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8713434",
+   "published": "2026-11-15T23:57:00+00:00",
+   "summary": "강원도교육청, 내년 진로활동 지원금 ‘축소’ 전망 KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8zVzhtNWNKaTdUd0RUdHFIaktXblpSOXJHUGlpV2JwUnpYZnpFdHhZcDYzQ3dZOHoweHhsWDNxdHZfSUlRNXNjMmNzc2tzVzgxTFl3b2VCeXEzRWc?oc=5"
   },
   {
    "source": "KBS",
@@ -479,229 +469,239 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA5X3N3VDlDZGFrUk4tSk53Q3duQzVtSFVEN25zUkxuZHRpWVhuV21IODFFN0RMX0tkcm5pVXo4UDF2NzNaMHhXeW1yUkVXNGhyU2ItemRzbWdnNWN0Y3FwOFYtWGRSZw?oc=5"
   },
   {
-   "source": "경향신문",
+   "source": "KBS",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[요리에 과학 한 스푼]커피와 차, 같은 반응 다른 맛",
-   "url": "https://www.khan.co.kr/article/202611222015025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:15:02+09:00",
-   "summary": "커피를 마시다가 차에 대한 생각이 떠올랐습니다. 차 또한 커피처럼 대표적인 기호음료 가운데 하나입니다. 둘 다 식물에서 얻은 재료를 뜨거운 물에 우려 마시고, 제조 과정에서 가열한다는 공통점도 있습니다. 그런데 커피와 차는 맛과 향이 확연히 다릅니다.커피 원두를 볶으면 특유의 맛과 향을 내는 수많은 물질이 만들어집니다. 그중에는 아미노산과 당을 재료로 하는"
+   "title": "제조업 AI 전환 속도…중소 제조업 ‘아직 출발선’",
+   "url": "https://news.kbs.co.kr/news/view.do?ncd=8713317",
+   "published": "2026-11-15T21:32:00+00:00",
+   "summary": "제조업 AI 전환 속도…중소 제조업 ‘아직 출발선’ KBS 뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAyQmVROTQ2WjdFTEFFamhYQS1OT25kT3pjVUVaalZ2M3VDZ2YtSFUzRUptbWp3aGNfV25yZE93anV6UzlkZW1XMjNiT09CdmRiNFFBVFYzTnA3d3M?oc=5"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[NGO 현장]주택 공급 정책, 이제는 변해야",
-   "url": "https://www.khan.co.kr/article/202611222015015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:15:01+09:00",
-   "summary": "최근 서울시 주택정책을 담당하는 공무원의 발제를 듣게 됐다. ‘청년들이 아파트를 좋아하니, 서울시는 아파트를 많이 짓는 것에 집중하고 있다’는 내용이 중심이었다. ‘아파트 수요’라는 단어로 쉽게 설명할 수도 있겠지만, 이것은 단순히 아파트라는 생활 양식에 대한 선호뿐 아니라 자산가치 상승 기대, 계층 이동성, 현실 가능성, 복지 체계, 일자리 위협의 여파 "
+   "title": "이 대통령 “문제지 촬영·외부 전송 막을 법안 전면 정비” 지시",
+   "url": "https://www.khan.co.kr/article/202611222108025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T21:08:02+09:00",
+   "summary": "정부, 수능 끝나도 ‘AI 커닝’ 해법 찾기 숙제수험생들 앞치마 입고 논술시험 칠 때…학부모는 ‘내 아이 어디 갈 수 있을까’ 골몰 수험생이 지난 21일 서울 동대문구 경희대학교에서 인공지능(AI) 활용 부정행위 방지 목적의 일회용 앞치마를 입고 2027학년도 대입 논술시험을 치르고 있다(왼쪽 사진). 학부모들이 22일 서울 노원구 강북청솔학원에서 열린 수"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[최정화의 사소한 세계]대도시의 물도둑",
-   "url": "https://www.khan.co.kr/article/202611222015005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:15:00+09:00",
-   "summary": "“에비앙과 트레비, 삼다수랑 무라벨 생수 중에 뭘 원해?” 마트 냉장고가 내게 질문을 던진다. 나는 입안에서 톡톡 터지는 탄산수의 경쾌함을 좋아하고, 낯선 해외상품에 자주 현혹되며, 그럼에도 불구하고 로컬음식을 구매하고 섭취하는 것이 가장 건강한 식생활이라고 믿는 환경주의자기도 하지만, 최종적으로는 가난한 주머니 탓에 매번 신념과 취향을 배반하고 매대에서 "
+   "title": "앞치마 착용, 머리는 묶기…생경한 논술 고사장 모습",
+   "url": "https://www.khan.co.kr/article/202611222108015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T21:08:01+09:00",
+   "summary": "수능 이후 첫 주말, 14개 대학 시험학부모 “정부·대학들 사후약방문”2027학년도 대학수학능력시험에 이어 대학별 입학시험이 시작됐다. 대학들은 인공지능(AI) 등을 활용한 부정행위를 막기 위해 총력을 기울이고 있다.수능 이후 첫 주말인 21~22일 고려대, 경희대, 서강대, 성균관대 등 14개 대학이 논술시험을 치렀다. 경희대에선 ‘부정행위 방지용 앞치마"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[기고]공무원에게 ‘생각할 용기’를 묻기 전에",
-   "url": "https://www.khan.co.kr/article/202611222011025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:11:02+09:00",
-   "summary": "독일 철학자 칸트는 1784년 <계몽이란 무엇인가>에서 계몽을 ‘스스로 초래한 미성숙에서 벗어나는 일’로 설명했다. 이러한 미성숙의 원인이 지성의 부족이 아니라 스스로 지성을 사용하려는 결단과 용기의 부족에 있을 때, 칸트는 이를 스스로 초래한 미성숙이라 봤다. 그러나 오늘날 공직에서 스스로 판단하기 어려운 이유를 개인의 용기 부족으로만 돌릴 수···"
+   "title": "인터넷 연결 안 하고 커닝…내년 ‘온디바이스AI’ 주의보",
+   "url": "https://www.khan.co.kr/article/202611222108005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T21:08:00+09:00",
+   "summary": "한 기기로 촬영·풀이 마칠 수 있어신호 없어 전파탐지기 무용지물기기 작아지고 사후 추적에도 한계올해 치러진 2027학년도 대학수학능력시험 이후 인공지능(AI) 스마트기기를 이용한 부정행위는 앞으로 한층 더 교묘해질 가능성이 높다. 인터넷 연결 없이도 기기 안에서 작동하는 AI가 빠르게 발전하고 있어서다. 이런 부정행위는 전파 탐지나 AI 이용기록 추적으로도"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[김명희의 사회의학 클리닉]시민은 의료개혁의 동반자",
-   "url": "https://www.khan.co.kr/article/202611222011015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:11:01+09:00",
-   "summary": "‘AI 기본사회’ 핵심 과제 ‘의료’거점병원부터 1차진료 강화 등주민 동의와 연대가 가장 중요정책 결정·설계에 시민 참여를지난 9월, 223명의 시민 대표들이 1박2일간 “인공지능(AI) 전환에 따른 기본사회 공론화”를 진행했다. 당시 시민들이 기본사회 핵심과제로 가장 많이 언급한 것은 주거와 의료, 교육, 돌봄 등 ‘기본서비스’의 보장이었다. 그리고 기본"
+   "title": "[김용민의 그림마당]2026년 11월 23일",
+   "url": "https://www.khan.co.kr/article/202611222104015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T21:04:01+09:00",
+   "summary": ""
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[지금, 여기]몸 사리려다 몸 버리는 사회",
-   "url": "https://www.khan.co.kr/article/202611222011005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:11:00+09:00",
-   "summary": "위경련, 비염, 아토피, 중이염, 기타 등등. 나도 내 또래의 삼사십대 암경험자 친구들도 처음 겪어보는 질환을 순회 중이다. 병원에 갈 일도 덩달아 늘었다. 아픔의 원인을 탐구하는 것은 환자의 역할, 현실적인 타개책이 없을 때 느는 건 해학의 기술이다. 나는 골똘해진 골골쟁이들 사이에서 자조를 담당하고 있다. “생존한 암경험자는 감기만 걸려도 항암치료 후유"
+   "title": "“12·3 계엄은 내란” 대법원 판단엔 입 다문 국민의힘",
+   "url": "https://www.khan.co.kr/article/202611222104005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T21:04:00+09:00",
+   "summary": "‘조희대 탄핵’ 대여 공세에만 몰두당내서도 입장 정리 필요성 지적“털 건 털어야 장외투쟁 힘 받아”국민의힘이 더불어민주당의 조희대 대법원장 탄핵 추진을 두고 대여 공세를 이어가고 있지만 ‘12·3 비상계엄은 내란’이라는 대법원 판단에 대해서는 공식 입장을 내놓지 않고 있다. 당내에선 이번 판단과 관련해 당 지도부의 입장 정리와 사과가 필요하다는 비판이 나온"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[세계의 시, 시의 세계]내가 쪼개는 이 빵은",
-   "url": "https://www.khan.co.kr/article/202611222009025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:09:02+09:00",
-   "summary": "내가 쪼개는 이 빵은 한때 귀리였고,이 포도주는 이국의 나무에서그 열매 속에 잠겨 있었다.낮엔 사람이, 밤엔 바람이작물을 쓰러뜨리고, 포도의 기쁨을 깨부쉈다.한때 이 포도주 속 여름의 피가포도덩굴을 덮은 살 속에서 고동쳤고,한때 이 빵 속에서귀리는 바람을 맞으며 즐거웠다.사람이 해를 부서뜨리고, 바람을 끌어내렸다.네가 쪼개는 이 살, 네가 혈관 속에서황폐하"
+   "title": "불복으로 비칠라…여 “조희대 탄핵 사유, 한덕수 판결 내용 제외”",
+   "url": "https://www.khan.co.kr/article/202611222103005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T21:03:00+09:00",
+   "summary": "탄핵소추 추진단 “판결은 존중, 심리 과정 절차상 하자 포함 검토”소추안 연내 처리 방침 속 당내 ‘중도층 이탈·역풍’ 회의론 여전일각선 탄핵 추진으로 ‘반·분·신’ 의혹 등 분열 봉합 의도 해석도‘역사상 최악의 판결’ 피켓 들고 더불어민주당 조희대 대법원장 탄핵소추 추진단 이용우 의원이 22일 국회 당대표실에서 열린 기자간담회에서 발언하고 있다. 연합뉴·"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[아침을 열며]압도적 숫자는 축복인가 독인가",
-   "url": "https://www.khan.co.kr/article/202611222009015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:09:01+09:00",
-   "summary": "15년 만의 최고 성장률, 때론 독탄핵 추진에 경제·민생 뒷전 될라좋은 경제지표 뒤 가려진 서민 고통성장 과실 나눌 정치 역량 집중해야최근 만난 경제부처 관료 출신 한 인사는 “일단 숫자는 좋고 봐야 한다”고 했다. 성장률이 0.1%라도 떨어지면 경보음이 켜져 여기저기 불려 다니기 바쁘다는 것이다. 이번 정부와 경제팀은 ‘축복’받았다고도 했다.국제통화기금("
+   "title": "북·미 대화 불발에 이재명 정부 ‘남북관계 개선 구상’ 시험대",
+   "url": "https://www.khan.co.kr/article/202611222101025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T21:01:02+09:00",
+   "summary": "경주 이어 중 APEC서도 회담 무산…한반도 문제 돌파구 마련 차질이 대통령 “한반도 현안, 우리가 주도적 해결” 적극 대응 유지 뜻전문가 “중·러관계 지렛대 삼아 향후 북·미 대화 관여 대비해야”‘메가프로젝트’ 현장 둘러보는 이 대통령 이재명 대통령이 지난 21일 울산 SK AI 데이터센터 건설 현장을 방문하고 있다. 청와대사진기자단북·미 대화 불발로 북"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[시선]일하는 사람 기본법은 틀렸다",
-   "url": "https://www.khan.co.kr/article/202611222009005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:09:00+09:00",
-   "summary": "노사관계는 대등하지 않다. 이는 만고의 진리다. 직원 때문에 힘든 사용자가 있을 수 있지만, 그런 관계에서도 사용자는 직원 위에 있다. 그래서 노사관계를 자율에 맡기면 사용자는 얼마든지 원하는 대로 계약 내용을 정하고 노동력을 착취할 수 있다. 이를 막기 위해 헌법은 두 개의 조문을 두고 있다. 하나는 노동자 스스로 뭉쳐 싸우도록 단결권·단체교섭권 및 단체"
+   "title": "이번엔 울산으로…주말 지역 현장 방문 늘리는 이 대통령",
+   "url": "https://www.khan.co.kr/article/202611222101015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T21:01:01+09:00",
+   "summary": "SK AI 데이터센터 건설 현황 점검인근 시장 찾아 주민들과 대화도유튜브 채널 이어 소통 강화 행보이재명 대통령이 주말인 지난 21일 울산의 SK 인공지능(AI) 데이터센터 건설 현장을 찾아 영남권 메가프로젝트 추진 현황을 점검했다. 유튜브 프로그램 <대통령의 Y>를 시작한 데 이어 토요일 현장 방문에도 나서면서 소통의 폭을 넓힌 것이다. 청와대···"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[미디어세상]그림자와 싸워서 이길 수는 없다",
-   "url": "https://www.khan.co.kr/article/202611222004015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:04:01+09:00",
-   "summary": "‘개혁’에 의문을 제기하기는 쉽지 않다. 마치 문제를 부정하거나 변호하는 것처럼 비칠 수 있어서다. 하지만 개혁의 기치를 내걸고 제시된 해법들이 항상 모두 타당할 수는 없다. 환자가 찾아왔다고 다짜고짜 수술대에 눕히는 게 능사는 아니지 않나. 중환자라면 더 그렇다. 까딱하면 치명타를 날릴 수 있다.그래서 제대로 된 개혁이라면, 뭔가를 바꿨다는 징표보다는 실"
+   "title": "트럼프 ‘중·러와 친분 과시’ 강대국 중심 외교에 무게…한국, 전작권 전환·핵잠 도입 앞두고 ‘복잡해진 셈법’",
+   "url": "https://www.khan.co.kr/article/202611222101005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T21:01:00+09:00",
+   "summary": "북핵 등 주요 논의서 배제될 우려미 동맹 압박 기조·민주 다수 의회원자력 협정 개정 등 현안에 변수정부, G20 계기 정상 간 협의 목표도널드 트럼프 미국 대통령이 연일 중·러와의 친분을 과시하면서 강대국 중심의 외교에 무게를 싣고 있다는 분석이 나온다. 이러한 기조가 이어지면 한국을 비롯한 중견국이 주요 의사결정 과정에서 소외될 수 있다는 우려가 제기된다"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[정동칼럼]‘위대한 소수의견’, 오경미 대법관",
-   "url": "https://www.khan.co.kr/article/202611222004005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:04:00+09:00",
-   "summary": "저연차 판사였던 시절, 다른 재판부 부장판사님께서 물어 오신 적이 있다. 긴급조치(박정희 전 대통령의 긴급조치 9호를 의미함)가 위헌이라면, 그 위반으로 유죄를 선고한 재판에 대한 국가배상 책임은 어떻게 판단해야겠냐고. 아마도 내가 ‘긴급조치는 유신 헌법에 비추어 봐도 위헌’이라는 발표를 했기 때문이었을 것이다. 마침 재판 책임에 대해 선배 판사들에게 물어"
+   "title": "[속보] COP31, 폐막일 넘기고도 끝내 ‘합의 불발’",
+   "url": "https://www.khan.co.kr/article/202611222059001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:59:00+09:00",
+   "summary": "22일(현지시간) 튀르키예 안탈리아에서 열린 제31차 유엔기후변화협약 당사국총회(COP31) 폐회 총회에서 다라 오브라이언 아일랜드 기후에너지환경부 장관(오른쪽)이 발언을 신청하고 있다. AP연합뉴스튀르키예 안탈리아에서 열린 제31차 유엔 기후변화협약 당사국총회(COP31)가 예정된 폐막일을 이틀 넘겨 협상을 이어갔지만 끝내 최종 합의문 채택에 실패했다. "
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "폭설 뚫고 온 그, 탈주범일까…김윤석·구교환의 ‘밀실 대치’",
-   "url": "https://www.khan.co.kr/article/202611222002025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:02:02+09:00",
-   "summary": "홍의정 감독 두번째 장편 ‘폭설’선악 모호한 인물들과 설원 눈길영화 <폭설>에서 정년퇴임을 앞둔 설오역 역장 ‘갑수’(김윤석)와 그의 후임 ‘현택’(구교환)이 역사 주변을 둘러보고 있다. 쇼박스 제공‘설오역’은 겨울이면 눈에 뒤덮이는 산중의 외딴 역이다. 폐광으로 인적이 드물어진 이 역은 조만간 폐쇄를 앞두고 있다. 역장 ‘갑수’(김윤석)가 정년···"
+   "title": "WSJ “트럼프, 김정은과 ‘종전선언’까지 검토했었다” 관계자들 인용 보도",
+   "url": "https://www.khan.co.kr/article/202611222058015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:58:01+09:00",
+   "summary": "막판까지 북·미 정상회담 시도핵 폐기 요구 않는 방안도 포함“북이 어려운 조건 제시해 무산”도널드 트럼프 미국 행정부가 최근 트럼프 대통령과 김정은 북한 국무위원장 간 정상회담을 적극 추진했으나 북한이 받아들이기 어려운 조건을 내걸어 무산됐다는 보도가 나왔다. 미국은 회담 성사를 위해 한국전쟁 종전선언을 포함한 여러 사전 조치를 검토한 것으로 전해졌다.미 "
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "메트로놈·인이어 없이 “우리 음악은 유기농”",
-   "url": "https://www.khan.co.kr/article/202611222002015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:02:01+09:00",
-   "summary": "72세 베이시스트 송홍섭, 드러머 차기은·피아니스트 이수창과 ‘송차앤’ 결성…“옛 감성과 즉흥연주 재미”밴드 ‘송차앤’의 송홍섭·차기은·이수창(오른쪽부터). 송홍섭 제공사랑과 평화, 조용필과 위대한 탄생 등에서 베이시스트로 이름을 알린 송홍섭(72)이 밴드 ‘송차앤’으로 새 시작에 나선다. 송차앤은 송홍섭이 10여년 전 대학에서 만난 제자인 드러머 차기은,"
+   "title": "명분보다 친분…우크라 보복 예고하는 푸틴 감싼 트럼프",
+   "url": "https://www.khan.co.kr/article/202611222058005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:58:00+09:00",
+   "summary": "아시아 순방 회견 중 “푸틴·시진핑과 환상적인 관계, 미국에 행운”“한반도의 위험 대응 얘기” 북핵 논의한 듯…젠슨 황엔 “돌아오길”만면에 화색 20일(현지시간) 미국 백악관에서 열린 도널드 트럼프 대통령 기자회견에서 스티븐 밀러 비서실장(앞줄 왼쪽)과 J D 밴스 부통령(뒷줄 왼쪽), 마코 루비오 국무장관(오른쪽)이 웃고 있다. 로이터연합뉴스도널드 트럼프"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "민족대표 두 번째 적힌 길선주, 왜 독립선언식에 없었나",
-   "url": "https://www.khan.co.kr/article/202611222002005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T20:02:00+09:00",
-   "summary": "‘평양대부흥’ 120주년 앞두고길 목사의 발자취를 되짚다1907년 해외 선교잡지에 표지에 실린 길선주 목사. 1907년 장로교 첫 한국인 목사로 장립된 7인 중 길선주 목사(앞줄 오른쪽에서 두번째). 1900년 완공된 평양 장대현교회. 장신대 박경수 총장·나부터포럼 대표 류영모 목사·길선주 목사의 외증손인 박시완 집사 부부(오른쪽부터). 승동교회 출입구에 "
+   "title": "공기총 사격 연습하다 주민 숨지게 한 60대···경찰, 구속영장 신청",
+   "url": "https://www.khan.co.kr/article/202611222058001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:58:00+09:00",
+   "summary": "경찰 마크. 김창길 기자공기총 사격 연습을 하다 지나가던 주민을 맞혀 숨지게 한 60대에 대해 경찰이 구속영장을 신청했다.평창경찰서는 A씨(68)에 대해 중과실치사 혐의로 구속영장을 신청했다고 22일 밝혔다.A씨는 전날 오전 11시4분쯤 강원 평창군 방림면의 한 비닐하우스에서 공기총을 쏘다 인근을 지나던 B씨(60대)를 맞혀 숨지게 한 혐의를 받는다. B씨"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "철도노조, ‘안전운행투쟁’ 26일로 연기…“사고 복구가 우선”",
-   "url": "https://www.khan.co.kr/article/202611221921001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T19:21:00+09:00",
-   "summary": "22일 서울역 전광판에 전국철도노동조합 쟁의행위 예고 안내문이 표시되고 있다. 철도노조는 오는 23일 오전 9시부터 쟁의행위를 진행할 예정이었으나 지난 21일 발생한 화물열차 탈선 사고의 복구가 우선이라며 이를 오는 26일로 연기했다. 권도현 기자전국철도노동조합(철도노조)이 23일로 예고했던 ‘안전운행투쟁’을 26일로 연기한다고 22일 밝혔다. 전날 경부선"
+   "title": "블랙 먼데이 막자…정부 ‘증안펀드’ 가동 준비",
+   "url": "https://www.khan.co.kr/article/202611222054015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:54:01+09:00",
+   "summary": "코스피·나스닥 급락에 긴급 대응상장기업 자사주 매입 한도 완화3개월간 불법 공매도 집중감시도정부가 23일 국내 증시의 ‘블랙 먼데이’(검은 월요일) 우려가 커지자 증권시장안정펀드(증안펀드) 가동 준비에 들어간다. 또 주식시장 변동성을 줄이기 위해 상장기업의 자사주 매입 한도를 3개월간 완화하고, 불법 공매도도 특별 감시한다.재정경제부는 22일 정부서울청사에"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[여적]‘집단학살이었다’",
-   "url": "https://www.khan.co.kr/article/202611221916001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T19:16:00+09:00",
-   "summary": "전 세계 150여개 국가가 비준한 ‘집단살해죄의 방지와 처벌에 관한 협약’(CPPCG·집단학살방지협약)은 인류가 두 차례 세계대전의 참상을 뼈저리게 반성한 결과물이었다. 제1차 세계대전 때 오스만제국이 아르메니아인 120여만명을 학살했고, 제2차 세계대전 당시 독일은 유대인 600여만명을 살해했다. 국제사회는 집단학살을 단순 전쟁범죄나 반인도적 범죄와 구분"
+   "title": "내수 부진 ‘엎친 데’ 금리 인상 ‘덮친’ 자영업자들, 가혹한 겨울",
+   "url": "https://www.khan.co.kr/article/202611222054005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:54:00+09:00",
+   "summary": "중소기업 대출금리, 대기업보다 0.26%P 높아 42개월 만에 최대 차금통위 추가 인상 가능성에 자금난 심화 우려…연체율도 ‘경고등’충남에서 식품회사를 경영하는 A씨는 요즘 ‘금리’ 얘기만 나오면 불안하다. 지난해 공장을 담보로 은행에서 받은 대출금리는 4%대였다. 지금은 5%대로 뛰었다. A씨는 22일 “연간 금융비용이 500만원 넘게 늘어난 것 같다”며"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "한전도 해킹당했다…65만명 주민번호·계좌·카드번호 유출",
-   "url": "https://www.khan.co.kr/article/202611221907001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T19:07:00+09:00",
-   "summary": "지난 8월 한국전력공사 경기본부 전력관리처 계통운영센터에서 관계자가 전력수급상황을 주시하고 있다. 공동취재사진한국전력의 고객 서비스 플랫폼과 전자조달시스템이 외부 공격을 받아 두 시스템에서 총 152만여명의 개인정보가 유출됐다. 65만명은 주민등록번호는 물론 계좌번호와 카드번호 등 금융 정보까지 빠져나가 2차 피해 우려가 커지고 있다.한전은 전산시스템에 보"
+   "title": "쉬운 수능에 복잡해진 정시 전략…‘논술 부정’ 우려도 여전",
+   "url": "https://www.khan.co.kr/article/202611222051025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:51:02+09:00",
+   "summary": "탈 많은 수능, 입시설명회 현장“2025학년도 수능과 비슷한 수준” 수학 선택과목 유불리 변수 부상 탐구 변환표준점수 보정방식 관건 “논술시험 단추 없는 옷 입혀 보내”22일 오후 서울 노원구 청솔학원에서 열린 2027학년도 대학수학능력시험(수능) 가채점 분석 설명회. 기관별 예상 등급컷이 공개되자 볼펜이 일제히 달칵였다. 강단에 선 박건영 이투스에듀 ··"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "전자발찌 착용자 범죄 잇따르는데···보호관찰관 1인당 20명 감독, 적정치의 2배",
-   "url": "https://www.khan.co.kr/article/202611221854001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T18:54:00+09:00",
-   "summary": "서울 동대문구 휘경동에 위치한 법무부 위치추적중앙관제센터에서 지난달 14일 한 직원이 전자발찌를 보이고 있다. 연합뉴스전자발찌 등 전자감독 대상자의 범행이 잇따르는 가운데 이들을 관리감독하는 보호관찰관을 더 충원해야 한다는 지적이 나온다. 고위험군 외 다수를 관리하는 일반 보호관찰관의 경우 내년 중 충원이 이뤄진다해도 감독 대상자가 적정 수준 대비 1.7배"
+   "title": "[포토뉴스]철도 ‘파업 전야’",
+   "url": "https://www.khan.co.kr/article/202611222051015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:51:01+09:00",
+   "summary": "22일 서울역 전광판에 전국철도노동조합 쟁의행위 예고 안내문이 표시돼 있다. 철도노조는 23일 오전 9시부터 쟁의행위에 돌입할 예정이다."
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "영월서 차박하던 70대 숨진 채 발견···일산화탄소 중독 추정",
-   "url": "https://www.khan.co.kr/article/202611221853001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T18:53:00+09:00",
-   "summary": "119구급대 차량. 경향신문 자료사진강원 영월에서 차량 숙박(차박)을 하던 70대가 숨진 채 발견됐다.22일 경찰과 소방 등에 따르면 이날 오전 10시10분쯤 영월군 한 도로변에서 차박 중이던 A씨(70대)가 쓰러진 채 발견됐다.함께 있던 B씨(60대)가 발견해 119에 신고한 것으로 전해졌다.A씨는 발견 당시 사후 강직이 나타난 상태였다. B씨는 전신 쇠"
+   "title": "한전 고객정보 152만명분 해킹…65만명은 주민번호·계좌·카드번호까지 유출",
+   "url": "https://www.khan.co.kr/article/202611222051005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:51:00+09:00",
+   "summary": "고객 서비스 플랫폼·전자조달시스템 공격, 2차 피해 우려 커한국전력의 고객 서비스 플랫폼과 전자조달시스템이 외부 공격을 받아 두 시스템에서 총 152만여명 개인정보가 유출됐다. 65만명은 주민등록번호는 물론 계좌번호와 카드번호 등 금융정보까지 빠져나가 2차 피해 우려가 커지고 있다.한전은 전산시스템에 보유 중이던 일부 고객정보가 유출된 사실을 지난 20일 "
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[속보]‘블랙먼데이’ 막아라···정부, 증시안정펀드 가동 준비 착수",
-   "url": "https://www.khan.co.kr/article/202611221821001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T18:21:00+09:00",
-   "summary": "이형일 부총리 겸 재정경제부 장관이 22일 서울 종로구 정부서울청사에서 열린 ‘긴급 시장상황점검회의’를 주재하고 있다. 재경부 제공정부가 23일 국내 증시의 ‘블랙 먼데이(검은 월요일)’ 우려가 커지자 증권시장안정펀드(증안펀드) 가동 준비에 들어간다. 주식시장 변동성을 줄이기 위해 상장기업의 자사주 매입 한도를 3개월간 완화하고, 불법 공매도도 특별 감시한"
+   "title": "‘정치인 수사’는 경찰·공수처로…중수청 ‘선택적 이첩’ 논란",
+   "url": "https://www.khan.co.kr/article/202611222048035/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:48:03+09:00",
+   "summary": "한동훈 딸 허위스펙·김승원 회계부정 의혹…뇌물·배임도 ‘관할 밖’ 판단중대범죄수사청(중수청)이 김승원 더불어민주당 의원의 경기도당 회계부정 의혹 사건과 한동훈 무소속 의원의 딸 허위 스펙 의혹 사건을 모두 다른 수사기관에 이첩해 뒷말이 나온다. 중수청은 주요 혐의가 수사 대상이 아니라는 이유를 내세웠지만 정치적으로 민감한 사건을 피하는 것 아니냐는 지적이 "
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[사설]“계엄은 위헌·위법” 대법 판결에도 사과 없는 국민의힘",
-   "url": "https://www.khan.co.kr/article/202611221819001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T18:19:00+09:00",
-   "summary": "장동혁 국민의힘 대표가 지난 21일 대구 중구에서 열린 장외집회에서 더불어민주당의 ‘조작기소 특검법’ 처리와 조희대 대법원장 탄핵 추진을 비판하고 있다. 연합뉴스국민의힘이 더불어민주당의 ‘조희대 대법원장 탄핵’ 추진에 대해 “광기”(정점식 원내대표)라며 공세 수위를 높이고 있다. 그러나 대법원이 한덕수 전 국무총리 상고심에서 12·3 비상계엄의 위헌·위법성"
+   "title": "해광호, 5일 만에 해저서 발견…선원 7명 수색 돌입",
+   "url": "https://www.khan.co.kr/article/202611222048025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:48:02+09:00",
+   "summary": "서격렬비열도 북서쪽 수심 53m해군 통영함 무인탐사기로 확인충남 태안 서격렬비열도 인근 해상에서 실종됐던 7.93t급 연안통발 어선 해광호가 침몰한 상태로 해저에서 발견됐다. 당국이 수색에 나선 지 5일 만이다.태안해양경찰서는 서격렬비열도 북서방 약 22해리(약 40.7㎞) 인근 수심 53m 해저에서 해광호 선체를 확인했다고 22일 밝혔다. 해경 등은 전날"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[사설]‘수능 혼란 책임’ 교육부 장관 사퇴, 시험체계 전면 개편 서둘러야",
-   "url": "https://www.khan.co.kr/article/202611221810011/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T18:10:01+09:00",
-   "summary": "최교진 교육부 장관이 지난 16일 서울 영등포구 영등포여자고등학교를 방문해 2027학년도 대학수학능력시험 시험장을 점검하고 있다. 공동취재사진최교진 교육부 장관이 22일 2027학년도 대학수학능력시험을 앞두고 불거진 인공지능(AI) 부정행위 방지 대책 미비 등 혼란에 책임을 지고 사의를 표명했다. 이재명 대통령은 즉각 수용했다. 정부의 대처 미흡과 여론 악"
+   "title": "[2026년 11월 23일 날씨]차차 흐려져 비·눈…25일까지 추워요",
+   "url": "https://www.khan.co.kr/article/202611222048015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:48:01+09:00",
+   "summary": ""
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[사설]당내서도 “조희대 탄핵 인용 힘들다”는데, 민주당 냉정해야",
-   "url": "https://www.khan.co.kr/article/202611221810001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T18:10:00+09:00",
-   "summary": "더불어민주당 ‘조희대 대법원장 탄핵소추 추진단’이 22일 국회 당 대표실에서 기자간담회를 하고 있다. 연합뉴스더불어민주당이 22일 한덕수 전 국무총리의 내란 중요임무종사 혐의 일부를 무죄 취지로 파기환송한 대법원 전원합의체의 판결을 대법원장 탄핵 사유로 삼지 않겠다고 했다. 대신 3개월 내 선고 규정 위반 등 상고심의 절차적 하자를 탄핵 사유에 넣겠다고 했"
+   "title": "이용철 성남산업진흥재단 대표 때 유력 인사 자녀 채용 논란",
+   "url": "https://www.khan.co.kr/article/202611222048005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:48:00+09:00",
+   "summary": "호남향우회 성남회장인 부친, 이재명 시장 인수위 함께 활동 인연카페·시설공단 경력뿐, 채용 적합성 의문…이 후보자 “개입 안 해”이용철 법무부 장관 후보자가 성남산업진흥재단(현 성남산업진흥원) 대표이사를 지낼 당시 성남시 유력 인사의 자녀가 관련 경력 없이 재단에 채용된 것으로 밝혀졌다. 이 유력 인사와 이 후보자, 재단 인사위원은 이재명 대통령이 성남시장"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "아파트서 5개월 딸 안고 추락한 엄마, 아기는 살았다···40대 여성 사망",
-   "url": "https://www.khan.co.kr/article/202611221803001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T18:03:00+09:00",
-   "summary": "119구급대 차량. 경향신문 자료사진경남 창원시의 한 아파트에서 40대 여성이 아기와 함께 떨어져 숨졌고, 아기는 목숨을 건졌다.22일 경찰에 따르면 지난 20일 오전 9시 23분쯤 창원시 한 아파트 단지에서 40대 여성 A씨와 생후 5개월 된 B양이 쓰러져 있는 것을 주민이 발견해 119에 신고했다.소방 당국이 현장에 도착했을 당시 A씨는 심정지 상태였으"
+   "title": "용산구, 30년 이상 ‘오래이음가게’ 10곳 선정",
+   "url": "https://www.khan.co.kr/article/202611222045025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:45:02+09:00",
+   "summary": "전통 보존·골목상권 활성화 기대서울 용산구가 30년 이상 한자리를 지키며 주민들과 신뢰를 쌓아온 장수 점포 10곳을 ‘오래이음가게’로 선정했다고 22일 밝혔다.오래이음가게는 장기간 지역을 지켜온 소상공인의 역사성과 전통을 보존하고 골목상권을 활성화하기 위해 용산구가 올해 처음 도입한 사업이다. 영업 기간뿐 아니라 기술과 전문성, 지역사회 기여도, 주민 신뢰"
   },
   {
    "source": "경향신문",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "민주당 “한덕수 판결 절차상 문제, 탄핵소추 사유 포함 검토”…역풍 우려 회의론 여전",
-   "url": "https://www.khan.co.kr/article/202611221745001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-   "published": "2026-11-22T17:45:00+09:00",
-   "summary": "더불어민주당 ‘조희대 대법원장 탄핵소추 추진단’ 단장인 양부남 의원(가운데)이 22일 국회 당대표실에서 열린 추진단 기자간담회에서 발언하고 있다. 연합뉴스여당이 22일 대법원의 한덕수 전 국무총리 판결의 절차상 문제점을 탄핵소추 사유에 포함하는 안을 검토한다. 다만 이번 판결에 불복해 탄핵한다는 여론을 의식해 판결 내용 자체를 문제 삼지는 않겠다고 밝혔다."
+   "title": "순천대 국립의대 후보 선정…추가 검증 나선다",
+   "url": "https://www.khan.co.kr/article/202611222045015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:45:01+09:00",
+   "summary": "목포대 탈락 ‘불공정 의혹’ 제기에…전남광주시, 심사 과정 공개 합의전남광주시가 순천대를 국립의대 신설 후보로 선정·추천한 과정과 관련해 추가 검증에 나선다. 심사가 불공정했다는 서남권 의혹을 해소하기 위한 조치로, 심사자료를 공개하고 검증 협의기구 구성도 추진할 예정이다.전남광주시는 지난 21일 무안청사에서 민형배 시장과 목포대, 서남권 의대설립비상대책위"
+  },
+  {
+   "source": "경향신문",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "카카오페이·토스도 23일부터 주민증 사진 활용 신분 확인",
+   "url": "https://www.khan.co.kr/article/202611222045005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+   "published": "2026-11-22T20:45:00+09:00",
+   "summary": "행안부, 정부 시스템 연계 마쳐전자금융사 비대면 안전성 강화네이버페이는 내달 서비스 도입카카오페이와 토스에서도 사진 정보까지 활용해 주민등록증 진위 여부를 확인할 수 있게 된다.행정안전부는 정부 주민등록증 진위 확인 서비스를 23일부터 카카오페이와 토스에 확대 적용해 신분 확인 절차를 강화한다고 22일 밝혔다. 네이버페이는 다음달 중 해당 서비스를 도입할 "
   },
   {
    "source": "동아사이언스",
@@ -812,16 +812,6 @@
    "published": "2026-11-20T23:00:00+00:00",
    "summary": "다이아몬드 속 빈자리가 첨단 센서의 비밀 DongA Science",
    "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5qdUd2YlppdUllMWJKN3JiVm1FRWItaVRzSWdtMzNEYVViS1Iwck9QdXFDQXBxSF81aWZwMzRWRlRLMjFEWlF0NUNXTGoxZzJaQS1Vbg?oc=5"
-  },
-  {
-   "source": "동아사이언스",
-   "kind": "과학 매체",
-   "lang": "ko",
-   "title": "250년 만에 제 이름 찾은 고양이 '틸카요'…신종 생물 발견 느는 이유",
-   "url": "https://www.dongascience.com/ko/news/80984",
-   "published": "2026-11-20T23:00:00+00:00",
-   "summary": "250년 만에 제 이름 찾은 고양이 '틸카요'…신종 생물 발견 느는 이유 DongA Science",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBzZlA0ZnBVWExjbmNfWmhhaE1LMWNQSUdnU2VUdm5VcnZvOElrZ1hIVTZmNURyeFFySGpWazhqdTByVEc5d2NTc2xEaUo5dmkyaFNDVA?oc=5"
   },
   {
    "source": "동아사이언스",
@@ -947,11 +937,30 @@
    "source": "동아사이언스",
    "kind": "과학 매체",
    "lang": "ko",
+   "title": "\"임신 중 흡연하면 자녀 사춘기 때 ADHD 가능성\"",
+   "url": "https://www.dongascience.com/ko/news/80811",
+   "published": "2026-11-15T23:23:00+00:00",
+   "summary": "\"임신 중 흡연하면 자녀 사춘기 때 ADHD 가능성\" DongA Science",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hZzhlckQwOFRra09oT09tQjVrcS1GbkRvRFo0V0tlQVJ1NHBvenBMeEQyTzgyTDNlOWtPbE0xR2lqUlFSQ0taay1HVm9qbkVpQVpMNg?oc=5"
+  },
+  {
+   "source": "동아사이언스",
+   "kind": "과학 매체",
+   "lang": "ko",
    "title": "천문 관측 방해하는 머스크 '스타링크' 막는 서울대 '스타링크'",
    "url": "https://www.dongascience.com/ko/news/80815",
    "published": "2026-11-15T22:00:00+00:00",
    "summary": "천문 관측 방해하는 머스크 '스타링크' 막는 서울대 '스타링크' DongA Science",
    "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFByWEpwSFNodkJ5ZWZHN0JLc2dDeUZWR2FvWnI0OHFEb1lnLWk5RmdKOUdCMTlWUGp2N1U2R3hNMDFYUjJzb3VTSHAxMnhfUDBQdFVIMQ?oc=5"
+  },
+  {
+   "source": "Korea Herald",
+   "kind": "영자신문",
+   "lang": "en",
+   "title": "Confusion at climate talks as final deal offered doesn't mention fossil fuels",
+   "url": "https://www.koreaherald.com/article/10945295",
+   "published": "2026-11-22T21:14:13+00:00",
+   "summary": "Turkey (AP) — Several nations and blocs, including the European Union, the Marshall Islands and Panama, objected to a draft of the final agreement at United Nations climate talks because it failed to "
   },
   {
    "source": "Korea Herald",
@@ -1170,15 +1179,6 @@
    "summary": "Hotel patisseries are decking the halls with a blend of festivity and gastronomy, each offering its own take on Christmas cakes and desserts. Conrad Seoul is presenting five whole cakes and six minica"
   },
   {
-   "source": "Korea Herald",
-   "kind": "영자신문",
-   "lang": "en",
-   "title": "What to see in Seoul’s galleries before the year is out",
-   "url": "https://www.koreaherald.com/article/10942855",
-   "published": "2026-11-21T16:00:00+00:00",
-   "summary": "With the fall art fairs in the rearview, Seoul's galleries have moved on to their year-end programs, rounding out 2026 with a busy run of solo shows. The highlights are spread across the city's two co"
-  },
-  {
    "source": "Korea Times",
    "kind": "영자신문",
    "lang": "en",
@@ -1202,21 +1202,21 @@
    "source": "Korea Times",
    "kind": "영자신문",
    "lang": "en",
-   "title": "Education minister resigns amid backlash over CSAT anti-cheating measures",
-   "url": "https://www.koreatimes.co.kr/southkorea/education/20261122/education-minister-resigns-amid-backlash-over-csat-anti-cheating-measures",
-   "published": "2026-11-22T04:26:03+00:00",
-   "summary": "Education minister resigns amid backlash over CSAT anti-cheating measures The Korea Times",
-   "gnews_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPR1hoUTYweFJFSHRhLU9BeGp3ZHpORVk3ZWpjeHZXb045Q005ZTFFVmViVDlBVmRERGNSVGUyV0VXaElSM0I1X3dkczJWLXU3T2gybHlaTWdteld1LXc4YUVORjdsUXlMNG5sQjA5QkZ5a0RSa3Eycm5JZXVveTNDd2UtdE5qcmtwRExicEJDMEVhWDVxVWZJNE1aYmlPNjNCYkZLY3ViZGRwUFZEOGtYYkhycVI3cngxbmlMWURIWnp6Vl9fT2UxMnp2dmTSAdIBQVVfeXFMTU1hUVFVdUh3ZldVRFV4OWJ6aVZZSGo3dzJOS1htSkZBVWoySmtjaDZfbTVWZ2hHOW9WendSNTdwcGI0dWdGenFYcWQyN2hOU0xCUDBnazE4d3BvYW5wSGcyOGVjVzdwdFkyY1c1SlpTaGJkaWp4VUU3aEFfeFBNMmRxUEV3TVM2WWh1TUE0a1IyMW81aTVPZ0xWRXR5LXZMSk81eGxoZDNMaldlbkU1amctYl9LenNtUk95WG1XWnZxclR4Zm5HTDhBUTlwVjh3UGFB?oc=5"
+   "title": "Korea holds landmark Kimchi Day vision declaration in New York",
+   "url": "https://www.koreatimes.co.kr/business/20261122/korea-holds-landmark-kimchi-day-vision-declaration-in-new-york",
+   "published": "2026-11-22T05:55:03+00:00",
+   "summary": "Korea holds landmark Kimchi Day vision declaration in New York The Korea Times",
+   "gnews_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMVdVb2JBMV9yX2t5X3lwdm4zZ0h6QTZBazg4LTF0emthVy0wRVByczNSdDZQVDk4b1dSX3FxSGJFaXpLQjZfSE9kQnZQWDRmdGQ4a2hWbkJ2aTlkckpVak00enlLUlFyU1ZyRURyV1Z3cXdsYzZXb1dERzNab3FHLXVhaUh2Qy1qeXZoVmVOc2g5S2I3V0xyOTZIcE5DWEtESWYxeXdmanVWVkUyaVHSAbMBQVVfeXFMT0R3TzJqVnEwbFRXNnFMYkd3OUp5QXFwUUQtbUE4ZlpJellTbktld2NFTEotb2lYaThnVHlQaE9zTlF4bWVBTGhDT1dsSHZEMG5qcWkyQjBGWjVHV2dOaWFGcDdEdTBwRWd2dTZrSXJQTmtrb25DYU45MFdrQ2ozb09WdGlzMkk2dFh1aktzZE0yQ05sWVVDQkM2OThWZE5vS05uRWNVZkZUd2t0X1d4S3UzRlk?oc=5"
   },
   {
    "source": "Korea Times",
    "kind": "영자신문",
    "lang": "en",
-   "title": "Van Gogh Museum bistro drops kimchi sandwich after 'Japanese' labeling controversy",
-   "url": "https://www.koreatimes.co.kr/lifestyle/koreanheritage/20261122/van-gogh-museum-bistro-drops-kimchi-sandwich-after-japanese-labeling-controversy",
-   "published": "2026-11-22T03:17:02+00:00",
-   "summary": "Van Gogh Museum bistro drops kimchi sandwich after 'Japanese' labeling controversy The Korea Times",
-   "gnews_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZ3N5b1pfcGxsbzJwRUVVT2MxUmVhOFhpaXB5MkhRaHZpYnN2SVZGWVFFRnk4a2ZtWk1sdXBodWtSTDB0eUdWWGFXalNZLThwVS1mTXpXeURjODNhQVJfYUwwLS1pUTZITzB1cHV4ajNUNnlRTXNXMkplMFRqbFNpcGk4R0hWbGdPcGNKZzRjWVM4X3R2WXNjNDlPaGVRc1lTV2dobmtNbi1JZlhnMWRFQXBRa1I1SUNTZ3JnaXNGUVplLTZBMVlYT3lsYzdhNjNNT1g0c1VSVURDUmPSAeABQVVfeXFMT2JMS0l1alMzU1RIN2ZSSUdvazJ6MVBoSWd5bUlSSUVPSE15TmFXbmVndHJod1J3QWdyU0VCY3ZFRGwzYTc5ZmJOcEREaVM1Ym1jOWE4S2VHTnU3T1JVSmE1bGEwMTRVb3Y0LXJvR3ZsQlc0UmlDVmxZcGVkUXhIS0JOZ19nRzY0ZjJwZmhWYi1JbG43eEFMaEMzeE9ESG8tbi1KMGQxc0N0dGtUdUZ4RTFWYnpiRHdNYld6eGVNczdWdVkyVnBINEd1RWxMUGxjZGpRSUt2aWdraWxldVhKc1E?oc=5"
+   "title": "Education minister resigns amid backlash over CSAT anti-cheating measures",
+   "url": "https://www.koreatimes.co.kr/southkorea/education/20261122/education-minister-resigns-amid-backlash-over-csat-anti-cheating-measures",
+   "published": "2026-11-22T04:26:03+00:00",
+   "summary": "Education minister resigns amid backlash over CSAT anti-cheating measures The Korea Times",
+   "gnews_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPR1hoUTYweFJFSHRhLU9BeGp3ZHpORVk3ZWpjeHZXb045Q005ZTFFVmViVDlBVmRERGNSVGUyV0VXaElSM0I1X3dkczJWLXU3T2gybHlaTWdteld1LXc4YUVORjdsUXlMNG5sQjA5QkZ5a0RSa3Eycm5JZXVveTNDd2UtdE5qcmtwRExicEJDMEVhWDVxVWZJNE1aYmlPNjNCYkZLY3ViZGRwUFZEOGtYYkhycVI3cngxbmlMWURIWnp6Vl9fT2UxMnp2dmTSAdIBQVVfeXFMTU1hUVFVdUh3ZldVRFV4OWJ6aVZZSGo3dzJOS1htSkZBVWoySmtjaDZfbTVWZ2hHOW9WendSNTdwcGI0dWdGenFYcWQyN2hOU0xCUDBnazE4d3BvYW5wSGcyOGVjVzdwdFkyY1c1SlpTaGJkaWp4VUU3aEFfeFBNMmRxUEV3TVM2WWh1TUE0a1IyMW81aTVPZ0xWRXR5LXZMSk81eGxoZDNMaldlbkU1amctYl9LenNtUk95WG1XWnZxclR4Zm5HTDhBUTlwVjh3UGFB?oc=5"
   },
   {
    "source": "Korea Times",
@@ -1332,6 +1332,16 @@
    "source": "Korea Times",
    "kind": "영자신문",
    "lang": "en",
+   "title": "Trump, Xi and Putin release 'peace declaration' from unprecedented summit",
+   "url": "https://www.koreatimes.co.kr/world/20261120/trump-xi-and-putin-release-peace-declaration-from-unprecedented-summit",
+   "published": "2026-11-19T16:15:00+00:00",
+   "summary": "Trump, Xi and Putin release 'peace declaration' from unprecedented summit The Korea Times",
+   "gnews_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ09BSURTNXJrNGkxSjJiSUpRTDFmbTd4STdNWmNWWWlGZ2VqN0dEVG9ydFdCcC1kTjQxeU1DbEd3UmszM05qWkRMNENScHZ4QjVzb0J2RGFvUWhNS1VHWFloVlVCdkZtSS1qVWVicUxHUy1DdHFHclVMMndMV3NVWDBlNmJFZWhNalNidFRsV0NaaVNtT3hmeWFKR0QxWThPTmRscVFUcVVSdjc0ejNZdnp2OVLSAboBQVVfeXFMUEc3OHJtOUVPbUd4eXkwUk1KUHB1R1huRk1HbHAza1kwMXRRVU5jak4zZ3JrTHk3RWxqbWcweWlvTWlNcHJVci1qNzNacU83ZWd1OXdLWUxQLUtUbHhib3FIcmhGeWwtVXhTU0I2Q2JxZzRtZ1JRck5zSXo5akYzTGhQa19ZNW5UTkRVTENZY0RsTzZVZFJnT0dHdFh5VHp4a2t4TFN4bWtPdHBIck1LZXMtRjR0SEt6ZVN3?oc=5"
+  },
+  {
+   "source": "Korea Times",
+   "kind": "영자신문",
+   "lang": "en",
    "title": "Half million students take annual college entrance exam amid AI cheating concerns",
    "url": "https://www.koreatimes.co.kr/southkorea/education/20261119/half-million-students-take-annual-college-entrance-exam-amid-ai-cheating-concerns",
    "published": "2026-11-18T23:47:00+00:00",
@@ -1417,16 +1427,6 @@
    "published": "2026-11-16T14:12:03+00:00",
    "summary": "Jennie nominated for Grammy Awards' Record of the Year for 'Dracula' The Korea Times",
    "gnews_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPLWhZZThmZzFHSXVNbUZfbmZVYjRocWZFX2tUY0dlRFM0SjJoOEQxS2xJNWZ5cnV3R20xOHc2RTVfM0VLN1l2YVI4T09fWWNoQkhPbDVTbHVLekFXMnR0dF9DZk1EY2tmZzMzaHd0MHdScXd5X0NXUTNfSzY1NHNxQUkwU2ZpeWk1R2tvektFMGZDZUVyQm5kWmVDV0lvNHpTMUt2UWVRbVJmeE1MdlVzTGwyT3Y1dGVT0gG-AUFVX3lxTE05cURtR195SDJVT0hBMmtXRGVQR0FqMEo4UzIzaEhjSUNOVklFbUhxTHVJZkZLcXE1VFRVNlh0TXlMSFcxajdERWxBV1V5bmVYT0M4bi1lMDdMTnR1QVlmOEtkMmx0eDYtaWpmSDNMSEN1MEQ1Y1R4RFVMeWNETlJfT1VPd3I3S1puVEVZU2hTYU9CdlVQN0pmcW1qZ3JVU0l0UXM0SGtEZmtyUk9pVmhaV3MtYmNWdi1CcWdnRWc?oc=5"
-  },
-  {
-   "source": "Korea Times",
-   "kind": "영자신문",
-   "lang": "en",
-   "title": "Megaspeed says Alice Huang left firm in August 2025",
-   "url": "https://www.koreatimes.co.kr/business/companies/20261115/megaspeed-says-alice-huang-left-firm-in-august-2025",
-   "published": "2026-11-15T11:27:03+00:00",
-   "summary": "Megaspeed says Alice Huang left firm in August 2025 The Korea Times",
-   "gnews_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOX0tzcGp3aDNpU05TZkExMmpWbG1EdWVmQS13THIwZEdadG1Nb1JlN1JMckxTalFrNkFOVlMtM1ljdmdacHZaVTFHWnRNNEpXc2NpdlZhRU9sQ3VVWk45SGxNTmZWM2xlbVNDVDFDOXlrT0F1NzY1T3JMV1RhRlk1Qk92U3h2RTJDU1doUWRoeHdpU3M1VDMtbkVTS1RfSjliWVE1LTE5Wnczczh30gGyAUFVX3lxTFBBQ2FPNjZZNmxSMF85VzJxVmdZZDdFa1dNa3dCVFpmY1BfQ19sVEVOMnhZOF83QXh5S05tUTgtWW56TEtEOXVibW54bFN2TmRfMlp5dE53VDZDRXBlalFlVHV3X3JJZmRqeThheFlKNTg0UWQ4UEJfdUJNdDY2MXBmZWQ2SWpsdEFROTNneDRzSTJ2NHBWSmFzMno4YlNraHFGMUlxQ29fWTlzd0NtQmJ0Q3c?oc=5"
   },
   {
    "source": "ScienceDaily",
@@ -1807,16 +1807,6 @@
    "source": "Brookings",
    "kind": "싱크탱크",
    "lang": "en",
-   "title": "How new governors and legislators can ready their states for the AI transition",
-   "url": "https://www.brookings.edu/articles/how-new-governors-and-legislators-can-ready-their-states-for-the-ai-transition/",
-   "published": "2026-11-18T21:31:13+00:00",
-   "summary": "How new governors and legislators can ready their states for the AI transition Brookings",
-   "gnews_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMnZSODR4dHEyc0ZGWjB6UmhTZjNfRUd4bGdiSEdOOU5XRkVsNVBHdVp6R2ZadjUzcktFc2ZQbm5kQ1NpbUtUTndRVndLa05PTE9fZ0pzZ3pJYTE5STFUX2NxeGV4RWZCQUhSSk12a2lVY0ZDWm9oYW5rS3FOcDRmQ1ItcnBhVTczVjdzNmhKS0c2TTkzQWdlODV6YWpCU3NZUm50SXpoTGVTMmxObFR0QkZzV1c?oc=5"
-  },
-  {
-   "source": "Brookings",
-   "kind": "싱크탱크",
-   "lang": "en",
    "title": "Does scientific collaboration with China make America stronger or more vulnerable?",
    "url": "https://www.brookings.edu/articles/does-scientific-collaboration-with-china-make-america-stronger-or-more-vulnerable/",
    "published": "2026-11-17T21:08:31+00:00",
@@ -1942,6 +1932,16 @@
    "published": "2026-11-16T19:29:50+00:00",
    "summary": "Five plays to help new governors jump-start their state economies Brookings",
    "gnews_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQalpOQ3M5MVBXdXhFYVFVaXNwMmppRHRWTElFeldlbTM3ZW5zcDZLSHVLbU13MlR1SWdQTFhpbFB0TVUzckFGQUlsYkpJdjcyWFZjTlN4V0M2SGJNeGR1YmFYNE14TnlvTThMZmRBLWd6QmtZX3JWdEJrOUU2eU00Q19WUHMzaGJhVFFMWXlBUUR4Y1owTERUTFZGQ0dnVzdITGNn?oc=5"
+  },
+  {
+   "source": "CSIS",
+   "kind": "싱크탱크",
+   "lang": "en",
+   "title": "Israel’s Elections and the Future of the Middle East",
+   "url": "https://www.csis.org/analysis/israels-elections-and-future-middle-east",
+   "published": "2026-11-21T06:47:05+00:00",
+   "summary": "Israel’s Elections and the Future of the Middle East CSIS | Center for Strategic and International Studies",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBLcl9PN01Nc25wUDluZGJEd1FOckFRdlJSSk40Q2hlZGFjdFU2YklKUThSSlpPUUVVdDR0LTBBbU5lSTFPMWpYczZ4d2RELTFHdUFDZlcyem9mcXRfcHprWWhXcC1FUk13WUpLakpvWE9OS3F6YU1XeklB?oc=5"
   },
   {
    "source": "CSIS",
@@ -2147,16 +2147,6 @@
    "source": "CSIS",
    "kind": "싱크탱크",
    "lang": "en",
-   "title": "Israel’s Elections and the Future of the Middle East",
-   "url": "https://www.csis.org/analysis/israels-elections-and-future-middle-east",
-   "published": "2026-11-16T18:32:41+00:00",
-   "summary": "Israel’s Elections and the Future of the Middle East CSIS | Center for Strategic and International Studies",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBLcl9PN01Nc25wUDluZGJEd1FOckFRdlJSSk40Q2hlZGFjdFU2YklKUThSSlpPUUVVdDR0LTBBbU5lSTFPMWpYczZ4d2RELTFHdUFDZlcyem9mcXRfcHprWWhXcC1FUk13WUpLakpvWE9OS3F6YU1XeklB?oc=5"
-  },
-  {
-   "source": "CSIS",
-   "kind": "싱크탱크",
-   "lang": "en",
    "title": "What Do the Results of the Midterm Elections Mean for Clean Energy and Climate?",
    "url": "https://www.csis.org/analysis/what-do-results-midterm-elections-mean-clean-energy-and-climate",
    "published": "2026-11-16T18:32:40+00:00",
@@ -2197,6 +2187,16 @@
    "source": "중앙일보",
    "kind": "국내 언론",
    "lang": "ko",
+   "title": "“北외교관, 트럼프 친서 봉투째 내던졌다”…북미 회담 불발 전말",
+   "url": "https://www.joongang.co.kr/article/25480829",
+   "published": "2026-11-22T11:49:19+00:00",
+   "summary": "“北외교관, 트럼프 친서 봉투째 내던졌다”…북미 회담 불발 전말 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wQUNIa2RUb05zNEZuWGxFOE1kQ0FuM1hERnVTUjJSSUpyN1c4RHo3c21hUE1yRF9xQ0F2UVVkMzZZMHdDdGVYUGlCNmtMMXJacDVTSGxB?oc=5"
+  },
+  {
+   "source": "중앙일보",
+   "kind": "국내 언론",
+   "lang": "ko",
    "title": "“내일 블랙 먼데이 막아라”…18년만에 증안펀드 가동 준비",
    "url": "https://www.joongang.co.kr/article/25480840",
    "published": "2026-11-22T09:41:54+00:00",
@@ -2217,11 +2217,11 @@
    "source": "중앙일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "“북한 외교관, 트럼프 친서 봉투째 내던져”…북·미 회담 불발의 전말",
-   "url": "https://www.joongang.co.kr/article/25480829",
-   "published": "2026-11-22T08:14:24+00:00",
-   "summary": "“북한 외교관, 트럼프 친서 봉투째 내던져”…북·미 회담 불발의 전말 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wQUNIa2RUb05zNEZuWGxFOE1kQ0FuM1hERnVTUjJSSUpyN1c4RHo3c21hUE1yRF9xQ0F2UVVkMzZZMHdDdGVYUGlCNmtMMXJacDVTSGxB?oc=5"
+   "title": "전교조, ‘한식구’ 최교진 사임에 “수능 대응 리더십 한계 드러내”",
+   "url": "https://www.joongang.co.kr/article/25480832",
+   "published": "2026-11-22T08:19:49+00:00",
+   "summary": "전교조, ‘한식구’ 최교진 사임에 “수능 대응 리더십 한계 드러내” 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBFRTBJclpKZFd3YjV1YVhBYzRTeWMtUWtITWpDWnNxV01FbWE2UjROOEdDNEtlN3p1dkFrZ19KdFRjbFBQYlBKNEEyUDBEaG8zWFZfZHZR?oc=5"
   },
   {
    "source": "중앙일보",
@@ -2277,11 +2277,31 @@
    "source": "중앙일보",
    "kind": "국내 언론",
    "lang": "ko",
+   "title": "“파란만장 격투기 인생 즐거웠다”…추성훈의 마지막 한마디",
+   "url": "https://www.joongang.co.kr/article/25480725",
+   "published": "2026-11-21T21:00:00+00:00",
+   "summary": "“파란만장 격투기 인생 즐거웠다”…추성훈의 마지막 한마디 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MZ2J6YXMxRlFjNzhIajY5bTZ2eFBZQ2dwZUFaT04zVm1DT3F3Rm9UX3d5X3NGRlJzZFptcVVwWE1Xbm4tVEgxanR1QUgtazFyalJSdmFR?oc=5"
+  },
+  {
+   "source": "중앙일보",
+   "kind": "국내 언론",
+   "lang": "ko",
    "title": "영화 같은 바다 배경에…500만원 ‘덤으로’ 주는 국내 예식장",
    "url": "https://www.joongang.co.kr/article/25480660",
    "published": "2026-11-20T22:00:01+00:00",
    "summary": "영화 같은 바다 배경에…500만원 ‘덤으로’ 주는 국내 예식장 중앙일보",
    "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAwWjBwYzRaRTdqU3pWMTEyQ3VMZDVJTUdqMi1nU3JjNWRaR3EwSWZDdHJkZ2UzUlJib1NiVVFKYS1KUG5rby1TTnpRNkstVF9faWpBcXVn?oc=5"
+  },
+  {
+   "source": "중앙일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "조선 비밀병기 살려냈다, 매일 화살 다듬는 사나이 [스튜디오486]",
+   "url": "https://www.joongang.co.kr/article/25480662",
+   "published": "2026-11-20T22:00:00+00:00",
+   "summary": "조선 비밀병기 살려냈다, 매일 화살 다듬는 사나이 [스튜디오486] 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mRjFzYUI4UW9fUDRZU081NnZ3bTlPb3RKY2hJLW5yRGk1WW1IY0hFQkpZR2VqV0pmcnd0Rmk5Z2QzSm9WdERhYmdET1ZlbWpTSjR2UFNn?oc=5"
   },
   {
    "source": "중앙일보",
@@ -2317,11 +2337,21 @@
    "source": "중앙일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[속보] 앤트로픽, 상장 첫날 97.17달러로 마감",
-   "url": "https://www.joongang.co.kr/article/25480380",
-   "published": "2026-11-19T21:06:49+00:00",
-   "summary": "[속보] 앤트로픽, 상장 첫날 97.17달러로 마감 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZN1QyYUg2aE91Q1dhcldVMVZIcjBxQXFrVHFheFZJQzRXRGxnM011OTZGYzZGSXlxMmdicm9yRXUwbXhicEZaUlVybVVLVEMyOG1DZ1NB?oc=5"
+   "title": "오징어에서 반도체·BTS까지…수출 1조 달러 일군 10대 개척자",
+   "url": "https://www.joongang.co.kr/article/25480365",
+   "published": "2026-11-19T20:00:02+00:00",
+   "summary": "오징어에서 반도체·BTS까지…수출 1조 달러 일군 10대 개척자 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVQmo2Um91aDh5T1EtVlRUSkZfa3l0Y0VkTF9HbGdQZWpCUDZLQTNha2s3U0E2WjdoWXlyS3NMUkNCQW5hQzQwWXppSFNXTzhBTlIwWnFR?oc=5"
+  },
+  {
+   "source": "중앙일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "“오후 4시 퇴실에 와인도 공짜”…VIP 대접 받는 호캉스 비결 [더 하이엔드]",
+   "url": "https://www.joongang.co.kr/article/25480364",
+   "published": "2026-11-19T20:00:02+00:00",
+   "summary": "“오후 4시 퇴실에 와인도 공짜”…VIP 대접 받는 호캉스 비결 [더 하이엔드] 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5IU29fTnFtMlFnTmVxZktMLXB6TzRSc29mbXZ6bkxNUTMyRHJTSVlNelhPMzNMMXc2bFpQU3NCM2N2eFZwNFFLel9aRGRYakJJSTJUM1hn?oc=5"
   },
   {
    "source": "중앙일보",
@@ -2347,11 +2377,11 @@
    "source": "중앙일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "“차에 꿀 묻혀놨나, 촬영때만 겨우 나와”…배종옥, 후배들에 일침",
-   "url": "https://www.joongang.co.kr/article/25479979",
-   "published": "2026-11-18T15:33:50+00:00",
-   "summary": "“차에 꿀 묻혀놨나, 촬영때만 겨우 나와”…배종옥, 후배들에 일침 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KcWNzekNtWUg2N2E4aUNSUVNkOWpFTzhKdV9LYUVFR2FIblB3N3J3WmZnbEpfdmkxRHBvQzl0TEc5enF5V2RMcVFBSDh2c1ZqNktHX3Vn?oc=5"
+   "title": "박정훈 “리트 만점자, 치대 간 수능 시험지 오늘 폐기할 수도”",
+   "url": "https://www.joongang.co.kr/article/25480019",
+   "published": "2026-11-18T20:43:52+00:00",
+   "summary": "박정훈 “리트 만점자, 치대 간 수능 시험지 오늘 폐기할 수도” 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1rcHQycE5LcUVfWUVNUWZVcGpYT3BZRlJQZEtwM25VTzhpV015aEJ4NExPTGpXdS1WcFZzSXVRVUJxS1Z4blJmaHNSRE1xa0UtdGtXNC1n?oc=5"
   },
   {
    "source": "중앙일보",
@@ -2367,26 +2397,6 @@
    "source": "중앙일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "비닐하우스→100억 펜트 산 그녀 “3억으로 이 동네 사라”",
-   "url": "https://www.joongang.co.kr/article/25479867",
-   "published": "2026-11-18T08:37:20+00:00",
-   "summary": "비닐하우스→100억 펜트 산 그녀 “3억으로 이 동네 사라” 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OZHJ0cjdVMWFaQ3pkV05KY292LVhSakhzNUpxQllyMVNsVVY2TDJxUDFCWWctWTNwMlQzX1UtRGpqV1U4V3JaYktibUJSTkc4akVTTVlB?oc=5"
-  },
-  {
-   "source": "중앙일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "난민 신청인이 낸 ‘이집트 판결문’ 배척한 2심 …대법서 파기",
-   "url": "https://www.joongang.co.kr/article/25479685",
-   "published": "2026-11-17T23:35:39+00:00",
-   "summary": "난민 신청인이 낸 ‘이집트 판결문’ 배척한 2심 …대법서 파기 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE44aUdNQnplUVpYZmt4LWdKdjhnU0IwcGQ0WUR2R19xRm50ZzgtZ0JxT1lCVUZqUnFiczZiV1ZOX0w5c2FFX0t3ejlJNDg1WDZpeHRRRXJR?oc=5"
-  },
-  {
-   "source": "중앙일보",
-   "kind": "국내 언론",
-   "lang": "ko",
    "title": "“몰카 천국 만드느라 애썼다”…국회가 10년간 키운 ‘수능 재앙’",
    "url": "https://www.joongang.co.kr/article/25479641",
    "published": "2026-11-17T20:00:02+00:00",
@@ -2397,51 +2407,31 @@
    "source": "중앙일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "치매父 통장서 10억 빼간 장남…상속 변호사 “이것만 했어도”",
-   "url": "https://www.joongang.co.kr/article/25479635",
-   "published": "2026-11-17T20:00:00+00:00",
-   "summary": "치매父 통장서 10억 빼간 장남…상속 변호사 “이것만 했어도” 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JSUxjYm5nZ09YWDlydFcxbkJoOHl6VmU5ZmgxQ0xoalVWbVg1Y2owNUtnVTZhUmp1Y3EyUmpiRmxHbW1HNXpIclZUemNkQ1E4NjRMelpR?oc=5"
+   "title": "“속옷 진동기도 포착” 부정행위 267건 잡아낸 감독관 정체 [팩플]",
+   "url": "https://www.joongang.co.kr/article/25479490",
+   "published": "2026-11-17T09:22:34+00:00",
+   "summary": "“속옷 진동기도 포착” 부정행위 267건 잡아낸 감독관 정체 [팩플] 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9RYVl0WFV6OW1tUXVnYlo0M0FsRUtqckRKbmVhM0VxT3NpSFNxN1N5VU5uMkhNUTYzbm04dXhtcjVVb2EweENCMURQRHFfN1dNMkhHa013?oc=5"
   },
   {
    "source": "중앙일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "“‘폭싹 속았수다’ 보고 오열”…日 국보급 여배우의 ‘한국 앓이’",
-   "url": "https://www.joongang.co.kr/article/25479218",
+   "title": "[단독] “韓세무사시험 1등 우리 덕, 문의 폭주”…中업체 ‘커닝 홍보’",
+   "url": "https://www.joongang.co.kr/article/25479289",
+   "published": "2026-11-17T00:15:32+00:00",
+   "summary": "[단독] “韓세무사시험 1등 우리 덕, 문의 폭주”…中업체 ‘커닝 홍보’ 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mOURPdktrbE5WMTYxMy0yaHhxdjhSZTRaU0dwYTNLT0JEdmlFMjE0WGpmMnk2NEhNS19WRDdyVHZNcHBKUWlyNGFfUGg3MHY1Uzd3RGhn?oc=5"
+  },
+  {
+   "source": "중앙일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "멀쩡한 밭에 ‘악마의 구멍’ 700개…공포의 재앙 덮친 이곳 [영상]",
+   "url": "https://www.joongang.co.kr/article/25479214",
    "published": "2026-11-16T20:00:01+00:00",
-   "summary": "“‘폭싹 속았수다’ 보고 오열”…日 국보급 여배우의 ‘한국 앓이’ 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5b0FhZk9lNXBwMHNOaE1jMkpkamM3WlBpd0hpakZ0cE1EY0ZUUVFNQmxST0w4YVNvUk5kYUJ5VHZIMGlzS2xkbVVBX2x3YTJFMnVibTRB?oc=5"
-  },
-  {
-   "source": "중앙일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "“계약에도 없던 돈”…장항준, ‘왕사남’ 배우·스태프에 26억 쐈다",
-   "url": "https://www.joongang.co.kr/article/25479103",
-   "published": "2026-11-16T11:48:43+00:00",
-   "summary": "“계약에도 없던 돈”…장항준, ‘왕사남’ 배우·스태프에 26억 쐈다 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mbURLUHRRNUtxTUUwbElWajExODBHSmZrOWh0WG5reWpaYUN0RDhZTkNSWWVmQkNYX1FMTUxGZTNTZ0Z1TTIyVnB3eUdrVm0yMG5lUGdn?oc=5"
-  },
-  {
-   "source": "중앙일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "“‘음란물 낙인’ 여배우는 나락”…27년간 17분 잘린 이 영화",
-   "url": "https://www.joongang.co.kr/article/25478727",
-   "published": "2026-11-16T08:00:00+00:00",
-   "summary": "“‘음란물 낙인’ 여배우는 나락”…27년간 17분 잘린 이 영화 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5tbVgwbjAwLXlhRnJMRlpUX21XOVQxalVSY1dta0ZOSnoxaEVkYmlOckJlb3ZXZVFrNU92UmNPX0RkNHdWcW5DOVRYM3dpOHQ3MjV2emdB?oc=5"
-  },
-  {
-   "source": "중앙일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "“김정은, 포격 명령 내렸다” 애기봉 점등식 직전 ‘충격 무전’",
-   "url": "https://www.joongang.co.kr/article/25478861",
-   "published": "2026-11-15T20:00:00+00:00",
-   "summary": "“김정은, 포격 명령 내렸다” 애기봉 점등식 직전 ‘충격 무전’ 중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZeW5XRWZlOVY0RFRFSC1nbzB5MWhWWWtpVWF3X1BNYTB2Vk92NTJ0X0xHcDE3RVhncXlmUmx2Z0tWbUYtM3JIQ2FZQzM4eXpFQ3ZpT1lR?oc=5"
+   "summary": "멀쩡한 밭에 ‘악마의 구멍’ 700개…공포의 재앙 덮친 이곳 [영상] 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ZR0cxWWxTbHhnWl9Pa0JzUDZteVZWNEhMRHJQMy1FVC13QTdKR3ZPS2xfRXFHWkR5Uk13QVpJb21BVE5fdlBMYXFVS3VUVF9WZUNPU2tR?oc=5"
   },
   {
    "source": "시사IN",
@@ -2449,7 +2439,7 @@
    "lang": "ko",
    "title": "중국 점유율 77% 시대, 한국 조선업의 다음 경쟁력은? [산업지도 다시 그리기 ② 조선산업]",
    "url": "https://www.sisain.co.kr/news/articleView.html?idxno=58861",
-   "published": "2026-11-22T10:10:57+00:00",
+   "published": "2026-11-22T11:40:58+00:00",
    "summary": "중국 점유율 77% 시대, 한국 조선업의 다음 경쟁력은? [산업지도 다시 그리기 ② 조선산업] 시사IN",
    "gnews_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE13X3ZuR0lvcTZjeE8xRVAwcFRwN20xaEluT3VfcGsyZmlKNV8wbmtDcFVkZ3dZenJza3ZRamE1U3V2aHdOQWxVX3o1eXc3SngzNnVqaVdDekx3SE1GdUd5SUE1U1pON09qMlE?oc=5"
   },
@@ -2718,9 +2708,10 @@
    "kind": "국내 언론",
    "lang": "ko",
    "title": "'징역 4년' 울먹인 김건희... \"죽어도 이해 못 해, 언제까지 정치 눈치 볼 거냐\"",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xMGFqa09sME51eXUzWXlVYkF4YjlJR1BHNk14V1d2MTFfSV9EeTRGVUIteGtGV202NDN3cHp1eUVMZlNkOHJYd3ItUTBaRWM4RWFDc0szQnRCV3UzWHFwSTlZLWNQYUdUVURzS0N30gFzQVVfeXFMTkJMOXZBWEZMay1BeEtpa251VzJNUTU2NVluWmpDTWZnbmY0WEdXeHdlRWZ4Y0M2SVJPRWhkb19zWWE1OElicWtkSmlYb2tIZ0t4NHpwZ1FOOWlHRml0TzdyUFN1SU14aVNsdFVaSDNfMjJrNA?oc=5",
+   "url": "https://www.hankookilbo.com/news/article/A2026112017100004640",
    "published": "2026-11-20T08:28:00+00:00",
-   "summary": "'징역 4년' 울먹인 김건희... \"죽어도 이해 못 해, 언제까지 정치 눈치 볼 거냐\" 한국일보"
+   "summary": "'징역 4년' 울먹인 김건희... \"죽어도 이해 못 해, 언제까지 정치 눈치 볼 거냐\" 한국일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xMGFqa09sME51eXUzWXlVYkF4YjlJR1BHNk14V1d2MTFfSV9EeTRGVUIteGtGV202NDN3cHp1eUVMZlNkOHJYd3ItUTBaRWM4RWFDc0szQnRCV3UzWHFwSTlZLWNQYUdUVURzS0N30gFzQVVfeXFMTkJMOXZBWEZMay1BeEtpa251VzJNUTU2NVluWmpDTWZnbmY0WEdXeHdlRWZ4Y0M2SVJPRWhkb19zWWE1OElicWtkSmlYb2tIZ0t4NHpwZ1FOOWlHRml0TzdyUFN1SU14aVNsdFVaSDNfMjJrNA?oc=5"
   },
   {
    "source": "한국일보",
@@ -2877,9 +2868,10 @@
    "kind": "국내 언론",
    "lang": "ko",
    "title": "美의회 새 역사 쓴 하킴 제프리스… '권력 서열 3위' 하원의장 사실상 확정",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrRzFlcFV4UGZvaWVGdUlPNldobFYzZkRhUmVNTHk5eUFKaFRwLWJ1TWhZTVcyTktpZTNsS3VseFMyMF8wOHBhVWZwQ1hlSV9NaGxHcUU2R0ZEaWZ2d0FuSGhpcXVabU5QQ2c1T1VR0gFzQVVfeXFMTnh1TXhHVWZxUUg2cWd0WXlqWkxjTGkwNEtCclJ6VmVpUk5PUTFXak9DaTF0Mm1BYmpVdGFRLWxkdWtSZjRzV3pFdWpCVHdkQVNwYjgzeUxwUHlOOW1HbmFjVWRpRHJZQ2M1NkZObnlCaS1BNA?oc=5",
+   "url": "https://www.hankookilbo.com/news/article/A2026111905090001030",
    "published": "2026-11-18T20:28:00+00:00",
-   "summary": "美의회 새 역사 쓴 하킴 제프리스… '권력 서열 3위' 하원의장 사실상 확정 한국일보"
+   "summary": "美의회 새 역사 쓴 하킴 제프리스… '권력 서열 3위' 하원의장 사실상 확정 한국일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrRzFlcFV4UGZvaWVGdUlPNldobFYzZkRhUmVNTHk5eUFKaFRwLWJ1TWhZTVcyTktpZTNsS3VseFMyMF8wOHBhVWZwQ1hlSV9NaGxHcUU2R0ZEaWZ2d0FuSGhpcXVabU5QQ2c1T1VR0gFzQVVfeXFMTnh1TXhHVWZxUUg2cWd0WXlqWkxjTGkwNEtCclJ6VmVpUk5PUTFXak9DaTF0Mm1BYmpVdGFRLWxkdWtSZjRzV3pFdWpCVHdkQVNwYjgzeUxwUHlOOW1HbmFjVWRpRHJZQ2M1NkZObnlCaS1BNA?oc=5"
   },
   {
    "source": "한국일보",
@@ -2945,56 +2937,6 @@
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "아일릿, K팝 그룹 최초 日‘레코드 대상’서 3년 연속 수상",
-   "url": "https://www.munhwa.com/article/11633111",
-   "published": "2026-11-22T06:37:54+00:00",
-   "summary": "아일릿, K팝 그룹 최초 日‘레코드 대상’서 3년 연속 수상 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9XRTBBRnhXOEQ4ZW1ncmZFcm9yLXY1WmtYWXRqOVVPOTNQZGlFZmNkUDM4MnM3R0MxQ19ibFZ1NkhQanZjUDFmNTNwUTNaRERW?oc=5"
-  },
-  {
-   "source": "문화일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "[속보]금천구 건물 지하 보일러실서 미라화 시신 발견",
-   "url": "https://www.munhwa.com/article/11633096",
-   "published": "2026-11-22T03:18:18+00:00",
-   "summary": "[속보]금천구 건물 지하 보일러실서 미라화 시신 발견 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBTN1I5S0I4dll2TFltaVZIX01TNzhqUXNJNV9oQlY1dXdGLW15dEsxcFpNemdJUzFNSWZWSU5fQzlhTV83WExSeHJYTEdYVzJv?oc=5"
-  },
-  {
-   "source": "문화일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "제주 서귀포 해상서 다이빙하던 60대 스쿠버다이버 숨져",
-   "url": "https://www.munhwa.com/article/11633094",
-   "published": "2026-11-22T03:00:19+00:00",
-   "summary": "제주 서귀포 해상서 다이빙하던 60대 스쿠버다이버 숨져 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9IUTVGM1VUS1ozb1hIWWlqMkJmMjlxYlVFMV81RTFIbE5ZN1ZpaHF6bkxpbDMzNUk0MXk1Y3NpN3d6TnYydDh0d3JjQjdLOWRY?oc=5"
-  },
-  {
-   "source": "문화일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "강릉 2층 상가주택서 화재…70대 1층 세입자 숨져",
-   "url": "https://www.munhwa.com/article/11633093",
-   "published": "2026-11-22T03:00:06+00:00",
-   "summary": "강릉 2층 상가주택서 화재…70대 1층 세입자 숨져 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB3bTM4VklqSU5CUGRoSjlhWGQ2UWIxWU43T3ZPa0lRSkYwcFJyNy1uTEVvLXM3NFVTX1h3aFJsWFcwTUo2Tndxc3hBa0IyeE5x?oc=5"
-  },
-  {
-   "source": "문화일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "300만 달성 ‘치이카와’…‘토이스토리5’도 눌렀다",
-   "url": "https://www.munhwa.com/article/11633052",
-   "published": "2026-11-21T23:53:07+00:00",
-   "summary": "300만 달성 ‘치이카와’…‘토이스토리5’도 눌렀다 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tT285SXVGRWVybkZEUy11ZUdFSGZwQzI3bXJLTlg0RWwzNTlwUXRqWkNZVmVmTVRVVHI1T0lTSldMZFNUUTV5RkVEMTRiUVRo?oc=5"
-  },
-  {
-   "source": "문화일보",
-   "kind": "국내 언론",
-   "lang": "ko",
    "title": "트럼프 “이란 공격 서두르지 않겠다”…美·이스라엘 내부선 군사행동 압박",
    "url": "https://www.munhwa.com/article/11633037",
    "published": "2026-11-21T21:33:41+00:00",
@@ -3025,31 +2967,21 @@
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
+   "title": "나경원 “국민 돈 날려놓고 대장동 변호만”…국힘, 증시 폭락에 李정부 맹공",
+   "url": "https://www.munhwa.com/article/11633005",
+   "published": "2026-11-21T05:32:51+00:00",
+   "summary": "나경원 “국민 돈 날려놓고 대장동 변호만”…국힘, 증시 폭락에 李정부 맹공 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA1VVEwODZjWUVVUG9HTXVOR3dXb2VJOHRnTVFjYWFNSkswc3owOUo3SU4tSjZpSFJkRGcxQVQ3X3F3V3dRbHU1U2pEbzd6WDY1?oc=5"
+  },
+  {
+   "source": "문화일보",
+   "kind": "국내 언론",
+   "lang": "ko",
    "title": "“챗GPT도 틀렸다”…오답률 92% 수능 세계사 2번, 이의신청 빗발",
    "url": "https://www.munhwa.com/article/11632973",
    "published": "2026-11-20T22:38:23+00:00",
    "summary": "“챗GPT도 틀렸다”…오답률 92% 수능 세계사 2번, 이의신청 빗발 문화일보",
    "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5QLUFjbWp5REJnczlkOVZHUkVSQ3dxMk5JTkVFTTNpT29NbDJTb2JmUjVlWGM2N09pRFRpUy15MTFQQWlLSk42YmV3UThEUWhX?oc=5"
-  },
-  {
-   "source": "문화일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "‘같이 식사하다가 왜’…당진 식당서 일행에 흉기휘두른 40대",
-   "url": "https://www.munhwa.com/article/11632971",
-   "published": "2026-11-20T22:04:55+00:00",
-   "summary": "‘같이 식사하다가 왜’…당진 식당서 일행에 흉기휘두른 40대 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yWjF0UjBsM3JPNTN6akx5M1EwODlZeDVrVTJyMkpkMEtxc3FpeWhkRmdvd3BIOXpLZW1QbzRaWUQxQmRBcTFncGx5X1FCNGFO?oc=5"
-  },
-  {
-   "source": "문화일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "제72주년 독도대첩 기념 및 독도의용수비대 영령 추모행사",
-   "url": "https://www.munhwa.com/article/11632961",
-   "published": "2026-11-20T14:49:45+00:00",
-   "summary": "제72주년 독도대첩 기념 및 독도의용수비대 영령 추모행사 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtR2duWmlwNlQyeXY4SHJscDVpREhTQ1RBUU9oOEJYdFF0MDE2U05FcHlrQXZ3bi1FUjZvalZfbUV4dEJTYmRMZGpBeEs1Wk9o?oc=5"
   },
   {
    "source": "문화일보",
@@ -3065,6 +2997,26 @@
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
+   "title": "김건희 “대법관들, 정말 사건 들여다봤는지 의문”",
+   "url": "https://www.munhwa.com/article/11632918",
+   "published": "2026-11-20T03:00:41+00:00",
+   "summary": "김건희 “대법관들, 정말 사건 들여다봤는지 의문” 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBMRmI4V0lMT0tUaUJSSjRwLUxWbHJnVlh1SnNBTENLczF0RG9zSXNFN2RpUFlobWNpNUw3ZFVJOFo2a0JMOHY3UXFQLVhUaW41?oc=5"
+  },
+  {
+   "source": "문화일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "경주서 천마총 이전 ‘4세기 신라 지배층 무덤’ 발굴",
+   "url": "https://www.munhwa.com/article/11632915",
+   "published": "2026-11-20T03:00:33+00:00",
+   "summary": "경주서 천마총 이전 ‘4세기 신라 지배층 무덤’ 발굴 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1Oc2IxbDVSNXRyMFRTOFhtaUoyZndMamI0ajVCTHNXYjRWR0RkQWI3bUpFMjhLaXN2TjlsWjEzbGJ1ZGhFemVFdFFSNFNZVkxQ?oc=5"
+  },
+  {
+   "source": "문화일보",
+   "kind": "국내 언론",
+   "lang": "ko",
    "title": "“죽음으로 속죄했는데 마지막까지 손가락질” 서울대 교수, ‘이진우 사태’ 비판",
    "url": "https://www.munhwa.com/article/11632708",
    "published": "2026-11-19T22:21:39+00:00",
@@ -3075,21 +3027,51 @@
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "[속보]앤트로픽 상장 첫날, 뉴욕증시 2%대 급락…다우 5만선 아래로",
-   "url": "https://www.munhwa.com/article/11632692",
-   "published": "2026-11-19T21:34:10+00:00",
-   "summary": "[속보]앤트로픽 상장 첫날, 뉴욕증시 2%대 급락…다우 5만선 아래로 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ibzd5OEFWMXJjSm9UbW1ITHpEQmQ0NDlRRWFldDdKMjVNTlJRTjkxSW15NWtqOFVXTXZhdnBneTVuMkZmelJRT0FHNkxVMnht?oc=5"
+   "title": "[속보]여자프로배구 관람 중 쓰러진 남성 끝내 숨져",
+   "url": "https://www.munhwa.com/article/11632681",
+   "published": "2026-11-19T14:38:26+00:00",
+   "summary": "[속보]여자프로배구 관람 중 쓰러진 남성 끝내 숨져 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZMVJoa3IyR1FPQWlVcmREV1B1N1liaHZnUzQxOUhWNDFENC1uRmZGT043Q2JBS2ZFME0wTHEtODZvNzdyWUpkWDdqdGJ0MEo5?oc=5"
   },
   {
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "‘수능도전’ 승려 출신 50대, 가방서 스마트폰 ‘삐’ 퇴실",
-   "url": "https://www.munhwa.com/article/11632684",
-   "published": "2026-11-19T15:55:01+00:00",
-   "summary": "‘수능도전’ 승려 출신 50대, 가방서 스마트폰 ‘삐’ 퇴실 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVcW44czFWY29jenYwTDltblY5UU1qRzZ1NXdleDIyWWlnblJmNF8tWkVKNGNPOXFzYzc1dDAxcU9PZDV1a0p0TTlHS2ZoUWQx?oc=5"
+   "title": "특검법 17일 재가→19일 공포… 국민은 ‘李, 거부권 미행사’ 이틀간 몰랐다",
+   "url": "https://www.munhwa.com/article/11632573",
+   "published": "2026-11-19T03:13:17+00:00",
+   "summary": "특검법 17일 재가→19일 공포… 국민은 ‘李, 거부권 미행사’ 이틀간 몰랐다 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MUWVlMnRtanhXMXRCUy1LdUM0Tl9SbVRqZm45ZnQ3RFBuY2Z6YTVwMGw1ZldUeWRBMlV2M3V5NTcwRVJOWGtjVW5mSWI3SVdZ?oc=5"
+  },
+  {
+   "source": "문화일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "민주, 민주유공자법 처리 나서… 국힘 “모든 법안에 필리버스터”",
+   "url": "https://www.munhwa.com/article/11632572",
+   "published": "2026-11-19T03:13:05+00:00",
+   "summary": "민주, 민주유공자법 처리 나서… 국힘 “모든 법안에 필리버스터” 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1hV1pYOFU5ZkFpbjVMU0VURUltVElZcmtWdnhKQm02SmJGS2FSSmM2S3lsYmpJNlZ3WllHTjI3TFMtNVExbkJNcE1xdUdpOFRC?oc=5"
+  },
+  {
+   "source": "문화일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "윤도현·이홍기·요스케, SBS ‘밴드왕’ 마스터 합류",
+   "url": "https://www.munhwa.com/article/11632433",
+   "published": "2026-11-18T23:54:36+00:00",
+   "summary": "윤도현·이홍기·요스케, SBS ‘밴드왕’ 마스터 합류 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9CUEJQOS14ZEowa1NXMUFGYUdnbHpENHo0bnZzRVJfaWNJT0dHTmU2N2lzUlA5d2xGYTdQZWlHVEU3b0FnclRENEdLd2NLckE4?oc=5"
+  },
+  {
+   "source": "문화일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "영등포구 “대림3유수지가 육상·농구·피클볼 갖춘 생활체육 거점으로”",
+   "url": "https://www.munhwa.com/article/11632426",
+   "published": "2026-11-18T23:12:10+00:00",
+   "summary": "영등포구 “대림3유수지가 육상·농구·피클볼 갖춘 생활체육 거점으로” 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtY1p0WUI2a2h2SFFVdnhuSXN1SEFTVll6UUFMaTB6V3lrTFhJWHNPdjJjV3AtVlg1QWpyRVpacU8xLXJEN1BXbXpwRzExZVI0?oc=5"
   },
   {
    "source": "문화일보",
@@ -3105,61 +3087,59 @@
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "김종철 경찰청장 후보 청문회… ‘한동훈 딸·신천지’ 수사 추궁",
-   "url": "https://www.munhwa.com/article/11632260",
-   "published": "2026-11-18T03:04:34+00:00",
-   "summary": "김종철 경찰청장 후보 청문회… ‘한동훈 딸·신천지’ 수사 추궁 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5FdlpwTmVwcXlBaHlVakVPRGExVThxUjJhRDNIWTFXelcyQVpKbW1qSExldDA0S2swOHVidC1xbWFyajRRT2g4ZjI5enFUaERL?oc=5"
+   "title": "김다현, 韓예술문화대상 ‘특별공로상’ 수상…“더 큰 문화예술인으로 성장할 것”",
+   "url": "https://www.munhwa.com/article/11632285",
+   "published": "2026-11-18T05:41:56+00:00",
+   "summary": "김다현, 韓예술문화대상 ‘특별공로상’ 수상…“더 큰 문화예술인으로 성장할 것” 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5CRWtWSm43RFlMVy1lUzcxWmU1clNPRDFRSnBJSHM2M0FuVzdnNjJKM0k3b2xqQXFwY1dTU0pwVHQ2cXRwbjVTa3NmcTRvU0sz?oc=5"
   },
   {
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "李 “방해받은 만큼 수능시간 연장”…수험생 대혼란",
-   "url": "https://www.munhwa.com/article/11632254",
-   "published": "2026-11-18T03:03:05+00:00",
-   "summary": "李 “방해받은 만큼 수능시간 연장”…수험생 대혼란 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5iMkJUTWRJUXpGcFlVdU84ZHdHTmdEekNTWllOVXNkSHE4SUtKTEdQVEY0azBZOFFtTU83SzFCM0EzU2k3dC1mZzZMSEZLNkVw?oc=5"
+   "title": "[속보]수험생이 헌재에 ‘수능 시험일 효력 정지’ 가처분신청 제기",
+   "url": "https://www.munhwa.com/article/11632049",
+   "published": "2026-11-17T11:28:41+00:00",
+   "summary": "[속보]수험생이 헌재에 ‘수능 시험일 효력 정지’ 가처분신청 제기 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE50OFNzLUZwdUVEZ3Q3WUlMYkJtejctRUhzd2JpcERoT0hscVRmLVBEQkFFc05MSDFHaFd6VlRvZTRvS3VBRFdDcHIzMkNJckU2?oc=5"
+  },
+  {
+   "source": "문화일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "[속보]19일 오전 8시반 ‘거부 불가능’ 위급재난문자 울린다…수능 부정행위 대책",
+   "url": "https://www.munhwa.com/article/11632017",
+   "published": "2026-11-17T08:04:06+00:00",
+   "summary": "[속보]19일 오전 8시반 ‘거부 불가능’ 위급재난문자 울린다…수능 부정행위 대책 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBsVnJYQlp6QkJwNWJkNkl2SUZZUk5qUXpiOUd1UGVuQ3A4anVTTTVIWmlkTTFOMFg4S3RsbjVfM2NQQTBUaFRKak80NmRYNlNL?oc=5"
   },
   {
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
    "title": "[속보]與 김문수 “수능 커닝 대책 막막…수험생끼리 감수해야”",
-   "url": "https://www.munhwa.com/article/11631944",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB1VTNaZEFmSVVDUVdUM2hUWmF3MVdJM21yanRxZy1jSzl2QUF3ckJVXzJvZTF1OWFtUU16NFVhTjJEQ0FBM3hzNUl0bnFTdDFj?oc=5",
    "published": "2026-11-17T03:44:02+00:00",
-   "summary": "[속보]與 김문수 “수능 커닝 대책 막막…수험생끼리 감수해야” 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB1VTNaZEFmSVVDUVdUM2hUWmF3MVdJM21yanRxZy1jSzl2QUF3ckJVXzJvZTF1OWFtUU16NFVhTjJEQ0FBM3hzNUl0bnFTdDFj?oc=5"
-  },
-  {
-   "source": "문화일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "‘張 직접개입’ 증거 없었던 1차폭로… 황경성 측 “시간 주겠다”",
-   "url": "https://www.munhwa.com/article/11631938",
-   "published": "2026-11-17T03:04:19+00:00",
-   "summary": "‘張 직접개입’ 증거 없었던 1차폭로… 황경성 측 “시간 주겠다” 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5VVzhpbUs3dUVQR0xrRWlRaHBScXJzaE5BaTRoOFh0X1BJckhOZEFqdEU5MldxT21YS19zNnFBWHFtWFNEaTFvVDlXallTTU1P?oc=5"
-  },
-  {
-   "source": "문화일보",
-   "kind": "국내 언론",
-   "lang": "ko",
-   "title": "與 초선모임 “崔 엄중징계” 성명… 친청계는 빠져",
-   "url": "https://www.munhwa.com/article/11631937",
-   "published": "2026-11-17T03:04:16+00:00",
-   "summary": "與 초선모임 “崔 엄중징계” 성명… 친청계는 빠져 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5XV1J0dkpEMUR1VkdGU0wtWWNtdzV5R2hLNUYxd1JKQkt3ZGg3LVA2RzhRdkFzT0o0dFdTLUZuenVMQkU4Zi1zSU1FajBNSTNZ?oc=5"
+   "summary": "[속보]與 김문수 “수능 커닝 대책 막막…수험생끼리 감수해야” 문화일보"
   },
   {
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
    "title": "[속보]러 군용기 수 대 84일 만에 동해 KADIZ 무단진입…공군 전투기 출격해 대응",
-   "url": "https://www.munhwa.com/article/11631767",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9JbG8wYWduZHFFd1dJRTdXdW9UN3d4VlRTQXB0anY0RkJKank5SGFGSWpnTDMwRlo1NE5uZ201ZW9oUnM1NDJ3N1VpellDdThY?oc=5",
    "published": "2026-11-16T22:27:33+00:00",
-   "summary": "[속보]러 군용기 수 대 84일 만에 동해 KADIZ 무단진입…공군 전투기 출격해 대응 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9JbG8wYWduZHFFd1dJRTdXdW9UN3d4VlRTQXB0anY0RkJKank5SGFGSWpnTDMwRlo1NE5uZ201ZW9oUnM1NDJ3N1VpellDdThY?oc=5"
+   "summary": "[속보]러 군용기 수 대 84일 만에 동해 KADIZ 무단진입…공군 전투기 출격해 대응 문화일보"
+  },
+  {
+   "source": "문화일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "‘우주먼지’ 지웅배 교수, 양평도서관 온다…“천문학 재미 만끽하길”",
+   "url": "https://www.munhwa.com/article/11631741",
+   "published": "2026-11-16T21:32:03+00:00",
+   "summary": "‘우주먼지’ 지웅배 교수, 양평도서관 온다…“천문학 재미 만끽하길” 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ZaG5BYjZWeElneW9Nem40RU1sbDMtaVRsZC1QajV6cUlBYTM2V284cnhGelM3NTVaYVRDT2MtNzczRGxQbDQ5a1pqV0RQdExZ?oc=5"
   },
   {
    "source": "문화일보",
@@ -3175,11 +3155,11 @@
    "source": "문화일보",
    "kind": "국내 언론",
    "lang": "ko",
-   "title": "수능 3일 앞두고 ‘부랴부랴 회의’… 탐지기 등 올해는 적용불가",
-   "url": "https://www.munhwa.com/article/11631643",
-   "published": "2026-11-16T03:15:00+00:00",
-   "summary": "수능 3일 앞두고 ‘부랴부랴 회의’… 탐지기 등 올해는 적용불가 문화일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9leFZIYlpBN1lOQXRXRnVvUlNZemdPSmpWd1hhbHg5Zlh4ZjNMbi1VemtkTWhmS0VUTEh3X2dweGtUajBDb0hUWTBSbFF6eXpu?oc=5"
+   "title": "“러 정보부, 방산업체 파괴공작 시도” 에스토니아, 러시아와 국경 폐쇄",
+   "url": "https://www.munhwa.com/article/11631444",
+   "published": "2026-11-15T19:28:13+00:00",
+   "summary": "“러 정보부, 방산업체 파괴공작 시도” 에스토니아, 러시아와 국경 폐쇄 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1kOFNNQjJyanhHdnEyZk52MTlnX3FqeFlvM04xVl9jZUJWdWJ3eGN3Y2RPYW1OZ25WblhHeVI5LXU4QjNXZW9ERFA5b3lWQXVB?oc=5"
   },
   {
    "source": "문화일보",
@@ -3190,6 +3170,16 @@
    "published": "2026-11-15T14:16:23+00:00",
    "summary": "SSG 떠난 ‘우승 포수’ 김민식, LG행 초읽기…계약 마무리 단계 문화일보",
    "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE90c3VaRlhTWWJTQ1BmWncwaHlnNUFCUkh3Q3VhaDNpU1hQQ3ZJMGE1Mm5adklsc09KM0ZCLTlQa3FIeThpaHp0VG1LLTBrWlN4?oc=5"
+  },
+  {
+   "source": "문화일보",
+   "kind": "국내 언론",
+   "lang": "ko",
+   "title": "박원석 “20대 총선, 혐오 부르는 인사 정리해 승리…대표적으로 정청래”",
+   "url": "https://www.munhwa.com/article/11631434",
+   "published": "2026-11-15T13:16:41+00:00",
+   "summary": "박원석 “20대 총선, 혐오 부르는 인사 정리해 승리…대표적으로 정청래” 문화일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9DcDZMXzVBUUdMRVA1aU5mWVFDWW1LMWFlWFlrTlVqSFIxM3FSTVhfUzhXNkxScWs3TXNnVE96eG5pYWNsUXBIOENWSU4zT3h6?oc=5"
   },
   {
    "source": "한국교육신문",
@@ -3206,10 +3196,9 @@
    "kind": "교육 매체",
    "lang": "ko",
    "title": "교총, 수능 공정성 검증·국가시험보안센터 신설 촉구",
-   "url": "https://www.hangyo.com/news/article.html?no=110152",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1mR0Y0V0pjWE9yQTF5ZzVlMmd3bGYyZjRsaV9ITXF2cUZTSHhIN1gwVHk4S192cFQzLW1ldTFBYjVoRWFzRExxQ2djWkhKVUt4UnZGbGF4MU53Vk1FRkVV?oc=5",
    "published": "2026-11-20T04:49:49+00:00",
-   "summary": "교총, 수능 공정성 검증·국가시험보안센터 신설 촉구 한국교육신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1mR0Y0V0pjWE9yQTF5ZzVlMmd3bGYyZjRsaV9ITXF2cUZTSHhIN1gwVHk4S192cFQzLW1ldTFBYjVoRWFzRExxQ2djWkhKVUt4UnZGbGF4MU53Vk1FRkVV?oc=5"
+   "summary": "교총, 수능 공정성 검증·국가시험보안센터 신설 촉구 한국교육신문"
   },
   {
    "source": "한국교육신문",
@@ -3266,20 +3255,19 @@
    "kind": "교육 매체",
    "lang": "ko",
    "title": "손곡초, 학생자치회 주도 ‘폰 프리 스쿨’ 실천",
-   "url": "https://www.hangyo.com/news/article.html?no=110133",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1KdTdRZVFwWUZIUi1QMlZsN2tVNEtDZjRMbTE0UEVZU0NiQUNGXzF4T0YyYUc3RW96UG1IazRPZ0ZWeG9fSDdfTlBzRDNXNUsxVW9lRExLSzBfQlJaU0Rr?oc=5",
    "published": "2026-11-19T07:46:12+00:00",
-   "summary": "손곡초, 학생자치회 주도 ‘폰 프리 스쿨’ 실천 한국교육신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1KdTdRZVFwWUZIUi1QMlZsN2tVNEtDZjRMbTE0UEVZU0NiQUNGXzF4T0YyYUc3RW96UG1IazRPZ0ZWeG9fSDdfTlBzRDNXNUsxVW9lRExLSzBfQlJaU0Rr?oc=5"
+   "summary": "손곡초, 학생자치회 주도 ‘폰 프리 스쿨’ 실천 한국교육신문"
   },
   {
    "source": "한국교육신문",
    "kind": "교육 매체",
    "lang": "ko",
-   "title": "한국교육신문",
-   "url": "http://www.hangyo.com/news/section_month.html?year=8716&month=12",
+   "title": "지면신문보기",
+   "url": "http://www.hangyo.com/news/pdf.html?s=&s_year=1961&s_month=1&e_year=2020&e_month=7&page=1400",
    "published": "2026-11-19T01:20:00+00:00",
-   "summary": "한국교육신문 한국교육신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE92Y0dPWG96eGFsNFhjNmdSZHBZVF9YZkIyVFo3MmV0SVo3TnpNZGV3c3NPVTcwWWFac2pTZkF0dExkUjVpeHJpb1dWYWU0QVAzQWRDc1FnQWRQU296ck5SYW9zRkxNTEtUT0ZtMUhuRVFhZw?oc=5"
+   "summary": "지면신문보기 한국교육신문",
+   "gnews_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNakZrT3JGbXdaUTJpdGlVZlE5TWFkbmVWeElpTUFKWW1BazB2ZXhwMHZYN0RGRGxlRkp4Nm9JUHVIdGFsWW1wMlF5bm4tTF9rTHNRTk1ObE9PMGdQLTNfQ09wNWRUODgzSzViZ3JXUFQ3NThYbHVVcnRtMW1OWXhXcG9sUXJ1UXJQTFdhSXZ2QS1iSFQ3NFMw?oc=5"
   },
   {
    "source": "한국교육신문",
@@ -3315,10 +3303,9 @@
    "kind": "교육 매체",
    "lang": "ko",
    "title": "정부의 준비 부족을 교사에 떠넘기다니",
-   "url": "https://www.hangyo.com/news/article.html?no=110139",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HdU5iU01GZlUxSk1FXzZnV1RvU3UxYW9EWmE1VE9vUWdNSy13VUp1OVRoM2kyX1Zld0YzU2xqWHhDc0RrUXVvN0t6bWVKc1hoWG5DcE1zaEhrSXlmUmNR?oc=5",
    "published": "2026-11-18T06:50:51+00:00",
-   "summary": "정부의 준비 부족을 교사에 떠넘기다니 한국교육신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HdU5iU01GZlUxSk1FXzZnV1RvU3UxYW9EWmE1VE9vUWdNSy13VUp1OVRoM2kyX1Zld0YzU2xqWHhDc0RrUXVvN0t6bWVKc1hoWG5DcE1zaEhrSXlmUmNR?oc=5"
+   "summary": "정부의 준비 부족을 교사에 떠넘기다니 한국교육신문"
   },
   {
    "source": "한국교육신문",
@@ -3345,10 +3332,9 @@
    "kind": "교육 매체",
    "lang": "ko",
    "title": "폭력예방교육 강화, 교원 지원이 핵심",
-   "url": "https://www.hangyo.com/news/article.html?no=110120",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5ZHZYOV9uYkhZRnRfQXlBV1VOZllHNEZtcTl3SGlJR3FhTFNqUmV1VXFZcXgyakU2MnhPeXRnSVdmUkJmNzN3UUd6RUlYLTN1eE1xUTl3dWotUldSaERR?oc=5",
    "published": "2026-11-17T23:30:59+00:00",
-   "summary": "폭력예방교육 강화, 교원 지원이 핵심 한국교육신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5ZHZYOV9uYkhZRnRfQXlBV1VOZllHNEZtcTl3SGlJR3FhTFNqUmV1VXFZcXgyakU2MnhPeXRnSVdmUkJmNzN3UUd6RUlYLTN1eE1xUTl3dWotUldSaERR?oc=5"
+   "summary": "폭력예방교육 강화, 교원 지원이 핵심 한국교육신문"
   },
   {
    "source": "한국교육신문",
@@ -3405,10 +3391,9 @@
    "kind": "교육 매체",
    "lang": "ko",
    "title": "교총, 교원 심리회복 지원 나서",
-   "url": "https://www.hangyo.com/news/article.html?no=110101",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92SWlzdTJkenk2ZG1RLTdjVVl1aHRiSmM5Qlhrbng0dzg2ZEhoaGk5ZTJSalBPZk83LUNYdmpDd2RZOFh0S3JwQThJd2RyM1UwZVlkZWJBeV9XTW5lV2xr?oc=5",
    "published": "2026-11-16T08:00:20+00:00",
-   "summary": "교총, 교원 심리회복 지원 나서 한국교육신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92SWlzdTJkenk2ZG1RLTdjVVl1aHRiSmM5Qlhrbng0dzg2ZEhoaGk5ZTJSalBPZk83LUNYdmpDd2RZOFh0S3JwQThJd2RyM1UwZVlkZWJBeV9XTW5lV2xr?oc=5"
+   "summary": "교총, 교원 심리회복 지원 나서 한국교육신문"
   },
   {
    "source": "한국교육신문",
@@ -3966,21 +3951,31 @@
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
-   "title": "아산재단, 아산의료원장 박승일·서울아산병원장 이제환 임명",
-   "url": "http://m.medigatenews.com/news/2241960457?category=shortnews",
-   "published": "2026-11-22T02:08:42+00:00",
-   "summary": "아산재단, 아산의료원장 박승일·서울아산병원장 이제환 임명 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84OUx0bDhHMDR3QWNGZFVTUjR3bXRRaUg3czIyWjJTR1N2U3p4MVdKblpPYXd5NFlJV0ItLXNrTk9SUzFjUGFydUU5WkNJOFd5ZnBHZnB3Vmh4eHV5bGF3c2lPSVJoVEI1ZV9Baw?oc=5"
+   "title": "서미화 의원, 탈시설 증언대회 개최",
+   "url": "http://www.medigatenews.com/news/1428274612",
+   "published": "2026-11-22T08:22:00+00:00",
+   "summary": "서미화 의원, 탈시설 증언대회 개최 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9aRDc0ekMxdzF2MlI4Y0g1aG44OFBCb25QV2QzbU55NHpTb2xoaFlkQWFNLVpvMEhyZ2JrZWdzTC03cnpIenk3YmJnSDFYYUZjenUtSTZR?oc=5"
   },
   {
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
-   "title": "용인시의사회, 식약처에 자가치료 의약품 반복 반입 차단 재검토 건의",
-   "url": "http://m.medigatenews.com/news/2001879661?category=shortnews",
-   "published": "2026-11-22T02:05:30+00:00",
-   "summary": "용인시의사회, 식약처에 자가치료 의약품 반복 반입 차단 재검토 건의 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5ZSXZxMTc3ODN6YXVRdS1MZ0kyYXdHSmx1a0x2YzY4T1pKMEd2WXdkYVNBbm44VlBSOG52akFISHNfbjlBWlV1U2NpSVh4RnNReW9Lbl9jM3BsUnJmWHFCR3RielpvczZPdmhZZQ?oc=5"
+   "title": "\"의대증원되는데 전문의 따야 하나요\"…전공의들이 의대생에게 전한 조언은",
+   "url": "https://www.medigatenews.com/news/3037552586",
+   "published": "2026-11-21T20:13:55+00:00",
+   "summary": "\"의대증원되는데 전문의 따야 하나요\"…전공의들이 의대생에게 전한 조언은 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBaQVVIWFRNZkk2ZXN1UkJBRmVCYlNQMlNkQUxvYXY5WHRXWkcxZ0pWZjR1VGkxSzFnN3RDdHMxUGplM0k2SVNlV2FNMDU0SjdmdmpXWlFyQQ?oc=5"
+  },
+  {
+   "source": "메디게이트뉴스",
+   "kind": "의약·보건 매체",
+   "lang": "ko",
+   "title": "\"흉부외과 간다니 집에 돈 많냐고\"…의대생 고민에 흉부외과 전공의가 건넨 답변",
+   "url": "https://www.medigatenews.com/news/2191111873",
+   "published": "2026-11-21T13:27:00+00:00",
+   "summary": "\"흉부외과 간다니 집에 돈 많냐고\"…의대생 고민에 흉부외과 전공의가 건넨 답변 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8tcFNMN2JmMU9QNlRzRGNBWFZVR2FSVjdEdlM0NHVGZmhWeTZoOU9VVExEV3NieXVUWk5qUHRIbG5WQnVDRURIZUtGM3VIeVFpcDNTV0h6VQ?oc=5"
   },
   {
    "source": "메디게이트뉴스",
@@ -3997,59 +3992,80 @@
    "kind": "의약·보건 매체",
    "lang": "ko",
    "title": "한국임상심리학회, 보건복지부 ‘심리상담 공통업무화’ 추진에 반대 입장",
-   "url": "http://www.medigatenews.com/news/2055862753",
+   "url": "https://m.medigatenews.com/news/2055862753",
    "published": "2026-11-21T05:45:00+00:00",
    "summary": "한국임상심리학회, 보건복지부 ‘심리상담 공통업무화’ 추진에 반대 입장 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE81WXFlU19ManZnNVp1Xzdkemg0WWg0bVlXUDAxc0hORmpXUlNIVjZtRGFtd2hzbmYyX1hUNFk3ZXBFbWQ1T0NvWmFZTGpuZnVVdjY2MUFn?oc=5"
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4xcjFSSXhRdWlLZFlQVkVGUnF4czdXb2JzMGt6RlQ5Y1Z4VEZuQVVKUTI3c19PQ3ZLQmo3OWkxQnVCMGlvNWZBLUZHWUtCZnFpeHRCXw?oc=5"
   },
   {
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
    "title": "의정협의체 협상단장 지낸 이광래 의장 \"의료계 매번 정부에 지는 이유? 내부에 있다\"",
-   "url": "https://m.medigatenews.com/news/1865259044",
+   "url": "https://www.medigatenews.com/news/1865259044",
    "published": "2026-11-20T23:20:00+00:00",
    "summary": "의정협의체 협상단장 지낸 이광래 의장 \"의료계 매번 정부에 지는 이유? 내부에 있다\" MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1mRVRKdjAwbF9FOUZHTXNvb1lCSXhGU091dGFFWDNRUm50QmNTSGx0Z092R2oyc2hWSE5VX1JiU1FmVWZmN0RpMXp3Ym11dFFhZzhJcA?oc=5"
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5HQWdZbEJ0elQ5YVI2aWNvWkU2cjc2dVYtdkVuWnB1VzdQQ3pDNVJieVBtRjFWWHFuZnB3bkktM3o2ck5WM1JYeTlrck9ub3dfWk13VnBzNA?oc=5"
+  },
+  {
+   "source": "메디게이트뉴스",
+   "kind": "의약·보건 매체",
+   "lang": "ko",
+   "title": "건보재정 여건 빠르게 악화되는데…\"건보 수가협상, 실제 의료비 지출 통제 효과 제한적\"",
+   "url": "https://m.medigatenews.com/news/2493169512",
+   "published": "2026-11-20T23:17:00+00:00",
+   "summary": "건보재정 여건 빠르게 악화되는데…\"건보 수가협상, 실제 의료비 지출 통제 효과 제한적\" MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBzNERJUzNTVHp1V0hGdnJ3RDMzOWJLaDAwQ2ZCNkxfZWNEOU4xNENwM3hjOURKeElQbnljZWpVa1F6VWpjM1pzOFhmdUNjbnE4ckFwTg?oc=5"
+  },
+  {
+   "source": "메디게이트뉴스",
+   "kind": "의약·보건 매체",
+   "lang": "ko",
+   "title": "해외 원정 구매까지 번진 '마운자로'…멈춰 선 급여화, 이번엔 문턱 넘을까",
+   "url": "https://www.medigatenews.com/news/2731909827",
+   "published": "2026-11-20T23:16:00+00:00",
+   "summary": "해외 원정 구매까지 번진 '마운자로'…멈춰 선 급여화, 이번엔 문턱 넘을까 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5tNnd6TUNodmpaaFN1YmVRQVBLU2ZuYTRwMkRhQjc0V25YcnZGSWhoUHBmSFEzTUdJUkhBSWc2X3J5YUpJdjl4WDVySmxTZVozNzNzRWR0NA?oc=5"
   },
   {
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
    "title": "복지부·진흥원, 미국 헬스 유에스에이 2026 디지털헬스케어 한국관 운영",
-   "url": "https://m.medigatenews.com/news/1500258887",
+   "url": "https://www.medigatenews.com/news/1500258887",
    "published": "2026-11-20T23:14:00+00:00",
    "summary": "복지부·진흥원, 미국 헬스 유에스에이 2026 디지털헬스케어 한국관 운영 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBPSlNPekdDQm5VRmRIX1prZWN4Znk5ZTF6azRpdDV4bU10RmxFZ0NlR0JjdjFIY3Z5U0lHU25iYUFYRUw3cURWUnh2NGxIWTJaTHNTWg?oc=5"
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE93RlJkMkV5N2pLZGVoZnJldnIxdGh1Sk1ReWNXZlFxd0lUcnpoVmJDSzdtMjluQXBHdktsa3FiZEFGYWthX1hlb2VmM2s3RFAxQzhuSEUwZw?oc=5"
   },
   {
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
-   "title": "화순전남대병원 전라남도환경보건센터, 화순군과 환경보건 안전망 구축 협약",
-   "url": "https://www.medigatenews.com/news/2544563564",
-   "published": "2026-11-20T23:11:00+00:00",
-   "summary": "화순전남대병원 전라남도환경보건센터, 화순군과 환경보건 안전망 구축 협약 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE96ZEN0bGNyY1RnYVlhUFhzVlc4aTExeWwzd0lKclQ2bi1GYWJxeUUzLVdLTElUUS0zd2lhWC1Cd2ZRZ19JNk91SFU1OWNzOVJ0SGJCUjUwMA?oc=5"
-  },
-  {
-   "source": "메디게이트뉴스",
-   "kind": "의약·보건 매체",
-   "lang": "ko",
-   "title": "용인시의사회, 식약처에 자가치료 의약품 반복 반입 차단 재검토 건의",
-   "url": "https://m.medigatenews.com/news/2001879661",
-   "published": "2026-11-20T23:05:00+00:00",
-   "summary": "용인시의사회, 식약처에 자가치료 의약품 반복 반입 차단 재검토 건의 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9hb0VRVm5kZHo1WElwYkdtei1WVUZmWWRfeGdqNkVkLXFHYURUeUYtTDdxazZsUV84N3EtQ0xrWlBKVzdpVTJYT292UU5jT0RqNG56NA?oc=5"
+   "title": "전공의 가르치려 수술 '절반' 줄인 교수…수련혁신, '개인 헌신'에 맡겨도 되나",
+   "url": "https://www.medigatenews.com/news/2798682397",
+   "published": "2026-11-19T22:07:00+00:00",
+   "summary": "전공의 가르치려 수술 '절반' 줄인 교수…수련혁신, '개인 헌신'에 맡겨도 되나 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBpNEpNSnBxWTJ3eV9RNEpudDJxYTIwcG9zSFNuUktGcTRZNFdHNktWSXgtZkp3TmFqWDAyQjk3c0NxcUdDVmVJNlZiQjh6VGJtVWZFMmdoaw?oc=5"
   },
   {
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
    "title": "경상북도의사회, 구미서 취약계층 어르신 급식 나눔 행사",
-   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1aWFdhSndEUGVmbTJDYlZfVzNucEdjNGxwRU1KaThjUDB3emxDM3pHMkxRTHhOVVZFbmZob2lLZ0V6b1JseXVSSkVkeVdCVHRDWERsTGR1dw?oc=5",
+   "url": "https://www.medigatenews.com/news/1487616425",
    "published": "2026-11-19T17:22:00+00:00",
-   "summary": "경상북도의사회, 구미서 취약계층 어르신 급식 나눔 행사 MEDI:GATE NEWS"
+   "summary": "경상북도의사회, 구미서 취약계층 어르신 급식 나눔 행사 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1aWFdhSndEUGVmbTJDYlZfVzNucEdjNGxwRU1KaThjUDB3emxDM3pHMkxRTHhOVVZFbmZob2lLZ0V6b1JseXVSSkVkeVdCVHRDWERsTGR1dw?oc=5"
+  },
+  {
+   "source": "메디게이트뉴스",
+   "kind": "의약·보건 매체",
+   "lang": "ko",
+   "title": "국립암센터, 임상영양사 종양전문 연수강좌 개최",
+   "url": "https://www.medigatenews.com/news/1544809567",
+   "published": "2026-11-19T17:15:00+00:00",
+   "summary": "국립암센터, 임상영양사 종양전문 연수강좌 개최 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9GM2lJU3FaTDZpdTJfLUo2MUphcHk3Q2wxRE55TS1UdDhfTDgyNU05end1Y1JFeFdaYlhFRmRWRUE0cVk5Q01RZFhQdDJPT0NwV1NkMGhIUQ?oc=5"
   },
   {
    "source": "메디게이트뉴스",
@@ -4065,60 +4081,41 @@
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
-   "title": "이대서울병원, 2년 연속 ‘금연치료 협력 우수기관’ 선정",
-   "url": "https://m.medigatenews.com/news/1076803773",
-   "published": "2026-11-19T16:58:00+00:00",
-   "summary": "이대서울병원, 2년 연속 ‘금연치료 협력 우수기관’ 선정 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1GZHFZclpLRlJRS0RRd3g3RmRZc3NJNGtlcnA1RE9ocHowZXM4ZFdaN3p1MXRmVWM3SklXTmxiUW5vamtoaVl6S2lHQ2pESUdPdlNOdQ?oc=5"
-  },
-  {
-   "source": "메디게이트뉴스",
-   "kind": "의약·보건 매체",
-   "lang": "ko",
-   "title": "국제성모병원, 검단구와 소아청소년 건강증진 업무협약 체결",
-   "url": "https://www.medigatenews.com/news/2541072674",
-   "published": "2026-11-19T16:49:00+00:00",
-   "summary": "국제성모병원, 검단구와 소아청소년 건강증진 업무협약 체결 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9mVktUZXFwVXRwOGlBdkNXeVEzRzY1NkUzTE5fRGI4SkdDZWxWTGl5elRVS2QwVzFDX1pFejZ4Zk5zNEVIZDFjV1BiVU1BYXgxa3k0T3V4NA?oc=5"
-  },
-  {
-   "source": "메디게이트뉴스",
-   "kind": "의약·보건 매체",
-   "lang": "ko",
-   "title": "부실 수련병원 솎아낸다…복지부, 2028년 전공의 정원 배정부터 '퇴출' 검토",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBkTTdER1lxZXFFcy1yVnVvQ19YRVRnUDduVllrNTJscnlnYnZyVEozSVNIOVo5dUFXdERxYVJWMWJqVjB6Y1dvUGw2SFNRbS1LR0kyQQ?oc=5",
-   "published": "2026-11-18T22:31:47+00:00",
-   "summary": "부실 수련병원 솎아낸다…복지부, 2028년 전공의 정원 배정부터 '퇴출' 검토 MEDI:GATE NEWS"
-  },
-  {
-   "source": "메디게이트뉴스",
-   "kind": "의약·보건 매체",
-   "lang": "ko",
-   "title": "가천대 길병원, AX혁신본부 1주년 심포지엄·인천 공공의료 AX 동행 협약",
-   "url": "https://m.medigatenews.com/news/1400612980",
-   "published": "2026-11-18T20:36:00+00:00",
-   "summary": "가천대 길병원, AX혁신본부 1주년 심포지엄·인천 공공의료 AX 동행 협약 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9PV3VCRnJIYVR0YnZuTDh3QzNsZHZnajRELWFENkJ3bVBnTTcwWUxxSjUtVnBXOXhHMm5VN1BEZzRWWXVvUmV5a1hWemZ2U3ZhdG9UXw?oc=5"
-  },
-  {
-   "source": "메디게이트뉴스",
-   "kind": "의약·보건 매체",
-   "lang": "ko",
    "title": "일본, 2028년부터 의료취약지 의사에 수당 지급…\"미용병원서 재원 조달\" 제안도",
-   "url": "https://m.medigatenews.com/news/275381412",
+   "url": "https://www.medigatenews.com/news/275381412",
    "published": "2026-11-18T19:05:00+00:00",
    "summary": "일본, 2028년부터 의료취약지 의사에 수당 지급…\"미용병원서 재원 조달\" 제안도 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfa2huSkRhYVdqcUpNWEFla3hNTHluemRsaGVULUtfVlBzRE5ud255R1Ytbkk0eUxqZjRqV3J5ZTZ5dWZUWW4tX2xJWFFXNVR5dW53?oc=5"
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Qdnh1bXFfS2JsWUZxZWlVdHFCYWU4bkFNTTlLRXgtTW9LcVRwRkNVZXNsOURTQThpelFlUEt1ZEJpSkgwQVZKZ3JJVEdjQWFHSFJtR1dn?oc=5"
   },
   {
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
    "title": "부천세종병원·인천세종병원, 응급의료 심포지엄 개최",
-   "url": "https://m.medigatenews.com/news/2321924297",
+   "url": "https://www.medigatenews.com/news/2321924297",
    "published": "2026-11-18T14:05:00+00:00",
    "summary": "부천세종병원·인천세종병원, 응급의료 심포지엄 개최 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9BalhLaU5UdnJRaHhGcmx1RVRGamo4M1U5QkF5UXV5andYdzhiN3N4RFJIaHZKb05ZbzVNZzVHcDJCdWhJTEhCdFU0NnY5UkxiY1ZoRQ?oc=5"
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE81bkY4Ry1TRGEtOTRfbjFTNWY1SmlHVDRYN1Q5RzBvQmtHRkJXYmdkRm42bnc1U3EteFJKT0VodG12ek5JLUJfeXVPUDdGSzBNVVE3dG96OA?oc=5"
+  },
+  {
+   "source": "메디게이트뉴스",
+   "kind": "의약·보건 매체",
+   "lang": "ko",
+   "title": "제주대병원 김송이 권역심뇌혈관질환센터장, 복지부장관 표창",
+   "url": "https://m.medigatenews.com/news/239053989",
+   "published": "2026-11-18T14:01:00+00:00",
+   "summary": "제주대병원 김송이 권역심뇌혈관질환센터장, 복지부장관 표창 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5qYzNPVUI0OUFudTJCaVZpU3VaOG9EXzdOWHd5eElqWHpfakRjNG9NMm0xWGswVmdIdnRac0NmaW5CaW5oeXpJNzNwaXdyaVJYd1Yw?oc=5"
+  },
+  {
+   "source": "메디게이트뉴스",
+   "kind": "의약·보건 매체",
+   "lang": "ko",
+   "title": "'선량한 의료인 보호' 약속한 건보공단…특사경 촉구 영상엔 '끝까지 추징'",
+   "url": "https://www.medigatenews.com/news/790000655",
+   "published": "2026-11-17T22:41:00+00:00",
+   "summary": "'선량한 의료인 보호' 약속한 건보공단…특사경 촉구 영상엔 '끝까지 추징' MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1TbE9EdHowcHYyWURkNENWbEl5YzZNNVlFeFk2WDAtbUNneWkzOWRUM2IxcERES1JBV3RTbXVWbE1OZktqazNKZ3prNnhiNm56d2ZsaF93?oc=5"
   },
   {
    "source": "메디게이트뉴스",
@@ -4144,51 +4141,31 @@
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
-   "title": "고려대 안산병원, 방사선치료기 ‘헬시온 5.0’ 도입",
-   "url": "https://m.medigatenews.com/news/1857220900",
-   "published": "2026-11-17T13:16:00+00:00",
-   "summary": "고려대 안산병원, 방사선치료기 ‘헬시온 5.0’ 도입 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBVUHUxdURERkVNRnJFWVZUSUl1OUthNzhsMWlDalNGQ1BWMzdnYmZhQl9XazlBREZyalpNTVhHMTZOTndVQnpzTEhteHhwUmlQZHVaaA?oc=5"
-  },
-  {
-   "source": "메디게이트뉴스",
-   "kind": "의약·보건 매체",
-   "lang": "ko",
-   "title": "건국대병원 김우섭 교수, 에디티지 장학금 수상",
-   "url": "https://www.medigatenews.com/news/1686303589",
-   "published": "2026-11-17T13:13:00+00:00",
-   "summary": "건국대병원 김우섭 교수, 에디티지 장학금 수상 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9wVk84SWExWHNFZUNZNGFwb1NVVW9FWEloV1VORVBSM0hNNE9XZXJ2Z09XdnczNmpsLVZSQ3NmUVpXZlh3bXpLR3l4UE4wVkVnTG80VnBMaw?oc=5"
-  },
-  {
-   "source": "메디게이트뉴스",
-   "kind": "의약·보건 매체",
-   "lang": "ko",
    "title": "유한재단·사보원, 가족돌봄 청소년·청년 276명 지원",
-   "url": "https://m.medigatenews.com/news/1465648099",
-   "published": "2026-11-16T23:47:00+00:00",
+   "url": "https://www.medigatenews.com/news/1465648099",
+   "published": "2026-11-16T23:49:02+00:00",
    "summary": "유한재단·사보원, 가족돌봄 청소년·청년 276명 지원 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlWnNxWGJWVkZqSFJGWDNPYmZPU0tMOFB4cDV4ZnYyemplcHI4ak92ZXlnVDM3MFRSZnR1N1NYenFJTXM3RG9DYUtGOFJTZ0FoQXc3Zg?oc=5"
+   "gnews_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5iU0FYaUlXeGZQMkVWYzJqVllKRkRqNHN0Y3NNX19MeWdNcUJZWUh2M3VUTFVhb2N5R3lveEY5cWdYaVBuTUpUQmUydlpWZTZ3STRtX01rSQ?oc=5"
   },
   {
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
-   "title": "노을, KOICA 포용적 비즈니스 솔루션 사업 선정…파나마서 추진",
-   "url": "https://www.medigatenews.com/news/485400307",
-   "published": "2026-11-16T23:45:00+00:00",
-   "summary": "노을, KOICA 포용적 비즈니스 솔루션 사업 선정…파나마서 추진 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1rUk54VXFNbDBRYnQtbkZIZVBIMGhKUmxSYjFORVV3cEZHQmk5MW5pWHNGVEdrN0lXRW8wWENaWnh3U0p0UFgwYVhNcmtfTjJsWTdXQVhn?oc=5"
+   "title": "피엔케이피부임상연구센타, 3분기 누적 매출 196억·영업이익 37억",
+   "url": "https://m.medigatenews.com/news/2522754596",
+   "published": "2026-11-16T23:49:00+00:00",
+   "summary": "피엔케이피부임상연구센타, 3분기 누적 매출 196억·영업이익 37억 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1QSVFrUFl0aGs3VEtERFlwemJHcmxPUHhZTDZfRUxyV3E0MHlfUE9YNDEzR0VlaDU5ZllIVWFqTWRHUG50ZHdiZElfRmlva2J4VUJaag?oc=5"
   },
   {
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
    "title": "서울성모병원 곽승기 진료부원장, 보건복지부 장관 표창 수상",
-   "url": "https://m.medigatenews.com/news/411798186",
+   "url": "https://www.medigatenews.com/news/411798186",
    "published": "2026-11-16T23:40:00+00:00",
    "summary": "서울성모병원 곽승기 진료부원장, 보건복지부 장관 표창 수상 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ObGd0N1dka1JmV0Y1MUZuUlFqc2J4QVJIb05ycHJhc1NfVl9jZVBuak5ndjdxOUpycGk4ZzNCQmtnWEVueHc5UVFIWGNqblF5ZUd3?oc=5"
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAtQkVfdjdMb0pRbGNZaElzdDVtS3R4ZjMtR2k0YU5kc1duM2tReFVKdGNaZ205U1V2al9yaTk3cUhtUnZtYjVqX3RFSzBrVEF1YjVwQXhn?oc=5"
   },
   {
    "source": "메디게이트뉴스",
@@ -4204,11 +4181,21 @@
    "source": "메디게이트뉴스",
    "kind": "의약·보건 매체",
    "lang": "ko",
-   "title": "16일 법사위 전체회의서 '건보공단 특사경법' 향방 결정",
-   "url": "https://m.medigatenews.com/news/2262895348",
-   "published": "2026-11-15T16:17:23+00:00",
-   "summary": "16일 법사위 전체회의서 '건보공단 특사경법' 향방 결정 MEDI:GATE NEWS",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYRHhLTVc2bmg2NW5SQTg3OHBYRGtwTm1hamlUZHpZN2huWEMyT2t0SURyMzFNOTJxSW5xcWNqaFlOeWpuZVdhWFJZRlJ4amZGSmllUA?oc=5"
+   "title": "수면내시경 중 저산소성 뇌손상…병원 책임 70% 인정된 이유",
+   "url": "https://m.medigatenews.com/news/2044642245?category=column",
+   "published": "2026-11-15T21:31:00+00:00",
+   "summary": "수면내시경 중 저산소성 뇌손상…병원 책임 70% 인정된 이유 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HLWJESk8zWmZJOTBjZmlZQnhUdEdIcW9tWVlMck92aUxMZUlJRms1YURLMjRqdFk1SG8ybkZMVkg3OTdyUUwxR1JxRmhJblZCdmg2bXUyWlRCQ3dPWURoUngwNFUwUkY5U1E?oc=5"
+  },
+  {
+   "source": "메디게이트뉴스",
+   "kind": "의약·보건 매체",
+   "lang": "ko",
+   "title": "환자가 AI에게 먼저 묻는 시대, 의원 정보는 어떻게 AI 답변에 반영되는가",
+   "url": "https://m.medigatenews.com/news/2055698913",
+   "published": "2026-11-15T18:16:00+00:00",
+   "summary": "환자가 AI에게 먼저 묻는 시대, 의원 정보는 어떻게 AI 답변에 반영되는가 MEDI:GATE NEWS",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5KdEljWTMzV3JtXzhtcTB3TWtQdktUN01UbGFwd2J5enhFM3RyanVSa0d3NXVMWlJfYUJmOS1CXzlfckRTaFMwUExqX1lZcGdqOGY2aA?oc=5"
   },
   {
    "source": "약사공론",
@@ -4285,19 +4272,20 @@
    "kind": "의약·보건 매체",
    "lang": "ko",
    "title": "대체조제 시스템·업무포털 21일 저녁 일시중단…시스템 점검 사유",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9WV3FBVDQtZXpGMl85VVpfXzAwb05tM0hZNjFDT205WVhiZkhpaWNmS2FqTGJLOUhqbHA2UXdTMVRLcW11NUJXd01ueS02M1dzaHBVaEEzdlNYa0xXZlcwY0ZQR0xrd3lINEJfSw?oc=5",
+   "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=549420",
    "published": "2026-11-19T20:57:00+00:00",
-   "summary": "대체조제 시스템·업무포털 21일 저녁 일시중단…시스템 점검 사유 약사공론"
+   "summary": "대체조제 시스템·업무포털 21일 저녁 일시중단…시스템 점검 사유 약사공론",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9WV3FBVDQtZXpGMl85VVpfXzAwb05tM0hZNjFDT205WVhiZkhpaWNmS2FqTGJLOUhqbHA2UXdTMVRLcW11NUJXd01ueS02M1dzaHBVaEEzdlNYa0xXZlcwY0ZQR0xrd3lINEJfSw?oc=5"
   },
   {
    "source": "약사공론",
    "kind": "의약·보건 매체",
    "lang": "ko",
-   "title": "[기고] \"누군가에겐 작은 문턱도 큰 장벽\"…장애인체전에서 깨달은 약료의 가치",
-   "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=549404",
-   "published": "2026-11-19T20:50:00+00:00",
-   "summary": "[기고] \"누군가에겐 작은 문턱도 큰 장벽\"…장애인체전에서 깨달은 약료의 가치 약사공론",
-   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93aVExa0FQbVRKT2JBZTJoT19LcVJUOFpyR3FkRDBFSW04ZG55Wk9WQ1R1Umcwdk1sQjgtMjdrRVJuTkM4OFZKMTdySnNsWm5aQUFRRDFpVnplNXlfZ1hrS04xODNFMEpBS1N5Mw?oc=5"
+   "title": "[릴레이집회-418일차] \"한약사 문제 정부 방관\"…약사회, 국회 앞 입법 촉구",
+   "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=548476",
+   "published": "2026-11-19T08:35:00+00:00",
+   "summary": "[릴레이집회-418일차] \"한약사 문제 정부 방관\"…약사회, 국회 앞 입법 촉구 약사공론",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBaTGNLSHBBYjd0eGdYN1I3b0hncmx6ejB0eW1tNFdObjhwbVJfV2pIN3c5SWp6MUR3TEgteVFiLTlGTnk3elZqNEhrTmlYWXBJN3NMVkJReWhTbzlnd1c0Ym1WUklaYkc4MnhJSQ?oc=5"
   },
   {
    "source": "약사공론",
@@ -4343,6 +4331,16 @@
    "source": "약사공론",
    "kind": "의약·보건 매체",
    "lang": "ko",
+   "title": "약국 등록은 소규모, 현수막엔 '1800평'…얌체 홍보 잇따라",
+   "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=549215",
+   "published": "2026-11-17T20:53:00+00:00",
+   "summary": "약국 등록은 소규모, 현수막엔 '1800평'…얌체 홍보 잇따라 약사공론",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsUW0tTFN1dXVoejRmZ2l5OGZFVWxZOXNYVEVac0gtT1VkYXlWbjBBY1NuaERyRWUtWWpqbkhtTE5uR2hycHBmMmNaN2lZd2VJdjlyemRDcFNqam14X2tJV0daMmNKZUI4blVIbg?oc=5"
+  },
+  {
+   "source": "약사공론",
+   "kind": "의약·보건 매체",
+   "lang": "ko",
    "title": "'스시자로' 반입 허용…식약처 \"부작용 피해구제·회수 대상 아냐\"",
    "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=549213",
    "published": "2026-11-17T20:52:00+00:00",
@@ -4368,16 +4366,6 @@
    "published": "2026-11-17T20:50:00+00:00",
    "summary": "[인슐랭가이드] '혼자서도 마음껏' 회전식 무한리필 훠궈의 매력 약사공론",
    "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9mdy1kWDVWUlhnU2dfZFUzSVpkNDRVM0VBYjg5VmcxMzQ1SzJFTEFUdF9SX0MydlJ2WWluRFVINUVqU1NiYmVPMVZpWEFrdU5lRGxVdXVPZnlsMHI3RTZ4RXliNm5ycmh0dF9TSA?oc=5"
-  },
-  {
-   "source": "약사공론",
-   "kind": "의약·보건 매체",
-   "lang": "ko",
-   "title": "릭시아나 제네릭 첫 주, 고약가 제품군에 물량 집중",
-   "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=549198",
-   "published": "2026-11-17T20:50:00+00:00",
-   "summary": "릭시아나 제네릭 첫 주, 고약가 제품군에 물량 집중 약사공론",
-   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ucmFqNmNIMUgtRThhSk40T1B2S2NtVWdRM3pxOWNRMXB5NnhQR1MyTDdkYlB4MFBkRGpsbjJjTm1BTTlBWWJ3bzNkS1FjeFZlZEtRWUFYdnZzdnk1T1JLV3p0MW9xTHlwOWJjTA?oc=5"
   },
   {
    "source": "약사공론",
@@ -4573,6 +4561,16 @@
    "source": "전자신문",
    "kind": "공학·IT 매체",
    "lang": "ko",
+   "title": "[ET포토] 베마, '토티움상 수상'",
+   "url": "https://www.etnews.com/20261121000014",
+   "published": "2026-11-20T16:26:32+00:00",
+   "summary": "[ET포토] 베마, '토티움상 수상' 전자신문",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBOR0FLQm50STMyWl9HSWdubHdkY0tJRUFFaEdEbm9kT0YwZVdlX3BUMXBqNEhvX3dBZjY4VTljZWxwaTE0Tmc1TEJXQi1uUQ?oc=5"
+  },
+  {
+   "source": "전자신문",
+   "kind": "공학·IT 매체",
+   "lang": "ko",
    "title": "닭장에 나타난 '휴머노이드'…임무는 달걀 수거",
    "url": "https://www.etnews.com/20261119000421",
    "published": "2026-11-19T21:00:00+00:00",
@@ -4623,11 +4621,11 @@
    "source": "전자신문",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "[전파진흥주간] 국방부, 국방 전파훈령 제정…“주파수는 미래 전투력”",
-   "url": "https://www.etnews.com/20261118000347",
-   "published": "2026-11-18T06:02:10+00:00",
-   "summary": "[전파진흥주간] 국방부, 국방 전파훈령 제정…“주파수는 미래 전투력” 전자신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBmT05aa0xiZjB0SkZ6THNQT1ZDVFFCaWgxMmUzaS1UVFZzSWdVam9oMHBtTVdLZHRFTmx0d1pGaWVVTzQzWFhDaUFhbkVadw?oc=5"
+   "title": "[대한민국 게임대상 2026] 이재정 “게임산업 도전 외롭지 않게... 법·제도로 뒷받침”",
+   "url": "https://www.etnews.com/20261118000424",
+   "published": "2026-11-18T07:45:37+00:00",
+   "summary": "[대한민국 게임대상 2026] 이재정 “게임산업 도전 외롭지 않게... 법·제도로 뒷받침” 전자신문",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5NdEQ4WUttMko3LWdTVk4wS2RUQks5a2ZLZEt5Q3VLLWZXeF95QTVXT29qYUxzdlBwdkgtNlEwOHBXUDRyZXU1Yk93M0E3dw?oc=5"
   },
   {
    "source": "전자신문",
@@ -4674,10 +4672,9 @@
    "kind": "공학·IT 매체",
    "lang": "ko",
    "title": "SK하이닉스 설비투자 올해 3분기까지 31조원…사상 최대 규모",
-   "url": "https://www.etnews.com/20261116000525",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE85Q2M2MjJiQVkzN25yZkt3MUptYTgtMlpFQjdxQ1gyZDZfRjluZEU4TVl2QkdDeXdOUWhIWlE1YnpqU1BpVEE1UWM4dXpBQQ?oc=5",
    "published": "2026-11-16T09:12:28+00:00",
-   "summary": "SK하이닉스 설비투자 올해 3분기까지 31조원…사상 최대 규모 전자신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE85Q2M2MjJiQVkzN25yZkt3MUptYTgtMlpFQjdxQ1gyZDZfRjluZEU4TVl2QkdDeXdOUWhIWlE1YnpqU1BpVEE1UWM4dXpBQQ?oc=5"
+   "summary": "SK하이닉스 설비투자 올해 3분기까지 31조원…사상 최대 규모 전자신문"
   },
   {
    "source": "전자신문",
@@ -4700,14 +4697,13 @@
    "gnews_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE83Tnp6aXdNYUQ1c3JzOHlrVXc2dXA5R29lZno3cUJiRW9VMG1rRWtaaFZLclN4aVgxS3hZWTNyNzJkQ0kxRjVUb2x6Zklsdw?oc=5"
   },
   {
-   "source": "전자신문",
+   "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "수출용 컨테이너가 쌓여있다. 이동근기자 foto@etnews.com",
-   "url": "https://www.etnews.com/tools/image_popup.html?v=bjQ5VkNYY2dLZTZMZFBUbmNzandvWmpGcjBTK1pHYm1CUVRXR0pTMldlYVZkdE5JeGJVUFVVNURJN04rbmhKTXFvU21MM1Y0UkEzUFViSU0zbXFRa05SVzVHSEpQMG51ZmNKeVVKMlk2WFJDTEVJYjNmQXM0MTV4TDYrOTkyOVJ4QTFZcGVBc3NSTGc1aVZzdVE0OU1tR2ZERUhLeFFPRXNoMFpVWnFlbVpONHB3ZFc1dFZKOEFXUUJ3WTU5bnJkc296L1cvZ09FckQ4ZTFjdUUxNWRpL09MZURHOGhsVGt5UGpqZlBITVM2bjB4K0pteGVZaG5JaytRTVExV2g4WmVUYXJ4TThYbk9ubUduUlhWNGNralliU1B1T041YlNHTndaUHFMWlY1ckRuNHUyNWgxeWJMalN6L0FZZW14ejVIQ0JGYkVzS2M1QUxITWdCamlIbEV1b0VYbW9sSDRmNThrNk1tNmxOV2xBPQ",
-   "published": "2026-11-15T11:24:13+00:00",
-   "summary": "수출용 컨테이너가 쌓여있다. 이동근기자 foto@etnews.com 전자신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMi5AVBVV95cUxPNWczQ1NmdVk2X2VLX2l3N1d2WEg3WkVGdE83RWd4a3ZGcjV1ZnJSRnpJR2N0RzM1MEgxQ0pMcUo0WlRkSmN4cHdSREFicGdjd0RQUjJPSGZSM0I0Um13RnNPbU9LcnFPMGozcWExQUhzZEhKaWNtSkt4cTJQRGVXcGphUHJCdHp5UTliaWdrX3A2Z19Lc0FtZElqRTB2N1NlZkFXQmRkTGlLNXBhb1VRemlqTUVSQkYtT25tRFZlekpJWHZEaFQtcTM5QzZRRTVBNjhZNWZ3TEJMTHE3UDNfT3BXRzgzNWtJbDA4TG16NzV3Zmo5eXo1R0Q5VGJzNDg4VnhLUFI5WEZvckV4NHYxTjJycV9uWllhcHE4eU0wMEZqemhsbm42N0tlbFU1R05acFFienJoMmh5WTZlSmZMWmUydV9Yel9ROHA1d1Y0ZzJiTkJYZ21TNVVmYnNRRy01UGdFZkRUdTdjMHRCNWZNZFlGcXRMLXJVMGVmNmd2NzdWY1BWamFfZmEyUWdLVlFqajVrcHhjTmZGc1NsOFp2TXFtQTJvODlkOEpqYzRqaUt6Q0luTmUyUzZaaHZVZ1E0dTQ3b3ZtTDBET3U3U1hSVDd4eC1FTUtnbWF3RkhuN00xeHNPR0F5TU55bGFseTJCY0U0dEJ6b2J4WC1pUHMxTDBOV0NMNjg1Y2xyOGRPWkpnZldKbzVHX3JYUWI5SmY0T1A0c1BTZ2ttcjVnOGt3WkU2YjV0MkNURWk0Z293Vmc1YzBXNUk0X3JXTF9oQzJINVFNNVh0aHR3SVFaT3JOb1dmREREOFhiMk1aTC1rUE1lSTRJVEw4Z0tTakJta0F2c1M1ZFcwZ2pJTDFZWG1LenZKZjRRV1pmeE1EZlh0ekRFcXNkdUpkTGxnbkQ4TVFHa0JyUzZQV0ZqZ0dGekNDdFFOYWV0Q25zeWF6SkVqVTJIOVEta3ZjeXBWOUtuSHJSckt1ag?oc=5"
+   "title": "[글로벌 줍줍] 백전백패 'AI 커닝' vs 백전백승 '뇌과학 공부법'",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVVkgtNHRVQzZNRWlwbVBHT2NIZFEyNERLeEw4cUE4MTBYMFhFakc2TnpuLTdveW5DNDdSbkY0SHJ5LS1iMVdrYnFnWXRVZ0YxZUVYbWl3?oc=5",
+   "published": "2026-11-22T02:32:00+00:00",
+   "summary": "[글로벌 줍줍] 백전백패 'AI 커닝' vs 백전백승 '뇌과학 공부법' 지디넷코리아"
   },
   {
    "source": "ZDNet Korea",
@@ -4744,10 +4740,18 @@
    "kind": "공학·IT 매체",
    "lang": "ko",
    "title": "\"손정의, SK하이닉스 1조 달러에 인수 노렸다\"",
-   "url": "https://zdnet.co.kr/view/?no=20261121174004",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE80WHpUb2xlMXpSSVlNQnhFMmFHVGF5S21aY3ZEQlU2QjB3U3R6N3RVRkR0NjRLeFdBbm9aSmEtNTVsRTdtNXMtUkdXck5zc3VXRExwS2lR?oc=5",
    "published": "2026-11-21T08:55:29+00:00",
-   "summary": "\"손정의, SK하이닉스 1조 달러에 인수 노렸다\" 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE80WHpUb2xlMXpSSVlNQnhFMmFHVGF5S21aY3ZEQlU2QjB3U3R6N3RVRkR0NjRLeFdBbm9aSmEtNTVsRTdtNXMtUkdXck5zc3VXRExwS2lR?oc=5"
+   "summary": "\"손정의, SK하이닉스 1조 달러에 인수 노렸다\" 지디넷코리아"
+  },
+  {
+   "source": "ZDNet Korea",
+   "kind": "공학·IT 매체",
+   "lang": "ko",
+   "title": "FBI, 전국 범죄정보 DB 해킹 정황 조사 착수",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB5dkRnRXdDdU04SWxZZHB6S1lKNGtNNjlGdXpiNmRDUUt5RGNWVWUtT0UyUGNmemU4XzlodVcxRFhYZ081d00yY1VmdDR3U0FOeWxDNnVn?oc=5",
+   "published": "2026-11-21T04:49:08+00:00",
+   "summary": "FBI, 전국 범죄정보 DB 해킹 정황 조사 착수 지디넷코리아"
   },
   {
    "source": "ZDNet Korea",
@@ -4758,16 +4762,6 @@
    "published": "2026-11-21T03:33:24+00:00",
    "summary": "[이창근의 헤디트] 게임과 전통문화, 무엇을 함께 만들 것인가 지디넷코리아",
    "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzemVlRktYc1VlTDF5MWF2VjRGMlF0cHZxamJLM0o1b05rZkgyRTZta2tjRVFTUl81SlVIMFVIN0VGV01IbE9NUFZKSmF2YjNUTDA3OTV3?oc=5"
-  },
-  {
-   "source": "ZDNet Korea",
-   "kind": "공학·IT 매체",
-   "lang": "ko",
-   "title": "치실로 혈당 재는 날 멀지 않았다…中 연구진, 스마트 치실 개발",
-   "url": "https://zdnet.co.kr/view/?no=20261121071922",
-   "published": "2026-11-21T02:04:55+00:00",
-   "summary": "치실로 혈당 재는 날 멀지 않았다…中 연구진, 스마트 치실 개발 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1rRDdpc0ZoaWZwdDNLNVNDYjNmdjJoYU85TXlXbFprN2FzdHlmcHNXZ2FybGx3ZEExdzhTR3VWbVotalpSRlplOGNqTm93M010cjJmUG1B?oc=5"
   },
   {
    "source": "ZDNet Korea",
@@ -4793,21 +4787,21 @@
    "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "LG헬로비전 \"CJ ENM 채널 송출종료 입장 변화 없다\"",
-   "url": "https://zdnet.co.kr/view/?no=20261120194250",
-   "published": "2026-11-20T10:42:50+00:00",
-   "summary": "LG헬로비전 \"CJ ENM 채널 송출종료 입장 변화 없다\" 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9PS2hVMkFQYVppMTQzWXRCTTd6dkdUS25iQkRyZ0hZWk8xY2xObENOdE1CYmZka3l5b2RwQXhWQUluVjdfZDMwT0s3WU5wY29XWUtJd213?oc=5"
+   "title": "[카드뉴스] AI와 전문가 말이 다른데 전문가가 틀리면 누구 책임일까",
+   "url": "https://zdnet.co.kr/view/?no=20261120102440",
+   "published": "2026-11-20T12:29:45+00:00",
+   "summary": "[카드뉴스] AI와 전문가 말이 다른데 전문가가 틀리면 누구 책임일까 지디넷코리아",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBLZ3pzM1doQTVTLTRkTURhRXdHNFlqU05LSW5CS3BVM3hyRXo0dHFaUDUzSm44Unp4Z0tJRG5OR3gtakVQdF9Ld1ZtU3lPZktONmdUend3?oc=5"
   },
   {
    "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "컬리, 큐레이터 개인정보 유출…1만여 명 규모",
-   "url": "https://zdnet.co.kr/view/?no=20261120174112",
-   "published": "2026-11-20T08:56:45+00:00",
-   "summary": "컬리, 큐레이터 개인정보 유출…1만여 명 규모 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5haWZ4OWtSOGxiUDNENkJFUU1McFBoZkVCakM0OTZZQ3VFZWVZNVRZUXdqMVJCV1BnTEVDS1ItbzRzVy1vZ0R0cTJzdl9GYXpKNnR4QndB?oc=5"
+   "title": "LG헬로비전 \"CJ ENM 채널 송출종료 입장 변화 없다\"",
+   "url": "https://zdnet.co.kr/view/?no=20261120194250",
+   "published": "2026-11-20T10:42:50+00:00",
+   "summary": "LG헬로비전 \"CJ ENM 채널 송출종료 입장 변화 없다\" 지디넷코리아",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9PS2hVMkFQYVppMTQzWXRCTTd6dkdUS25iQkRyZ0hZWk8xY2xObENOdE1CYmZka3l5b2RwQXhWQUluVjdfZDMwT0s3WU5wY29XWUtJd213?oc=5"
   },
   {
    "source": "ZDNet Korea",
@@ -4843,26 +4837,6 @@
    "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "인텔 \"1.8나노급 18A-P 공정, 외부 고객사 확보\"",
-   "url": "https://zdnet.co.kr/view/?no=20261120002410",
-   "published": "2026-11-19T23:27:28+00:00",
-   "summary": "인텔 \"1.8나노급 18A-P 공정, 외부 고객사 확보\" 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1UMlZTYTRWQmgzNDNac0I4MzB2THBwVEhsNHFuVFl2aG13WmtNeTJWVWtiRWs1TzI5dkMyVlBncEVFRkxDMk9iSVBQMWZNcVBtSmVDdEN3?oc=5"
-  },
-  {
-   "source": "ZDNet Korea",
-   "kind": "공학·IT 매체",
-   "lang": "ko",
-   "title": "튠즈와 페이어맥스, 글로벌 지급 역량 강화 위한 전략적 협력 확대",
-   "url": "https://zdnet.co.kr/view/?no=20261119071002",
-   "published": "2026-11-18T22:10:02+00:00",
-   "summary": "튠즈와 페이어맥스, 글로벌 지급 역량 강화 위한 전략적 협력 확대 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MLUgzMUZRSjlkRVJjX3g3NjBVUklPREdwbk1UZHNaMDlEUzQ3XzExcGtnYmRJMlRBaG1ERkM5MDlVQVF4OWQ0bHZoeVFjbHAtekVRalln?oc=5"
-  },
-  {
-   "source": "ZDNet Korea",
-   "kind": "공학·IT 매체",
-   "lang": "ko",
    "title": "WPP 신디 로즈 CEO, C 스페이스® 기조연설에서 AI 시대 데이터 독립성과 신뢰의 중요성 조명",
    "url": "https://zdnet.co.kr/view/?no=20261119061002",
    "published": "2026-11-18T21:10:02+00:00",
@@ -4883,41 +4857,41 @@
    "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "올해 네이버 뉴스제휴 심사 통과 언론사 없어...\"내년 심사 기준 완화 논의\"",
-   "url": "https://zdnet.co.kr/view/?no=20261118201654",
-   "published": "2026-11-18T11:21:29+00:00",
-   "summary": "올해 네이버 뉴스제휴 심사 통과 언론사 없어...\"내년 심사 기준 완화 논의\" 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0dzllOFhnT3I3WEZtQXllLUVOVGlpSE1NNUE2bXdHSVo2RDdtaVE5QzVaSnNUci0yUEV0TjVYbVV3SVVVLVVwMGF5ZWJoZHQ2VlhSbjJR?oc=5"
+   "title": "[카드뉴스] 내가 죽으면 내 카톡과 사진은 누구 것일까",
+   "url": "https://zdnet.co.kr/view/?no=20261118095215",
+   "published": "2026-11-18T11:57:15+00:00",
+   "summary": "[카드뉴스] 내가 죽으면 내 카톡과 사진은 누구 것일까 지디넷코리아",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5enNBNHZ2SHFaQXFoOERTQmo5M28td2laMy1kcV9DQVp4N3JRNzFRcFE0NXF1a2RPVmRhR0htTlhwU0UxQVhETEtMcjJocFM1ZnJMbWR3?oc=5"
   },
   {
    "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "사티아 나델라 \"코파일럿은 업무를 위한 새로운 운영체제\"…워드·엑셀까지 통합",
-   "url": "https://zdnet.co.kr/view/?no=20261118042645",
-   "published": "2026-11-17T19:36:53+00:00",
-   "summary": "사티아 나델라 \"코파일럿은 업무를 위한 새로운 운영체제\"…워드·엑셀까지 통합 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE44eVQyZTVLVmJidW04ekpFVWNqVENXVHVHaXhvOVUzRXpqd1hFWVNBWEp1bkZMVmFXX21DclJrSGJDeTItOG1nbWxPcWVDbzdpTmo3NlRB?oc=5"
+   "title": "MS, 이그나이트 2026서 AI 에이전트 중심 '프론티어 생태계' 공개",
+   "url": "https://zdnet.co.kr/view/?no=20261118083617",
+   "published": "2026-11-17T23:36:25+00:00",
+   "summary": "MS, 이그나이트 2026서 AI 에이전트 중심 '프론티어 생태계' 공개 지디넷코리아",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5GemRPcURnaldURy03MWNUZ0RlOHpmV2V0VGRqYUxpMkNXcDdrNUIxQXVvT1YyN3ZOX0ZSWEVsem85UFFKdU1HaHZNbFE3MTJSLXlvZk1n?oc=5"
   },
   {
    "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "엠게임 '나이트 온라인', 글로벌 신서버 첫날 매출 263만 달러…역대 최고 일매출",
-   "url": "https://zdnet.co.kr/view/?no=20261117150810",
-   "published": "2026-11-17T06:45:01+00:00",
-   "summary": "엠게임 '나이트 온라인', 글로벌 신서버 첫날 매출 263만 달러…역대 최고 일매출 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qUVlwTDhsVWx4bVJsS0xEN3ZZbnd4WVhhMGk5NnpNdXkxcHFLamtOSldfdi1iRWNrOGhvUVMxbm1pUUpTcHZJWmZGYnJhQkRyeXQtM29R?oc=5"
+   "title": "[카드뉴스] AI가 정답을 말해 주는데 시험 점수는 실력일까",
+   "url": "https://zdnet.co.kr/view/?no=20261117112012",
+   "published": "2026-11-17T09:15:07+00:00",
+   "summary": "[카드뉴스] AI가 정답을 말해 주는데 시험 점수는 실력일까 지디넷코리아",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB5SUVyaGxMaHhNVWE0M2FPTnhZX3BRRDJvZTBQenE2ZnZiVjQ0YktWeklBaU8wNzhQaWc2YUNXSkNzUVRVSDVOUXp1VjFiNFdNa3Axa1RR?oc=5"
   },
   {
    "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "8인치 단계적 철수 삼성 파운드리...韓 팹리스 \"12인치 전환 정책 시급\"",
-   "url": "https://zdnet.co.kr/view/?no=20261117111401",
-   "published": "2026-11-17T05:45:13+00:00",
-   "summary": "8인치 단계적 철수 삼성 파운드리...韓 팹리스 \"12인치 전환 정책 시급\" 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzakdwU2tscFlibGU1WkU2MWpjS1YyZ01mdVZSc1MxRVZkYmNiTy1pUWg3MjhYWlpNRTVsQzNiNDhhWFc2eU1QTW83aE5RX2lnVkUyOG5n?oc=5"
+   "title": "민테크, 전고체 배터리 공정 검사 장비 개발한다",
+   "url": "https://zdnet.co.kr/view/?no=20261117141705",
+   "published": "2026-11-17T05:29:30+00:00",
+   "summary": "민테크, 전고체 배터리 공정 검사 장비 개발한다 지디넷코리아",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MYnNHOFJ2Q1Q4VGNCbExrTkx2eUZTNTBIQ0RTeTdHV1l5WDZxSFNENnFIY2t0eFRzXzJka2RLRkc0LWtOSEp0MDQySjlieWdCbHFLY29B?oc=5"
   },
   {
    "source": "ZDNet Korea",
@@ -4933,16 +4907,6 @@
    "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
-   "title": "美 버추얼 크리에이터 4인과 손잡은 하이브...음악 프로젝트 진행",
-   "url": "https://zdnet.co.kr/view/?no=20261116222352",
-   "published": "2026-11-16T13:29:02+00:00",
-   "summary": "美 버추얼 크리에이터 4인과 손잡은 하이브...음악 프로젝트 진행 지디넷코리아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10azI2amZpRFZWY1dEZlZsdFhGbHJZakVLMmprQXpZZjNNR0dBdmhFWVhDaW5DN3FnVDAxVnRqYzdubVVZVDNYYi0tLWNZaWFWTFgwRVZn?oc=5"
-  },
-  {
-   "source": "ZDNet Korea",
-   "kind": "공학·IT 매체",
-   "lang": "ko",
    "title": "라보페, 홍콩 '코스모프로프 아시아' 참가…불가사리 콜라겐 기술 선봬",
    "url": "https://zdnet.co.kr/view/?no=20261116222129",
    "published": "2026-11-16T13:21:29+00:00",
@@ -4953,11 +4917,31 @@
    "source": "ZDNet Korea",
    "kind": "공학·IT 매체",
    "lang": "ko",
+   "title": "[카드뉴스] AI안경 하나면 국가시험도 뚫릴까요",
+   "url": "https://zdnet.co.kr/view/?no=20261116101323",
+   "published": "2026-11-16T12:46:05+00:00",
+   "summary": "[카드뉴스] AI안경 하나면 국가시험도 뚫릴까요 지디넷코리아",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBZbE1sb3czSWNfMFljMG9uX0FKVXpteGdKaVJqc3hqelZQS0EtMFFCWkJKWUtORDVhZ2hnN3JyMEtDSUJUSXlTaE1oQk5LYzlWRUgxb1d3?oc=5"
+  },
+  {
+   "source": "ZDNet Korea",
+   "kind": "공학·IT 매체",
+   "lang": "ko",
    "title": "내 돈 주고 산 테슬라 사이버캡…구독료 끊으면 운전도 못 한다",
    "url": "https://zdnet.co.kr/view/?no=20261115215513",
    "published": "2026-11-15T13:11:24+00:00",
    "summary": "내 돈 주고 산 테슬라 사이버캡…구독료 끊으면 운전도 못 한다 지디넷코리아",
    "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QSERJZl9Ob0psVndPVUZGZnRkalQ2Y0RyNmZpWVdISVYzdFU2OGx4QzFjUzhIQlpyWldsNkNSS24wc3VvUmFjandKZTJhUjBaVHJtZWxR?oc=5"
+  },
+  {
+   "source": "ZDNet Korea",
+   "kind": "공학·IT 매체",
+   "lang": "ko",
+   "title": "\"65만원 AI 안경 벌써 완판\"...삼성·구글·젠틀몬스터 제품 뭐길래",
+   "url": "https://zdnet.co.kr/view/?no=20261115210649",
+   "published": "2026-11-15T12:27:13+00:00",
+   "summary": "\"65만원 AI 안경 벌써 완판\"...삼성·구글·젠틀몬스터 제품 뭐길래 지디넷코리아",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1TcXlUQ2M4SlpPdzdOWlI3UVduVGgtekZpMkNvZDdlZC1mNm9hLXNpc3JKQUJoUzVaSm1oUXNqRjY1OTREOW9ZeUlybFlob2dVSFdlcmxn?oc=5"
   },
   {
    "source": "씨네21",
@@ -5073,16 +5057,6 @@
    "source": "씨네21",
    "kind": "문화·예술 매체",
    "lang": "ko",
-   "title": "[리뷰] 익숙함을 넘어설 변주는 부족하다,",
-   "url": "https://cine21.com/news/view/?mag_id=111283",
-   "published": "2026-11-18T07:05:00+00:00",
-   "summary": "[리뷰] 익숙함을 넘어설 변주는 부족하다, 씨네21",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iUlZ2YlpFQkVsM3pyMnZzTnl4SFc4dXhqZzI5TFJOWlh6dGtUVTFWU0NfXy1uQWcydWZ2NmFtOTQ4MHdBX1Y0UndKdTIxamN1OEV2TkNR?oc=5"
-  },
-  {
-   "source": "씨네21",
-   "kind": "문화·예술 매체",
-   "lang": "ko",
    "title": "[리뷰] 순정은 때로 과잉을 필요로 한다,",
    "url": "https://cine21.com/news/view/?mag_id=111281",
    "published": "2026-11-18T07:05:00+00:00",
@@ -5108,6 +5082,16 @@
    "published": "2026-11-18T07:05:00+00:00",
    "summary": "[리뷰] 함께 숨 쉬던 날들이 청춘의 한때로 남기까지, 씨네21",
    "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1JZEtJbU5TeWpOX1hTM3FXdGNtdXhRNXNnd25lY3hvTVQ2S3hRVlFTTU94WWVIMWtaVFo1dlNFaHRSaDRhSUgzVHdaSDlFSmh3Y2oxdHBn?oc=5"
+  },
+  {
+   "source": "씨네21",
+   "kind": "문화·예술 매체",
+   "lang": "ko",
+   "title": "[리뷰] 익숙함을 넘어설 변주는 부족하다,",
+   "url": "https://cine21.com/news/view/?mag_id=111283",
+   "published": "2026-11-18T07:05:00+00:00",
+   "summary": "[리뷰] 익숙함을 넘어설 변주는 부족하다, 씨네21",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iUlZ2YlpFQkVsM3pyMnZzTnl4SFc4dXhqZzI5TFJOWlh6dGtUVTFWU0NfXy1uQWcydWZ2NmFtOTQ4MHdBX1Y0UndKdTIxamN1OEV2TkNR?oc=5"
   },
   {
    "source": "씨네21",
@@ -5213,36 +5197,6 @@
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "선선한 바람과 함께 떠나는 청주 문화 유산 가볼 만한 곳",
-   "url": "https://www.joongangenews.com/news/articleView.html?idxno=561627",
-   "published": "2026-11-22T04:30:00+00:00",
-   "summary": "선선한 바람과 함께 떠나는 청주 문화 유산 가볼 만한 곳 중앙이코노미뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9RS1NJTjBXRkl4ZXNWUVp5TkRabk5zU1ZvdF9rQU8xYWxHWC1mbHdwU0laSjhKdDJsTmVzVThWUGZCbWVuS1VhTWRvUnhacFgxTkhHUG5XVVVkaWd0MzA5SFcwSUI1ZXdlaFFueDVSd1hkUQ?oc=5"
-  },
-  {
-   "source": "국립현대미술관",
-   "kind": "문화·예술 기관",
-   "lang": "ko",
-   "title": "”르 코르뷔지에를 넘어 서자”– 건축학자·전시기획자 정진국",
-   "url": "https://www.newsverse.kr/news/articleView.html?idxno=12007",
-   "published": "2026-11-21T22:37:22+00:00",
-   "summary": "”르 코르뷔지에를 넘어 서자”– 건축학자·전시기획자 정진국 뉴스버스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBtM3AtWGFrQkxwel9BejN2Q0hVcDJVRnZOUlJiVHJMMzNIa0otUWRZWG81di1wbXV6VXEySXF2OGF6U2MtT0JsRm9UMEx6Z1dWNjVuME1URTF1Yy0teDhzX3YtOUJYOHVYd2c?oc=5"
-  },
-  {
-   "source": "국립현대미술관",
-   "kind": "문화·예술 기관",
-   "lang": "ko",
-   "title": "국립중앙박물관 ‘모던 아트의 탄생’, 11월 27일 개막…예매는 1인 4매",
-   "url": "https://www.thetrippick.com/news/articleView.html?idxno=4622",
-   "published": "2026-11-21T21:00:00+00:00",
-   "summary": "국립중앙박물관 ‘모던 아트의 탄생’, 11월 27일 개막…예매는 1인 4매 여행픽",
-   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQYnBFSVZNbWVpdmNEUWNRcGVEakZ5LXNwZklrajRib0pjS0gyRjc1SmticzltaDU0U0lCMlNsdEw5SkY2MlNpNXY3RXpUQVNxRGg3WEdOa0I1SmhqR1BId0hXZk1sNFV0Zlo1LQ?oc=5"
-  },
-  {
-   "source": "국립현대미술관",
-   "kind": "문화·예술 기관",
-   "lang": "ko",
    "title": "[Pocus 용인 전시 해설] 백남준아트센터 《별, 괘卦》 展 … \"수능 끝, 미술관 갈래?\" 초대",
    "url": "https://www.eanews.kr/news/1055317",
    "published": "2026-11-21T17:38:49+00:00",
@@ -5258,6 +5212,16 @@
    "published": "2026-11-21T04:03:39+00:00",
    "summary": "나주문화재단, 국립현대미술관 공모 선정…생태 기획전 선보인다 뉴스21 통신",
    "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE92czVBYUlmdGNFaGdDblBFWFVWT2hLRDlkc0FzQWQ4aFhQaTJmZ1NrNmp3UndDUW4zMGphaDdlMF9iSE5rbWhza0EwR3FtamUwem1QVDJB?oc=5"
+  },
+  {
+   "source": "국립현대미술관",
+   "kind": "문화·예술 기관",
+   "lang": "ko",
+   "title": "나주문화재단, 국립현대미술관 소장품 기획전 개최",
+   "url": "https://www.newsworker.co.kr/news/articleViewAmp.html?idxno=515375",
+   "published": "2026-11-21T00:17:05+00:00",
+   "summary": "나주문화재단, 국립현대미술관 소장품 기획전 개최 뉴스워커",
+   "gnews_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE15WW9lQmhpQ3o3TFkzSkE5MFNHaWl6SlBlZVgwWkI0VWpQdHdyR0Q2WkZnSzdiVUNXcDMteDZHV2dPQ2xaWl9fNVplUzlzQzExWlVqeVU0d1QtWWZ1Q0hybEc5S3hYZkxYSkpMeFQzY285ajNa0gF0QVVfeXFMTXlZb2VCaGlDejdMWTNKQTkwU0dpaXpKUGVlWDBaQjRValB0d3JHRDZaRmdLN2JVQ1dwMy14NkdXZ09DbFpaX181WmVTOXNDMTFaVWp5VTR3VC1ZZnVDSHJsRzlLeFhmTFhKSkx4VDNjbzlqM1o?oc=5"
   },
   {
    "source": "국립현대미술관",
@@ -5283,16 +5247,6 @@
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "두 그림 속 마주 보는 주전자…조르조 모란디의 정물화 [fn 아트스냅]",
-   "url": "https://www.fnnews.com/news/202611210223408204",
-   "published": "2026-11-20T22:00:00+00:00",
-   "summary": "두 그림 속 마주 보는 주전자…조르조 모란디의 정물화 [fn 아트스냅] 파이낸셜뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ybnlab0lENXF5eFhtMFpWTmc4QldJSlNYUE5CNXNqMG9kWE5IZE5HZHlDM3FVeGoxTHlILTdiNEZzX0YtcmRRUXJNM0xySHIzNjhQUUUtLXI0dw?oc=5"
-  },
-  {
-   "source": "국립현대미술관",
-   "kind": "문화·예술 기관",
-   "lang": "ko",
    "title": "“전시 끝난 가벽은 어디로?” 미술관끼리 자원 공유",
    "url": "https://www.vegannews.co.kr/news/article.html?no=408471",
    "published": "2026-11-20T17:33:57+00:00",
@@ -5303,21 +5257,21 @@
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "'나솔' 29기 옥순, 삼청동서 포착됐다…미술관에서도 빛난 청순 미모",
-   "url": "https://www.tenasia.co.kr/article/2026111985024",
-   "published": "2026-11-19T11:00:00+00:00",
-   "summary": "'나솔' 29기 옥순, 삼청동서 포착됐다…미술관에서도 빛난 청순 미모 텐아시아",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5ZmZFM0V0YXM5aHV3WUJGbGJ2SVBCNmREdjM2ZXNkQWtnVXRPSkRZUFFER0xoQ3pOYThYekREZGo2c1VGcTZlaXdiTWZuWW9lZzdBdkF5ZUFXelk?oc=5"
+   "title": "나주문화재단, 국립현대미술관 공모 선정…생태 기획전 선보인다",
+   "url": "http://www.sisafact.kr/news/articleViewAmp.html?idxno=323328",
+   "published": "2026-11-20T13:27:04+00:00",
+   "summary": "나주문화재단, 국립현대미술관 공모 선정…생태 기획전 선보인다 시사팩트",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1nYXRXcUhEejNYQmZ1R090Qnd6dkhOWjAyVElWaWtENnZEb3JOem81QXRUSnNYb2tlR3U5emlPZEU2ZlhVNmpMMC15YUF3VDRpVFFFRHlaRE1XaVVHcE1VajFLOWFfOFJxaFBJVNIBbEFVX3lxTE1nYXRXcUhEejNYQmZ1R090Qnd6dkhOWjAyVElWaWtENnZEb3JOem81QXRUSnNYb2tlR3U5emlPZEU2ZlhVNmpMMC15YUF3VDRpVFFFRHlaRE1XaVVHcE1VajFLOWFfOFJxaFBJVA?oc=5"
   },
   {
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "[윤나애의 녹색 미술관] 예술로 말하는 환경이야기: 색을 걷어낸 자리",
-   "url": "https://www.munwhamagazine.co.kr/news/articleView.html?idxno=6400",
-   "published": "2026-11-19T07:30:53+00:00",
-   "summary": "[윤나애의 녹색 미술관] 예술로 말하는 환경이야기: 색을 걷어낸 자리 문화매거진",
-   "gnews_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBMalZMYk9TSDdpNHB2dUFzVmhzTGRMTHVNTkkzT0JtbUFPdmpGXzIyZVpWazlwMVZzV0RuZjhhXzFqeGx3cWdHbmZMeDBKRUtWTjZWYW9vcGtvekoxMGZ2NjBGTXgzTzVPMGItbVJhVDlIMk3SAXdBVV95cUxNNEFUQmtxS2x2Z0FUb3JwdnNEc0hTV0I3WGNQNHdlU21BMG1ZVUo2SWd5QlBYTXd5bVRJdUZzbC1TTlNPTTltWVhKU1FEY1lIMnV4WU1EaUptSjFGYkhZV2lDOHdBREZyTjQ0N3V0SEE5c09HQU4zRQ?oc=5"
+   "title": "‘나주 에콜로지’ 전시로…미래 생태문화 조명",
+   "url": "https://www.jntimes.kr/news/articleView.html?idxno=93706",
+   "published": "2026-11-20T10:43:39+00:00",
+   "summary": "‘나주 에콜로지’ 전시로…미래 생태문화 조명 전남타임스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mbDE5MDZTMXhxMXVGREZxZlpnbHhLT3ZULVdtejdzajBsYWJTUlJ3Q1U2S3ZfbzF5d2pfZUc5aklFb1NEY2ZNSFluMERCSkQxeTJFZjBfSzljUjVZU1hHOFBlWFotbmc?oc=5"
   },
   {
    "source": "국립현대미술관",
@@ -5343,21 +5297,51 @@
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "개성 넘치는 조형물 감상하고, 지역작가 그림도 보고",
-   "url": "https://www.busan.com/view/busan/view.php?code=2026111813582997400",
-   "published": "2026-11-18T05:55:04+00:00",
-   "summary": "개성 넘치는 조형물 감상하고, 지역작가 그림도 보고 부산일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBURlg4NVJCdE45UXdMeXhDVXowbHJfdlRJdWJtcmNRblNfc21zZE96MDJvMVBMX1ViSHhfV052OE1haElLdnkwQ3YtNkRIVFlBZ2IyazdHd1lhM2RmZmI3S1dIdUJsY3RVbnhnLWtDeWloc1Nx?oc=5"
+   "title": "이대원전 흥행 다음은?…미술관을 다시 찾게 할 조건 [이슈]",
+   "url": "https://www.dailian.co.kr/news/view/1716829/%EC%9D%B4%EB%8C%80%EC%9B%90%EC%A0%84-%ED%9D%A5%ED%96%89-%EB%8B%A4%EC%9D%8C%EC%9D%80%EB%AF%B8%EC%88%A0%EA%B4%80-%EB%8B%A4%EC%8B%9C-%EC%B0%BE%EA%B2%8C-2026",
+   "published": "2026-11-19T02:17:00+00:00",
+   "summary": "이대원전 흥행 다음은?…미술관을 다시 찾게 할 조건 [이슈] 데일리안",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPVFAteV9JODd2a0Zsc01Bc3JIazNhMVBGSWY2ckF2ellvTV9KcUZES1FqdVAyckpjNW9lZENrNHhlbkpnS3VXS2tFY2ZmeUhLbzgyeldkZ0NRV05kc2JJZk9qM1pRNG4zVWVGR1EteUV2RloybUFQR2ZoaTVNS2puWUY0aFRRQWJKTUJzVF9obmMyeWh0eWk4WDFFdmZtZmJPS05CUDdmMXRCYUFTSDVjTWw0V3hsMHNwa2tBNGRRMEdOSElRWW4tVGJGQkZaQ0xGWEhQRy0zVnNPd1h4WHdrRmpFa3YxQ2NIVHpRanJaRl84b21FUktvRXE1eVBDbVA1bHFwRF80Wl92YVdaTHU4R3RJUUVPZFp5SGNEQTJDWERUVEk?oc=5"
   },
   {
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "[강산 칼럼] 당신의 확신을 의심하시오",
-   "url": "https://www.munwhamagazine.co.kr/news/articleView.html?idxno=6390",
-   "published": "2026-11-18T00:36:30+00:00",
-   "summary": "[강산 칼럼] 당신의 확신을 의심하시오 문화매거진",
-   "gnews_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NN3p2SjRFbWVpQUFGTnZ0aFd6NUFOalgydDdaOWlqSE9CaC04OWNOaTU4SmlSNmFtTTJYT2F2eXFzQ25IUTR4SHBzSmdDWldfbWZBc0ZuT1NkY2l0eG9IcXpNZGxGM09ZRHhQdTFTU2d4U2PSAXdBVV95cUxNUHlnMnlhd044RTJmZXVjcmdFdXdsbGh6M094UjctbkgtWWNrdS1hNVFrUGZoTlpJSHlPV2ZscUhQV0lULUtReTJ1QlRidGhiX3FKYVBjVHBnSFhVclhaYktSTkhxWFRPaXNKYnJiaWtLcG4yazhlVQ?oc=5"
+   "title": "[전세윤의 디깅 #56] 발견된 사물",
+   "url": "https://www.munwhamagazine.co.kr/news/articleView.html?idxno=6398",
+   "published": "2026-11-19T01:16:13+00:00",
+   "summary": "[전세윤의 디깅 #56] 발견된 사물 문화매거진",
+   "gnews_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBc2VRT1oyMW55UXBUVXUyRFlFeGpwR3l3N1pENjZnY2RURHU2ekdLMVdOcG1wcWtIUmxVMkVHM2ItSmpqQzhBVlNrbGVVZ1hvRWJJeHVSVERYZlNDNEp0ZWZMQ1dwdGhvWENvMUpTb09mMW_SAXdBVV95cUxOck5pdXJrRWktSTFfOU14TEtPRVdsdjM4WV9nR3NKckFxbl9DT0ZvUlNfYnd0R0w5Y0Q3b1JWTmdIdk9lU2NqSC1pSXphZFltMUhVU1pUUmc4czJOMlFyX0U1cGVrWFN3cDl4YzdJeWpMMGZfc0UxRQ?oc=5"
+  },
+  {
+   "source": "국립현대미술관",
+   "kind": "문화·예술 기관",
+   "lang": "ko",
+   "title": "예술의전당 한가람미술관 재개관 특별전 ‘새로운 지평: 모네에서 몬드리안까지’ 개최",
+   "url": "https://www.munwhamagazine.co.kr/news/articleView.html?idxno=6395",
+   "published": "2026-11-19T00:32:47+00:00",
+   "summary": "예술의전당 한가람미술관 재개관 특별전 ‘새로운 지평: 모네에서 몬드리안까지’ 개최 문화매거진",
+   "gnews_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBlUkdNRUdoa25Yb0k3Qm0wQzNyY1JoUVF0bnVpV3pMSGtrbUk4WW9GczlNYU5kdTdCWWhSMWEyNHBNU0VhMDNsRmdIcVhXYld3OTByZ0JjQlZwRWl2T0w0WG8xSnlMR21NU21KOEVVdEJybnfSAXdBVV95cUxQZnZZbG11Ql9oUUdWeHlwcTViLWxMSU1vOXVGaUx2bjhRQThjSktXbFdjOUFMWmpkUXlTS2VuMktVOGY1RUlOVWNMNzAwSVN6cXpjM19GSlc3V082YTBYVmliTDN0enpGQnl5Y2I1UjRZVE9XdmhDRQ?oc=5"
+  },
+  {
+   "source": "국립현대미술관",
+   "kind": "문화·예술 기관",
+   "lang": "ko",
+   "title": "인천 공간듬, 한희선 개인전 ‘하나, 스물의 집 : 기억의 지층’ 개최",
+   "url": "https://www.munwhamagazine.co.kr/news/articleView.html?idxno=6391",
+   "published": "2026-11-18T09:26:25+00:00",
+   "summary": "인천 공간듬, 한희선 개인전 ‘하나, 스물의 집 : 기억의 지층’ 개최 문화매거진",
+   "gnews_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9UX1VLZEk4b2JXYXpxUFBENW50VktPajVsMjNILWpQejYxVUZMeUFtbDR1UDRXbS1BeGVBNjNGWkgwdDg2X2s3MUI5LTZfdnBrRlZlc0w2eE5iS1lrVXRnZUtudXI0eDZzWWRnSVF3VEpNRFXSAXdBVV95cUxPY3hneEtKVnluLUFEaHl3cy12UmxJZ0t3SlNZYk53NXpaZUtfcmJlbFFjMjlIUXRZZjZhRl9tb1JhOFB6VzVoc2tsbmtQMEZFaEhNNlZOTnlZYXZMMWdVNTVhZWlEWmQ0bGpiR2o0T1dsYXRkYkk1QQ?oc=5"
+  },
+  {
+   "source": "국립현대미술관",
+   "kind": "문화·예술 기관",
+   "lang": "ko",
+   "title": "개성 넘치는 조형물 감상하고, 지역작가 그림도 보고",
+   "url": "https://www.busan.com/view/busan/view.php?code=2026111813582997400",
+   "published": "2026-11-18T05:55:04+00:00",
+   "summary": "개성 넘치는 조형물 감상하고, 지역작가 그림도 보고 부산일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBURlg4NVJCdE45UXdMeXhDVXowbHJfdlRJdWJtcmNRblNfc21zZE96MDJvMVBMX1ViSHhfV052OE1haElLdnkwQ3YtNkRIVFlBZ2IyazdHd1lhM2RmZmI3S1dIdUJsY3RVbnhnLWtDeWloc1Nx?oc=5"
   },
   {
    "source": "국립현대미술관",
@@ -5393,11 +5377,31 @@
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "[Pocus 서울 전시 해설] 퐁피두센터 한화 《샤갈, 너머의 여정》, 조각과 유리로 확장한 색채의 실험",
-   "url": "https://www.didimkorea.net/news/591950",
-   "published": "2026-11-17T15:41:17+00:00",
-   "summary": "[Pocus 서울 전시 해설] 퐁피두센터 한화 《샤갈, 너머의 여정》, 조각과 유리로 확장한 색채의 실험 https://www.didimkorea.net/",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5LWDBtT0RhbDZ3UDdwUGNuTzJXbS1ISlV1SXZIMEtBeVdNcmtSTWV5cXZrWTFZMktSYklURzIwT1ZZNUxPUF9kdS03dWdvNzA?oc=5"
+   "title": "손응성, 이철이, 구본웅, 이인성 그리고 문우식",
+   "url": "https://brunch.co.kr/@kimseok7/579",
+   "published": "2026-11-17T19:00:54+00:00",
+   "summary": "손응성, 이철이, 구본웅, 이인성 그리고 문우식 브런치",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9wQXlsYVFMampkeWFFaHBDWS05WEViWHN6WmYxbTNpbHA1VjdjemJMQ0lsUTNJNjZDV2Y1QTE1OGx4Y3hJcnJYY3VB?oc=5"
+  },
+  {
+   "source": "국립현대미술관",
+   "kind": "문화·예술 기관",
+   "lang": "ko",
+   "title": "“파리서도 보기 힘든 전시”…샤갈 65점, 서울 나들이",
+   "url": "https://www.joongang.co.kr/article/25479574",
+   "published": "2026-11-17T15:02:00+00:00",
+   "summary": "“파리서도 보기 힘든 전시”…샤갈 65점, 서울 나들이 중앙일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuOGphQXlydXFuZDIwZjhkdFFkUU52U012SWtFUkwtMTdlVmdya2FHQS1ndXdCc2JRNkd3aTJ0VExSaWpIZUlsTTVqMzJVbEhqdkJ1SElR?oc=5"
+  },
+  {
+   "source": "국립현대미술관",
+   "kind": "문화·예술 기관",
+   "lang": "ko",
+   "title": "국립현대미술관 신임관장 임명에 즈음하여 ― 21세기 글로벌 다극화 시대에 있어서의 국공립 미술관의 미션과 비전 - K-ARTNOW",
+   "url": "https://k-artnow.com/ko/posts.php?co_id=1794895282",
+   "published": "2026-11-17T06:41:21+00:00",
+   "summary": "국립현대미술관 신임관장 임명에 즈음하여 ― 21세기 글로벌 다극화 시대에 있어서의 국공립 미술관의 미션과 비전 K-ARTNOW",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02UExJcmpaMWNYODdYVFlVYzNHZV9oN1pnNmE2clRzSjZaNlZOSkFuMk9STWw4a1Y4UjZKRWJudE9wUjlsaUxtMXh5cUp3NUJiaFZGSVZHd2RZZ0dQNHRv?oc=5"
   },
   {
    "source": "국립현대미술관",
@@ -5413,51 +5417,31 @@
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "SEOM: 개인전 “드라마 – 유동하는 몸” 2026년 11월 29일까지 아트스페이스 보안3에서 개최 - K-ARTNOW",
-   "url": "https://k-artnow.com/ko/posts.php?co_id=1794561884",
-   "published": "2026-11-16T18:09:10+00:00",
-   "summary": "SEOM: 개인전 “드라마 – 유동하는 몸” 2026년 11월 29일까지 아트스페이스 보안3에서 개최 K-ARTNOW",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0tV2NYcFBNMVNDZHpMbTFodDVydWcyOEVQNVdVNGd6MDJVNllvNDlpNUhiZUhWa1FTMU5jSkhqMWY2Wk5QN1RxOWg4UDBzSVJpeW1kUzZPTHpNVnllTDcw?oc=5"
+   "title": "서도호의 작업 여정을 담은 다큐멘터리 시리즈 국립현대미술관에서 공개 - K-ARTNOW",
+   "url": "https://k-artnow.com/ko/posts.php?co_id=1794558495",
+   "published": "2026-11-16T15:28:19+00:00",
+   "summary": "서도호의 작업 여정을 담은 다큐멘터리 시리즈 국립현대미술관에서 공개 K-ARTNOW",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9GT2h5QUFQUDduZVhtLU1SOF91Rks1N3VMbDlZeUhYTFJNX2J0THhETlpYSUZUV3lUZjNUYjhZZ0JhY2w4bk1LdUQyX0Jqc2tWOGRfSzdwOXN4c21pUnU0?oc=5"
   },
   {
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "이혜인 개인전 “7 Stages\" 2026년 12월 6일까지 프라이머리 프랙티스에서 개최 - K-ARTNOW",
-   "url": "https://k-artnow.com/ko/posts.php?co_id=1794561714",
-   "published": "2026-11-16T18:09:08+00:00",
-   "summary": "이혜인 개인전 “7 Stages\" 2026년 12월 6일까지 프라이머리 프랙티스에서 개최 K-ARTNOW",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBKQUFsQlNhQVRnRnI3aEU5UVJ6UVVfdnpQaW5NcXBsR1JwSzhkSHJxb2dhS2hQMmVjTHZjaDh6S01HMzFkaW02OHRTeFFxa0hidWp1SE9WT255YjE5azdn?oc=5"
+   "title": "[세종로의 아침] 신임 국립현대미술관장 취임에 부쳐",
+   "url": "https://www.seoul.co.kr/news/editOpinion/column/politics-story/2026/11/17/20261117025001",
+   "published": "2026-11-16T11:48:48+00:00",
+   "summary": "[세종로의 아침] 신임 국립현대미술관장 취임에 부쳐 서울신문",
+   "gnews_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZnFKdEtEaE1WZENyMW9teE9HMnVjWnd1UVJSTzI1MFRLWDRZM2lkOWlhR2FscTBRV0lLLU5oeks1Y2MxMDR1QTNUWUV5Y1NpVDVwT0F3NHBQd2hjY1BBU1dqeEI1bElUOWdSci1mMkl1X080X1JoS0VrQ3laNEYtZTF6Sy02N2hjZWRwX05BSEg0dw?oc=5"
   },
   {
    "source": "국립현대미술관",
    "kind": "문화·예술 기관",
    "lang": "ko",
-   "title": "말할 수도, 울 수도 없었던 불멸의 예술가들 ‘살롱 드 경성’ - 데일리아트 인문 포럼(11/28)",
-   "url": "https://www.kmunews.co.kr/news/articleView.html?idxno=438362",
-   "published": "2026-11-15T23:39:17+00:00",
-   "summary": "말할 수도, 울 수도 없었던 불멸의 예술가들 ‘살롱 드 경성’ - 데일리아트 인문 포럼(11/28) 한국미디어뉴스통신",
-   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJM2E2RHJtQzRRMlh5R25aSmFRdTNXbUEyREdEYUpVcHUzU2Z0UGVMampiWjRQR2J4YTBlbHBoSTIxVkdUeDFGdVJUencwcWlFa1BWaVI5UVNyQ1NmR25relhLYnBEMk9lWTVqeA?oc=5"
-  },
-  {
-   "source": "국립현대미술관",
-   "kind": "문화·예술 기관",
-   "lang": "ko",
-   "title": "미국만의 모더니즘 열었다, 오키프가 남긴 유산",
-   "url": "https://www.koreadaily.com/article/20261115070239092",
-   "published": "2026-11-15T20:27:00+00:00",
-   "summary": "미국만의 모더니즘 열었다, 오키프가 남긴 유산 미주중앙일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBDQm82TEFZTWdnLUlfdEpYVmpwXzZ3b3F5SHNxb3pKU0hoc1d1SFREMC1LWlF1S0JqeldGUnJ4WTZkVnQwTVUzYUxuVUo5bWxsbzg4ZGFvNHc3YXBFWTV3bG53?oc=5"
-  },
-  {
-   "source": "국립현대미술관",
-   "kind": "문화·예술 기관",
-   "lang": "ko",
-   "title": "[Pocus 서울 전시 해설] 서서울미술관 《탈피하지 못하는 뱀은》… 편지로 엮은 가족 기억, 영상·사운드로 듣다",
-   "url": "https://www.didimkorea.net/news/589604",
-   "published": "2026-11-15T19:24:40+00:00",
-   "summary": "[Pocus 서울 전시 해설] 서서울미술관 《탈피하지 못하는 뱀은》… 편지로 엮은 가족 기억, 영상·사운드로 듣다 https://www.didimkorea.net/",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hMHFlY1BKQU5WZ2lPQ1Fnd3Q0Uy1YQjZycTUwdWxlVWJJeTRDWEx4bHV0eVdVRVdrZmllTU00ZGVMaXFHZ3VmMHRtSUg1M3M?oc=5"
+   "title": "[인사] 기혜경 홍익대 교수, 국립현대미술관장 임명",
+   "url": "https://www.sctoday.co.kr/news/articleView.html?idxno=49031",
+   "published": "2026-11-16T00:50:22+00:00",
+   "summary": "[인사] 기혜경 홍익대 교수, 국립현대미술관장 임명 서울문화투데이",
+   "gnews_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93bEZ4V2lhaFFtU0dXZkRVY05MQmd5ZUtiT3d0LTBITjdDQXM1LVpfS0Z6SVBzd0cweHhwZHdpMEFvY3JtcURPbFJCX2hmOVF1UlNxZEJVUWloajVBWXdxa1h3cWQ5OVJzOXZJ?oc=5"
   },
   {
    "source": "문화체육관광부",
@@ -5713,6 +5697,24 @@
    "source": "BBC",
    "kind": "해외 언론",
    "lang": "en",
+   "title": "School wins mental health and wellbeing award",
+   "url": "https://www.bbc.co.uk/news/articles/c5n4eyv9wv7zo?at_medium=RSS&at_campaign=rss",
+   "published": "2026-11-22T12:10:39+00:00",
+   "summary": "The opening of a wellbeing room for students at Blanchelande College is recognised by judges."
+  },
+  {
+   "source": "BBC",
+   "kind": "해외 언론",
+   "lang": "en",
+   "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
+   "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+   "published": "2026-11-22T11:25:14+00:00",
+   "summary": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel."
+  },
+  {
+   "source": "BBC",
+   "kind": "해외 언론",
+   "lang": "en",
    "title": "Mysterious Mercury gets a visitor - after spacecraft's eight-year epic voyage",
    "url": "https://www.bbc.co.uk/news/articles/c39w9l4v1p9ro?at_medium=RSS&at_campaign=rss",
    "published": "2026-11-22T10:44:12+00:00",
@@ -5726,24 +5728,6 @@
    "url": "https://www.bbc.co.uk/news/videos/cmqx54px4n1eo?at_medium=RSS&at_campaign=rss",
    "published": "2026-11-22T09:56:37+00:00",
    "summary": "Registered health visitor Ruth Watts explains what parents should check before buying a baby's sleeping bag."
-  },
-  {
-   "source": "BBC",
-   "kind": "해외 언론",
-   "lang": "en",
-   "title": "Why are so many more young Scots claiming disability benefits?",
-   "url": "https://www.bbc.co.uk/news/articles/cw8r7kmgd8dxo?at_medium=RSS&at_campaign=rss",
-   "published": "2026-11-22T09:28:24+00:00",
-   "summary": "The number of Scots claiming disability benefits has risen sharply since the Covid pandemic - why?"
-  },
-  {
-   "source": "BBC",
-   "kind": "해외 언론",
-   "lang": "en",
-   "title": "South Korea education minister resigns over exam cheating scandal",
-   "url": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
-   "published": "2026-11-22T09:20:45+00:00",
-   "summary": "Choi Kyo-jin admits last-minute measures to stop AI-assisted cheating during the college entrance exam caused chaos."
   },
   {
    "source": "BBC",
@@ -5938,37 +5922,37 @@
    "source": "The Guardian",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Conservative media weighs its future as cracks emerge in Trump’s movement",
-   "url": "https://www.theguardian.com/us-news/2026/nov/22/conservative-media-trump-midterm-elections-results",
-   "published": "2026-11-22T11:00:26+00:00",
-   "summary": "Two weeks after Democrats flipped Congress, conservative outlets are having conversations on whether to distance themselves from Trump or double down on Maga As a so-called “blue wave” crashed across "
+   "title": "Burnham should ‘move on’ from Brexit, says Theresa May, as critics hit out over closer EU ties – UK politics live",
+   "url": "https://www.theguardian.com/politics/live/2026/nov/22/andy-burnham-brexit-theresa-may-michael-gove-latest-news-updates",
+   "published": "2026-11-22T12:09:54+00:00",
+   "summary": "Issue dominates Sunday broadcast round following Friday’s deals on trade and youth mobility Theresa May ‘aghast’ at Andy Burnham’s talk about rejoining EU European Relations Minister Hamish Falconer o"
   },
   {
    "source": "The Guardian",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Arizona grandfather hailed as a hero after finding missing toddler in desert",
-   "url": "https://www.theguardian.com/us-news/2026/nov/22/arizona-grandfather-toddler-missing-desert",
-   "published": "2026-11-22T11:00:25+00:00",
-   "summary": "Jay Stewart joined search party after two-year-old Vella Campillo wandered off into desert from front yard of home An Arizona granddad has been formally recognized as a hero after recently volunteerin"
+   "title": "CEO of funding agency for UK science and research criticised by union over cuts",
+   "url": "https://www.theguardian.com/education/2026/nov/22/prospect-union-leader-uk-funding-agency-science-research-ukri",
+   "published": "2026-11-22T12:00:28+00:00",
+   "summary": "Exclusive: Prospect’s Mike Clancy tells Ian Chapman at UKRI that union has ‘lost confidence’ in his leadership A trade union that counts scientists and engineers among its members says it has lost con"
   },
   {
    "source": "The Guardian",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "UK-EU food deal hailed by British firms: ‘We’re pretty aligned anyway’",
-   "url": "https://www.theguardian.com/business/2026/nov/22/uk-eu-food-sps-deal-brexit-checks",
-   "published": "2026-11-22T11:00:24+00:00",
-   "summary": "Exporters welcome end in sight for Brexit checks – but are frustrated that implementation will take so long British producers have broadly welcomed the UK’s deal with the EU, designed to remove the va"
+   "title": "They went out to celebrate at a Memphis bar. Then, ICE descended",
+   "url": "https://www.theguardian.com/us-news/2026/nov/22/memphis-tn-ice-detained",
+   "published": "2026-11-22T12:00:28+00:00",
+   "summary": "More than 120 people in the Tennessee city were detained in one of the largest single-day ICE raids in the US in 2026 The date 1 September, or 9/01 Day, is a festive day for Memphians. The date mirror"
   },
   {
    "source": "The Guardian",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Exquisitely decorated home of Victorian workman David Parr wins blue plaque",
-   "url": "https://www.theguardian.com/culture/2026/nov/22/exquisitely-decorated-home-of-victorian-workman-david-parr-wins-blue-plaque-cambridge",
-   "published": "2026-11-22T10:59:28+00:00",
-   "summary": "Working-class man who covered mansions with William Morris’s patterns spent his nights filling his Cambridge terrace house with his own designs As a Victorian working-class labourer, David Parr was pa"
+   "title": "Cloned number plate victims in England and Wales to get new reporting tool",
+   "url": "https://www.theguardian.com/money/2026/nov/22/cloned-number-plate-victims-england-and-wales-new-reporting-tool",
+   "published": "2026-11-22T11:59:28+00:00",
+   "summary": "Police launch initiative after steep rise in criminals using method to evade detection and avoid paying penalties Sandra Yarwood has a file “about 2in thick” of paperwork relating to the 32 driving fi"
   },
   {
    "source": "The Guardian",
@@ -5983,15 +5967,6 @@
    "source": "The Guardian",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Man charged with attempted murder after councillor stabbed in Bradford",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/21/man-charged-with-attempted-after-councillor-stabbed-in-bradford",
-   "published": "2026-11-21T19:42:42+00:00",
-   "summary": "Arfan Ali, 31, has also been charged with assault and possession of an offensive weapon in a public place A man has been charged with attempted murder after a local councillor was stabbed while workin"
-  },
-  {
-   "source": "The Guardian",
-   "kind": "해외 언론",
-   "lang": "en",
    "title": "Louisiana man charged with killing woman on hiking trail and murdering co-worker with crossbow",
    "url": "https://www.theguardian.com/us-news/2026/nov/21/louisiana-mississippi-hiking-trail-crossbow-murder-charges",
    "published": "2026-11-21T18:50:00+00:00",
@@ -6001,10 +5976,19 @@
    "source": "The Guardian",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Trump orders contractors to check with White House over any congressional inquiries",
-   "url": "https://www.theguardian.com/us-news/2026/nov/21/trump-contractors-congress-executive-order",
-   "published": "2026-11-21T18:08:30+00:00",
-   "summary": "Anticipating flood of Democratic requests, US president issues executive order in attempt to stymie oversight efforts Donald Trump is directing federal contractors and subcontractors to consult with h"
+   "title": "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid",
+   "url": "https://www.theguardian.com/world/2026/nov/21/alleged-mexican-drug-cartel-boss-el-chapo-isidro-meza-flores-arrested",
+   "published": "2026-11-21T17:46:55+00:00",
+   "summary": "Fausto Isidro Meza Flores was one of FBI’s most wanted fugitives and evaded capture for more than a decade The Mexican military captured one of the FBI’s 10 most wanted fugitives during a special forc"
+  },
+  {
+   "source": "The Guardian",
+   "kind": "해외 언론",
+   "lang": "en",
+   "title": "International UN talks on controlling use of autonomous weapons collapse",
+   "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+   "published": "2026-11-21T16:36:11+00:00",
+   "summary": "Week-long efforts fail to establish negotiating mandate on AI warfare after Russian ‘filibustering’ Week-long efforts to agree a negotiating mandate for a legally binding international treaty to contr"
   },
   {
    "source": "The Guardian",
@@ -6501,21 +6485,21 @@
    "source": "AP",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Anthropic surges in market debut after biggest IPO on record, despite fears that AI is running amok",
-   "url": "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649",
-   "published": "2026-11-19T23:22:00+00:00",
-   "summary": "Anthropic surges in market debut after biggest IPO on record, despite fears that AI is running amok AP News",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZXdyUExSdjhGa000MWtxaUR0YzhiVHJnNzN0N0lTUnNONktkaWZkUVUwdExoUXhXMTlJN0NEZ3F3M2RYbUZYelpiNFhpOE14LWdtYjF1MnB2M00xMk1GbENmci1UeFlXa3V0aHM4TWlxVVZNeFBwUkZjMTA2ZWhCSFBVaVVBb0FUdnpj?oc=5"
+   "title": "Suspects charged in brazen train heist ring that netted $22 million in cargo from major retailers",
+   "url": "https://apnews.com/article/california-nike-train-heist-ring-ed54b10d751d1b3a5a32e834629bf125",
+   "published": "2026-11-19T23:28:00+00:00",
+   "summary": "Suspects charged in brazen train heist ring that netted $22 million in cargo from major retailers AP News",
+   "gnews_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZVV5dFFWRV8wc1dSWFpSZGlUalprUHZKRERtQmtsSUdrX1FXRU5vVGpRMXR4Y2FPWjQ5TWZua2VfYnZvWXdCdEJiVUZxc2RqeXAyOTB3a19hSDRWZG9LTXJPQzVLQy1pTXpNWnNTMjE0M3pWemxTSlBNNkZLSG9ObDRWdjlrY2MtRi1YcXNqeEt6a1BoSGow?oc=5"
   },
   {
    "source": "AP",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Mississippi saw a spike in ‘inactive’ voters for the midterms. Democrats want answers",
-   "url": "https://apnews.com/article/mississippi-voters-ballots-democrats-experian-7a9282987612197b43c73cf05f7e7d31",
-   "published": "2026-11-19T23:18:00+00:00",
-   "summary": "Mississippi saw a spike in ‘inactive’ voters for the midterms. Democrats want answers AP News",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYktTUnVhX1NLRlhrYURBTHo2aVpEZjVEZ3JLUnBVczIxYWJCYUh0WVA3a2hLT2FwZnN2NzFiSFNwa0ZxZktFdDA2Z3M4WlVua2xRVHJSb2JERHo5SmdfTlJjazc2VHV6TmM3eEp1TTN1U25hb09DTUNPdGNqNzhYaTFERm55djMtM0xPc1V4S0tDR1NCel82OEpabFlfdF9NSmRUWGZKOUY?oc=5"
+   "title": "Anthropic surges in market debut after biggest IPO on record, despite fears that AI is running amok",
+   "url": "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649",
+   "published": "2026-11-19T23:22:00+00:00",
+   "summary": "Anthropic surges in market debut after biggest IPO on record, despite fears that AI is running amok AP News",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZXdyUExSdjhGa000MWtxaUR0YzhiVHJnNzN0N0lTUnNONktkaWZkUVUwdExoUXhXMTlJN0NEZ3F3M2RYbUZYelpiNFhpOE14LWdtYjF1MnB2M00xMk1GbENmci1UeFlXa3V0aHM4TWlxVVZNeFBwUkZjMTA2ZWhCSFBVaVVBb0FUdnpj?oc=5"
   },
   {
    "source": "AP",
@@ -6541,11 +6525,11 @@
    "source": "AP",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount",
-   "url": "https://apnews.com/article/federal-reserve-inflation-rates-9e72f3b6e3484173471cc382d6918de0",
-   "published": "2026-11-18T22:48:00+00:00",
-   "summary": "Fed minutes: Higher interest rates needed in December as inflation worries mount AP News",
-   "gnews_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOd2Q1ZnpsMjBsaWNUMEJIVUxmTTNSeUYyOWphQWtydFJKbDIzN3JiUXpvcEQ0dnhBcFVhRHdGWTR4dTRCQW5FNi1BVE8ycGtnTXEtWkZJMS1COGc5M25oUmNWb1hMemNpZ0p3MlRGSjBRLU1rX2cwRUlrbjNCWEcxazRkazhVd2dTUUFuWU1KN1RiVHBURHc?oc=5"
+   "title": "Hakeem Jeffries could become the first Black House speaker after Democratic nomination",
+   "url": "https://apnews.com/article/hakeem-jeffries-house-leadership-speaker-democrats-260433358f776473f29151992569f81d",
+   "published": "2026-11-18T21:09:00+00:00",
+   "summary": "Hakeem Jeffries could become the first Black House speaker after Democratic nomination AP News",
+   "gnews_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMkFKcjYyblpFekN4MnNrTUo1Z0ZIVGkyRTJHSENPZ2N6bEE3QmNPVWVnX1VkRG5xbk1IRzBsM1hkaHgwaWo1NkdQSW9PUzZoS1h5TUFteGhGakcxdVUyaml1SDNCXzNkYkhiSkpQVWFkRjh3d3JOeVlkRGt4X01sazQteW42UGIwMjJCZklydHBVbWYwLThsVUEyRnZ3ckZTZkhrcFdfcENjVG9Rc3dJ?oc=5"
   },
   {
    "source": "AP",
@@ -6561,21 +6545,21 @@
    "source": "AP",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "Mongolia’s president says he will step down after facing accusations of corruption",
-   "url": "https://apnews.com/article/mongolia-president-corruption-allegations-9542b2bf7536db6ae65b371aac07bbf4",
-   "published": "2026-11-17T12:42:00+00:00",
-   "summary": "Mongolia’s president says he will step down after facing accusations of corruption AP News",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNjZaTl9iN2I4eHBFUWlkWTNmY29qZndVdUdlUXpfbjJhSllpTnNncTFWcGhzdzliRU9aVkxQOVdGcWxqUWd3NjQtMUtEMlg0NU1uVjljc29aRFBHSDU2NXlIWXRyOTk5MnFJcGtKX0ZKdlo3b2FGRTdsU2ZFdjN2NVpTUXRRei14MUFiUGpaNjJFanBBXzRmR3VqS0FXbW1uTU5r?oc=5"
+   "title": "A Canadian teen was blackmailed after sending nude images. AP/FRONTLINE found his scammer in Nigeria",
+   "url": "https://apnews.com/article/sextortion-scams-tech-social-media-blackmail-privacy-d2b84856ace21f185cf14cecbcb765f3",
+   "published": "2026-11-17T15:59:00+00:00",
+   "summary": "A Canadian teen was blackmailed after sending nude images. AP/FRONTLINE found his scammer in Nigeria AP News",
+   "gnews_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUDh3Ml9fZWlUU0RFTkVYdTJCd2FlV25vUkZjM08zejVIb1BXUmg3T0N4dS1oVTQxbjlRTk1wVGZCSlQwdVFYZXVXYTd5NXRrSFJ2WThNX1A4ajhfN2RrOURmLUhvbVpManZPdmhJczd2UTlBMlliTWVieGdwY1YyVTg0M2paRVVfT254R2pVc2lWV3A5UWxkMVlNVzNKNV9KYzVsVDRrZV80UVBGX2g0LW13?oc=5"
   },
   {
    "source": "AP",
    "kind": "해외 언론",
    "lang": "en",
-   "title": "A technical issue at JPMorgan Chase triggers online banking delays for major US banks",
-   "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
-   "published": "2026-11-17T00:23:00+00:00",
-   "summary": "A technical issue at JPMorgan Chase triggers online banking delays for major US banks AP News",
-   "gnews_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT2I5X1NCMDRQZURDMlVFTTY4TmJ1TFVCeUIyWFRuenhhUmV4QTd5ZW9ydEdUaUFXb0dGTVFjR3VubUxvaExsZ3pfWUd2dUw1dEdFbDg5TWhkbEFxNEJydHNtaTgxRnJ1VXRNdjJQY25GSU1NdEZRcG9wUlN0NTJlRHk4QW5WbHk1eV9XOTROU2M3M3N4ZU0wbkxBSTY?oc=5"
+   "title": "Mongolia’s president says he will step down after facing accusations of corruption",
+   "url": "https://apnews.com/article/mongolia-president-corruption-allegations-9542b2bf7536db6ae65b371aac07bbf4",
+   "published": "2026-11-17T12:42:00+00:00",
+   "summary": "Mongolia’s president says he will step down after facing accusations of corruption AP News",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNjZaTl9iN2I4eHBFUWlkWTNmY29qZndVdUdlUXpfbjJhSllpTnNncTFWcGhzdzliRU9aVkxQOVdGcWxqUWd3NjQtMUtEMlg0NU1uVjljc29aRFBHSDU2NXlIWXRyOTk5MnFJcGtKX0ZKdlo3b2FGRTdsU2ZFdjN2NVpTUXRRei14MUFiUGpaNjJFanBBXzRmR3VqS0FXbW1uTU5r?oc=5"
   },
   {
    "source": "AP",
@@ -7202,6 +7186,16 @@
    "source": "EurekAlert!",
    "kind": "과학 매체",
    "lang": "en",
+   "title": "Indonesia’s pulp sector risks reversing progress toward zero deforestation",
+   "url": "https://www.eurekalert.org/news-releases/1152713",
+   "published": "2026-11-19T23:23:03+00:00",
+   "summary": "Indonesia’s pulp sector risks reversing progress toward zero deforestation EurekAlert!",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hWFphaG5xUnZHVi1GLWRlQnJqNUQ3c2RuVTd4OFdCcFhvb0M3aldRdkhRWk5JMU9PX0NBYU8tZUZHRE9FMTE3X0tQU1ZROVpXVktHSE5GN2RkdlFZ?oc=5"
+  },
+  {
+   "source": "EurekAlert!",
+   "kind": "과학 매체",
+   "lang": "en",
    "title": "Dan M. Frangopol receives honorary doctorate from Luleå University of Technology",
    "url": "https://www.eurekalert.org/news-releases/1152673",
    "published": "2026-11-19T21:30:38+00:00",
@@ -7227,16 +7221,6 @@
    "published": "2026-11-19T19:38:08+00:00",
    "summary": "Indonesia’s pulp industry threatens to reverse hard-won conservation gains EurekAlert!",
    "gnews_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE42aVh3Snc4VG55SVR4ZlZpel9Zemppdmo5XzRWdmtQcklOQWZEUGlXTnNGenpDWUt4azRMQWF6aWhKbldBWS1nWnh3QVlUOExnMnVMU0VfdlJXWWRl?oc=5"
-  },
-  {
-   "source": "EurekAlert!",
-   "kind": "과학 매체",
-   "lang": "en",
-   "title": "Bumblebee brains provide clues into the origins of intelligence",
-   "url": "https://www.eurekalert.org/news-releases/1151925",
-   "published": "2026-11-19T19:33:38+00:00",
-   "summary": "Bumblebee brains provide clues into the origins of intelligence EurekAlert!",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1FaU5za00xQk9nR1dZd2FPWTRxaW9XbjdEekRMakhjSktNS2l0bG9nT21nLTZJNnR5akZLZEZ6Z19HVzdYaDZseU1HUi1teGU5TWQybGJuUDJKOGpt?oc=5"
   },
   {
    "source": "EurekAlert!",
@@ -7302,6 +7286,16 @@
    "source": "EurekAlert!",
    "kind": "과학 매체",
    "lang": "en",
+   "title": "New Asian flying frog species identified in Indonesia",
+   "url": "https://www.eurekalert.org/news-releases/1152323",
+   "published": "2026-11-17T20:34:27+00:00",
+   "summary": "New Asian flying frog species identified in Indonesia EurekAlert!",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0xLVFlNFZFSHpTY2FUcXNBWmZGYUNBUlI3NXdKZ2tZbnAxRkRjdGVvdVR0X0pnWWxFeFJqSk9WTDlpcmxxYUZPU0NyWFBjNnhFNXZtSUJaR2VabDdY?oc=5"
+  },
+  {
+   "source": "EurekAlert!",
+   "kind": "과학 매체",
+   "lang": "en",
    "title": "New SARS-CoV-2 variant PJ.2.1: Vaccine antibodies provide protection",
    "url": "https://www.eurekalert.org/news-releases/1152229",
    "published": "2026-11-17T18:54:48+00:00",
@@ -7327,16 +7321,6 @@
    "published": "2026-11-17T13:19:19+00:00",
    "summary": "Eco-evolutionary game theory EurekAlert!",
    "gnews_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9jbmRVUE9xQVZURjdlVVVoa3JjNGprWnJBcmlhNEd1TGpBajFWcWpLWV9td2luVG1ILVktV18wb1U2bmZnWXJEbzZXX2o3azVyN1UzbjlPVzlVUzlP?oc=5"
-  },
-  {
-   "source": "EurekAlert!",
-   "kind": "과학 매체",
-   "lang": "en",
-   "title": "Whole genome sequencing using whale snot",
-   "url": "https://www.eurekalert.org/news-releases/1151764",
-   "published": "2026-11-17T10:04:58+00:00",
-   "summary": "Whole genome sequencing using whale snot EurekAlert!",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBvZjZKS3lrWnkzc29VS1EzekhHVDhLNy14aHRtVE83aWlYeHNtZ3FwUUZGTWx3aVNXb3RUSE43dUZKRTdSSUIybEJqcTRWSUtuLVlLWjY1R1VyN0d6?oc=5"
   },
   {
    "source": "EurekAlert!",
@@ -7762,16 +7746,6 @@
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "장기요양 가정 10곳 중 1곳 ‘돌봄 때문에 일 그만둬’···“재가 돌봄 시간 늘려야”",
-   "url": "https://www.khan.co.kr/article/202611221632001/amp",
-   "published": "2026-11-22T07:32:00+00:00",
-   "summary": "장기요양 가정 10곳 중 1곳 ‘돌봄 때문에 일 그만둬’···“재가 돌봄 시간 늘려야” 경향신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TSUJGZm9KVlB3aW1WVlVtbDY5OU96QVR4NlZLaG9PdU9RUEU0emhvd0tEQzAyMG5xb3pSc1F5aE9KSmlxblpXNnp0VHBPWVdWUmJEZzBSaXduN2JuNjBZ0gFfQVVfeXFMTlNJQkZmb0pWUHdpbVZWVW1sNjk5T3pBVHg2Vktob091T1FQRTR6aG93S0RDMDIwbnFvelJzUXloT0pKaXFuWlc2enRUcE9ZV1ZSYkRnMFJpd243Ym42MFk?oc=5"
-  },
-  {
-   "source": "한국보건사회연구원",
-   "kind": "연구기관",
-   "lang": "ko",
    "title": "신경안정제 기대는 돌봄필요청년…일반 청년보다 최대 9배 많아",
    "url": "https://www.newsis.com/view/NISX20261120_0003877039",
    "published": "2026-11-21T22:02:00+00:00",
@@ -7782,41 +7756,11 @@
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "“특별한 혜택 아닌 정당한 권리”…다가치포럼서 쏟아진 동포 사회보장 개선 요구",
-   "url": "https://www.ekw.co.kr/news/articleView.html?idxno=21098",
-   "published": "2026-11-21T11:44:04+00:00",
-   "summary": "“특별한 혜택 아닌 정당한 권리”…다가치포럼서 쏟아진 동포 사회보장 개선 요구 EKW이코리아월드(동포세계신문)",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4tYlhfV1REMGFFVlpybzZkamdPZHg4NlpEX3lncFBYM0I2bWVGX3RXN2IwMnlqYUhMUVBZbGpPNVJmb200aE8wWTZpd3N1UjBkOHRLT0s0aGFmcGt5ZzRtRnhORE1EUQ?oc=5"
-  },
-  {
-   "source": "한국보건사회연구원",
-   "kind": "연구기관",
-   "lang": "ko",
-   "title": "2026 제4차 다가치포럼, 국민연금·실업급여·건강보험 현안 종합 논의...\"공정한 제도 속 정당한 권리 보장을...\"",
-   "url": "https://www.ekw.co.kr/news/articleView.html?idxno=21097",
-   "published": "2026-11-21T10:53:15+00:00",
-   "summary": "2026 제4차 다가치포럼, 국민연금·실업급여·건강보험 현안 종합 논의...\"공정한 제도 속 정당한 권리 보장을...\" EKW이코리아월드(동포세계신문)",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5EeWpyb0M5RDRYSGREZmJVMWY1UEF0Mi01NFRhT3BHSnhkQ3B5T2x3ckZJMzRMeTVqT28xdVUzZGRlck9mdUhXZHV6UW8zMmdOVGMtd0RkNDBSU1ZYdHNOU09GZXoyZw?oc=5"
-  },
-  {
-   "source": "한국보건사회연구원",
-   "kind": "연구기관",
-   "lang": "ko",
    "title": "질병청, 24일 질병관리 인공지능 전환 전략 토론회",
    "url": "https://www.medifonews.com/news/article.html?no=219116",
    "published": "2026-11-21T04:05:03+00:00",
    "summary": "질병청, 24일 질병관리 인공지능 전환 전략 토론회 메디포뉴스",
    "gnews_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YTWpkYjctOWV5S1FPNnhUMlNZLWo4eGlsWGJwUGdYQll0LTZxN2tDakpqcVNKcjlsdDN1Z1RmLVZJVjlZR1VvVXVyVnkzUmxURWRYZWwwb0JpWVRFQTAyWUpaSk0?oc=5"
-  },
-  {
-   "source": "한국보건사회연구원",
-   "kind": "연구기관",
-   "lang": "ko",
-   "title": "경기도교육청, 제1형 당뇨병 학생 지원사업, 사회보장제도 사전협의 전국 최우수 사례 선정",
-   "url": "https://www.ndnnews.co.kr/news/articleViewAmp.html?idxno=1134799",
-   "published": "2026-11-20T08:28:20+00:00",
-   "summary": "경기도교육청, 제1형 당뇨병 학생 지원사업, 사회보장제도 사전협의 전국 최우수 사례 선정 엔디엔뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1FMGduSF9WZ3RDRUoyRGVHeHp6NmNLajctaWdXVTVyTlBWaXh3TlV2TzgyX3RKWWZxSFdTX0xNZ3R5QVpXSHd0ckppSUg2VVVwSkVFbzRKVHlrTGh0ZHBHN1lfd2QweDQ3NVBVaUdwYXBhd9IBckFVX3lxTE1FMGduSF9WZ3RDRUoyRGVHeHp6NmNLajctaWdXVTVyTlBWaXh3TlV2TzgyX3RKWWZxSFdTX0xNZ3R5QVpXSHd0ckppSUg2VVVwSkVFbzRKVHlrTGh0ZHBHN1lfd2QweDQ3NVBVaUdwYXBhdw?oc=5"
   },
   {
    "source": "한국보건사회연구원",
@@ -7842,21 +7786,11 @@
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "돌봄 현장 부당대우 여전…장기요양요원 보호체계 미흡",
-   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1194352",
-   "published": "2026-11-19T09:37:03+00:00",
-   "summary": "돌봄 현장 부당대우 여전…장기요양요원 보호체계 미흡 금강일보",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9hVDFNVG5wOGFEUzR6bS1JMEhpeVh3WEpRRXBfckxBTlRxTm1BRktkTmhzUHU1Nm10QXFRNHQ5eVlYTnJNa0pjdjBybzZCT05rZVdNZlM4cFNfNldkUUFpMy02QXVBcVNMaEE?oc=5"
-  },
-  {
-   "source": "한국보건사회연구원",
-   "kind": "연구기관",
-   "lang": "ko",
-   "title": "복지부 “고양·파주 진료권 통합 미확정”…지역 의견 수렴 중",
-   "url": "https://www.medifonews.com/news/article.html?no=218951",
-   "published": "2026-11-19T09:25:05+00:00",
-   "summary": "복지부 “고양·파주 진료권 통합 미확정”…지역 의견 수렴 중 메디포뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5JUFRwY0lZWDZNZXg2Tl81QmZCMW1TbmIteHl1Y2RMSHptd3dhOE5LbXBvQVNEMW5FSHQ4RWw5WVBGOENYaVAyQmRudTJGOUNCRmtmY1VyNzFSR191T3QtZWMzT2s?oc=5"
+   "title": "\"방문진료 '재택의료'로 통합…'임종기 통합 패키지' 도입해야\"",
+   "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261119_0003875785",
+   "published": "2026-11-19T11:31:29+00:00",
+   "summary": "\"방문진료 '재택의료'로 통합…'임종기 통합 패키지' 도입해야\" 뉴시스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0tV2tWQWx4cHlmZ1JMaG1ua2R5aWRKQS1VdVV4bGU1UzlWWmF3Q3ZvVXN2MXQ4SmsxT1pMX2laeFhDMXExV1NqS0tpUWRjOEUxVmtUekQ3ME1acTdlLTE5ZnViTnBsMzVMZzU1UE8xcHEtM2RhZHlPVtIBeEFVX3lxTE0tV2tWQWx4cHlmZ1JMaG1ua2R5aWRKQS1VdVV4bGU1UzlWWmF3Q3ZvVXN2MXQ4SmsxT1pMX2laeFhDMXExV1NqS0tpUWRjOEUxVmtUekQ3ME1acTdlLTE5ZnViTnBsMzVMZzU1UE8xcHEtM2RhZHlPVg?oc=5"
   },
   {
    "source": "한국보건사회연구원",
@@ -7872,16 +7806,6 @@
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "양극화 해소 범부처 대응 본격화…2027년 경제성장전략에 반영",
-   "url": "https://www.newswhoplus.com/news/articleView.html?idxno=74919",
-   "published": "2026-11-19T08:00:00+00:00",
-   "summary": "양극화 해소 범부처 대응 본격화…2027년 경제성장전략에 반영 뉴스후플러스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1HOHR3NGVUSTFKWmYxREhrSFVHQ2l3WW9OenZLZ2cxMEwtcktYZllfcDVKaDdQeUtHdFhBNFRZYlkzemxmY0xxdEx1QTY3bUhqY2dhUHhpR0puMWdUbmt1cDZMZDRrTkY3ZWNNbll3?oc=5"
-  },
-  {
-   "source": "한국보건사회연구원",
-   "kind": "연구기관",
-   "lang": "ko",
    "title": "집에서 살고 싶은 장기요양 수급자, 돌봄은 부족",
    "url": "https://bravo.etoday.co.kr/view/atc_view/20518",
    "published": "2026-11-19T07:21:00+00:00",
@@ -7892,11 +7816,91 @@
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "노인 돌보는 요양보호사 월급 127만원…10명 중 6명은 시급제 계약직",
-   "url": "https://news.nate.com/view/20261119n04014",
-   "published": "2026-11-18T22:50:00+00:00",
-   "summary": "노인 돌보는 요양보호사 월급 127만원…10명 중 6명은 시급제 계약직 네이트",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB6VVpNajBuOWN6SlVBWGRFQi1veWsyYTgxNVQ0bGhoMXJvMUxkY3gzSUJzTXhKOFR0aDlHOVlaZXNySE5VRGozb1FRWHA4X2JPUnRr?oc=5"
+   "title": "경기도교육청, 제1형 당뇨병 학생 지원사업, 사회보장제도 사전협의 전국 최우수 사례 선정",
+   "url": "http://www.snfocus.net/sub_read.html?uid=127443&section=sc16&section2=%EC%82%AC%ED%9A%8C",
+   "published": "2026-11-19T07:10:00+00:00",
+   "summary": "경기도교육청, 제1형 당뇨병 학생 지원사업, 사회보장제도 사전협의 전국 최우수 사례 선정 성남포커스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQLVdaRzQ5T0FCSVM4UEZSZFQzREFtcWJXM3NPemhoeEZTZFZHcVNRRFpkSzgzWGZCc29EQlc1eDFRcHdfTzR4YXFXblpUOTdxaTNXV3VuSjdyMFJlTnpJelFDSTVmVlh5enV3Y1dfUkROdnJoR2lBUVo2Q0VmSHBidUt3RWw3RDZtazJ5elp3WHJ2UQ?oc=5"
+  },
+  {
+   "source": "한국보건사회연구원",
+   "kind": "연구기관",
+   "lang": "ko",
+   "title": "복지부, ‘제1차 지역사회 통합돌봄 기본계획’ 공청회 개최",
+   "url": "https://www.bokjitoday.com/news/articleView.html?idxno=19970",
+   "published": "2026-11-19T06:57:52+00:00",
+   "summary": "복지부, ‘제1차 지역사회 통합돌봄 기본계획’ 공청회 개최 복지투데이",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ZM0hFYXFlYlNKUmhMTjVkdTVld1Fua18xcllFTzFTNHZ2cXRWYmRQWXQ2bHZMV3AycVBfczNNQzE3SWJtOG53QlhwUWxYUWhLYk9oc2dTTTg5Z2RpSGtHTHZ6U0dGSXJmWWE3NA?oc=5"
+  },
+  {
+   "source": "한국보건사회연구원",
+   "kind": "연구기관",
+   "lang": "ko",
+   "title": "방문요양 97%·단기보호 2%…통합돌봄 서비스 충족률 '격차'",
+   "url": "https://www.yna.co.kr/amp/view/AKR20261119118800530",
+   "published": "2026-11-19T06:08:01+00:00",
+   "summary": "방문요양 97%·단기보호 2%…통합돌봄 서비스 충족률 '격차' 연합뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYeUtEMEp2cjZQaDVaT0hrTnRjdXR0ZUI1QnZQMDlNNHljQm1HNkFKbl9scEV6RnRrM19Eb0xoM0lndkFMY2t3eFdTaW00RVBlVXFQNXdqc21ZdkU5R3AyNNIBYEFVX3lxTFBYeUtEMEp2cjZQaDVaT0hrTnRjdXR0ZUI1QnZQMDlNNHljQm1HNkFKbl9scEV6RnRrM19Eb0xoM0lndkFMY2t3eFdTaW00RVBlVXFQNXdqc21ZdkU5R3AyNA?oc=5"
+  },
+  {
+   "source": "한국보건사회연구원",
+   "kind": "연구기관",
+   "lang": "ko",
+   "title": "2026~2030년 통합돌봄 발전 전략 논의⋯대상ㆍ서비스 확대",
+   "url": "https://www.etoday.co.kr/news/view/2650412",
+   "published": "2026-11-19T05:48:00+00:00",
+   "summary": "2026~2030년 통합돌봄 발전 전략 논의⋯대상ㆍ서비스 확대 이투데이",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1fVzA2QTJKRmx0aVFZbF9Bbno3UmxYLTh5TDFEa0R1Zmg4QXdlVXlwcUc5c3Z0VGs2b1hfUXFQeThweHlYZ2RJb0R6LTZNbjdlSzM2eA?oc=5"
+  },
+  {
+   "source": "한국보건사회연구원",
+   "kind": "연구기관",
+   "lang": "ko",
+   "title": "60세 이상 가구 순자산, 30대의 2.14배…정부, 사회 격차 완화 대책 논의",
+   "url": "https://www.nursenews.co.kr/news/articleView.html?idxno=46974",
+   "published": "2026-11-19T04:27:54+00:00",
+   "summary": "60세 이상 가구 순자산, 30대의 2.14배…정부, 사회 격차 완화 대책 논의 간호사신문",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9DZFV6Q2I5RjZRY0VfV2d0QWlVVWluSlYzNllaZjZ6WkV4ZjJxMDU4eG85bXV4V3JHdGRMLVRISVk0SmdPejdnQm0xMThNbGloeGEzMU9CV0I1dDc2V0hZQlFBUlZYMG50UnJpZjlR?oc=5"
+  },
+  {
+   "source": "한국보건사회연구원",
+   "kind": "연구기관",
+   "lang": "ko",
+   "title": "2027년 예산, 민생과 양극화 극복 초석 되길",
+   "url": "https://www.korea.kr/news/policyFocusView.do?newsId=148976060&pkgId=49500845",
+   "published": "2026-11-19T04:12:00+00:00",
+   "summary": "2027년 예산, 민생과 양극화 극복 초석 되길 대한민국 정책브리핑",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORHZBaUx2anR1Zi13OUlRNjZ0b182VE1OcUtVejAyZmMyQnB0VTYtdGhKcnhDVGtGaXV2WGMyQy10b0tYZk1TcEx2YUdzMnZYd3Y1ZExNNFBVOWQ5alZZQlM5eUpCT085blNFYkpmR09lLTlQajIyRHJGLUw3VUR3eW1n?oc=5"
+  },
+  {
+   "source": "한국보건사회연구원",
+   "kind": "연구기관",
+   "lang": "ko",
+   "title": "정부, 사회격차 완화 첫회의…\"사회경제 이동성 위한 투자 필요\"",
+   "url": "https://www.yna.co.kr/view/AKR20261119079900530",
+   "published": "2026-11-19T02:29:14+00:00",
+   "summary": "정부, 사회격차 완화 첫회의…\"사회경제 이동성 위한 투자 필요\" 연합뉴스",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aY1FGUDBPV0tQMUJEUzJjeW1IWmpyZXdINzRHUlFwVi1IODBSb05GWDg2bWhUNHFEOXFJNkEwM01CU3BqZ1dQZHBaV2ZIWFRhVk9vd28xckFQZFnSAWBBVV95cUxQQk9acFJQVkl2ZEpPUVNmRkJNYmxHLWRVSHl3dW5PTFJ3VmNrUGxPR09rX2M0R19FSFY3ci1WeFZYbUFxR29BYmxBdlotWE5UMmoxMnc3VFBTMWNDRkZmb20?oc=5"
+  },
+  {
+   "source": "한국보건사회연구원",
+   "kind": "연구기관",
+   "lang": "ko",
+   "title": "“욕설·성희롱 당해도 참는다”...장기요양요원 피해자 10명 중 4명",
+   "url": "https://www.kado.net/news/curationView.html?idxno=2085821",
+   "published": "2026-11-19T00:53:44+00:00",
+   "summary": "“욕설·성희롱 당해도 참는다”...장기요양요원 피해자 10명 중 4명 강원도민일보",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBsal8wNWxFeWxpZURhcmVjdXVISldkLWhxWFJyOVZnZmNRbE44bndVRFNqSzNjTk5MV0xEZVI4QTloQmNpcU5XME1IcnNyYnZLY0NGZWhIcmp2bGEzZkVpaWExNDZDSldP?oc=5"
+  },
+  {
+   "source": "한국보건사회연구원",
+   "kind": "연구기관",
+   "lang": "ko",
+   "title": "전체 장기요양기관 65% 늘 때 단기보호는 67.9% 급감…돌봄 공백 메울 공공 인프라 위기",
+   "url": "https://www.widedaily.com/news/articleView.html?idxno=304091",
+   "published": "2026-11-19T00:50:32+00:00",
+   "summary": "전체 장기요양기관 65% 늘 때 단기보호는 67.9% 급감…돌봄 공백 메울 공공 인프라 위기 와이드경제",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uclQ5ZGhrVnFzWmg1VFpSTWxaeDBQb2xudFhDM2Qxb1F4Y3VTbElHaVVjNlRLUXFfeDVKTnhGS05hcFNPaUhXZ1ctMExmNTctUHNMOVpwMVhoYUlfSEJkdjJUdElPUThkT2xieA?oc=5"
   },
   {
    "source": "한국보건사회연구원",
@@ -7922,41 +7926,41 @@
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "‘배움의 벽’ 뚫어 문 내고 길 놓기를 [왜냐면]",
-   "url": "https://www.hani.co.kr/arti/opinion/because/1288029.html",
-   "published": "2026-11-18T10:49:00+00:00",
-   "summary": "‘배움의 벽’ 뚫어 문 내고 길 놓기를 [왜냐면] 한겨레",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwd0F3NnNTUjhibzJfSEV0NzJLZXd3MmgxbWZWYVlUdkxnMlZZZkpIMGRPU3I0VFN1LTBmdHRUdkRnS1ZiNkN6Yk1PT2M4MFpkZGhZZ3lDaEZjbTFGdFBYenk1bDREbUU?oc=5"
+   "title": "[창간 9주년 기획] \"아동 연구 거의 없어...정책 마련 서둘러야\"",
+   "url": "https://www.newspenguin.com/news/articleView.html?idxno=22150",
+   "published": "2026-11-18T12:08:10+00:00",
+   "summary": "[창간 9주년 기획] \"아동 연구 거의 없어...정책 마련 서둘러야\" 뉴스펭귄",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBvYzJXTWlGMUlscjZEWGE2eGlhU1g0bUhPZXd0OTc0UHZycVhSWUVHYzRUeThyVUhlanFIcFhNaWRMUER6b3dPbjhKVGRCMTd1QzdfNFcxbEg3V2k3UjZ3VlBrRVRFX1kyUzNZdWl30gFyQVVfeXFMTVBwS2ZSZllEczNnR21KYWZFWWtMVVBCeE8ySGdzWkF3UFpzMmlsQ1V1U1JiMkZKLWM1US1hQ2p0ejdDdUFiMnRMRTBjT01NZ0t4SjdQMjh6eG5fckl4aE9aUHZUY1ZCTzZyM2dxRFF1b1ZR?oc=5"
   },
   {
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "장기요양보험 이용 가족 절반 이상 “돌봄 여전히 부담”",
-   "url": "https://www.addnewsin.com/news/articleView.html?idxno=63790",
-   "published": "2026-11-17T06:42:00+00:00",
-   "summary": "장기요양보험 이용 가족 절반 이상 “돌봄 여전히 부담” 애드뉴스인천",
-   "gnews_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjTnVzM3ljWmFCWWJmMzljMExFSm9ibkpWNjdYU0hvOVpjTHE2WVhqVUd0Yk9fU2ZGQUVSVjRiNG55ZGZ4eG91bGpzOE5PRjBKbDZNaFo5d25BTXE2eUZwdjNWQk9LcG1rd1Z3?oc=5"
+   "title": "정신건강 필요 클수록 감정 지원용 AI 이용 4.6%→20.7%",
+   "url": "https://www.famtimes.co.kr/news/articleView.html?idxno=705111",
+   "published": "2026-11-18T08:50:03+00:00",
+   "summary": "정신건강 필요 클수록 감정 지원용 AI 이용 4.6%→20.7% 팸타임스 FAM Times",
+   "gnews_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLdTJCOTNyVGI2X0ZkRG85bHVia1VlUlNveTR0QjRob3VHSHpNNnVBVW5jbDEwVExqMWw2bVgzOGdrOG1EYzF3Ti1tZThqTVpHWXBuVnhRa2dzMDlqSUJLSXEwQk05OUtuOXRoRjJ3?oc=5"
   },
   {
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "월급은 끊기고 연금은 멀었다...‘노후의 빈 시간’ 버티는 중고령층",
-   "url": "http://www.emozak.co.kr/news/articleView.html?idxno=14038",
-   "published": "2026-11-17T05:15:17+00:00",
-   "summary": "월급은 끊기고 연금은 멀었다...‘노후의 빈 시간’ 버티는 중고령층 이모작뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yY3FCM2NjY2EyczJBSS1UdVcxekVyLW10TmhHNUhycTdYbzh6c3RRTVRhSC0yUFN5WHFXQ0owa0VWdlBBVktrZlRKZTdHaDNxeDdvZkQ5VDlWT28zVklibmYyQ2g3eWpI0gFsQVVfeXFMTUVuaXBBMXRNcHJXbkxqWkoyMFFDcDdFeHNyLXFETE9yQk5Gbks2aGpGbk9HSU1yaDVveElXVGlVcEx4cmVBMFFVZkg4clFFbUltTm9lMGpDeXk4TWE3cFVIZjhhSlV2eGttWVBR?oc=5"
+   "title": "“복약관리부터 AI 노쇠 예측까지” 고려대 고령사회硏, 후기학술대회 개최",
+   "url": "https://bravo.etoday.co.kr/view/atc_view/20509",
+   "published": "2026-11-18T06:11:00+00:00",
+   "summary": "“복약관리부터 AI 노쇠 예측까지” 고려대 고령사회硏, 후기학술대회 개최 이투데이",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DLWNyeXBqZmhZdGhyajBBdXdySjc2X2JBR1NiS2ZCMEdzODdLc0JULUJrVDJCU29FM0RpaWF0UVVKd0l3d3lTQ3dpWk9iQ0FvNnZXX0UtX0Zzdw?oc=5"
   },
   {
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "노인장기요양보험 이용해도 가족 절반은 여전히 돌봄부담",
-   "url": "https://www.yna.co.kr/view/AKR20261117088600530",
-   "published": "2026-11-17T03:19:17+00:00",
-   "summary": "노인장기요양보험 이용해도 가족 절반은 여전히 돌봄부담 연합뉴스",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5iUTJnTmM5OUNUSDN0VDl0Z0pkV01pc1VJRklESENiSmFfU2dmUlFtT1RISXpxMFlvdUhvQ3h6MFl1bmhvMHBmQVRDNWVDSjA1aEdhQS0tQnVfUWPSAWBBVV95cUxOUnpnRUNuY01MQWdTRWVjQXVKSEpVa0FrZVMxUHAtX1pLUmhHMWhqZEdlZGhWVzg0dU9xNUkycUpGQTZuUHc4ZWtoQmlTU0dLUzd1ak5pR2NKTEdnSHIzbWk?oc=5"
+   "title": "노인장기요양보험 이용...가족 절반은 여전히 돌봄 부담",
+   "url": "https://www.kbsm.net/news/view.php?idx=542139",
+   "published": "2026-11-17T05:20:37+00:00",
+   "summary": "노인장기요양보험 이용...가족 절반은 여전히 돌봄 부담 경북신문",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Pa2RZd3VGWW5PRnUyYm1McHk0eTFRLVFQZlJNX3BXOGxMWWhGNGJPTHBpUGNnNWsza2RCOGJnb2RKYlFMSldFcHFZOGRPemg3cXZMQ2x3Zlo?oc=5"
   },
   {
    "source": "한국보건사회연구원",
@@ -7972,41 +7976,11 @@
    "source": "한국보건사회연구원",
    "kind": "연구기관",
    "lang": "ko",
-   "title": "고립·은둔 청년의 사회 진입, 일경험과 관계 회복에서 길 찾다",
-   "url": "https://www.yonhapnewstv.co.kr/news/AKR20261116182316Dmt",
-   "published": "2026-11-16T09:23:00+00:00",
-   "summary": "고립·은둔 청년의 사회 진입, 일경험과 관계 회복에서 길 찾다 연합뉴스TV",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9NSWNBOFV4ZzZGVHo1bVU5NHFEdFgwZ21IOVJrWjA2LVl4a2RzN0VQZ0ZubFhJWTlmVUY5MXBrRjBKVkJMdndJbnRtQTFjekRVR3RvdF9BWlJVTldiM2t2aFFHS2l5ZG8?oc=5"
-  },
-  {
-   "source": "한국보건사회연구원",
-   "kind": "연구기관",
-   "lang": "ko",
-   "title": "중고령층 소득공백(Income Crevasse)의 현황과 대응 방안",
-   "url": "https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000208184",
-   "published": "2026-11-16T09:09:22+00:00",
-   "summary": "중고령층 소득공백(Income Crevasse)의 현황과 대응 방안 KDI 경제교육·정보센터",
-   "gnews_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE45eVVZMmtZWkJhSWNrR1dNOUVyNE52d1RhemlUSHZRT2ZEUzZmU2lyT3Z4TkI3ck5EUWMtaWI0cDhDZlhxUkk5eEg0YlNMcC15dGJlMzRKV3FmQll3OVdwM1hORnlBTklPMGpn?oc=5"
-  },
-  {
-   "source": "한국보건사회연구원",
-   "kind": "연구기관",
-   "lang": "ko",
-   "title": "'쉬었음' 미혼 청년, 결혼 의향 52%…미래에 비관적, 가족 형성 유보",
-   "url": "https://unipress.co.kr/news/articleView.html?idxno=15628",
-   "published": "2026-11-15T15:11:59+00:00",
-   "summary": "'쉬었음' 미혼 청년, 결혼 의향 52%…미래에 비관적, 가족 형성 유보 대학지성 In&Out",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1CZjNOOUY3akVQTlRjcmpFamVIU05MdUFYdExJX2hPN0pPc2E0RURmeDQ1RFFwMHFEcElpZmZPWmNXSzJTQl9fQ2NESnJlUno3R1dHTWlHN3huTTRCUG1TeVdiNlRzUGs?oc=5"
-  },
-  {
-   "source": "한국보건사회연구원",
-   "kind": "연구기관",
-   "lang": "ko",
-   "title": "다차원 빈곤, 소득 잣대에 가려진 빈곤의 얼굴을 묻다",
-   "url": "http://www.skkuw.com/news/articleView.html?idxno=33828",
-   "published": "2026-11-15T11:49:58+00:00",
-   "summary": "다차원 빈곤, 소득 잣대에 가려진 빈곤의 얼굴을 묻다 성대신문",
-   "gnews_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9CSWNsX0VOdTNfTUtUa1ZYYlRIUEtOQ0U1M0RNb3dJelgtbFpkemNXQVJkYWZRWVlZelNNNkUtbHU2NFJ3em43dElxSVlsbm1odXFDbUwtczhjdUViNTdOLUdBWXHSAWhBVV95cUxQVG9vMWhscEdOcEtjc3NnX1JBNzdkdE9qZHJ1SF9tU19XX1VNVllTbXFzdzI5RlJYUF9OMGJ4aklUVVZic3lqNE5SejVabGlVOE5vbGxJb3hkWjJRTzE0OW9jb3BNbjN3aA?oc=5"
+   "title": "[집중진단] 지역가입자 400만세대, 건보료 더 낸다…소득 정산제 확대 논란",
+   "url": "https://biz.sbs.co.kr/article/20000341544",
+   "published": "2026-11-16T06:48:00+00:00",
+   "summary": "[집중진단] 지역가입자 400만세대, 건보료 더 낸다…소득 정산제 확대 논란 SBS Biz",
+   "gnews_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Dc0F5aG9maExJdVIyV25wMEhFRHpxTDBtV1BSTTlnVkdmNXV6T3pxUDZfbFQxbkIwNVZ6aV9lN0h1c2lxbC1rc2d5WVRYUGtaOEhF?oc=5"
   },
   {
    "source": "Pew Research Center",
